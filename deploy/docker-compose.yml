@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  ghost:
+    image: ghost:latest
+    ports:
+      - 80:2368
+    env_file:
+      - ./.env
+    volumes:
+      - ./content/apps:/var/lib/ghost/content/apps
+      - ./content/data:/var/lib/ghost/content/data
+      - ./content/images:/var/lib/ghost/content/images
+      - ./content/logs:/var/lib/ghost/content/logs
+      - ./content/settings:/var/lib/ghost/content/settings
+      - ./content/themes:/var/lib/ghost/content/themes
