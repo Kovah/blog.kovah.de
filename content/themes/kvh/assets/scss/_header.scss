@@ -1,6 +1,7 @@
 .header {
   background-color: $c-primary;
   padding: $spacer-md 0;
+  font-family: $font-family-special;
 
   @media screen and (min-width: $screen-bp-sm) {
     padding: $spacer-lg 0;
@@ -17,6 +18,10 @@
       justify-content: inherit;
       flex-wrap: nowrap;
     }
+
+    @media screen and (min-width: $screen-bp) {
+      font-size: $font-size-xl;
+    }
   }
 
   &__nav-logo {
@@ -27,6 +32,10 @@
       flex: 0 0 auto;
       margin-bottom: 0;
       margin-right: $spacer-md;
+    }
+
+    @media screen and (min-width: $screen-bp) {
+      margin-right: $spacer-lg;
     }
 
     img {
@@ -47,7 +56,7 @@
     position: relative;
     flex: 0 0 calc(50% - #{$spacer});
     padding: $spacer-xs 0;
-    color: rgba($white, .8);
+    color: $white;
 
     @media screen and (min-width: $screen-bp-sm) {
       flex: 0 0 auto;
@@ -68,7 +77,7 @@
     &:hover,
     &:focus,
     &:active {
-      color: rgba($white, 1);
+      color: $white;
 
       &:after {
         top: 100%;
