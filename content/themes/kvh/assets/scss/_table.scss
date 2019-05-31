@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: $table-spacing;
+    vertical-align: top;
+    border-bottom: 1px solid $table-border;
+
+    &:first-child {
+      min-width: 200px;
+    }
+  }
+
+  th {
+    text-align: inherit;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * 1px) solid $table-border;
+  }
+
+  tbody + tbody {
+    border-top: (2 * 1px) solid $table-border;
+  }
+
+  .table {
+    background-color: #fff;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * 1px);
+    }
+  }
+}
+
+.table-wrapper {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}

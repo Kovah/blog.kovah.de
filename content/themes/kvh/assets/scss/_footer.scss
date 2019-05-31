@@ -1,0 +1,15 @@
+.footer {
+  opacity: .5;
+
+  a {
+    color: $gray-lightest;
+    text-decoration: none;
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: $gray-lightest;
+      text-decoration: none;
+    }
+  }
+}
