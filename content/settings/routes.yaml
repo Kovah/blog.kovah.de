@@ -1,9 +1,13 @@
 routes:
+  /: homeredirect
 
 collections:
-  /:
-    permalink: /{slug}/
-    template: index
+  /en/:
+    permalink: /en/{slug}/
+    filter: 'tag:-de'
+  /de/:
+    permalink: /de/{slug}/
+    filter: 'tag:de'
 
 taxonomies:
   tag: /tag/{slug}/
