@@ -20,24 +20,15 @@ html, body {
 }
 
 a {
-  color: $c-kvh;
+  color: $c-primary;
   text-decoration: none;
+  transition: color 200ms ease;
 
   &:active,
   &:hover,
   &:focus {
     color: $link-hover-color;
     text-decoration: none;
-  }
-
-  .block-blue & {
-    color: $link-blue-color;
-
-    &:active,
-    &:hover,
-    &:focus {
-      color: $link-blue-hover-color;
-    }
   }
 }
 

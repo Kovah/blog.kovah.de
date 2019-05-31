@@ -1,5 +1,19 @@
-$c-kvh: #2c8edd;
-$c-alexa: #00caff;
+$c-primary: #2c8edd;
+$c-primary-light: lighten($c-primary, 15%);
+$c-primary-dark: darken($c-primary, 15%);
+
+$white: #ffffff;
+$shade-10: #DAE7F2;
+$shade-9: #CFDBE6;
+$shade-8: #B8C3CC;
+$shade-7: #A1ABB3;
+$shade-6: #8A9299;
+$shade-5: #737A80;
+$shade-4: #5C6166;
+$shade-3: #45494D;
+$shade-2: #2E3133;
+$shade-1: #17181A;
+$black: #000000;
 
 // Create grayscale
 $gray-darker: #202122;
@@ -24,9 +38,9 @@ $table-border: darken($gray-lighter, 5%);
 $screen-bp-sm: 500px;
 $screen-bp: 960px;
 
-$link-color: $c-kvh;
+$link-color: $c-primary;
 $link-decoration: none;
-$link-hover-color: $c-kvh;
+$link-hover-color: $c-primary-dark;
 $link-hover-decoration: underline;
 
 $link-blue-color: $gray-lightest;
