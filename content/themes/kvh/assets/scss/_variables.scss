@@ -3,6 +3,7 @@ $c-primary-light: lighten($c-primary, 15%);
 $c-primary-dark: darken($c-primary, 15%);
 
 $white: #ffffff;
+$shade-11: #E9F1F7;
 $shade-10: #DAE7F2;
 $shade-9: #CFDBE6;
 $shade-8: #B8C3CC;
@@ -15,13 +16,8 @@ $shade-2: #2E3133;
 $shade-1: #17181A;
 $black: #000000;
 
-// Create grayscale
-$gray-darker: #202122;
-$gray-dark: #373a3c;
-$gray: #55595c;
-$gray-light: #818a91;
-$gray-lighter: #eceeef;
-$gray-lightest: #f7f7f9;
+$body-color: $shade-1;
+$body-color-light: $shade-6;
 
 $spacer: 1.5rem;
 $spacer-xs: .5rem;
@@ -33,7 +29,7 @@ $spacer-xl: 8rem;
 $table-spacing-x: $spacer;
 $table-spacing-y: $spacer-sm;
 $table-spacing: $table-spacing-y $table-spacing-x;
-$table-border: darken($gray-lighter, 5%);
+$table-border: darken($shade-9, 5%);
 
 $screen-bp-sm: 500px;
 $screen-bp: 960px;
@@ -42,9 +38,6 @@ $link-color: $c-primary;
 $link-decoration: none;
 $link-hover-color: $c-primary-dark;
 $link-hover-decoration: underline;
-
-$link-blue-color: $gray-lightest;
-$link-blue-hover-color: $gray-lightest;
 
 $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-special: 'D-DIN', $font-family;

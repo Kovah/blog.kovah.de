@@ -1,14 +1,21 @@
 .footer {
-  opacity: .5;
+  background-color: $shade-10;
+  padding: $spacer-md 0;
+  color: $body-color-light;
+  text-align: center;
+
+  @media screen and (min-width: $screen-bp-sm) {
+    padding: $spacer-lg 0;
+  }
 
   a {
-    color: $gray-lightest;
+    color: $shade-4;
     text-decoration: none;
 
     &:active,
     &:hover,
     &:focus {
-      color: $gray-lightest;
+      color: $shade-2;
       text-decoration: none;
     }
   }
