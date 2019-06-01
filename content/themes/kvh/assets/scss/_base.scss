@@ -11,7 +11,7 @@ html {
 
 body {
   color: $body-color;
-  background-color: $white;
+  background-color: $shade-10;
   margin: 0;
   padding: 0;
   overflow-y: scroll;
@@ -41,7 +41,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-special;
   font-weight: bold;
-  margin: $spacer 0;
+  margin: 0 0 $spacer;
   padding: 0;
 }
 
