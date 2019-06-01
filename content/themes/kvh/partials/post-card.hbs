@@ -1,15 +1,19 @@
-<article>
-  <header>
-    <h2>
-      <a href="{{url}}">{{title}}</a>
-    </h2>
+<article class="feed__post">
+  <header class="feed__post-header">
+    <a href="{{url}}">
+      <h2>{{title}}</h2>
+    </a>
   </header>
 
-  <section>
-    <p>{{excerpt words="33"}}</p>
+  <aside class="feed__post-meta">
+    {{#primary_tag}}
+      <a href="{{url}}" class="tag">{{name}}</a>
+    {{/primary_tag}}
+    <span class="feed__post-read-time">{{reading_time}}</span>
+  </aside>
+
+  <section class="feed__post-excerpt">
+    <p>{{excerpt words="35"}}</p>
   </section>
 
-  <aside>
-    <span class="reading-time">{{reading_time}}</span>
-  </aside>
 </article>

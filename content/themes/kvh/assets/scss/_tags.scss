@@ -1,0 +1,22 @@
+.tags {
+
+  .tag & .tag {
+    margin-left: rem(5);
+  }
+}
+
+.tag {
+  font-size: $font-size-sm;
+  background-color: $shade-10;
+  color: $shade-5;
+  padding: rem(3) rem(5);
+  border-radius: rem(4);
+  transition: background-color 200ms ease;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $c-primary;
+  }
+}

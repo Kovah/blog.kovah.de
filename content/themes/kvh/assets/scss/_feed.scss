@@ -1,0 +1,28 @@
+.feed {
+
+  &__post {
+    padding: $spacer 0;
+
+    @media screen and (min-width: $screen-bp) {
+      padding: $spacer-md 0;
+    }
+  }
+
+  &__post-header {
+    margin-bottom: $spacer-sm;
+  }
+
+  &__post-meta {
+    margin-bottom: $spacer-sm;
+
+    @media screen and (min-width: $screen-bp) {
+      margin-bottom: $spacer;
+    }
+  }
+
+  &__post-read-time {
+    display: inline-block;
+    margin-left: $spacer-sm;
+    color: $body-color-light;
+  }
+}
