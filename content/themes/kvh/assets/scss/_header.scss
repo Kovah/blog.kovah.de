@@ -31,11 +31,10 @@
     @media screen and (min-width: $screen-bp-sm) {
       flex: 0 0 auto;
       margin-bottom: 0;
-      margin-right: $spacer-md;
     }
 
     @media screen and (min-width: $screen-bp) {
-      margin-right: $spacer-lg;
+      margin-right: $spacer;
     }
 
     img {
@@ -60,6 +59,7 @@
 
     @media screen and (min-width: $screen-bp-sm) {
       flex: 0 0 auto;
+      margin-left: $spacer-md;
     }
 
     &:after {
@@ -85,10 +85,17 @@
       }
     }
 
-    & + & {
+    &--small {
 
       @media screen and (min-width: $screen-bp-sm) {
-        margin-left: $spacer-md;
+        margin-left: $spacer-sm;
+      }
+    }
+
+    &--right {
+
+      @media screen and (min-width: $screen-bp) {
+        margin-left: auto !important;
       }
     }
   }
