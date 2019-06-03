@@ -8,6 +8,14 @@
   }
 }
 
+.block {
+  padding: $spacer-md 0;
+
+  @media screen and (min-width: $screen-bp) {
+    padding: $spacer-lg 0;
+  }
+}
+
 .main {
   padding: $spacer-md 0;
   background-color: $white;

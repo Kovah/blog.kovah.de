@@ -5,11 +5,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: $spacer-md 0;
-
-  @media screen and (min-width: $screen-bp-sm) {
-    padding: $spacer-lg 0;
-  }
 
   &__text {
     flex: 0 0 auto;

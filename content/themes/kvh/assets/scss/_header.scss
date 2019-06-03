@@ -1,11 +1,6 @@
 .header {
   background-color: $c-primary;
-  padding: $spacer-md 0;
   font-family: $font-family-special;
-
-  @media screen and (min-width: $screen-bp-sm) {
-    padding: $spacer-lg 0;
-  }
 
   &__nav {
     display: flex;

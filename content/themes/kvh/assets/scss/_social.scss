@@ -1,11 +1,6 @@
 .social {
   background-color: $c-primary;
-  padding: $spacer-md 0;
   color: $white;
-
-  @media screen and (min-width: $screen-bp-sm) {
-    padding: $spacer-lg 0;
-  }
 
   &__icons {
     position: relative;
