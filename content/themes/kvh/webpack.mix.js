@@ -26,6 +26,6 @@ mix.combine([
   'node_modules/prismjs/components/prism-php.js',
   'node_modules/prismjs/components/prism-scss.js',
   'node_modules/prismjs/components/prism-sql.js'
-], 'assets/dist/prism.js');
+], 'assets/dist/highlighter.js');
 
 mix.sass('assets/scss/app.scss', 'assets/dist');

@@ -8,6 +8,8 @@ import { faXing } from '@fortawesome/free-brands-svg-icons/faXing';
 import { faArrowLeft } from '@fortawesome/pro-light-svg-icons/faArrowLeft';
 import { faArrowRight } from '@fortawesome/pro-light-svg-icons/faArrowRight';
 
+import { loadSyntaxHighlighter } from './highlighter-loader';
+
 window.onload = function () {
   // Font Awesome
   library.add(faRss);
@@ -20,4 +22,6 @@ window.onload = function () {
   library.add(faXing);
 
   dom.i2svg();
+
+  loadSyntaxHighlighter();
 };
