@@ -1,6 +1,5 @@
-export function loadSyntaxHighlighter(){
+export default function loadSyntaxHighlighter(){
   const $post = document.querySelector('article.post pre');
-  console.log($post); //@DEBUG
 
   if ($post !== null) {
     const $highlightScript = document.getElementById('highlight-script');

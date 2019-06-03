@@ -96,6 +96,20 @@
       font-size: $font-size-sm;
     }
 
+    .kg-image {
+
+      &--hidden {
+        opacity: 0;
+        transform: translateY(200px);
+      }
+
+      &--reveal {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 500ms ease, opacity 300ms ease 200ms;
+      }
+    }
+
     blockquote {
       padding: $spacer-sm;
       border-left: rem(4) solid $c-primary;

@@ -8,9 +8,20 @@ import { faXing } from '@fortawesome/free-brands-svg-icons/faXing';
 import { faArrowLeft } from '@fortawesome/pro-light-svg-icons/faArrowLeft';
 import { faArrowRight } from '@fortawesome/pro-light-svg-icons/faArrowRight';
 
-import { loadSyntaxHighlighter } from './highlighter-loader';
+import loadSyntaxHighlighter from './helper/highlighter-loader';
+import Reveal from './modules/Reveal';
 
 window.onload = function () {
+  const $revealModules = document.querySelectorAll('.kg-image');
+  const revealCount = $revealModules.length;
+  console.log($revealModules, revealCount); //@DEBUG
+
+  if (revealCount > 0) {
+    for (let i = 0; i < revealCount; i++) {
+      new Reveal($revealModules[i]);
+    }
+  }
+
   // Font Awesome
   library.add(faRss);
   library.add(faGlobe);
