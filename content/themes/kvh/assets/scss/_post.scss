@@ -35,6 +35,10 @@
   &__tags {
     display: inline-block;
     margin-left: $spacer-sm;
+
+    .post-tag & .post-tag {
+      margin-left: rem(5);
+    }
   }
 
   &__content {

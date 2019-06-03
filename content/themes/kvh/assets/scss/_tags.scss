@@ -1,11 +1,4 @@
-.tags {
-
-  .tag & .tag {
-    margin-left: rem(5);
-  }
-}
-
-.tag {
+.post-tag {
   font-size: $font-size-sm;
   background-color: $shade-10;
   color: $shade-5;
