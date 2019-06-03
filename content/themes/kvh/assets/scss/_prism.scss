@@ -5,7 +5,7 @@
  */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
   color: #ccc;
   background: none;
   font-family: $font-family-mono;
@@ -29,14 +29,19 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-  padding: $spacer-xs;
-  margin: $spacer 0;
+pre {
+  padding: $spacer-sm;
+  margin: 0 0 $spacer;
   overflow: auto;
+
+  @media screen and (min-width: $screen-bp) {
+    padding: $spacer;
+    margin: 0 0 $spacer-md;
+  }
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre {
   background: #2d2d2d;
 }
 
@@ -109,6 +114,7 @@ pre[class*="language-"] {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }

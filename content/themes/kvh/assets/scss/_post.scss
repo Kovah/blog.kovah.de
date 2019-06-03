@@ -1,3 +1,117 @@
 .post {
 
+  padding: 0;
+
+  @media screen and (min-width: $screen-bp-sm) {
+    padding: 0 $spacer-md;
+  }
+
+  @media screen and (min-width: $screen-bp) {
+    padding: 0 $spacer-lg;
+  }
+
+
+  &__header {
+    margin: 0 0 $spacer-md;
+
+    @media screen and (min-width: $screen-bp) {
+      margin: 0 0 $spacer-lg;
+    }
+  }
+
+  &__title {
+    margin: 0 0 $spacer-xs;
+
+    @media screen and (min-width: $screen-bp) {
+      margin: 0 0 $spacer-sm;
+    }
+  }
+
+  &__meta {
+    display: inline-block;
+    color: $body-color-light;
+  }
+
+  &__tags {
+    display: inline-block;
+    margin-left: $spacer-sm;
+  }
+
+  &__content {
+
+    h1, h2, h3, figure, p, .table-wrapper, blockquote {
+      margin: 0 0 $spacer;
+
+      @media screen and (min-width: $screen-bp) {
+        margin: 0 0 $spacer-md;
+      }
+    }
+
+    h1, h2, h3 {
+      margin-top: $spacer-md;
+
+      @media screen and (min-width: $screen-bp) {
+        margin-top: $spacer-lg;
+      }
+    }
+
+    p {
+      //
+    }
+
+    figure {
+
+      padding: 0 $spacer;
+
+      @media screen and (min-width: $screen-bp-sm) {
+        padding: 0 #{$spacer-md};
+      }
+
+      @media screen and (min-width: $screen-bp) {
+        padding: 0 $spacer-lg;
+      }
+
+      &.kg-width-wide {
+        padding: 0;
+
+        @media screen and (min-width: $screen-bp-sm) {
+          margin-left: -#{$spacer-md};
+          margin-right: -#{$spacer-md};
+        }
+
+        @media screen and (min-width: $screen-bp) {
+          margin-left: -#{$spacer-lg};
+          margin-right: -#{$spacer-lg};
+        }
+      }
+    }
+
+    figcaption {
+      text-align: center;
+      color: $body-color-light;
+      font-size: $font-size-sm;
+    }
+
+    blockquote {
+      padding: $spacer-sm;
+      border-left: rem(4) solid $c-primary;
+      font-style: italic;
+
+      @media screen and (min-width: $screen-bp) {
+        padding: $spacer;
+      }
+    }
+
+    hr {
+      height: 0;
+      background: none;
+      border: 0;
+      border-top: rem(2) solid $border-color;
+      margin: $spacer-md 0;
+
+      @media screen and (min-width: $screen-bp) {
+        margin: $spacer-lg 0;
+      }
+    }
+  }
 }

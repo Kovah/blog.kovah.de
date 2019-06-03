@@ -6,11 +6,16 @@
 
     <header class="post__header">
       <h1 class="post__title">{{title}}</h1>
+
       <section class="post__meta">
         <time class="post__date" datetime="{{date format='YYYY-MM-DD'}}">
           {{date format="DD MMMM YYYY"}}
         </time>
-        {{> "post-tags"}}
+        <div class="post__tags">
+          {{#foreach tags}}
+            <a href="{{url}}" class="tag">{{name}}</a>
+          {{/foreach}}
+        </div>
       </section>
     </header>
 

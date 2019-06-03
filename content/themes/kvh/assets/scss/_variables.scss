@@ -18,6 +18,7 @@ $black: #000000;
 
 $body-color: $shade-2;
 $body-color-light: $shade-6;
+$border-color: $shade-9;
 
 $spacer: 1.5rem;
 $spacer-xs: .5rem;
@@ -29,7 +30,7 @@ $spacer-xl: 8rem;
 $table-spacing-x: $spacer;
 $table-spacing-y: $spacer-sm;
 $table-spacing: $table-spacing-y $table-spacing-x;
-$table-border: darken($shade-9, 5%);
+$table-border: $border-color;
 
 $screen-bp-sm: 500px;
 $screen-bp: 960px;
