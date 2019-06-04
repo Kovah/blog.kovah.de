@@ -2,7 +2,13 @@
   <div class="container">
 
     <div class="social__icons">
-      <span class="social__teaser">Get in touch:</span>
+      {{#post}}
+        {{#has tag="de"}}
+          <span class="social__teaser">Kontakt:</span>
+        {{else}}
+          <span class="social__teaser">Get in touch:</span>
+        {{/has}}
+      {{/post}}
       <a href="https://kovah.de" class="social__icon" title="Kovah.de Portfolio">
         <i class="fal fa-globe"></i>
       </a>

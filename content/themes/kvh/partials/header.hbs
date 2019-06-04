@@ -12,8 +12,16 @@
         {{navigation}}
       {{/if}}
 
-      <a href="/en" class="header__nav-item header__nav-item--right">EN</a>
-      <a href="/de" class="header__nav-item header__nav-item--small">DE</a>
+      {{#post}}
+        {{#has tag="de"}}
+          <a href="/en" class="header__nav-item header__nav-item--right">EN</a>
+        {{else}}
+          <a href="/de" class="header__nav-item header__nav-item--right">DE</a>
+        {{/has}}
+      {{else}}
+        <a href="/de" class="header__nav-item header__nav-item--right">DE</a>
+      {{/post}}
+
     </nav>
 
   </div>
