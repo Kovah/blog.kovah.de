@@ -1,21 +1,21 @@
 {{ define "main" }}
 
-<section class="block block-blue block-small text-center">
-  <div class="container">
-
-    <h2>{{ .Title }}</h2>
-
-  </div>
-</section>
-
-<section class="block block-small">
-  <div class="container">
-
-    <div class="post__content">
-      {{ .Content }}
+<article class="post">
+  <header class="post__header block block--primary block--small text--center">
+    <div class="container">
+      <h2>{{ .Title }}</h2>
     </div>
+  </header>
 
-  </div>
-</section>
+  <section class="post__content-wrapper block block--small">
+    <div class="container">
+
+      <div class="post__content">
+        {{ .Content }}
+      </div>
+
+    </div>
+  </section>
+</article>
 
 {{ end }}

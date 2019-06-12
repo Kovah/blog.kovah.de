@@ -17,13 +17,18 @@
     padding: $spacer-xl 0;
   }
 
-  &.block-blue {
+  &--primary {
 
     background: $c-kvh;
     color: $gray-lightest;
+
+    & + & {
+
+      padding-top: 0;
+    }
   }
 
-  &.block-small {
+  &--small {
 
     padding: $spacer-md 0;
 

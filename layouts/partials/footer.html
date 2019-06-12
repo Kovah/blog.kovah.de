@@ -1,6 +1,6 @@
-<div class="block block-blue block-small text-center">
+<footer class="footer block block--primary block--small text--center">
 
-  <div class="container footer">
+  <div class="container">
 
     <p>
       <small>
@@ -14,13 +14,11 @@
       </small>
     </p>
 
-    <br>
-
     &copy; {{ now.Format "2006" }} Kovah.de | <a href="https://kovah.de/info/impress">Impress</a> | <a
       href="info/privacy">Privacy</a>
   </div>
 
-</div>
+</footer>
 
 {{ $appjs := resources.Get "app.js" | fingerprint }}
 <script src="{{ $appjs.Permalink }}"></script>

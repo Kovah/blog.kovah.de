@@ -30,7 +30,7 @@ a {
     text-decoration: none;
   }
 
-  .block-blue & {
+  .block--primary & {
     color: $link-blue-color;
 
     &:active,
@@ -76,6 +76,10 @@ h6 {
   font-size: 1rem;
 }
 
+p {
+  margin: 0 0 $spacer;
+}
+
 pre {
   max-width: 100%;
   overflow: auto;
@@ -85,18 +89,6 @@ code {
   font-family: $font-family-mono;
 }
 
-.text-center {
+.text--center {
   text-align: center;
-}
-
-.clearfix {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
 }
