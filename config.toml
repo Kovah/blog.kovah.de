@@ -1,6 +1,7 @@
 title = "Kovah.de Blog"
 baseURL = "http://blog.kovah.de/"
 assetDir = "./assets/dist"
+paginate = 2
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"

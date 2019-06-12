@@ -2,6 +2,10 @@ import { dom, library } from '@fortawesome/fontawesome-svg-core';
 import { faBook } from '@fortawesome/pro-light-svg-icons/faBook';
 import { faEnvelope } from '@fortawesome/pro-light-svg-icons/faEnvelope';
 import { faKey } from '@fortawesome/pro-light-svg-icons/faKey';
+import { faAngleDoubleLeft } from '@fortawesome/pro-light-svg-icons/faAngleDoubleLeft';
+import { faAngleDoubleRight } from '@fortawesome/pro-light-svg-icons/faAngleDoubleRight';
+import { faAngleLeft } from '@fortawesome/pro-light-svg-icons/faAngleLeft';
+import { faAngleRight } from '@fortawesome/pro-light-svg-icons/faAngleRight';
 
 import { fa500px } from '@fortawesome/free-brands-svg-icons/fa500px';
 import { faBehance } from '@fortawesome/free-brands-svg-icons/faBehance';
@@ -18,6 +22,11 @@ window.onload = function () {
   library.add(faBook);
   library.add(faEnvelope);
   library.add(faKey);
+  library.add(faAngleDoubleLeft);
+  library.add(faAngleDoubleRight);
+  library.add(faAngleLeft);
+  library.add(faAngleRight);
+
   library.add(fa500px);
   library.add(faBehance);
   library.add(faGithub);
