@@ -33,34 +33,6 @@
   }
 }
 
-.logo {
-  display: block;
-  max-width: 80%;
-  margin: 0 auto;
-
-  @media screen and (min-width: $screen-bp-sm) {
-    max-width: 350px;
-    margin: 0;
-  }
-
-  svg {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.reference {
-  margin-bottom: $spacer-lg;
-
-  @media screen and (min-width: $screen-bp) {
-    margin-bottom: $spacer-xl;
-  }
-
-  .reference-details {
-    //
-  }
-}
-
 .footer {
   color: rgba($gray-lightest, .5);
 

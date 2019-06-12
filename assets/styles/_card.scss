@@ -1,29 +1,25 @@
 .card {
   max-width: 500px;
   margin: 0 auto;
+  text-align: center;
 
   @media screen and (min-width: $screen-bp) {
     margin: $spacer-lg auto;
   }
 
-  .contact {
-    padding-top: $spacer-lg;
-    clear: both;
-    text-align: right;
-    font-size: $font-size-lg;
-    line-height: 1.6;
+  .logo {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
 
-    @media screen and (min-width: $screen-bp) {
-      padding-top: $spacer-xl;
-      font-size: $font-size-xl;
+    @media screen and (min-width: $screen-bp-sm) {
+      max-width: 350px;
+      margin: 0 auto;
     }
 
-    .profession {
-      font-weight: 700;
-    }
-
-    .mail {
-      //
+    svg {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

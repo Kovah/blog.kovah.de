@@ -12,19 +12,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faXing } from '@fortawesome/free-brands-svg-icons/faXing';
 import { faDev } from '@fortawesome/free-brands-svg-icons/faDev';
 
-// import 'lazysizes';
-
 window.onload = function () {
-  let at = Math.random().toString(36).substring(7);
-  let em = 'mail' + at + 'kovah.de';
-  document.getElementById('display-mail').innerHTML = em.replace(at, '@');
-
-  document.getElementById('send-mail').addEventListener('click', function (e) {
-    e.preventDefault();
-    let at = Math.random().toString(36).substring(7);
-    let em = 'work' + at + 'kovah.de';
-    window.location.href = 'mailto:' + em.replace(at, '@');
-  });
 
   // Font Awesome
   library.add(faBook);
