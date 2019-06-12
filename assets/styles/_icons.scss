@@ -13,47 +13,38 @@
     }
   }
 
-  .icon {
+  &__icon {
     position: relative;
     flex: 0 1 auto;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    min-width: 5rem;
+    min-height: 5rem;
     padding: $spacer-sm;
-    margin: $spacer-sm;
     color: $gray-lightest;
     background: none;
     border: 0;
     cursor: pointer;
     font-size: 2.25rem;
+    line-height: 1;
+    transition: font-size 200ms ease;
 
     @media screen and (min-width: $screen-bp) {
-      width: 5rem;
-      height: 5rem;
       font-size: 2.5rem;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 105%;
-      height: 2px;
-
-      background-color: $gray-lightest;
-      width: 100%;
-      opacity: 0;
-      transition: top 300ms ease, opacity 200ms ease;
+      min-width: 5.5rem;
+      min-height: 5.5rem;
     }
 
     &:hover,
     &:focus,
     &:active {
+      font-size: 3rem;
+      transition: font-size 300ms ease;
 
-      &:after {
-        top: 100%;
-        opacity: 1;
+      @media screen and (min-width: $screen-bp) {
+        font-size: 3.25rem;
       }
     }
 
