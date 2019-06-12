@@ -1,0 +1,43 @@
+$c-kvh: #2c8edd;
+$c-alexa: #00caff;
+
+// Create grayscale
+$gray-darker: #202122;
+$gray-dark: #373a3c;
+$gray: #55595c;
+$gray-light: #818a91;
+$gray-lighter: #eceeef;
+$gray-lightest: #f7f7f9;
+
+$spacer: 1.5rem;
+$spacer-sm: .75rem;
+$spacer-md: 2.5rem;
+$spacer-lg: 4rem;
+$spacer-xl: 8rem;
+
+$table-spacing-x: $spacer;
+$table-spacing-y: $spacer-sm;
+$table-spacing: $table-spacing-y $table-spacing-x;
+$table-border: darken($gray-lighter, 5%);
+
+$screen-bp-sm: 500px;
+$screen-bp: 960px;
+
+$link-color: $c-kvh;
+$link-decoration: none;
+$link-hover-color: $c-kvh;
+$link-hover-decoration: underline;
+
+$link-blue-color: $gray-lightest;
+$link-blue-hover-color: $gray-lightest;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-size-base: 1rem;
+$font-size-xl: 1.5rem;
+$font-size-lg: 1.25rem;
+$font-size-sm: .875rem;
+$font-size-xs: .75rem;
+
+$consent-spacer: $spacer-sm;

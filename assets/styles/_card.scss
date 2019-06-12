@@ -1,0 +1,29 @@
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $screen-bp) {
+    margin: $spacer-lg auto;
+  }
+
+  .contact {
+    padding-top: $spacer-lg;
+    clear: both;
+    text-align: right;
+    font-size: $font-size-lg;
+    line-height: 1.6;
+
+    @media screen and (min-width: $screen-bp) {
+      padding-top: $spacer-xl;
+      font-size: $font-size-xl;
+    }
+
+    .profession {
+      font-weight: 700;
+    }
+
+    .mail {
+      //
+    }
+  }
+}

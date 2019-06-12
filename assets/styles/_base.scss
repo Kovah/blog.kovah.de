@@ -1,0 +1,102 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+  font-family: $font-family;
+}
+
+body {
+  color: $gray-dark;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  color: $c-kvh;
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+  .block-blue & {
+    color: $link-blue-color;
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: $link-blue-hover-color;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  font-weight: 400;
+  margin: $spacer 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+pre {
+  max-width: 100%;
+  overflow: auto;
+}
+
+code {
+  font-family: $font-family-mono;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

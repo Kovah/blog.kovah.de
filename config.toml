@@ -1,0 +1,22 @@
+title = "Kovah.de Blog"
+baseURL = "http://blog.kovah.de/"
+assetDir = "./assets/dist"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+[languages.en]
+  contentDir = "content/en"
+  languageName = "EN"
+  weight = 1.0
+
+[languages.de]
+  contentDir = "content/de"
+  languageName = "DE"
+  weight = 2.0
+
+[taxonomies]
+category = "categories"
+tag = "tags"

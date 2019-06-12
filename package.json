@@ -1,0 +1,29 @@
+{
+  "name": "kovah.de-blog",
+  "version": "1.0.0",
+  "description": "Kovah.de Blog source",
+  "author": "Kevin Woblick <mail@kovah.de>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/pro-light-svg-icons": "^5.8.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.15",
+    "laravel-mix-polyfill": "^1.0.2",
+    "vue-template-compiler": "^2.6.10",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0"
+  },
+  "scripts": {
+    "dev": "npm run development -- --watch",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}

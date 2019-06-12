@@ -1,6 +1,4 @@
-/content/apps
-/content/data/*.db
-/content/images
-/content/logs
-
-/.env
+/node_modules
+/resources/_gen
+/public
+/mix-manifest.json

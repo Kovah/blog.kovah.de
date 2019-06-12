@@ -1,0 +1,74 @@
+.icons {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .divider {
+    flex: 1 0 100%;
+    display: none;
+
+    @media screen and (min-width: $screen-bp-sm) {
+      display: block;
+    }
+  }
+
+  .icon {
+    position: relative;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: $spacer-sm;
+    margin: $spacer-sm;
+    color: $gray-lightest;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 2.25rem;
+
+    @media screen and (min-width: $screen-bp) {
+      width: 5rem;
+      height: 5rem;
+      font-size: 2.5rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 105%;
+      height: 2px;
+
+      background-color: $gray-lightest;
+      width: 100%;
+      opacity: 0;
+      transition: top 300ms ease, opacity 200ms ease;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      &:after {
+        top: 100%;
+        opacity: 1;
+      }
+    }
+
+    &--wide {
+      width: auto;
+    }
+
+    [data-fa-i2svg],
+    .text {
+      z-index: 10;
+      position: relative;
+    }
+
+    .text {
+      font-size: $font-size-xl;
+    }
+  }
+}
