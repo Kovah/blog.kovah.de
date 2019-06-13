@@ -1,16 +1,18 @@
 .container {
   width: 100%;
-  padding: 0 $spacer;
+  margin: 0 auto;
+  padding: 0 $container-spacing-sm;
+
+  @media screen and (min-width: $screen-bp-sm) {
+    padding: 0 $container-spacing;
+  }
 
   @media screen and (min-width: $screen-bp) {
     max-width: $screen-bp;
-    margin: 0 auto;
-    padding: 0 $spacer-lg;
   }
 }
 
 .block {
-
   padding: $spacer-lg 0;
 
   @media screen and (min-width: $screen-bp) {

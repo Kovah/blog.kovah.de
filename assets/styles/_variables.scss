@@ -41,9 +41,16 @@ $table-spacing-y: $spacer-sm;
 $table-spacing: $table-spacing-y $table-spacing-x;
 $table-border: darken($gray-200, 5%);
 
-// Breakpoints
+$nav-spacing-x: $spacer-sm;
+$nav-spacing-y: $spacer-sm;
+$nav-spacing: $nav-spacing-y $nav-spacing-x;
+
+// Breakpoints & Container
 $screen-bp-sm: 500px;
 $screen-bp: 960px;
+
+$container-spacing-sm: $spacer-sm;
+$container-spacing: $spacer;
 
 // Fonts & Typo
 $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

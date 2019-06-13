@@ -3,6 +3,10 @@ baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
 paginate = 2
 
+[taxonomies]
+category = "categories"
+tag = "tags"
+
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
@@ -18,6 +22,43 @@ defaultContentLanguageInSubdir = true
   languageName = "DE"
   weight = 2.0
 
-[taxonomies]
-category = "categories"
-tag = "tags"
+[[languages.en.menu.main]]
+url    = "/categories/article"
+name   = "Articles"
+weight = 1
+
+[[languages.en.menu.main]]
+url    = "/categories/news"
+name   = "News"
+weight = 2
+
+[[languages.en.menu.main]]
+url    = "/categories/tests"
+name   = "Tests"
+weight = 3
+
+[[languages.en.menu.main]]
+url    = "/categories/tutorials"
+name   = "Tutorials"
+weight = 4
+
+
+[[languages.de.menu.main]]
+url    = "/categories/artikel"
+name   = "Artikel"
+weight = 1
+
+[[languages.de.menu.main]]
+url    = "/categories/news"
+name   = "News"
+weight = 2
+
+[[languages.de.menu.main]]
+url    = "/categories/tests"
+name   = "Tests"
+weight = 3
+
+[[languages.de.menu.main]]
+url    = "/categories/tutorials"
+name   = "Tutorials"
+weight = 4
