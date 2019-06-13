@@ -3,11 +3,6 @@ baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
 paginate = 2
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-
-languageCode = "en-us"
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
@@ -15,12 +10,14 @@ defaultContentLanguageInSubdir = true
 [languages.en]
   contentDir = "content/en"
   languageName = "EN"
-  weight = 1.0
+  languageCode = "en-us"
+  weight = 1
 
 [languages.de]
   contentDir = "content/de"
   languageName = "DE"
-  weight = 2.0
+  languageCode = "de-de"
+  weight = 2
 
 [[languages.en.menu.main]]
 url    = "/categories/article"
@@ -62,3 +59,7 @@ weight = 3
 url    = "/categories/tutorials"
 name   = "Tutorials"
 weight = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
