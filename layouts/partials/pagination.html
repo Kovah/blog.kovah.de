@@ -3,7 +3,7 @@
 {{ if gt $paginator.TotalPages 1 }}
 <ul class="pagination">
 
-  <li class="pagination__item pagination__item--first">
+  <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber 1 }}
     <a class="pagination__link" href="{{ $paginator.First.URL }}">
       <i class="fal fa-angle-double-left"></i>
@@ -15,7 +15,7 @@
     {{ end }}
   </li>
 
-  <li class="pagination__item pagination__item--previous">
+  <li class="pagination__item pagination__arrow">
     {{ if $paginator.HasPrev }}
     <a href="{{ $paginator.Prev.URL }}" class="pagination__link">
       <i class="fal fa-angle-left"></i>
@@ -39,7 +39,7 @@
 
   <li class="pagination__divider"></li>
 
-  <li class="pagination__item pagination__item--next">
+  <li class="pagination__item pagination__arrow">
     {{ if $paginator.HasNext }}
     <a href="{{ $paginator.Next.URL }}" class="pagination__link pagination__link--next">
       <i class="fal fa-angle-right"></i>
@@ -51,7 +51,7 @@
     {{ end }}
   </li>
 
-  <li class="pagination__item pagination__item--last">
+  <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber $paginator.TotalPages }}
     <a class="pagination__link pagination__link--last" href="{{ $paginator.Last.URL }}">
       <i class="fal fa-angle-double-right"></i>

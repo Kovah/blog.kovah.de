@@ -45,6 +45,10 @@ $nav-spacing-x: $spacer-sm;
 $nav-spacing-y: $spacer-sm;
 $nav-spacing: $nav-spacing-y $nav-spacing-x;
 
+$pagination-spacing-x: $spacer;
+$pagination-spacing-y: $spacer-sm;
+$pagination-spacing: $pagination-spacing-y $pagination-spacing-x;
+
 // Breakpoints & Container
 $screen-bp-sm: 500px;
 $screen-bp: 960px;
