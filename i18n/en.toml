@@ -3,3 +3,6 @@ other = "Kovah.de Blog"
 
 [site_description]
 other = "Kovah.de Blog - Web Development, Programming and the Internet"
+
+[published]
+other = "Published"

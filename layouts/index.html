@@ -3,18 +3,7 @@
 <section class="block block--small">
   <div class="container">
 
-    <ul>
-      {{ range (.Paginator).Pages }}
-        <li>
-          <h2>
-            <a href="{{.Permalink}}">{{.Title}}</a>
-          </h2>
-          <small>{{.Date.Format "2006-01-02"}}</small>
-        </li>
-      {{ end }}
-    </ul>
-
-    {{ partial "pagination.html" . }}
+    {{ partial "postlist.html" . }}
 
   </div>
 </section>

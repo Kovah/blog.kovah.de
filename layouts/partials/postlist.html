@@ -1,0 +1,21 @@
+<ul class="post-list">
+  {{ range (.Paginator).Pages }}
+  <li class="post-list__item">
+
+    <h2 class="post-list__item-headline">
+      <a href="{{ .Permalink }}">{{.Title}}</a>
+    </h2>
+
+    {{ if .Description }}
+    <p class="post-list__item-description">{{ .Description }}</p>
+    {{ end }}
+
+    <div class="post-list__item-meta">
+      <time datetime='{{.Date.Format "2006-01-02"}}'>{{ i18n "published" }}: {{.Date.Format "2006-01-02"}}</time>
+    </div>
+
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "pagination.html" . }}
