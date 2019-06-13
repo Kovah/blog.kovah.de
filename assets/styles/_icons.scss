@@ -4,7 +4,15 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 
-  .divider {
+  &__header {
+    margin-bottom: $spacer;
+
+    @media screen and (min-width: $screen-bp) {
+      margin-bottom: $spacer-md;
+    }
+  }
+
+  &__divider {
     flex: 1 0 100%;
     display: none;
 
