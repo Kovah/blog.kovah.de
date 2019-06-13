@@ -9,10 +9,32 @@
 
       <div class="navigation__spacer"></div>
 
+      {{ with .OutputFormats.Get "rss" -}}
+      <a class="navigation__item" href="{{ .Permalink }}" title="Feed">
+        <i class="fal fa-rss"></i>
+      </a>
+      {{ else }}
+        {{ with $.Site.Home.OutputFormats.Get "rss" -}}
+        <a class="navigation__item" href="{{ .Permalink }}" title="Feed">
+          <i class="fal fa-rss"></i>
+        </a>
+        {{ end -}}
+      {{ end -}}
+
       {{ range .Translations }}
-      <a class="navigation__item" href="{{ .Permalink }}">
+      <a class="navigation__item" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
         {{ .Language.LanguageName }}
       </a>
+      {{ else }}
+        {{ $currentLang := .Language.Lang }}
+        {{ range $.Site.Home.AllTranslations }}
+          {{ if eq $currentLang .Lang }}
+          {{ else }}
+          <a class="navigation__item" href='{{ .Permalink }}' title="{{ .Language.LanguageName }}">
+            {{ .Language.LanguageName }}
+          </a>
+          {{ end }}
+        {{ end }}
       {{ end }}
 
     </div>

@@ -15,6 +15,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faXing } from '@fortawesome/free-brands-svg-icons/faXing';
 import { faDev } from '@fortawesome/free-brands-svg-icons/faDev';
+import { faRss } from '@fortawesome/pro-light-svg-icons/faRss';
 
 window.onload = function () {
 
@@ -22,6 +23,7 @@ window.onload = function () {
   library.add(faBook);
   library.add(faEnvelope);
   library.add(faKey);
+  library.add(faRss);
   library.add(faAngleDoubleLeft);
   library.add(faAngleDoubleRight);
   library.add(faAngleLeft);
