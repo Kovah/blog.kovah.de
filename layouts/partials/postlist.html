@@ -1,17 +1,25 @@
 <ul class="post-list">
   {{ range (.Paginator).Pages }}
-  <li class="post-list__item">
+  <li class="post-list__item post-excerpt">
 
-    <h2 class="post-list__item-headline">
+    <h2 class="post-excerpt__headline">
       <a href="{{ .Permalink }}">{{.Title}}</a>
     </h2>
 
     {{ if .Description }}
-    <p class="post-list__item-description">{{ .Description }}</p>
+    <p class="post-excerpt__description">{{ .Description }}</p>
     {{ end }}
 
-    <div class="post-list__item-meta">
-      <time datetime='{{.Date.Format "2006-01-02"}}'>{{ i18n "published" }}: {{.Date.Format "2006-01-02"}}</time>
+    <div class="post-excerpt__meta">
+      {{ range .Params.Categories }}
+      <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post-excerpt__category">
+        {{- . -}}
+      </a>
+      {{ end }}
+      <span class="post-excerpt__readtime">{{ i18n "readtime" . }}</span>
+      <time class="post-excerpt__published" datetime='{{.Date.Format "2006-01-02"}}'>
+        {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+      </time>
     </div>
 
   </li>
