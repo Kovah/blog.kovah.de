@@ -1,5 +1,5 @@
 title = "Kovah.de Blog"
-baseURL = "http://blog.kovah.de/"
+baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
 paginate = 2
 

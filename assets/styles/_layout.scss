@@ -19,8 +19,8 @@
 
   &--primary {
 
-    background: $c-kvh;
-    color: $gray-lightest;
+    background: $c-primary;
+    color: $gray-100;
 
     & + & {
 
@@ -39,17 +39,15 @@
 }
 
 .footer {
-  color: rgba($gray-lightest, .5);
+  color: rgba($body-color-light, .5);
 
   a {
-    color: rgba($gray-lightest, .75);
-    text-decoration: none;
+    color: rgba($body-color-light, .75);
 
     &:active,
     &:hover,
     &:focus {
-      color: rgba($gray-lightest, 1);
-      text-decoration: none;
+      color: rgba($body-color-light, 1);
     }
   }
 }
