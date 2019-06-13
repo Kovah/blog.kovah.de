@@ -1,16 +1,35 @@
-<meta name="description" content='{{ i18n "site_description" }}'/>
+{{ if .IsPage }}
+<title>{{ .Page.Title }} - {{ i18n "site_title" }}</title>
+{{ else }}
+<title>{{ i18n "site_title" }}</title>
+{{ end }}
 
-<meta property="og:title" content="Kovah.de Blog">
+{{ if .IsPage }}
+<meta name="description" content='{{ .Page.Description }}'/>
+{{ else }}
+<meta name="description" content='{{ i18n "site_description" }}'/>
+{{ end }}
+
+{{ if .IsPage }}
+<meta property="og:title" content='{{ .Page.Title }}'>
+<meta property="og:description" content='{{ .Page.Description }}'>
+{{ else }}
+<meta property="og:title" content='{{ i18n "site_title" }}'>
 <meta property="og:description" content='{{ i18n "site_description" }}'>
+{{ end }}
 <meta property="og:image" content='{{ "/kvh_social_1200x630.jpg" | absURL }}'>
-<meta property="og:url" content='{{ "" | absURL }}'/>
-<meta property="og:site_name" content="Kovah.de Blog"/>
+<meta property="og:url" content='{{ .Permalink }}'/>
+<meta property="og:site_name" content='{{ i18n "site_title" }}'/>
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@kovah_kvh">
 <meta name="twitter:creator" content="@kovah_kvh">
 <meta property="twitter:card" content="summary_large_image">
+{{ if .IsPage }}
+<meta property="twitter:description" content='{{ .Page.Description }}'>
+{{ else }}
 <meta property="twitter:description" content='{{ i18n "site_description" }}'>
+{{ end }}
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
