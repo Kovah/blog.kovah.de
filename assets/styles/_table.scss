@@ -7,7 +7,7 @@ th {
   text-align: inherit;
 }
 
-.table {
+table {
   width: 100%;
   max-width: 100%;
 
@@ -47,8 +47,4 @@ th {
   display: block;
   max-width: 100%;
   overflow-x: auto;
-
-  > .table-bordered {
-    border: 0;
-  }
 }
