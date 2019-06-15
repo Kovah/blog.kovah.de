@@ -1,9 +1,39 @@
 {{ define "main" }}
 
 <article class="post">
-  <header class="post__header block block--primary block--small text--center">
+  <header class="post__header block block--primary block--small">
     <div class="container">
-      <h2>{{ .Title }}</h2>
+
+      <h1 class="post__title">{{ .Title }}</h1>
+
+      <div class="post__meta">
+        {{ range .Params.Categories }}
+        {{ i18n "category" . }}:
+        <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post__category">
+          {{- . -}}
+        </a>
+        {{ end }}
+        <span class="post__tags">
+          {{ $list := .Params.Tags }}
+          {{ $len := (len $list) }}
+          {{ if gt $len 0 }}
+          {{ i18n "tags" . }}:
+          {{ range $index, $element := $list }}
+          <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="post__tag">
+            {{- $element -}}
+          </a>{{ if ne (add $index 1) $len }} | {{ end }}
+          {{ end }}
+          {{ end }}
+        </span>
+      </div>
+
+      <div class="post__meta">
+        <span class="post__readtime">{{ i18n "readtime" . }}</span>
+        <time class="post__published" datetime='{{.Date.Format "2006-01-02"}}'>
+          {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+        </time>
+      </div>
+
     </div>
   </header>
 

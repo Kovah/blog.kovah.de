@@ -7,3 +7,7 @@ other = "Kovah.de Blog - Web Development, Programmierung und das Internet"
 other = "Veröffentlicht"
 [readtime]
 other = "{{ .ReadingTime }} Min. zu lesen"
+[category]
+other = "Kategorie"
+[tags]
+other = "Tags"
