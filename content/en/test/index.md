@@ -28,6 +28,8 @@ The MAMP app worked pretty well. But it has one major flaw: all apps share the s
 
 ### Micro-services over monolithic architecture
 
+{{< image img="gery-wibowo-1321938-unsplash.jpg" alt="Some coding image" modifier="right" >}}
+
 Docker creates isolated container for each application in which only the application runs and has access to. This leads to not only a more sold security (even if not that important for development only), but also a fixed environment for each app. That mans that you can configure PHP, databases and the web server completely to your app requirements without the need to take care of other apps or switching between configurations.
 
 Docker creates isolated container for each application in which only the application runs and has access to. This leads to not only a more sold security (even if not that important for development only), but also a fixed environment for each app. That mans that you can configure PHP, databases and the web server completely to your app requirements without the need to take care of other apps or switching between configurations.
@@ -60,7 +62,7 @@ As most of the projects I work on are developed with plain PHP, a larger Laravel
 * **Easily swap services.** If the architecture of your app changes, you can easily swap services by replacing some lines in your `docker-compose.yml` file – instead of revisiting your Dockerfile and making sure that your installation still works.
 * **Last but not least: security.** It doesn’t even feel save to have one machine that runs everything, where every service can access everything from all other services. If services can only talk to each other trough ports, you probably closed some hundred possible vulnerabilities.
 
-![Some coding Image](php-coding-henri-unsplash.jpg)
+{{< image img="php-coding-henri-unsplash.jpg" alt="Some coding image" caption="Some coding image" >}}
 
 ```
 /

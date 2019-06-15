@@ -54,6 +54,36 @@
       }
     }
 
+    figure {
+      margin-left: 0;
+      margin-right: 0;
+
+      &.figure--left {
+
+        @media screen and (min-width: $screen-bp-sm) {
+          float: left;
+          max-width: 50%;
+          margin-right: $spacer;
+        }
+      }
+
+      &.figure--right {
+
+        @media screen and (min-width: $screen-bp-sm) {
+          float: right;
+          max-width: 50%;
+          margin-left: $spacer;
+        }
+      }
+
+      figcaption {
+        text-align: center;
+        margin: $spacer-sm 0 0;
+        color: $body-color-muted;
+        font-size: $font-size-sm;
+      }
+    }
+
     hr {
       margin: $spacer-lg $spacer;
       border: 0;

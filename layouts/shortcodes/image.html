@@ -1,0 +1,8 @@
+<figure {{ with .Get "modifier"}}class="figure--{{.}}"{{ end }}>
+  <picture>
+    <source srcset='{{ .Get "img" }}.webp' type="image/webp"/>
+    <source srcset='{{ .Get "img" }}' />
+    <img src='{{ .Get "img" }}' {{ with .Get "alt"}} alt="{{.}}"{{ end }}/>
+  </picture>
+  {{ with .Get "caption"}}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
