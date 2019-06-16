@@ -84,6 +84,16 @@
       }
     }
 
+    pre {
+      padding: $spacer-sm;
+      font-size: $font-size-sm;
+      line-height: 1.7;
+
+      @media screen and (min-width: $screen-bp) {
+        padding: $spacer;
+      }
+    }
+
     hr {
       margin: $spacer-lg $spacer;
       border: 0;

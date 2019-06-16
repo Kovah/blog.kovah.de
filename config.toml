@@ -2,6 +2,8 @@ title = "Kovah.de Blog"
 baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
 paginate = 2
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
