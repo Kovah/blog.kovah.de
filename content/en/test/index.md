@@ -3,6 +3,7 @@ title: A drop-in Docker stack for PHP apps
 date: 2019-06-12T12:17:00+02:00
 draft: false
 description: Over the past months I gradually implemented a solid Docker setup for all private projects. As I think that this stack is quite solid I want to share it with you.
+hascode: true
 categories:
 - Article
 tags:
@@ -78,7 +79,7 @@ As most of the projects I work on are developed with plain PHP, a larger Laravel
 
 In most cases you only have to change the .env file because it contains variable details about the stack and passwords. The main stack works for all plain PHP projects but you can easily make it work with Laravel or any CMS by changing the `nginx.conf` file because each system may has different requirements on the web server configuration.
 
-<div class="table-wrapper">
+<div class="table-wrapper full-width">
 <table>
 <tbody>
 <tr>
@@ -92,7 +93,7 @@ In most cases you only have to change the .env file because it contains variable
 <td><strong>Dauer in Sek.</strong></td>
 </tr>
 <tr>
-<td><strong>1</strong></td>
+<th>1</th>
 <td>PeaZip</td>
 <td>4.4</td>
 <td></td>
@@ -101,7 +102,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>49</td>
 </tr>
 <tr>
-<td><strong>2</strong></td>
+<th>2</th>
 <td>7Zip</td>
 <td>9.20</td>
 <td></td>
@@ -110,7 +111,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>50</td>
 </tr>
 <tr>
-<td><strong>3</strong></td>
+<th>3</th>
 <td>WinZip Pro</td>
 <td>16.0</td>
 <td></td>
@@ -119,7 +120,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>9</td>
 </tr>
 <tr>
-<td><strong>4</strong></td>
+<th>4</th>
 <td>WinRAR</td>
 <td>3.93</td>
 <td></td>
@@ -128,7 +129,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>19</td>
 </tr>
 <tr>
-<td><strong>5</strong></td>
+<th>5</th>
 <td>Haozip</td>
 <td>4.2</td>
 <td></td>
@@ -137,7 +138,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>7</td>
 </tr>
 <tr>
-<td><strong>6</strong></td>
+<th>6</th>
 <td>ALZip</td>
 <td>7.52</td>
 <td></td>
@@ -146,7 +147,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>28</td>
 </tr>
 <tr>
-<td><strong>7</strong></td>
+<th>7</th>
 <td>ZipGenius</td>
 <td>6.3.2</td>
 <td></td>
@@ -155,7 +156,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>24</td>
 </tr>
 <tr>
-<td><strong>8</strong></td>
+<th>8</th>
 <td>IZArc</td>
 <td>4.1.6</td>
 <td></td>
@@ -164,7 +165,7 @@ In most cases you only have to change the .env file because it contains variable
 <td>39</td>
 </tr>
 <tr>
-<td><strong>9</strong></td>
+<th>9</th>
 <td>PowerArchivier 2011</td>
 <td>12.12.03</td>
 <td></td>
@@ -176,7 +177,7 @@ In most cases you only have to change the .env file because it contains variable
 <td colspan="7"></td>
 </tr>
 <tr>
-<td><strong>10</strong></td>
+<th>10</th>
 <td>KGB Archiver</td>
 <td>2.0.0.2</td>
 <td></td>

@@ -41,6 +41,14 @@
       padding: 0 $spacer-lg;
     }
 
+    .full-width {
+
+      @media screen and (min-width: $screen-bp) {
+        max-width: none;
+        margin: 0 -#{$spacer-lg};
+      }
+    }
+
     h1, h2, h3, h4, h5 {
       margin-bottom: $spacer;
     }
