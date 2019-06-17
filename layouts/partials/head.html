@@ -48,7 +48,7 @@
 
 {{ with .Params.hascode }}
   {{ if . }}
-  {{ $highlightcss := resources.Get "highlighter.css" | fingerprint }}
+  {{ $highlightcss := resources.Get "highlighter.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $highlightcss.Permalink }}">
   {{ end }}
 {{ end }}
