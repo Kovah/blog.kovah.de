@@ -1,0 +1,16 @@
+.alert {
+  padding: $spacer-sm;
+  background-color: $alert-default-bg;
+  border-left: 5px solid $alert-default-border;
+
+  @media screen and (min-width: $screen-bp) {
+    padding: $spacer;
+  }
+
+  @each $type, $color in $alert-types {
+    &--#{$type} {
+      background-color: lighten($color, 40%);
+      border-color: $color
+    }
+  }
+}

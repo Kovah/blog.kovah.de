@@ -3,6 +3,10 @@ $c-primary: #2c8edd;
 $c-primary-light: lighten($c-primary, 10%);
 $c-primary-dark: darken($c-primary, 10%);
 
+$c-red: #e53935;
+$c-orange: #FF9106;
+$c-green: #4BB952;
+
 // Create grayscale
 $white: #fff;
 $gray-100: #f8f9fa;
@@ -76,3 +80,13 @@ $font-size-h3: 1.9rem;
 $font-size-h4: 1.6rem;
 $font-size-h5: 1.3rem;
 $font-size-h6: 1rem;
+
+// Alerts
+$alert-types: (
+  "info": $c-primary,
+  "success": $c-green,
+  "warning": $c-orange,
+  "danger": $c-red,
+);
+$alert-default-bg: $gray-100;
+$alert-default-border: $gray-300;

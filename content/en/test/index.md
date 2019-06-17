@@ -65,7 +65,7 @@ As most of the projects I work on are developed with plain PHP, a larger Laravel
 
 {{< image img="php-coding-henri-unsplash.jpg" alt="Some coding image" caption="Some coding image" >}}
 
-```
+```shell
 /
 ├─ docker
 │ ├─ php.ini
@@ -76,6 +76,28 @@ As most of the projects I work on are developed with plain PHP, a larger Laravel
 ```
 
 ## The drop-in Docker stack
+
+{{< alert >}}
+  This is an alert with some information.
+{{< /alert >}}
+
+{{< alert type="info" >}}
+  This is an alert with <a href="#">a link</a>.
+{{< /alert >}}
+
+{{< alert type="success" >}}
+  This is an alert with some information.
+{{< /alert >}}
+
+{{< alert type="warning" >}}
+  This is an alert with some information.
+{{< /alert >}}
+
+{{< alert type="danger" >}}
+  This is an alert with some information.
+{{< /alert >}}
+
+Quae vero auctorem tractata ab fiducia dicuntur. Non equidem invideo, miror magis posuere velit aliquet. At nos hinc posthac, sitientis piros Afros. Sed haec quis possit intrepidus aestimare tellus. Pellentesque habitant morbi tristique senectus et netus.
 
 In most cases you only have to change the .env file because it contains variable details about the stack and passwords. The main stack works for all plain PHP projects but you can easily make it work with Laravel or any CMS by changing the `nginx.conf` file because each system may has different requirements on the web server configuration.
 
