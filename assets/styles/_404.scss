@@ -1,10 +1,18 @@
 .e404 {
+  text-align: center;
+
+  &__image {
+    margin: $spacer;
+  }
+
   &__title {
-    color: darken($c-red, 10%);
+    color: $c-red-dark;
     margin-bottom: $spacer-sm;
   }
 
   &__copy {
-    color: darken($c-red, 10%);
+    color: $c-red-dark;
+    font-size: $font-size-lg;
+    opacity: .65;
   }
 }
