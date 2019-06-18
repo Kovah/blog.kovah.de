@@ -1,0 +1,5 @@
+{{ range .Translations }}
+<div class="alert alert--info">
+  {{ i18n "translation_for_post" . }} <a href='{{ .Permalink }}'>{{ .Title }}</a>
+</div>
+{{ end }}

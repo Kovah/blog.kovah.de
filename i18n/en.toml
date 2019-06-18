@@ -15,3 +15,5 @@ other = "Tags"
 other = "Share this article"
 [share_via]
 other = "Share article via {{ . }}"
+[translation_for_post]
+other = "Dieser Artikel ist auch in Deutsch verfügbar:"
