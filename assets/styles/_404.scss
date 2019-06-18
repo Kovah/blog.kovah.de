@@ -1,0 +1,10 @@
+.e404 {
+  &__title {
+    color: darken($c-red, 10%);
+    margin-bottom: $spacer-sm;
+  }
+
+  &__copy {
+    color: darken($c-red, 10%);
+  }
+}

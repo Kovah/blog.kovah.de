@@ -17,3 +17,8 @@ other = "Diesen Artikel teilen"
 other = "Artikel über  {{ . }} teilen"
 [translation_for_post]
 other = "This article is also available in English:"
+
+[404_title]
+other = "404 - Seite nicht gefunden"
+[404_copy]
+other = "Die gesuchte Seite konnte leider nicht gefunden werden."
