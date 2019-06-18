@@ -1,13 +1,16 @@
-<ul class="post-list">
+<ul class="post-list" >
   {{ range (.Paginator).Pages }}
-  <li class="post-list__item post-excerpt">
+  <li class="post-list__item post-excerpt" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}' />
 
     <h2 class="post-excerpt__headline">
-      <a href="{{ .Permalink }}">{{.Title}}</a>
+      <a href="{{ .Permalink }}" itemprop="url">
+        <span itemprop="name">{{.Title}}</span>
+      </a>
     </h2>
 
     {{ if .Description }}
-    <p class="post-excerpt__description">{{ .Description }}</p>
+    <p class="post-excerpt__description" itemprop="description">{{ .Description }}</p>
     {{ end }}
 
     <div class="post-excerpt__meta">

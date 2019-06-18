@@ -1,10 +1,13 @@
 {{ define "main" }}
 
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}' />
+  <meta itemprop="description" content="{{ .Description }}" />
+
   <header class="post__header block block--primary block--small">
     <div class="container">
 
-      <h1 class="post__title">{{ .Title }}</h1>
+      <h1 class="post__title" itemprop="name">{{ .Title }}</h1>
 
       <div class="post__meta">
         {{ range .Params.Categories }}
@@ -29,7 +32,7 @@
 
       <div class="post__meta">
         <span class="post__readtime">{{ i18n "readtime" . }}</span>
-        <time class="post__published" datetime='{{.Date.Format "2006-01-02"}}'>
+        <time class="post__published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
           {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
         </time>
       </div>
@@ -40,7 +43,7 @@
   <section class="post__content-wrapper block block--small">
     <div class="container">
 
-      <div class="post__content">
+      <div class="post__content" itemprop="articleBody">
         {{ partial "post/translation-info.html" . }}
         {{ .Content }}
       </div>
