@@ -1,0 +1,52 @@
+.share {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__title {
+    flex: 0 1 100%;
+    margin-bottom: $spacer;
+    text-align: center;
+    color: $body-color-muted;
+
+    @media screen and (min-width: $screen-bp-sm) {
+      flex: 0 1 auto;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    position: relative;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    padding: $spacer-sm;
+    color: $c-primary-light;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: $font-size-lg;
+    line-height: 1;
+    transition: font-size 200ms ease, color 200ms ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      font-size: $font-size-xl;
+      color: $c-primary;
+      transition: font-size 300ms ease, color 300ms ease;
+    }
+
+    [data-fa-i2svg] {
+      z-index: 10;
+      position: relative;
+    }
+  }
+}

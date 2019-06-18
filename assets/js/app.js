@@ -6,6 +6,7 @@ import { faAngleDoubleLeft } from '@fortawesome/pro-light-svg-icons/faAngleDoubl
 import { faAngleDoubleRight } from '@fortawesome/pro-light-svg-icons/faAngleDoubleRight';
 import { faAngleLeft } from '@fortawesome/pro-light-svg-icons/faAngleLeft';
 import { faAngleRight } from '@fortawesome/pro-light-svg-icons/faAngleRight';
+import { faRss } from '@fortawesome/pro-light-svg-icons/faRss';
 
 import { fa500px } from '@fortawesome/free-brands-svg-icons/fa500px';
 import { faBehance } from '@fortawesome/free-brands-svg-icons/faBehance';
@@ -15,7 +16,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faXing } from '@fortawesome/free-brands-svg-icons/faXing';
 import { faDev } from '@fortawesome/free-brands-svg-icons/faDev';
-import { faRss } from '@fortawesome/pro-light-svg-icons/faRss';
+import { faReddit } from '@fortawesome/free-brands-svg-icons/faReddit';
 
 window.onload = function () {
 
@@ -37,6 +38,7 @@ window.onload = function () {
   library.add(faDev);
   library.add(faTwitter);
   library.add(faXing);
+  library.add(faReddit);
 
   dom.i2svg();
 };
