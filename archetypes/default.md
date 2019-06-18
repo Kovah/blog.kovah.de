@@ -1,8 +1,12 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+description: A small description
+
 date: {{ .Date }}
 draft: true
-description: A small description
+hascode: true
+translationKey: some-translation-string
+
 categories:
 tags:
 ---
