@@ -1,7 +1,7 @@
 .post {
 
   &__header {
-
+    //
   }
 
   &__title {
@@ -37,11 +37,20 @@
 
   &__content {
 
+    @media screen and (min-width: $screen-bp-sm) {
+      padding: 0 $spacer-md;
+    }
+
     @media screen and (min-width: $screen-bp) {
       padding: 0 $spacer-lg;
     }
 
     .full-width {
+
+      @media screen and (min-width: $screen-bp-sm) {
+        max-width: none;
+        margin: 0 -#{$spacer-md};
+      }
 
       @media screen and (min-width: $screen-bp) {
         max-width: none;
