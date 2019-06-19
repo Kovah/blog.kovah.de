@@ -48,11 +48,11 @@
 <meta name="theme-color" content="#2c8edd">
 
 {{ $appcss := resources.Get "app.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $appcss.Permalink }}">
+<link rel="stylesheet" href="{{ $appcss.Permalink | relURL }}">
 
 {{ with .Params.hascode }}
   {{ if . }}
   {{ $highlightcss := resources.Get "highlighter.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $highlightcss.Permalink }}">
+  <link rel="stylesheet" href="{{ $highlightcss.Permalink | relURL }}">
   {{ end }}
 {{ end }}
