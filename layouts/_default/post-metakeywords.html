@@ -1,1 +1,1 @@
-{{ range .Params.Categories }}{{- . -}}, {{ end }}{{ delimit .Params.Tags ", " }}
+{{ range .Params.Categories }}{{- . -}}, {{ end }}{{ with .Params.Tags }}{{ delimit . ", " }}{{ end }}
