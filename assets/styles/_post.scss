@@ -1,7 +1,19 @@
 .post {
 
   &__header {
-    //
+    margin-bottom: $spacer;
+
+    @media screen and (min-width: $screen-bp) {
+      margin-bottom: $spacer-lg;
+    }
+  }
+
+  &__thumbnail {
+    margin-bottom: $spacer;
+
+    @media screen and (min-width: $screen-bp) {
+      margin-bottom: $spacer-lg;
+    }
   }
 
   &__title {
@@ -10,15 +22,15 @@
 
   &__meta {
     margin-top: $spacer-sm;
-    color: rgba($body-color-light, .5);
+    color: $body-color-muted;
 
     a {
-      color: rgba($body-color-light, .75);
+      color: $c-primary-light;
 
       &:active,
       &:hover,
       &:focus {
-        color: rgba($body-color-light, 1);
+        color: $c-primary;
       }
     }
   }
@@ -35,8 +47,7 @@
     margin-right: $spacer-sm;
   }
 
-  &__content {
-    font-size: $font-size-md;
+  &__inner {
 
     @media screen and (min-width: $screen-bp-sm) {
       padding: 0 $spacer-md;
@@ -45,6 +56,10 @@
     @media screen and (min-width: $screen-bp) {
       padding: 0 $spacer-lg;
     }
+  }
+
+  &__content {
+    font-size: $font-size-md;
 
     .full-width {
 

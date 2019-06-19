@@ -4,6 +4,7 @@ description: More publishers release their games exclusively on one platform - a
 
 date: 2019-03-19
 draft: false
+thumbnail: sean-do-782269-unsplash-1200x420.jpg
 
 categories:
 - Article
@@ -13,8 +14,6 @@ tags:
 - Gaming
 - Steam
 ---
-
-{{< image img="sean-do-782269-unsplash-1200x420.jpg" alt="Guy playing games in front of a PC monitor" >}}
 
 You may hear it: Metro Exodus was [exclusively released to the Epic Games store](https://www.engadget.com/2019/01/28/metro-exodus-epic-games-exclusive/). The game was initially marketed on Steam, you could even pre-order the game on the platform. Just two weeks before the official launch the game was pulled and is now exclusively available on the Epic Games store. Some gamers felt betrayed and complained about the decision. Most of them named the need to install another launcher on their PCs as the main reason. On the other side fans of the series bought the game anyway, explaining that another launcher may be a barrier, but a small one they accept to be able to play the game. Just this weekend I discovered that another game I wanted to buy will be released exclusively to the Epic Games store.
 

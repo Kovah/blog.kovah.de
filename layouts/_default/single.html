@@ -1,55 +1,61 @@
 {{ define "main" }}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}' />
-  <meta itemprop="description" content="{{ .Description }}" />
+  <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
+  <meta itemprop="description" content="{{ .Description }}"/>
 
-  <header class="post__header block block--primary block--small">
+  <header class="post__header">
     <div class="container">
 
-      <h1 class="post__title" itemprop="name">{{ .Title }}</h1>
+      {{ partial "post/thumbnail.html" . }}
 
-      <div class="post__meta">
-        {{ range .Params.Categories }}
-        {{ i18n "category" . }}:
-        <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post__category">
-          {{- . -}}
-        </a>
-        {{ end }}
-        <span class="post__tags">
+      <div class="post__inner">
+
+        <h1 class="post__title" itemprop="name">{{ .Title }}</h1>
+
+        <div class="post__meta">
+          {{ range .Params.Categories }}
+            {{ i18n "category" . }}:
+            <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post__category">
+              {{- . -}}
+            </a>
+          {{ end }}
+          <span class="post__tags">
           {{ $list := .Params.Tags }}
           {{ $len := (len $list) }}
           {{ if gt $len 0 }}
-          {{ i18n "tags" . }}:
-          {{ range $index, $element := $list }}
-          <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="post__tag">
-            {{- $element -}}
-          </a>{{ if ne (add $index 1) $len }} | {{ end }}
-          {{ end }}
+            {{ i18n "tags" . }}:
+            {{ range $index, $element := $list }}
+            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="post__tag">
+              {{- $element -}}
+            </a>{{ if ne (add $index 1) $len }} | {{ end }}
+            {{ end }}
           {{ end }}
         </span>
-      </div>
+        </div>
 
-      <div class="post__meta">
-        <span class="post__readtime">{{ i18n "readtime" . }}</span>
-        <time class="post__published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
-          {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
-        </time>
-      </div>
+        <div class="post__meta">
+          <span class="post__readtime">{{ i18n "readtime" . }}</span>
+          <time class="post__published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+            {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+          </time>
+        </div>
 
+      </div>
     </div>
   </header>
 
-  <section class="post__content-wrapper block block--small">
+  <section class="post__content-wrapper">
     <div class="container">
 
-      <div class="post__content" itemprop="articleBody">
+      <div class="post__inner post__content" itemprop="articleBody">
         {{ partial "post/translation-info.html" . }}
         {{ .Content }}
       </div>
 
     </div>
   </section>
+
 </article>
 
 <section class="block block--small">
