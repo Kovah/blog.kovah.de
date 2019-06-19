@@ -34,6 +34,18 @@
     display: block;
     padding: $nav-spacing;
     font-size: $font-size-base;
+
+    @media screen and (min-width: $screen-bp-sm) {
+      padding: $nav-spacing;
+    }
+
+    #{$block}__categories & {
+      padding: $nav-spacing-sm;
+
+      @media screen and (min-width: $screen-bp-sm) {
+        padding: $nav-spacing;
+      }
+    }
   }
 
   &__logo {

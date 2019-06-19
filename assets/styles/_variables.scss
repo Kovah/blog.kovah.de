@@ -50,6 +50,7 @@ $table-border: darken($gray-200, 5%);
 $nav-spacing-x: $spacer-sm;
 $nav-spacing-y: $spacer-sm;
 $nav-spacing: $nav-spacing-y $nav-spacing-x;
+$nav-spacing-sm: $nav-spacing-y $nav-spacing-x 0;
 
 $pagination-spacing-x: $spacer;
 $pagination-spacing-y: $spacer-sm;
