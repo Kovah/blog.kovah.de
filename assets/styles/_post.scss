@@ -36,6 +36,7 @@
   }
 
   &__content {
+    font-size: $font-size-md;
 
     @media screen and (min-width: $screen-bp-sm) {
       padding: 0 $spacer-md;
@@ -74,6 +75,7 @@
     figure {
       margin-left: 0;
       margin-right: 0;
+      text-align: center;
 
       &.figure--left {
 
@@ -94,7 +96,6 @@
       }
 
       figcaption {
-        text-align: center;
         margin: $spacer-sm 0 0;
         color: $body-color-muted;
         font-size: $font-size-sm;
