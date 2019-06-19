@@ -19,9 +19,6 @@
   </div>
 </footer>
 
-{{ $appjs := resources.Get "app.js" | fingerprint }}
-<script src="{{ $appjs.Permalink }}"></script>
-
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
   (function(f, a, t, h, o, m){

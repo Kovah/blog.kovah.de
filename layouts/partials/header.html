@@ -12,12 +12,12 @@
 
       {{ with .OutputFormats.Get "rss" -}}
       <a class="navigation__item" href="{{ .Permalink }}" title="Feed">
-        <i class="fal fa-rss"></i>
+        {{ partial "icons/rss.html" }}
       </a>
       {{ else }}
         {{ with $.Site.Home.OutputFormats.Get "rss" -}}
         <a class="navigation__item" href="{{ .Permalink }}" title="Feed">
-          <i class="fal fa-rss"></i>
+          {{ partial "icons/rss.html" }}
         </a>
         {{ end -}}
       {{ end -}}

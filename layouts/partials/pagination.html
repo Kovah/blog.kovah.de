@@ -6,11 +6,11 @@
   <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber 1 }}
     <a class="pagination__link" href="{{ $paginator.First.URL }}">
-      <i class="fal fa-angle-double-left"></i>
+      {{ partial "icons/angle-double-left.html" }}
     </a>
     {{ else }}
     <span class="pagination__text pagination__text--disabled">
-      <i class="fal fa-angle-double-left"></i>
+      {{ partial "icons/angle-double-left.html" }}
     </span>
     {{ end }}
   </li>
@@ -18,11 +18,11 @@
   <li class="pagination__item pagination__arrow">
     {{ if $paginator.HasPrev }}
     <a href="{{ $paginator.Prev.URL }}" class="pagination__link">
-      <i class="fal fa-angle-left"></i>
+      {{ partial "icons/angle-left.html" }}
     </a>
     {{ else }}
     <span class="pagination__text pagination__text--disabled">
-      <i class="fal fa-angle-left"></i>
+      {{ partial "icons/angle-left.html" }}
     </span>
     {{ end }}
   </li>
@@ -42,11 +42,11 @@
   <li class="pagination__item pagination__arrow">
     {{ if $paginator.HasNext }}
     <a href="{{ $paginator.Next.URL }}" class="pagination__link pagination__link--next">
-      <i class="fal fa-angle-right"></i>
+      {{ partial "icons/angle-right.html" }}
     </a>
     {{ else }}
     <span class="pagination__text pagination__text--disabled">
-      <i class="fal fa-angle-right"></i>
+      {{ partial "icons/angle-right.html" }}
     </span>
     {{ end }}
   </li>
@@ -54,11 +54,11 @@
   <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber $paginator.TotalPages }}
     <a class="pagination__link pagination__link--last" href="{{ $paginator.Last.URL }}">
-      <i class="fal fa-angle-double-right"></i>
+      {{ partial "icons/angle-double-right.html" }}
     </a>
     {{ else }}
     <span class="pagination__text pagination__text--disabled">
-      <i class="fal fa-angle-double-right"></i>
+      {{ partial "icons/angle-double-right.html" }}
     </span>
     {{ end }}
   </li>

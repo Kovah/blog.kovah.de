@@ -7,12 +7,12 @@ mix.options({
 
 mix.disableNotifications();
 
-mix.js('assets/js/app.js', 'assets/dist')
-  .polyfill({
-    enabled: true,
-    useBuiltIns: 'usage',
-    targets: ['> 2%']
-  });
+// mix.js('assets/js/app.js', 'assets/dist')
+//   .polyfill({
+//     enabled: true,
+//     useBuiltIns: 'usage',
+//     targets: ['> 2%']
+//   });
 
 mix.sass('assets/styles/app.scss', 'assets/dist');
 

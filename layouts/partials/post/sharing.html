@@ -8,22 +8,22 @@
   <a class="share__link" target="_blank" rel="noopener noreferrer"
       href='https://twitter.com/share?url={{ .Permalink }}&text={{ $share_description }}&via=kovah_kvh'
       title='{{ i18n "share_via" "Twitter" }}'>
-    <i class="fab fa-twitter"></i>
+    {{ partial "icons/twitter.html" }}
   </a>
   <a class="share__link" target="_blank" rel="noopener noreferrer"
       href='mailto:?subject={{ $share_title }}&body={{ $share_description }}'
       title='{{ i18n "share_via" "Email" }}'>
-    <i class="fal fa-envelope"></i>
+    {{ partial "icons/email.html" }}
   </a>
   <a class="share__link" target="_blank" rel="noopener noreferrer"
       href='https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ $share_title }}&summary={{ $share_description }}&source={{ "/" | absURL }}'
       title='{{ i18n "share_via" "Email" }}'>
-    <i class="fab fa-linkedin-in"></i>
+    {{ partial "icons/linkedin.html" }}
   </a>
   <a class="share__link" target="_blank" rel="noopener noreferrer"
       href='https://reddit.com/submit?url={{ .Permalink }}&title={{ replace .Title "&" "and" }}'
       title='{{ i18n "share_via" "Reddit" }}'>
-    <i class="fab fa-reddit"></i>
+    {{ partial "icons/reddit.html" }}
   </a>
 
 </div>
