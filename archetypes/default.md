@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: Some nice title
 description: A small description
 
 date: {{ .Date }}

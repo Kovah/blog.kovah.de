@@ -1,8 +1,8 @@
 ---
-title: A drop-in Docker stack for PHP apps
-date: 2019-06-12T12:17:00+02:00
+title: Test Post with Example Content
+date: 2019-06-19T12:00:00+02:00
 draft: false
-description: Over the past months I gradually implemented a solid Docker setup for all private projects & as I think that this stack is quite solid I want to share it with you.
+description: Hi omnes lingua, institutis, legibus inter se differunt. Paullum deliquit, ponderibus modulisque suis ratio utitur. Prima luce, cum quibus mons aliud consensu ab eo.
 hascode: true
 translationKey: "post-test"
 categories:
