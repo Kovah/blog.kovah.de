@@ -50,15 +50,15 @@
     }
 
     h1, h2, h3, h4, h5 {
-      margin-bottom: $spacer;
+      margin-bottom: $spacer-sm;
     }
 
     p, pre, .table-wrapper,
     ol, ul, figure, .alert {
-      margin-bottom: $spacer-md;
+      margin-bottom: $spacer;
 
       & + h1, & + h2, & + h3, & + h4, & + h5{
-        margin-top: $spacer-lg;
+        margin-top: $spacer-md;
       }
     }
 
@@ -92,6 +92,12 @@
       }
     }
 
+    code:not([class^="language-"]) {
+      padding: 2px 3px;
+      background-color: $gray-200;
+      font-size: 85%;
+    }
+
     pre {
       padding: $spacer-sm;
       font-size: $font-size-sm;
@@ -103,7 +109,7 @@
     }
 
     hr {
-      margin: $spacer-lg $spacer;
+      margin: $spacer-md $spacer;
       border: 0;
       background-color: $body-color-light;
       height: 2px;
@@ -113,29 +119,4 @@
       }
     }
   }
-
-  //a {
-  //  position: relative;
-  //  display: inline-block;
-  //
-  //  &:after {
-  //    content: '';
-  //    position: absolute;
-  //    bottom: 5%;
-  //    left: 0;
-  //    width: 0;
-  //    height: 1px;
-  //    background-color: currentColor;
-  //    transition: width 200ms;
-  //  }
-  //
-  //  &:active,
-  //  &:hover,
-  //  &:focus {
-  //
-  //    &:after {
-  //      width: 100%;
-  //    }
-  //  }
-  //}
 }
