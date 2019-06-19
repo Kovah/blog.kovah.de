@@ -8,6 +8,9 @@ pygmentsUseClasses = true
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
+[imaging]
+quality = 85
+
 [languages]
 [languages.en]
   contentDir = "content/en"

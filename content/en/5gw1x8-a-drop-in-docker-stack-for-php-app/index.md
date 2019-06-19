@@ -3,7 +3,6 @@ title: A drop-in Docker stack for PHP apps
 description: Over the past months I gradually implemented a solid Docker setup for all private projects. As I think that this stack is quite solid so I want to share it with you.
 
 date: 2019-06-18
-slug: 5gw1x8-a-drop-in-docker-stack-for-php-app
 draft: false
 hascode: true
 

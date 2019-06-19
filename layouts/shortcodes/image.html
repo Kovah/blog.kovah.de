@@ -1,8 +1,17 @@
-<figure {{ with .Get "modifier"}}class="figure--{{.}}"{{ end }}>
+{{ $original := .Page.Resources.GetMatch (.Get "img") }}
+{{ $image := $original.Resize "1000x" }}
+{{ $small_image := $original.Resize "500x" }}
+<figure{{ with .Get "modifier"}} class="figure--{{.}}"{{ end }}>
   <picture>
-    <source srcset='{{ .Get "img" }}.webp' type="image/webp"/>
-    <source srcset='{{ .Get "img" }}' />
-    <img src='{{ .Get "img" }}' {{ with .Get "alt"}} alt="{{.}}"{{ end }}/>
+    {{ if ne .Site.IsServer true }}
+    <source srcset='{{ $small_image.RelPermalink }}.webp' media="(max-width: 500px)" type="image/webp"/>
+    {{ end }}
+    <source srcset='{{ $small_image.RelPermalink }}' media="(max-width: 500px)"/>
+    {{ if ne .Site.IsServer true }}
+    <source srcset='{{ $image.RelPermalink }}.webp' media="(max-width: 1000px)" type="image/webp"/>
+    {{ end }}
+    <source srcset='{{ $image.RelPermalink }}' media="(max-width: 1000px)"/>
+    <img src='{{ $original.RelPermalink }}' {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
   {{ with .Get "caption"}}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
