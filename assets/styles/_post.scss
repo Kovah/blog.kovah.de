@@ -133,6 +133,12 @@
       }
     }
 
+    code.language-php {
+      span.cp {
+        display: none;
+      }
+    }
+
     hr {
       margin: $spacer-md $spacer;
       border: 0;
