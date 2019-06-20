@@ -2,6 +2,7 @@
 title: Why exclusive Game releases are bad for Publishers
 description: More publishers release their games exclusively on one platform - and lose a lot of money with that. So I built a calculator for this.
 
+url: 4bnl8q-why-exclusive-game-releases-are-bad-for-publishers
 date: 2019-03-19
 draft: false
 thumbnail: sean-do-782269-unsplash-1200x420.jpg
