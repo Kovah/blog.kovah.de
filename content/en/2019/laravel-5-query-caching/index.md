@@ -43,7 +43,6 @@ composer require watson/rememberable
 After that you have to prepare the model you want to enable query caches for. To do so, modify it like this:
 
 ```php
-<?php
 use Watson\Rememberable\Rememberable;
 
 class Quote extends Model
@@ -60,7 +59,6 @@ We now have told the Rememberable package to automatically cache all database qu
 The first step is to tell Rememberable to tag the cache for this particular model. Caution: this only works with caching that also support tagging, like Redis or Memcached, [but not the file cache](https://laravel.com/docs/5.7/cache#cache-tags).
 
 ```php
-<?php
 class Quote extends Model
 {
     use Rememberable;
@@ -72,14 +70,12 @@ class Quote extends Model
 This option makes it possible to just delete the query caches for our model, which is important to do if content changes. We could do something like this then:
 
 ```php
-<?php
 Cache::tags('quote_queries')->flush();
 ```
 
 To make things easier you can also use a special method of the Rememberable package so you do not have to remember the cache tag. Call `flushCache()` on your model to clear the query caches for it:
 
 ```php
-<?php
 Quote::flushCache();
 // or
 $quote->flushCache();
@@ -90,7 +86,6 @@ $quote->flushCache();
 This step is optional as you may only need to invalidate caches when content changes. However, you may be on the safer side if query caches do not last forever. Simply add the following option, the value is the cache lifetime in minutes.
 
 ```php
-<?php
 class Quote extends Model
 {
     use Rememberable;

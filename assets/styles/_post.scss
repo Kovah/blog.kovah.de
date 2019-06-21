@@ -117,7 +117,7 @@
       }
     }
 
-    code:not([class^="language-"]) {
+    code:not([class^=" language-"]) {
       padding: 2px 3px;
       background-color: $gray-200;
       font-size: 85%;

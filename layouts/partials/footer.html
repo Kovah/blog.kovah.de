@@ -19,6 +19,13 @@
   </div>
 </footer>
 
+{{ with .Params.hascode }}
+  {{ if . }}
+  {{ $highlightjs := resources.Get "highlighter.js" | fingerprint }}
+  <script src="{{ $highlightjs.Permalink | relURL }}"></script>
+  {{ end }}
+{{ end }}
+
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
   (function(f, a, t, h, o, m){

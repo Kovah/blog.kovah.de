@@ -8,8 +8,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
     "@fortawesome/pro-light-svg-icons": "^5.8.2",
-    "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.0.1"
+    "prismjs": "^1.15.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
@@ -17,7 +16,9 @@
     "laravel-mix-polyfill": "^1.0.2",
     "vue-template-compiler": "^2.6.10",
     "sass": "^1.20.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.0.1"
   },
   "scripts": {
     "dev": "npm run development -- --watch",
