@@ -2,6 +2,7 @@
   padding: $spacer-sm;
   background-color: $alert-default-bg;
   border-left: 5px solid $alert-default-border;
+  font-size: $font-size-base;
 
   @media screen and (min-width: $screen-bp) {
     padding: $spacer;

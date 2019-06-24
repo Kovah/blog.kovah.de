@@ -1,13 +1,11 @@
 
-table {
-  border-collapse: collapse;
-}
-
 th {
   text-align: inherit;
 }
 
 table {
+  border-collapse: collapse;
+  font-size: $font-size-base;
   width: 100%;
   max-width: 100%;
 
@@ -39,7 +37,7 @@ table {
   }
 }
 
-.table-wrapper {
+.table__wrapper {
   display: block;
   max-width: 100%;
   overflow-x: auto;
