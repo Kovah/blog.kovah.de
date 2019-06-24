@@ -74,12 +74,23 @@
       }
     }
 
+    blockquote {
+      margin: 0;
+      padding: $spacer;
+      background-color: lighten($c-primary-light, 34%);
+      font-style: italic;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     h1, h2, h3, h4, h5 {
       margin-bottom: $spacer-sm;
     }
 
     p, pre, .table-wrapper,
-    ol, ul, figure, .alert {
+    ol, ul, figure, .alert, blockquote {
       margin-bottom: $spacer;
 
       & + h1, & + h2, & + h3, & + h4, & + h5{
