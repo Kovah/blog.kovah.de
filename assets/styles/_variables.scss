@@ -6,6 +6,7 @@ $c-primary-dark: darken($c-primary, 10%);
 $c-red: #e53935;
 $c-red-dark: darken($c-red, 10%);
 $c-orange: #FF9106;
+$c-yellow: #FDD835;
 $c-green: #4BB952;
 
 // Create grayscale
@@ -92,3 +93,7 @@ $alert-types: (
 );
 $alert-default-bg: $gray-100;
 $alert-default-border: $gray-300;
+
+// Various elements
+$reviewbox-bg: $gray-100;
+$reviewbox-star-color: $c-yellow;

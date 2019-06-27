@@ -90,7 +90,8 @@
     }
 
     p, pre, .table-wrapper,
-    ol, ul, figure, .alert, blockquote {
+    ol, ul, figure, blockquote,
+    .reviewbox, .alert {
       margin-bottom: $spacer;
 
       & + h1, & + h2, & + h3, & + h4, & + h5{

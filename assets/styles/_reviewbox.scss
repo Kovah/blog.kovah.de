@@ -1,0 +1,31 @@
+.reviewbox {
+
+  padding: $spacer;
+  background-color: $reviewbox-bg;
+
+  @media screen and (min-width: $screen-bp) {
+    padding: $spacer;
+    margin-left: $spacer-lg;
+    margin-right: $spacer-lg;
+  }
+
+  &__rating {
+    width: 100%;
+    margin-bottom: $spacer-sm;
+    text-align: center;
+    color: $reviewbox-star-color;
+    font-size: $font-size-h3;
+  }
+
+  &__star {
+    display: inline-block;
+
+    &--empty {
+      color: $body-color-muted;
+    }
+  }
+
+  &__content {
+    //
+  }
+}

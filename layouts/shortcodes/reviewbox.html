@@ -1,0 +1,16 @@
+<div class="reviewbox">
+  <div class="reviewbox__rating">
+    {{ range $index, $num := (seq 5) }}
+      {{ if lt $index ($.Get 0) }}
+        <span class="reviewbox__star">
+          {{ partial "icons/star.html" }}
+        </span>
+      {{ else }}
+        <span class="reviewbox__star reviewbox__star--empty">
+          {{ partial "icons/star-empty.html" }}
+        </span>
+      {{ end }}
+    {{ end }}
+  </div>
+  <div class="reviewbox__content">{{ .Inner | markdownify }}</div>
+</div>
