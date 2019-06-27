@@ -1,0 +1,10 @@
+{{ $video := .Page.Resources.GetMatch (.Get 0) }}
+{{ with $video }}
+<video autoplay>
+  <source src="{{ .Permalink }}" type="{{ $.Get 1 }}">
+</video>
+{{ else }}
+<video autoplay>
+  <source src="{{ .Get 0 }}" type="{{ .Get 1 }}">
+</video>
+{{ end }}
