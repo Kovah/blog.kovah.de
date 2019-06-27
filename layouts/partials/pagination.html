@@ -1,7 +1,22 @@
 {{ $paginator := .Paginator }}
+{{ $paginator_current := sub .Paginator.PageNumber 1 }}
+
+{{ $paginator_limit := 7 }}
+{{ $paginator_start := 1 }}
+{{ if gt $paginator_current 3 }}
+  {{ $paginator_start = (sub $paginator_current 3)}}
+{{ end }}
+
+{{ $pages := $paginator.Pagers }}
+
+{{ if gt $paginator_current 3 }}
+  {{ if gt $paginator.TotalPages $paginator_limit }}
+    {{ $pages = after $paginator_start $paginator.Pagers }}
+  {{ end }}
+{{ end }}
 
 {{ if gt $paginator.TotalPages 1 }}
-<ul class="pagination">
+<ul class="pagination" data-current="{{ $paginator_current }}" data-start="{{ $paginator_start }}" data-total="{{ $paginator.TotalPages }}">
 
   <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber 1 }}
@@ -29,9 +44,9 @@
 
   <li class="pagination__divider"></li>
 
-  {{ range $paginator.Pagers }}
-  <li class="pagination__item{{ if eq . $paginator }} pagination__item--current{{ end }}">
-    <a href="{{ .URL }}" class="pagination__link">
+  {{ range $index, $page := first $paginator_limit $pages }}
+  <li class="pagination__item{{ if eq $page $paginator }} pagination__item--current{{ end }}" data-index="{{ $index }}">
+    <a href="{{ $page.URL }}" class="pagination__link">
       {{ .PageNumber }}
     </a>
   </li>
