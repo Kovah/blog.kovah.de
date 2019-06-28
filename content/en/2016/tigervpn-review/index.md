@@ -6,6 +6,7 @@ description: I use the TigerVPN service for a couple of months now and want to s
 draft: false
 title: My Experiences with TigerVPN
 type: post
+translationKey: "tigervpn-review"
 url: /en/my-experiences-with-tigervpn/
 categories:
 - Test
