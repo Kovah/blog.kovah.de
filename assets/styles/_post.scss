@@ -108,8 +108,12 @@
 
         @media screen and (min-width: $screen-bp-sm) {
           float: left;
-          max-width: 50%;
+          max-width: 40%;
           margin-right: $spacer;
+        }
+
+        @media screen and (min-width: $screen-bp) {
+          margin-right: $spacer-md;
         }
       }
 
@@ -117,8 +121,12 @@
 
         @media screen and (min-width: $screen-bp-sm) {
           float: right;
-          max-width: 50%;
+          max-width: 40%;
           margin-left: $spacer;
+        }
+
+        @media screen and (min-width: $screen-bp) {
+          margin-left: $spacer-md;
         }
       }
 
