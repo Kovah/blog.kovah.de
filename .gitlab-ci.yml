@@ -1,0 +1,52 @@
+stages:
+  - build-assets
+  - build-page
+  - deploy
+
+build-assets:
+  # Needed vars for asset generation: NPM_FA_TOKEN
+  stage: build-assets
+  image: node:10.15.3
+  only:
+    - master
+  artifacts:
+    paths:
+      - assets/dist
+  before_script:
+    - echo "@fortawesome:registry=https://npm.fontawesome.com/" >> .npmrc
+    - echo "//npm.fontawesome.com/:_authToken=$NPM_FA_TOKEN" >> .npmrc
+  script:
+    - npm install
+    - npm run production
+
+build-page:
+  stage: build-page
+  image: monachus/hugo
+  only:
+    - master
+  dependencies:
+    - build-assets
+  artifacts:
+    paths:
+      - public
+  script:
+    - hugo
+
+deploy:
+  # Needed vars for deployment: DEPLOY_HOST, DEPLOY_PATH, DEPLOY_PRIVATE_KEY
+  stage: deploy
+  image: ubuntu:18.04
+  only:
+    - master
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - export DEPLOY_TS=$(date +%s)
+    - ssh $DEPLOY_HOST "mkdir -p $DEPLOY_PATH/releases"
+    - scp -r public/ $DEPLOY_HOST:$DEPLOY_PATH/releases/$DEPLOY_TS
+    - ssh $DEPLOY_HOST "rm -f $DEPLOY_PATH/current && ln -s $DEPLOY_PATH/releases/$DEPLOY_TS $DEPLOY_PATH/current"
