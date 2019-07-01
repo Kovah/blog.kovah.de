@@ -52,8 +52,9 @@ deploy:
     - tar -xzf /opt/libwebp.tar.gz
   script:
     # Generate webp versions of all images
-    - find ./public/en -name "*.jpg" -o -name "*.png" | xargs -I{} /opt/libwebp/bin/cwebp -mt {} -o {}.webp
-    - find ./public/de -name "*.jpg" -o -name "*.png" | xargs -I{} /opt/libwebp/bin/cwebp -mt {} -o {}.webp
+    - pwd && ls
+    - find public/en -name "*.jpg" -o -name "*.png" | xargs -I{} /opt/libwebp/bin/cwebp -mt {} -o {}.webp
+    - find public/de -name "*.jpg" -o -name "*.png" | xargs -I{} /opt/libwebp/bin/cwebp -mt {} -o {}.webp
     # Deploy the page to the server
     - export DEPLOY_TS=$(date +%s)
     - ssh $DEPLOY_HOST "mkdir -p $DEPLOY_PATH/releases"
