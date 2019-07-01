@@ -35,12 +35,12 @@ name   = "News"
 weight = 2
 
 [[languages.en.menu.main]]
-url    = "/categories/tests"
+url    = "/categories/test"
 name   = "Tests"
 weight = 3
 
 [[languages.en.menu.main]]
-url    = "/categories/tutorials"
+url    = "/categories/tutorial"
 name   = "Tutorials"
 weight = 4
 
@@ -56,12 +56,12 @@ name   = "News"
 weight = 2
 
 [[languages.de.menu.main]]
-url    = "/categories/tests"
+url    = "/categories/test"
 name   = "Tests"
 weight = 3
 
 [[languages.de.menu.main]]
-url    = "/categories/tutorials"
+url    = "/categories/tutorial"
 name   = "Tutorials"
 weight = 4
 
