@@ -11,7 +11,9 @@
     <!--<source srcset='{{ $image.RelPermalink }}.webp' media="(max-width: 1000px)" type="image/webp"/>-->
     {{ end }}
     <source srcset='{{ $image.RelPermalink }}' media="(max-width: 1000px)"/>
-    <img src='{{ $original.RelPermalink }}' {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
+    <img src='{{ $original.RelPermalink }}'
+        width="{{ $original.Width }}" height="{{ $original.Height }}"
+        {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
   {{ with .Get "caption"}}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
