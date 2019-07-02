@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-08-20 15:44:33+00:00
 description: Warum Facebook eigentlich tot ist und ich dem Netzwerk den Rücken kehre und andere Netzwerke nutze.
 draft: false

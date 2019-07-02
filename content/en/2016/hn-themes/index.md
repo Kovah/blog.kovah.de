@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-02-25 09:21:58+00:00
 description: I decided to create some themes to spice up the Hacker News site with
   CSS only that can be used with almost every browser

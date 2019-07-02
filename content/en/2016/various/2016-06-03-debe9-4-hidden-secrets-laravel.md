@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-06-03 11:45:09+00:00
 description: An article written by Matt Stauffer about 4 hidden Laravel secrets.
 draft: false

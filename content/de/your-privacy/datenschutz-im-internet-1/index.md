@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2017-06-05 11:23:56+00:00
 description: Das Internet bietet unendlich viele Möglichkeiten, die Kontrolle über seine Daten zu verlieren. Dies ist Teil 1 zum allgemeinen Datenschutz im Netz.
 draft: false

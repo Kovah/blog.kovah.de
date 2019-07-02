@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2017-01-19 16:40:15+00:00
 draft: false
 title: Programmatically add Custom Buttons to the Wordpress TinyMCE Editor

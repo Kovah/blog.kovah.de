@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-03-21 22:28:36+00:00
 description: Ein kurzes Tutorial das beschreibt, wie man OpenERP auf einer Synology Diskstation personalisiert und seinen Wünschen anpassen kann.
 draft: false

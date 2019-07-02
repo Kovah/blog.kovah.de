@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-05-10 09:29:44+00:00
 description: Examples for converting arrays into objects in PHP
 draft: false

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-01-31 10:53:55+00:00
 description: Nach einiger Zeit der Nutzung von O&O Disk Image 6 habe ich die Backupsoftware deinstalliert und bin wieder zurück zu Acronis TrueImage gewechselt.
 draft: false

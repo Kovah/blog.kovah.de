@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2017-03-24 13:22:47+00:00
 draft: false
 title: Smoothly animate particles with HTML5

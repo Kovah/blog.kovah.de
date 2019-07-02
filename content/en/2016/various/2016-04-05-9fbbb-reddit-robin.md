@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-05 10:25:45+00:00
 description: Want to know what the small grey button with a red pidgeon in the Reddit
   sidebar is?

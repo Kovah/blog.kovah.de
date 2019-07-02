@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-02-19 19:02:01+00:00
 description: Meine Erfahrung mit Hide.me nach zwei Jahren Nutzung. Ich habe das Angebot, die Geschwindigkeit und den Service drei Jahre lang genutzt.
 draft: false

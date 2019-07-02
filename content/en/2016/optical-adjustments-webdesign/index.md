@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-08-24 11:09:53+00:00
 description: How small changes that can make a big difference in your web designs.
 draft: false

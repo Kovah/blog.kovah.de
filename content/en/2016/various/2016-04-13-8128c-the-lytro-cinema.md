@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-13 11:40:07+00:00
 description: Need a camera with 755 Megapixel resolution, 40k video and 300 fps?
 draft: false

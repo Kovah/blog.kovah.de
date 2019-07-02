@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-09-05 13:39:23+00:00
 description: Learn how to easy add a progress bar to your Impress.js presentation
   with some lines of HTML, CSS and Javascript.

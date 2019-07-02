@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-04-24 11:41:13+00:00
 description: OwnCloud macht Probleme, hängt ständig und Updates zerstören alles? Bei
   mir war es ähnlich, erfahre hier, was ich gemacht habe.

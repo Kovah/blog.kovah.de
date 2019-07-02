@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-08-01 15:48:28+00:00
 description: How to create layouts with vertical text using the writing-mode property.
 draft: false

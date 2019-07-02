@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-05-31 11:35:38+00:00
 description: Interesting hints about how to deliver your app contents and saving both
   requests and bandwith.

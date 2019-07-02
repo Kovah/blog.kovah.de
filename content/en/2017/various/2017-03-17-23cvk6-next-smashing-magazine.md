@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2017-03-17 06:05:05+00:00
 draft: false
 title: The next Smashing Magazine

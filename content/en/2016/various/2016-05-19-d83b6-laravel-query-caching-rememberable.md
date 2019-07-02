@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-05-19 11:21:38+00:00
 description: Reduce the query count with query caching in Laravel.
 draft: false

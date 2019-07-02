@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-02-18 16:56:40+00:00
 description: Ein Tutorial wie man Duplikate in der Datenbank mit PHP, MySQL, Levenshtein und jQuery findet.
 draft: false

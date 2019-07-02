@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-25 07:08:12+00:00
 description: 'The CRUD builder looks awesome! More features: notifications, complete
   bootstrap, form maker and billing with Cashier.'

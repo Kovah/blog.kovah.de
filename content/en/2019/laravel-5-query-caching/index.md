@@ -2,6 +2,7 @@
 title: "Laravel 5: Use Query Caching to make your App really fast"
 description: There are several methods to make your Laravel app faster by using caching. Today I want to introduce query caching which reduced the number of database calls to almost zero.
 
+author: Kevin Woblick
 url: n7hs3x-laravel-5-use-query-caching-to-make-your-app-really-fast
 date: 2019-03-01
 draft: false

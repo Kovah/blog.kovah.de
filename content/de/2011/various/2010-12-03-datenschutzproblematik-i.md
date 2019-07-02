@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2010-12-03 15:40:01+00:00
 description: Ein Artikel über falsche Herangehensweisen bei der Aufklärung von Nutzern über Datenschutz und Datensicherheit.
 draft: false

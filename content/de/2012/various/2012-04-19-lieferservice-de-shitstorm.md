@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-04-19 10:56:25+00:00
 description: 'Aktion von Lieferservice.de: 1 Pizza gratis, ab 19 Uhr, für alle. Hat nicht gut geklappt, auf Facebook gab''s einen Shirtstorm. Die ganze Geschichte hier.'
 draft: false

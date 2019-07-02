@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-11 11:03:03+00:00
 description: Una Kravets explains how to use counter-increment, counter-reset and
   checkboxes to make little games with CSS.

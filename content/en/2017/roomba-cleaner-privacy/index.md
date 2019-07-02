@@ -2,6 +2,7 @@
 title: Your Roomba vacuum cleaner may sell the map of your house
 description: The Roomba vacuum cleaner series 900, made by iRobot, maps your home to improve his cleaning efforts. iRobot plans to sell this mapping data to companies like Google or Amazon.
 
+author: Kevin Woblick
 url: roomba-vacuum-cleaner-may-sell-map-house
 date: 2017-07-25
 draft: false

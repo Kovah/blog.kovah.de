@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-06-07 11:11:47+00:00
 description: Warum Nextcloud als neuer Ableger von ownCloud die beste Alternative zu ownCloud selber ist und was die Software besser machen will.
 draft: false

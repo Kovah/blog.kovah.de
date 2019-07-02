@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-07 10:53:24+00:00
 description: 'We want to achieve the following behaviour: if a text is centered and
   becomes aligned left when it files multiple lines.'

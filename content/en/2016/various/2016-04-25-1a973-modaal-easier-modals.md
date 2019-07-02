@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-25 09:01:47+00:00
 description: Highly accessible modal windows as a plugin.
 draft: false

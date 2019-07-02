@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-18 21:15:46+00:00
 description: Nun, Firefox hat seine Stellung in Deutschland scheinbar wirklich gefestigt. Laut Statcounter nutzen knapp 50% den Browser von Mozilla.
 draft: false

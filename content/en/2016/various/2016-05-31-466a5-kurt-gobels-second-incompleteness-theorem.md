@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-05-31 11:38:12+00:00
 description: Any mind that believes it can prove its own sanity, is insane.
 draft: false

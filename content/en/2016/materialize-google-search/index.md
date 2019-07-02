@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-06-05 11:40:26+00:00
 description: A Reddit user applied the Material Design to the Google Search.
 draft: false

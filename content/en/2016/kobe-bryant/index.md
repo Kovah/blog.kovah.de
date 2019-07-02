@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-14 11:23:30+00:00
 description: Every shot Kobe Bryant ever took. All 30,699 of them in one infographic.
 draft: false

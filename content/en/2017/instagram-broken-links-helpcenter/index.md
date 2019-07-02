@@ -2,6 +2,7 @@
 title: Instagram’s broken Links in the Help Center
 description: Want to report an Image on Instagram? Visiting the Help Center will lead to endless searches for the correct forms that will then be not available anymore.
 
+author: Kevin Woblick
 url: 45v33-instagrams-broken-links-help-center
 date: 2017-09-13
 

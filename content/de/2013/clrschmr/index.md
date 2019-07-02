@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-10-21 21:04:18+00:00
 description: CLRSCHMR  - Ein Tool zur Erstellung von Farbschemen, zum selber hosten auf dem eigenen Server.
 draft: false

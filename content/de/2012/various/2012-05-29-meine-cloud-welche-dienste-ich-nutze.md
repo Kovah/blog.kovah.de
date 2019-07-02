@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-05-29 21:59:11+00:00
 description: Cloud Dienste und Onlinespeicher so weit das Auge reicht. Hier eine Übersicht mit Beschreibung und weiterführenden Informationen.
 draft: false

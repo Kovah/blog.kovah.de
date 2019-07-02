@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-06 10:40:44+00:00
 description: A Google-less Webkit based browser with a lot of possibilities to customize
   the look and feel

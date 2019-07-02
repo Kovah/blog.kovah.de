@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2015-11-06 15:50:08+00:00
 description: "An article about my new blog and what it's built on: Wordpress and a lot of work."
 draft: false

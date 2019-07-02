@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-14 10:15:20+00:00
 description: osTicket als Support System
 title: osTicket als Support System

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-08-03 15:51:06+00:00
 description: Implement a page scrolling indicator using CSS only. No JavaScript.
 draft: false

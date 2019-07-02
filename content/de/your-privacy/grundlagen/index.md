@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-11-29 11:09:54+00:00
 description: Datenschutz fängt mit der richtigen Grundeinstellung an. In diesem Artikel geht es um die richtige Einstellung zu seiner Privatsphäre und seinen Daten.
 draft: false

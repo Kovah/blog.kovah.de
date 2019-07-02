@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-07 10:49:15+00:00
 description: Textexpander 6 will get a SaaS sync service that is not optional
 draft: false

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2015-04-16 16:17:00+00:00
 description: Ich habe kürzlich bei 6DollarShirts.com bestellt und möchte euch davon berichten und auf mögliche Stolpersteine aufmerksam machen.
 draft: false

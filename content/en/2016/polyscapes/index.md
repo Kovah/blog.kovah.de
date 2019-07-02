@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-08 11:00:27+00:00
 description: "I saw such pictures pretty often but never knew how to find more. Now I know how they are called: Polyscapes."
 draft: false

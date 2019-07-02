@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-02-05 14:11:16+00:00
 description: Need a password suggestion generator for your (Codeigniter) app? Look
   no further, you can find two different approaches in this tutorial

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-28 09:24:41+00:00
 description: Very interesting article about the mechanics behind competitive multiplayer
   FPS games.

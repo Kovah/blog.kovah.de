@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-04-24 14:59:39+00:00
 description: Du möchtest Bittorrent Sync für die Dateisynchonisation nutzen? Hier erfährst du, wie du Bittorrent Sync entsprechend einrichtest.
 draft: false

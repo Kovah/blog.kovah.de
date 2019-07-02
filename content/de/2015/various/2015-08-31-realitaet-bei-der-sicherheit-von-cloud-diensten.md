@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2015-08-31 05:48:21+00:00
 description: Die Skepsis ging, aber die Lücken blieben. Fünf Jahre Wahrnehmung und Realität bei der Sicherheit von Cloud. Diensten
 draft: false

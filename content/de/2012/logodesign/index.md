@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-12-24 09:45:26+00:00
 description: Meine Meinung über die aktuelle Entwicklung im Logo Design mit den Beispielen McFIT, eBay und Weight Watchers, die alle erst kürzlich das Logo gewechselt haben.
 draft: false

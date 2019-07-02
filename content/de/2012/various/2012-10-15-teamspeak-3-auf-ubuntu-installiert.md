@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-15 17:34:09+00:00
 description: 'Dein TeamSpeak Server lässt sich nicht informieren und wirft dir "instance check error" Fehler vor? Hier findest du die Lösung.'
 draft: false

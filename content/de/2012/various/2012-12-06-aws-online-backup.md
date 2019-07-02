@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-12-06 22:42:18+00:00
 description: Backups. Jeder braucht sie, kaum einer macht sie. Allerdings sind Backups zum Beispiel auf Amazon AWS Servern einfacher und kostengünstiger als man vielleicht denkt.
 draft: false

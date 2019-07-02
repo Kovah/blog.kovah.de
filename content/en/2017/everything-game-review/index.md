@@ -2,6 +2,7 @@
 title: Everything the Game - A short review
 description: Ever wanted to become a Hamburger, dancing around in an world filled with giant wheat plants? Or want to listen to a depressed Trumpet that would like to commit suicide but could not find someone to assist him? Well, here’s your chance!
 
+author: Kevin Woblick
 thumbnail: everything_game-1200x420.jpg
 url: everything-game-short-review
 date: 2017-06-28

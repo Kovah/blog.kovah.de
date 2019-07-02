@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-08 10:51:22+00:00
 description: A computer painted a new Rembrandt after analyzing his previous works.
 draft: false

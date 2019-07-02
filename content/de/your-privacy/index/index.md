@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-11-22 10:05:12+00:00
 description: YourPrivacy ist eine kleine Serie von kurzen, verständlichen Artikeln und Anleitungen rund um das Thema Privatsphäre und Datenschutz.
 draft: false

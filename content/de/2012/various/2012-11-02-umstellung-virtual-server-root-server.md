@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-11-02 07:23:30+00:00
 description: Ein Artikel über den Umzug von einem Virtual Server zu einem Root Server und die technischen Hintergründe dazu.
 draft: false

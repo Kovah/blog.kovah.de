@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-07-28 09:24:07+00:00
 description: I use the TigerVPN service for a couple of months now and want to share
   my experiences. I also did some speed tests with various connections.

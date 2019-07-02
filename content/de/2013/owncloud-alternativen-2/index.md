@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-11-21 15:36:50+00:00
 description: Eine umfangreiche Zusammenfassung von Alternativen für OwnCloud für die private Cloud und Dateisynchronisation
 draft: false

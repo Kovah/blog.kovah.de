@@ -2,6 +2,7 @@
 title: Stop stressing yourself to death
 description: Over the past months I gradually implemented a solid Docker setup for all private projects. As I think that this stack is quite solid so I want to share it with you.
 
+author: Kevin Woblick
 url: yx6b1a-stop-stressing-yourself-to-death
 date: 2019-03-07
 draft: false

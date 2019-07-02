@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-07-16 09:27:33+00:00
 description: 'Achtung: neue Phishing Mail von PayPal im Umlauf. Details zu der Mail gibt es hier.'
 draft: false

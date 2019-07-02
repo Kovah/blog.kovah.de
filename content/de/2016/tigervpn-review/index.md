@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-07-22 14:02:56+00:00
 description: Ich nutze TigerVPN bereits seit einigen Monaten und möchte nun meine Erfahrungen mit dem Anbieter schildern. Ich habe das Angebot und den Service genau unter die Lupe genommen und einige Geschwindigkeitstests durchgeführt.
 draft: false

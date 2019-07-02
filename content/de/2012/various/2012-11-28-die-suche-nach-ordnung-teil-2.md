@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-11-28 18:49:44+00:00
 description: 'Ordnung leicht gemacht: mit Things für Mac oder MantisBT für den Webserver. Was taugen sie und wofür können sie eingesetzt werden?'
 draft: false

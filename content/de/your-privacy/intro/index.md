@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-11-22 10:39:57+00:00
 description: YourPrivacy - Eine kurze Einführung zu den beiden Begriffen Privatsphäre
   und Datenschutz

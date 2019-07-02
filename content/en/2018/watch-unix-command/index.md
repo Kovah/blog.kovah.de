@@ -2,6 +2,7 @@
 title: Watch – A Unix command to tail directories
 description: Watch executes programs periodically, making it perfect for use cases like tailing directories.
 
+author: Kevin Woblick
 url: 74knd-watch-a-unix-command-to-tail-directories
 date: 2018-05-15
 hascode: true

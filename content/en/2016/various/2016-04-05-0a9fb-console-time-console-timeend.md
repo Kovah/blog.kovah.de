@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-05 09:56:24+00:00
 description: You can use console.time and console.timeEnd to measure the time it takes
   to do stuff in JavaScript

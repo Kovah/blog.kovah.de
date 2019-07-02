@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-08-05 11:06:00+00:00
 description: The biggest German magazine for tech news, heise.de, just published a
   new portal called Tippgeber.

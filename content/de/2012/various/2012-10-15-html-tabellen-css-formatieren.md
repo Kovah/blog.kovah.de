@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-15 22:03:33+00:00
 description: Wer Tabellen einfach und ohne Probleme formatieren möchte, kann hierzu ein Set an CSS Formatierungen nutzen, das von Smashing Magazine zur Verfügung gestellt wird.
 draft: false

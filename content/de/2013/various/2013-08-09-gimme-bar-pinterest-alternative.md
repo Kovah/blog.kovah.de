@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-08-09 13:23:37+00:00
 description: Gimmebar ist eine weitere Alternative zu Pinterest. Warum sie um einiges besser ist erfahrt ihr hier.
 draft: false

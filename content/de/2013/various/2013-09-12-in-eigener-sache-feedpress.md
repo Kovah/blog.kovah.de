@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-09-12 08:14:55+00:00
 description: 'In eigener Sache: der Feed ist jetzt über Feedpress erreichbar.'
 draft: false

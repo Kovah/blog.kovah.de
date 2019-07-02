@@ -2,6 +2,7 @@
 title: Litebit.eu was hacked
 description: Litebit.eu, a market for cryptocoins, has become the victim of a cyberattack. Attackers gained access to personal information but not the coin wallet servers.
 
+author: Kevin Woblick
 url: 34n62-litebit-eu-was-hacked
 date: 2017-09-13
 

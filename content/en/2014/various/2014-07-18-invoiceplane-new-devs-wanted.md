@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-07-18 10:46:55+00:00
 description: The InvoicePlane project is searching for new developers and people who
   generally want to support an open source project.

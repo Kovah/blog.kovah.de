@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-06-24 15:29:44+00:00
 description: A new game publishing and key selling service for small developers.
 draft: false

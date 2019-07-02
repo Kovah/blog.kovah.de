@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2011-02-25 07:54:08+00:00
 description: Der Youtube Player kann nicht nur als einfacher Videoplayer verwendet
   werden, zum Beispiel auch als Musikplayer. Wie das geht erfahrt ihr hier.

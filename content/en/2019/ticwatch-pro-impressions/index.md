@@ -2,6 +2,7 @@
 title: The Ticwatch Pro – First Impressions
 description: "After finding the Ticwatch Pro, I was surprised by the specs: modern components, good battery, neat design and the price tag of about 250€ was also pretty pleasing. But one feature really got me."
 
+author: Kevin Woblick
 url: the-ticwatch-pro-first-impressions
 date: 2019-02-27
 draft: false

@@ -2,6 +2,7 @@
 title: Me, myself and InvoicePlane – 4 Years into Open Source
 description: It’s been almost 4 years since I started the InvoicePlane project. Here are some things I learned about coding, planning, maintenance and project- and community management.
 
+author: Kevin Woblick
 url: invoiceplane-4-years-into-open-source
 date: 2018-06-02
 draft: false

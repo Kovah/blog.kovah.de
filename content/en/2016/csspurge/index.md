@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-05-21 11:32:44+00:00
 description: Complexity of well known sites like Github, Pinterest and Co.
 draft: false

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2017-03-06 08:05:14+00:00
 draft: false
 title: WD My Cloud is vulnerable to remote attacks

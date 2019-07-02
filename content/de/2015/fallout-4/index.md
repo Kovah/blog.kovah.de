@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2015-11-11 08:30:01+00:00
 description: Pünktlich zum Release habe ich meine Kopie von Fallout 4 erhalten. Hier nun die Erfahrungen der ersten 6 Stunden im Spiel.
 draft: false

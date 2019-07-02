@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-02-10 15:41:55+00:00
 description: Ein neues Design für Facebook, das mit Stylebot übernommen werden kann.
 draft: false

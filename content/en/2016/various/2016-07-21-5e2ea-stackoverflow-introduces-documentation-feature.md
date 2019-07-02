@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-07-21 15:45:23+00:00
 description: Stack Overflow introduces a feature called Documentation where users
   can document several features or hidden tricks for anything related to programming.

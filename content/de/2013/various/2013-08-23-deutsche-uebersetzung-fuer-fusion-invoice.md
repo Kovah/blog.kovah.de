@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-08-23 00:35:38+00:00
 description: Die deutsche Übersetzung für FusionInvoice steht nun auf BitBucket zum Download zur Verfügung.
 draft: false

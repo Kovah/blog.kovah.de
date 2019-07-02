@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2015-01-21 19:11:02+00:00
 description: An article about how hard it is to manage a project like InvoicePlane
   and my search for a good feature request tracker.

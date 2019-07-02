@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2011-03-16 23:06:00+00:00
 description: Japan versinkt unter dem Schatten der Atomkatastrophe im Chaos und viele Menschen möchten sich auf meiner Webseite darüber informieren.
 draft: false

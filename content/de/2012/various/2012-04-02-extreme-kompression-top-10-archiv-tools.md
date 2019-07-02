@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-04-02 10:09:58+00:00
 description: Es gibt hunderte von Tools, um Dateien aller Art zu komprimieren und in Archive zu packen. Ich habe die bekanntesten ausprobiert und miteinander verglichen.
 draft: false

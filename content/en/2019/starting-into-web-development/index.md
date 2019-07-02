@@ -2,6 +2,7 @@
 title: Starting into Web Development - A small Guide
 description: A user stated he would like to start into web development and become a full stack developer. I wrote a small guide for him.
 
+author: Kevin Woblick
 url: 5jnc2y-starting-into-web-development-a-small-guide
 date: 2019-03-05
 draft: false

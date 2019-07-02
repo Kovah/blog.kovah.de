@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-07-11 15:43:08+00:00
 description: And how it surpasses Twitter in terms of daily active users on the US market for Android.
 draft: false

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-09-25 16:13:04+00:00
 description: Wie sicher sind Cloud Lösungen zum Speichern von Bildern, Dokumenten
   oder anderen Dateien eigentlich? Eine Zusammenfassung über die Sicherheit von Dropbox

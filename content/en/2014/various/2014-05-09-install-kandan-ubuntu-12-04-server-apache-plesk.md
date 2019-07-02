@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-05-09 21:16:50+00:00
 description: Follow this tutorial powered by Kovah.me to install the Kandan chat system
   on your Ubuntu 12.04 server running with Apache / Plesk.

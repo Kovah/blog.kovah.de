@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-23 18:15:39+00:00
 description: Whatsapp. In aller Munde und jeder nutzt es zur Kommunikation. Doch was so toll scheint, hat auch seine Schattenseiten.
 draft: false

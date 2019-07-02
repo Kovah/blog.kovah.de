@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-02-17 13:56:58+00:00
 description: Alternativeto, the site known for finding the best alternative applications,
   got a new and fresh design.

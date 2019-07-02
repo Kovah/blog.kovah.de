@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2011-05-25 21:11:02+00:00
 description: Jappy hat das einfache Speichern von Bildern gesperrt. Wie ihr trotzdem an die Bilder heran kommt erfahrt ihr hier.
 draft: false

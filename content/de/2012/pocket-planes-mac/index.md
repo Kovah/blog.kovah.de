@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-12 12:40:18+00:00
 description: Du möchtest in Pocket Planes für Mac OSX gleich mit etwas mehr Geld in der Tasche durchstarten, anstatt sich hochzuarbeiten? Hier findest du eine Anleitung.
 draft: false

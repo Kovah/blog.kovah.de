@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-06-24 08:42:50+00:00
 description: Need to change the application language used by Laravel based on the subdomain? Here's how to achieve it with some simple lines of code.
 draft: false

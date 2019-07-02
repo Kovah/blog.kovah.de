@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-05-07 09:32:35+00:00
 description: More computing power than the Titan X but consume far less Watts.
 draft: false

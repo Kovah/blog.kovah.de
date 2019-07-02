@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-03-27 20:52:10+00:00
 description: Keepsafe soll ein toller Bilder-Safe sein? Von wegen! So leicht lässt
   sich der Safe knacken. Gleich zwei Sicherheitslücken machen es möglich.

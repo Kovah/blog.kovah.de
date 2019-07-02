@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-06-26 18:40:44+00:00
 description: Du möchtest Dropbox den Rücken kehren? Hier erfährst du, wie du zu Copy.com
   wechseln kannst.

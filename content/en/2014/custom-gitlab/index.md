@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2014-07-11 13:28:57+00:00
 description: Do you want to customize some parts of your GitLab server? Here's how to do it with some simple steps.
 draft: false

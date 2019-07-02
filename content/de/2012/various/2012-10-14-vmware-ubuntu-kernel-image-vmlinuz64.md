@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-10-14 19:18:34+00:00
 description: Die Ubuntu Installation unter VMware bricht mit dem Fehler "could not find kernel image" ab? Hier findest du die Lösung zum Problem.
 draft: false

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-02-05 14:50:14+00:00
 description: 'Die Migration von Drupal zu Wordpress: für mein Projekt Game-Zitate habe ich mich schlau gemacht und überlegt, wie man das bewerkstelligen kann.'
 draft: false

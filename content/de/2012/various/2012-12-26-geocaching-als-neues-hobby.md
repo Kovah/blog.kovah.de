@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2012-12-26 10:35:11+00:00
 description: "Geocaching, die neue Trend-Sportart der GPS Schnitzeljagd habe ich nun auch für mich entdeckt und mich in's Vergnügen gestürzt."
 draft: false

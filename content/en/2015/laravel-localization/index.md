@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2015-07-24 05:57:59+00:00
 description: You want to set the locale of your Laravel 5 application based on the visited subdomain? Here is the full tutorial.
 draft: false

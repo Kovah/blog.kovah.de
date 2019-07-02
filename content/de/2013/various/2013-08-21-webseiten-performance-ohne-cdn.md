@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-08-21 12:44:26+00:00
 description: Was ist besser? Mit oder ohne CDN? Ich habe es mit meinen Webseiten getestet
   und die Ergebnisse zusammengefasst

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-06-11 15:10:21+00:00
 description: Keine Lust mehr auf Dropbox? Dann solltest du dir auf jeden Fall Copy.com ansehen. Ein Dienst, der etwas mehr bietet als Dropbox.
 draft: false

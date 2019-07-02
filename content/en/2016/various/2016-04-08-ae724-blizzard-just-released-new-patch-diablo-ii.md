@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-04-08 10:57:40+00:00
 description: Blizzard just released a new patch for Diablo II. What year is it? 1995?
 draft: false

@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2013-02-12 13:50:35+00:00
 description: Hier findest du Informationen darüber, wie man Berechtigungen bei Drupal neu aufbauen kann, wenn Probleme mit Content Access auftauchen.
 draft: false

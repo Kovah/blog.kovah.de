@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2010-12-01 12:30:58+00:00
 description: Wer kennt die Situation nicht? Man meckert über die Politik. Mit "Politik Simulator 2 - Rulers of Nations" kann man nun selber Hand anlegen.
 draft: false

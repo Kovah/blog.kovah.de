@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2010-12-04 14:11:22+00:00
 description: Call of Duty (CoD) Reiht sich in die Liste der Legenden ein und wird nach wie vor gespielt. Doch was war CoD früher, wie hat es sich entwickelt und was können wir vielleicht in Zukunft erwarten?
 draft: false

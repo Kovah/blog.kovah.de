@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-01-06 13:01:21+00:00
 description: 'Personen, die Diskussionen über die Privatsphäre mit "ich hab nichts zu verbergen" beenden, tragen aktiv zu einer Zerstörung der Demokratie bei und schaden gleichzeitig denen, die ihre Privatsphäre verteidigen wollen'
 draft: false

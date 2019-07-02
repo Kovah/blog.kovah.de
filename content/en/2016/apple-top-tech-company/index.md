@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-01-13 10:52:06+00:00
 description: Why Apple may lose its status as a top tech company because of missing
   innovations in the last years while other companies are pushing forward

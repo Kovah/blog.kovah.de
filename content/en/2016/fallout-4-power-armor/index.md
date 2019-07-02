@@ -1,5 +1,5 @@
 ---
-author: Kovah
+author: Kevin Woblick
 date: 2016-06-24 15:27:06+00:00
 description: A wallpaper pack based on the Fallout 4 Power Armor helmets artwork made
   by me.
