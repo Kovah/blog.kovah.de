@@ -8,6 +8,10 @@ pygmentsCodeFences = false
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
+[params]
+  defaultAuthor = "Kevin Woblick"
+  publisher = "Kevin Woblick"
+
 [imaging]
 quality = 85
 

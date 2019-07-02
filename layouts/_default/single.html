@@ -3,6 +3,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
   <meta itemprop="description" content="{{ .Description }}"/>
+  <meta itemprop="author" content='{{ .Param "author" }}'/>
+  <meta itemprop="publisher" content="{{ $.Site.Params.Publisher }}"/>
 
   <header class="post__header">
     <div class="container">
@@ -11,7 +13,7 @@
 
       <div class="post__inner">
 
-        <h1 class="post__title" itemprop="name">{{ .Title }}</h1>
+        <h1 class="post__title" itemprop="headline">{{ .Title }}</h1>
 
         <div class="post__meta">
           {{ range .Params.Categories }}

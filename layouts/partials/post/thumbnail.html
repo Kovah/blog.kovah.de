@@ -12,7 +12,7 @@
       <!--<source srcset='{{ $image.RelPermalink }}.webp' media="(max-width: 1000px)" type="image/webp"/>-->
       {{ end }}
       <source srcset='{{ $image.RelPermalink }}' media="(max-width: 1000px)"/>
-      <img src='{{ $original.RelPermalink }}' alt="{{ $.Params.Title }}"/>
+      <img src='{{ $original.RelPermalink }}' alt="{{ $.Params.Title }}" itemprop="image" />
     </picture>
   </div>
 {{ end }}
