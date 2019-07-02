@@ -22,3 +22,14 @@ other = "Dieser Artikel ist auch in Deutsch verfügbar:"
 other = "404 - Page not found"
 [404_copy]
 other = "The site you were looking for could not be found."
+
+[page_first]
+other = "First page"
+[page_previous]
+other = "Previous page"
+[page_no]
+other = "Page"
+[page_next]
+other = "Next page"
+[page_last]
+other = "Last page"
