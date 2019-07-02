@@ -49,6 +49,10 @@
 .footer {
   color: rgba($body-color-light, .5);
 
+  p {
+    margin-bottom: $spacer-sm;
+  }
+
   a {
     color: rgba($body-color-light, .75);
 

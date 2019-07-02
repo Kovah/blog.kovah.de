@@ -1,7 +1,7 @@
 .post {
 
   &__header {
-    margin-bottom: $spacer;
+    margin-bottom: $spacer-md;
 
     @media screen and (min-width: $screen-bp) {
       margin-bottom: $spacer-lg;
