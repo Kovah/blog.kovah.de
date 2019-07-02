@@ -3,10 +3,12 @@
 
     <div class="navigation__top">
 
-      <a href='{{ "/" | relLangURL }}' class="navigation__logo">
-        <span class="navigation__logo-text" itemprop="name">{{ i18n "site_title" }}</span>
-        {{ partial "logo.html" . }}
-      </a>
+      <h1 class="navigation__logo">
+        <a href='{{ "/" | relLangURL }}'>
+          <span class="navigation__logo-text" itemprop="name">{{ i18n "site_title" }}</span>
+          {{ partial "logo.html" . }}
+        </a>
+      </h1>
 
       <div class="navigation__spacer"></div>
 

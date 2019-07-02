@@ -55,6 +55,12 @@
     height: 50px;
     width: 125px;
 
+    a {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+    }
+
     svg {
       max-height: 100%;
       max-width: 100%;
