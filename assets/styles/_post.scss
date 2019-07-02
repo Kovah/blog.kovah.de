@@ -74,6 +74,10 @@
       }
     }
 
+    figure {
+      margin: 0;
+    }
+
     blockquote {
       margin: 0;
       padding: $spacer;
@@ -137,12 +141,6 @@
       }
     }
 
-    code:not([class^=" language-"]) {
-      padding: 2px 3px;
-      background-color: $gray-200;
-      font-size: 85%;
-    }
-
     pre {
       padding: $spacer-sm;
       font-size: $font-size-sm;
@@ -153,9 +151,11 @@
       }
     }
 
-    code.language-php {
-      span.cp {
-        display: none;
+    p {
+      code {
+        padding: 2px 3px;
+        background-color: $gray-200;
+        font-size: 85%;
       }
     }
 
