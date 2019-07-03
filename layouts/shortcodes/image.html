@@ -4,11 +4,11 @@
 <figure{{ with .Get "modifier"}} class="figure--{{.}}"{{ end }}>
   <picture>
     {{ if ne .Site.IsServer true }}
-    <!--<source srcset='{{ $small_image.RelPermalink }}.webp' media="(max-width: 500px)" type="image/webp"/>-->
+    <source srcset='{{ $small_image.RelPermalink }}.webp' media="(max-width: 500px)" type="image/webp"/>
     {{ end }}
     <source srcset='{{ $small_image.RelPermalink }}' media="(max-width: 500px)"/>
     {{ if ne .Site.IsServer true }}
-    <!--<source srcset='{{ $image.RelPermalink }}.webp' media="(max-width: 1000px)" type="image/webp"/>-->
+    <source srcset='{{ $image.RelPermalink }}.webp' media="(max-width: 1000px)" type="image/webp"/>
     {{ end }}
     <source srcset='{{ $image.RelPermalink }}' media="(max-width: 1000px)"/>
     <img src='{{ $original.RelPermalink }}'
