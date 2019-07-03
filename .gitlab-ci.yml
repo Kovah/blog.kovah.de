@@ -59,7 +59,7 @@ deploy:
     - export DEPLOY_TS=$(date +%s)
     - export DEPLOY_DEST=$DEPLOY_PATH/releases/$DEPLOY_TS
     - tar -czf /tmp/build.tar.gz public
-    - ssh $DEPLOY_HOST "mkdir -p $DEPLOY_PATH/releases"
+    - ssh $DEPLOY_HOST "mkdir -p $DEPLOY_DEST"
     - scp /tmp/build.tar.gz $DEPLOY_HOST:$DEPLOY_DEST
     - ssh $DEPLOY_HOST "cd $DEPLOY_DEST && tar -xzf build.tar.gz"
     - ssh $DEPLOY_HOST "rm -f $DEPLOY_PATH/current && ln -s $DEPLOY_DEST $DEPLOY_PATH/current"
