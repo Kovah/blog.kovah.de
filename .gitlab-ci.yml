@@ -47,7 +47,7 @@ deploy:
     - echo "$DEPLOY_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     # Install webp converter
-    - apt update && apt install -y wget libjpeg-dev libpng-dev libtiff-dev libgif-dev libgl1
+    - apt update && apt install -y wget libjpeg-dev libpng-dev libtiff-dev libgif-dev libgl1 libXi
     - wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.0.2-linux-x86-64.tar.gz
     - tar -xzf libwebp-1.0.2-linux-x86-64.tar.gz
   script:
