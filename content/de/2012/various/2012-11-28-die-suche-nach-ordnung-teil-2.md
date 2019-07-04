@@ -18,7 +18,7 @@ tags:
 - Things
 ---
 
-Ich habe bereits im vorherigen Post über [Ordnung und Management]({{< ref path="/2012/various/2012-10-14-management-probleme.md" lang="de" >}}) davon berichtet, wie einem Zeit abhanden kommt und das ich derzeit auf der Suche nach einer optimalen Lösung zur Projekt- und Aufgabenverwaltung sowie zur Zeitplanung bin. Ich möchte daher heute die ersten Ergebnisse preisgeben und darstellen, wie die vergangenen Wochen verlaufen sind.
+Ich habe bereits im vorherigen Post über [Ordnung und Management]({{< relref path="/2012/various/2012-10-14-management-probleme.md" lang="de" >}}) davon berichtet, wie einem Zeit abhanden kommt und das ich derzeit auf der Suche nach einer optimalen Lösung zur Projekt- und Aufgabenverwaltung sowie zur Zeitplanung bin. Ich möchte daher heute die ersten Ergebnisse preisgeben und darstellen, wie die vergangenen Wochen verlaufen sind.
 
 
 ## Things: Ein Tool, aber nicht alle Möglichkeiten

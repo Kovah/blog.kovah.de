@@ -16,7 +16,7 @@ tags:
 ---
 
 {{< alert type="warning" >}}
-Looking for a solution for your Laravel 5 application? Take a look at [this post]({{< ref "/2015/laravel-localization" >}}).
+Looking for a solution for your Laravel 5 application? Take a look at [this post]({{< relref "/2015/laravel-localization" >}}).
 {{</ alert >}}
 
 For a new project I needed a solution to provide subdomain-based localization. Because I wanted to use Laravel for the project I started searching and found a lot of articles and questions about localization and subdomains. But the final solution is pretty simple and - maybe the most important thing - doesn't affect your routing. But let's start.

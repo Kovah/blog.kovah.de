@@ -23,7 +23,7 @@ tags:
 ---
 
 {{< alert >}}
-Dieser Artikel ist Teil der Serie [YourPrivacy]({{< ref path="/your-privacy/index" lang="de" >}}).  
+Dieser Artikel ist Teil der Serie [YourPrivacy]({{< relref path="/your-privacy/index" lang="de" >}}).  
 Zuletzt aktualisiert: 05.06.2017
 {{</ alert >}}
 
@@ -40,8 +40,8 @@ Das also bitte nicht vergessen. Zusätzlich gibt es jedoch noch weitere Punkte, 
 
 * Teil 1: https://
 * Teil 1: AGBs und Datenschutzerklärungen
-* [Teil 2]({{< ref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}}): Verhalten beim Registrierungen
-* [Teil 2]({{< ref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}}): Onlineshops und sonstige Einkäufe
+* [Teil 2]({{< relref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}}): Verhalten beim Registrierungen
+* [Teil 2]({{< relref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}}): Onlineshops und sonstige Einkäufe
 
 
 ### https://
@@ -105,4 +105,4 @@ Beim Überfliegen der Erklärungen sollte man auf die folgenden Punkte achten:
     Das Zurücktreten vom "Vertrag" kann in Form des Widerrufs beim Kauf oder auch dem Löschen des Profils z.B. bei sozialen Netzwerken geschehen. In beiden Fällen endet die Beziehung zwischen mir und dem Verkäufer oder Webseiten-Betreiber.  
     Beispiel: Nach löschen des Profils werden alle Daten des Nutzers innerhalb einer Frist von zwei Wochen gelöscht.
 
-Im [zweiten Teil dieses Artikels]({{< ref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}}) geht es anschließend um die Registrierung auf Webseiten sowie Online Shopping.
+Im [zweiten Teil dieses Artikels]({{< relref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}}) geht es anschließend um die Registrierung auf Webseiten sowie Online Shopping.

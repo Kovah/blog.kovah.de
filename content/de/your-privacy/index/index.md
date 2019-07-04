@@ -31,9 +31,9 @@ Wahrscheinlich gehörst du bereits zur Zielgruppe dieser Serie, wenn du bis zu d
 
 Diese Artikelserie besteht aus einigen Teilen, die jeweils ein eigenes, inhaltlich abgegrenztes Thema aufgreifen.
 
-* [Privatsphäre und Datenschutz - Eine kurze Einführung]({{< ref path="/your-privacy/intro" lang="de" >}})
-* [Datenschutz: Die Grundlagen]({{< ref path="/your-privacy/grundlagen" lang="de" >}})
-* [Datenschutz im Internet]({{< ref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}})
+* [Privatsphäre und Datenschutz - Eine kurze Einführung]({{< relref path="/your-privacy/intro" lang="de" >}})
+* [Datenschutz: Die Grundlagen]({{< relref path="/your-privacy/grundlagen" lang="de" >}})
+* [Datenschutz im Internet]({{< relref path="/your-privacy/datenschutz-im-internet-2" lang="de" >}})
     * Das Google-Syndrom
     * Browserwahl und richtige Konfiguration
     * Datenschutz in sozialen Netzwerken

@@ -17,7 +17,7 @@ tags:
 ---
 
 {{< alert >}}
-Dieser Artikel ist Teil der Serie [YourPrivacy]({{< ref path="/your-privacy/index" lang="de" >}}).  
+Dieser Artikel ist Teil der Serie [YourPrivacy]({{< relref path="/your-privacy/index" lang="de" >}}).  
 Zuletzt aktualisiert: 08.12.2016
 {{</ alert >}}
 

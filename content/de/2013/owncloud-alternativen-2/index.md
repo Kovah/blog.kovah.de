@@ -30,7 +30,7 @@ Letztes Update: 21.07.2016, Nextcloud und Synchthing hinzugefügt
 {{</ alert >}}
 
 
-Vor einiger Zeit habe ich in einem Beitrag meine [Probleme mit ownCloud]({{< ref path="/2013/various/2013-04-24-owncloud-alternativen-fur-private-cloud.md" lang="de" >}}) geschildert und Alternativen genannt. In diesem Beitrag möchte ich jetzt nochmals genauer auf die Alternativen für ownCloud eingehen und meinen vorherigen Beitrag ergänzen. Die Probleme mit ownCloud und einige interessante Beiträge sind im alten Beitrag zu finden.
+Vor einiger Zeit habe ich in einem Beitrag meine [Probleme mit ownCloud]({{< relref path="/2013/various/2013-04-24-owncloud-alternativen-fur-private-cloud.md" lang="de" >}}) geschildert und Alternativen genannt. In diesem Beitrag möchte ich jetzt nochmals genauer auf die Alternativen für ownCloud eingehen und meinen vorherigen Beitrag ergänzen. Die Probleme mit ownCloud und einige interessante Beiträge sind im alten Beitrag zu finden.
 
 Wer nicht viel lesen möchte findet am Ende des Beitrags eine Übersicht.
 

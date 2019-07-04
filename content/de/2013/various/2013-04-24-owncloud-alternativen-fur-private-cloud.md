@@ -23,7 +23,7 @@ tags:
 
 {{< alert type="info" >}}
 Es ist ein neuer Beitrag zu den Alternativen für OwnCloud verfügbar:
-[Private Cloud: OwnCloud Alternativen Teil 2]({{< ref path="/2013/owncloud-alternativen-2/index.md" lang="de" >}})
+[Private Cloud: OwnCloud Alternativen Teil 2]({{< relref path="/2013/owncloud-alternativen-2/index.md" lang="de" >}})
 {{</ alert >}}
 
 
@@ -62,4 +62,4 @@ Nach diesem ganzen Ärger mit ownCloud habe ich die ach so tolle Lösung vom Ser
 ## Andere Alternativen für ownCloud
 
 Die Suche ging in anderer Richtung weiter. Da ich meine Dateien lediglich auf meinem MacBook und meinem Windows Rechner synchron halten und zusätzlich ein Backup auf dem Webserver haben möchte, habe ich mich nach entsprechenden Clients umgesehen. [GoodSync](http://www.goodsync.com/de/) funktioniert sehr gut, läuft flüssig, ist jedoch kompliziert zu bedienen und die Automation zur Nutzung als Cloud Alternative gestaltet sich ziemlich schwierig. Die Anfrage zur Beta-Einladung für [AeroFS](https://www.aerofs.com/) habe ich bereits vor einem halben Jahr gestellt. Gut, dass ich vor keinem Monat dann die Einladung erhalten habe. Hab das ganze dann mal ausprobiert und siehe da: es funktioniert. Leider aber nur flüssig bei kleineren Dateimengen. Die Synchronisation meiner Ordner mit mehreren tausend Dateien und einer Gesamtgröße von knapp 500 MB dauerte knapp über 3 Stunden.
-Kurz vor dem Verzweifeln kam dann die quasi-Rettung: [BitTorrent Sync](http://labs.bittorrent.com/experiments/sync.html). <del>Eine derzeit in der Beta befindliche Sync App auf Basis der BitTorrent  P2P Technologie. also fix angemeldet und glücklicherweise habe ich gestern dann die Einladung bekommen.</del> Die App wurde bereits veröffentlicht und ist frei zugänglich. Wie es jetzt mit BitTorrent Sync gelaufen ist, könnt ihr in [diesem Beitrag]({{< ref path="/2013/various/2013-04-24-bittorrent-sync.md" lang="de" >}}) nachlesen.
+Kurz vor dem Verzweifeln kam dann die quasi-Rettung: [BitTorrent Sync](http://labs.bittorrent.com/experiments/sync.html). <del>Eine derzeit in der Beta befindliche Sync App auf Basis der BitTorrent  P2P Technologie. also fix angemeldet und glücklicherweise habe ich gestern dann die Einladung bekommen.</del> Die App wurde bereits veröffentlicht und ist frei zugänglich. Wie es jetzt mit BitTorrent Sync gelaufen ist, könnt ihr in [diesem Beitrag]({{< relref path="/2013/various/2013-04-24-bittorrent-sync.md" lang="de" >}}) nachlesen.

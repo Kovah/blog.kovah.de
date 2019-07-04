@@ -15,7 +15,7 @@ tags:
 - Wordpress
 ---
 
-This blog, started [back in 2010]({{< ref path="/2010/various/2010-12-01-politik-simulator-2.md" lang="de" >}}), was ever since based on Wordpress. This makes sense as Wordpress was basically the most easy-to-use software for the web that allowed you to start your blog within a couple of minutes. Years passed and now I decided to ditch Wordpress completely. Follow me on my journey from Wordpress to a static site built with [Hugo](https://gohugo.io/).
+This blog, started [back in 2010]({{< relref path="/2010/various/2010-12-01-politik-simulator-2.md" lang="de" >}}), was ever since based on Wordpress. This makes sense as Wordpress was basically the most easy-to-use software for the web that allowed you to start your blog within a couple of minutes. Years passed and now I decided to ditch Wordpress completely. Follow me on my journey from Wordpress to a static site built with [Hugo](https://gohugo.io/).
 
 
 ## Why I ditched Wordpress for Hugo

@@ -25,4 +25,4 @@ Ich habe mich ja schon bei so einigen Anbietern für Cloudstorage angemeldet und
 
 Derzeit befindet sich Copy in der Startphase und lockt Nutzer mit einer tollen Aktion: der Freunde wirbt, der erhält selber 5 GB, genau so wie der Geworbene. So startet der geworbene Freund gleich mit **satten 20 GB**, also dem 10-fachen des Dropbox Speichers! Wer an Copy Interesse hat, kann über den folgenden Link ebenfalls mit 20 GB starten: [Copy.com](https://copy.com?r=jZ0vWa)
 
-Wer komplett umsteigen will, sollte sich den Beitrag über den [Umstieg von Dropbox auf Copy]({{< ref path="/2013/various/2013-06-26-von-dropbox-auf-copy-umsteigen.md" lang="de" >}}) durchlesen.
+Wer komplett umsteigen will, sollte sich den Beitrag über den [Umstieg von Dropbox auf Copy]({{< relref path="/2013/various/2013-06-26-von-dropbox-auf-copy-umsteigen.md" lang="de" >}}) durchlesen.
