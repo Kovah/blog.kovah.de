@@ -20,7 +20,7 @@
 
   <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber 1 }}
-    <a class="pagination__link" href="{{ $paginator.First.URL }}" title='{{ i18n "page_first" }}'>
+    <a class="pagination__link" href="{{ $paginator.First.URL | relLangURL }}" title='{{ i18n "page_first" }}'>
       {{ partial "icons/angle-double-left.html" }}
     </a>
     {{ else }}
@@ -32,7 +32,7 @@
 
   <li class="pagination__item pagination__arrow">
     {{ if $paginator.HasPrev }}
-    <a href="{{ $paginator.Prev.URL }}" class="pagination__link" title='{{ i18n "page_previous" }}'>
+    <a href="{{ $paginator.Prev.URL | relLangURL }}" class="pagination__link" title='{{ i18n "page_previous" }}'>
       {{ partial "icons/angle-left.html" }}
     </a>
     {{ else }}
@@ -46,7 +46,7 @@
 
   {{ range $index, $page := first $paginator_limit $pages }}
   <li class="pagination__item{{ if eq $page $paginator }} pagination__item--current{{ end }}" data-index="{{ $index }}">
-    <a href="{{ $page.URL }}" class="pagination__link" title='{{ i18n "page_no" }} {{ .PageNumber }}'>
+    <a href="{{ $page.URL | relLangURL }}" class="pagination__link" title='{{ i18n "page_no" }} {{ .PageNumber }}'>
       {{ .PageNumber }}
     </a>
   </li>
@@ -56,7 +56,7 @@
 
   <li class="pagination__item pagination__arrow">
     {{ if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL }}" class="pagination__link pagination__link--next" title='{{ i18n "page_next" }}'>
+    <a href="{{ $paginator.Next.URL | relLangURL }}" class="pagination__link pagination__link--next" title='{{ i18n "page_next" }}'>
       {{ partial "icons/angle-right.html" }}
     </a>
     {{ else }}
@@ -68,7 +68,7 @@
 
   <li class="pagination__item pagination__arrow">
     {{ if ne $paginator.PageNumber $paginator.TotalPages }}
-    <a class="pagination__link pagination__link--last" href="{{ $paginator.Last.URL }}" title='{{ i18n "page_last" }}'>
+    <a class="pagination__link pagination__link--last" href="{{ $paginator.Last.URL | relLangURL }}" title='{{ i18n "page_last" }}'>
       {{ partial "icons/angle-double-right.html" }}
     </a>
     {{ else }}

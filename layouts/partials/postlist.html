@@ -4,7 +4,7 @@
     <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}' />
 
     <h2 class="post-excerpt__headline">
-      <a href="{{ .Permalink }}" itemprop="url">
+      <a href="{{ .Permalink  | relURL }}" itemprop="url">
         <span itemprop="name">{{.Title}}</span>
       </a>
     </h2>

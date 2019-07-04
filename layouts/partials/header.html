@@ -13,27 +13,27 @@
       <div class="navigation__spacer"></div>
 
       {{ with .OutputFormats.Get "rss" -}}
-      <a class="navigation__item" href="{{ .Permalink }}" title="Feed">
-        {{ partial "icons/rss.html" }}
-      </a>
+        <a class="navigation__item" href="{{ .Permalink | relURL }}" title="Feed">
+          {{ partial "icons/rss.html" }}
+        </a>
       {{ else }}
         {{ with $.Site.Home.OutputFormats.Get "rss" -}}
-        <a class="navigation__item" href="{{ .Permalink }}" title="Feed">
+        <a class="navigation__item" href="{{ .Permalink | relURL }}" title="Feed">
           {{ partial "icons/rss.html" }}
         </a>
         {{ end -}}
       {{ end -}}
 
       {{ range .Translations }}
-      <a class="navigation__item" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
-        {{ .Language.LanguageName }}
-      </a>
+        <a class="navigation__item" href="{{ .Permalink | relLangURL }}" title="{{ .Language.LanguageName }}">
+          {{ .Language.LanguageName }}
+        </a>
       {{ else }}
         {{ $currentLang := .Language.Lang }}
         {{ range $.Site.Home.AllTranslations }}
           {{ if eq $currentLang .Lang }}
           {{ else }}
-          <a class="navigation__item" href='{{ .Permalink }}' title="{{ .Language.LanguageName }}">
+          <a class="navigation__item" href='{{ .Permalink | relURL }}' title="{{ .Language.LanguageName }}">
             {{ .Language.LanguageName }}
           </a>
           {{ end }}
@@ -45,7 +45,7 @@
     <div class="navigation__categories">
 
       {{ range .Site.Menus.main -}}
-      <a class="navigation__item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      <a class="navigation__item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
       {{- end }}
 
     </div>

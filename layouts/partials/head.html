@@ -36,7 +36,7 @@
 {{ end -}}
 
 {{ range .Translations }}
-<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink | relLangURL }}">
 {{ end }}
 
 <link href="/pgp.key.txt" rel="me pgpkey authn">
