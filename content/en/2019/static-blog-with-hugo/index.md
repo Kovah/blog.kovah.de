@@ -1,5 +1,5 @@
 ---
-title: Rebuilding my blog as a stastic site with Hugo
+title: Rebuilding my blog as a static site with Hugo
 description: I share some insights about rebuilding this blog, originally based on Wordpress, as a static site with Hugo.
 
 author: Kevin Woblick
