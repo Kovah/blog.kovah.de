@@ -25,7 +25,7 @@
       {{ end -}}
 
       {{ range .Translations }}
-        <a class="navigation__item" href="{{ .Permalink | relLangURL }}" title="{{ .Language.LanguageName }}">
+        <a class="navigation__item" href="{{ .Permalink | relURL }}" title="{{ .Language.LanguageName }}">
           {{ .Language.LanguageName }}
         </a>
       {{ else }}
