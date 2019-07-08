@@ -36,7 +36,7 @@ Soon I jumped the static site generation train and just a few weeks later my por
 
 Static site generation is a big thing lately. There are a couple of systems out there you can use, from the good 'ol Jekyll, to Gatsby and special solutions like Next.js for React-based sites, to modern generators like Gatsby and Hugo. If you are interested, [staticgen.com](https://www.staticgen.com/) might have some more resources for you.
 
-So, which system do I use now? I already worked with Jekyll but the system looked a bit too complicated for ma multi-lang blog system. Next.js and Gatsby are not for me because I don't want to use React for a simple blog. That's why I wanted to give Hugo a try, as one of the last larger frameworks remaining. And know what? Even with some smaller hiccups I am very happy with the system.
+So, which system do I use now? I already worked with Jekyll but the system looked a bit too complicated for my multi-lang blog system. Next.js and Gatsby are not for me because I don't want to use React for a simple blog. That's why I wanted to give Hugo a try, as one of the last larger frameworks remaining. And know what? Even with some smaller hiccups I am very happy with the system.
 
 
 ---
@@ -126,7 +126,7 @@ I really wanted to use the built-in syntax highlighting. I really wanted to and 
     $some_variable = $a + $b;
     ```
 
-There is a lot of code on my blog, a lot of PHP and it just don't make any sense to start one-liners like the one above with a `<?php` line. The support told me that Chroma just don't support it and I would have to use Pygments for that. Pygments is the old code parser, slower than Chroma and requires to be installed in the PATH to be used by Hugo. As I don't wanted to give it a try I now use Prism.js from my Wordpress blog which works without any issues.  
+There is a lot of code on my blog, a lot of PHP and it just doesn't make any sense to start one-liners like the one above with a `<?php` line. The support told me that Chroma just don't support it and I would have to use Pygments for that. Pygments is the old code parser, slower than Chroma and requires to be installed in the PATH to be used by Hugo. As I don't wanted to give it a try I now use Prism.js from my Wordpress blog which works without any issues.  
 Maybe I give Pygments a try later on but for now the 10kb of JS won't hurt anyone, in fact it's only loaded if needed, by using a `hascode: true` flag in the post's front matter.
 
 
