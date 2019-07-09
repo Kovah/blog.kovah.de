@@ -1,9 +1,10 @@
 {{ define "main" }}
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <meta class="u-url" content='{{ .Permalink | absURL }}'>
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
-  <meta itemprop="description" content="{{ .Description }}"/>
-  <meta itemprop="author" content='{{ .Param "author" }}'/>
+  <meta class="p-summary" itemprop="description" content="{{ .Description }}"/>
+  <meta class="p-author h-card" itemprop="author" content='{{ .Param "author" }}'/>
   <meta itemprop="publisher" content="{{ $.Site.Params.Publisher }}"/>
 
   <header class="post__header">
@@ -13,7 +14,7 @@
 
       <div class="post__inner">
 
-        <h1 class="post__title" itemprop="headline">{{ .Title }}</h1>
+        <h1 class="post__title p-name" itemprop="headline">{{ .Title }}</h1>
 
         <div class="post__meta">
           {{ range .Params.Categories }}
@@ -38,7 +39,7 @@
 
         <div class="post__meta">
           <span class="post__readtime">{{ i18n "readtime" . }}</span>
-          <time class="post__published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+          <time class="post__published dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
             {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
           </time>
         </div>
@@ -50,7 +51,7 @@
   <section class="post__content-wrapper">
     <div class="container">
 
-      <div class="post__inner post__content" itemprop="articleBody">
+      <div class="post__inner post__content e-content" itemprop="articleBody">
         {{ partial "post/translation-info.html" . }}
         {{ .Content }}
       </div>
