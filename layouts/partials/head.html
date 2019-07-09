@@ -65,6 +65,9 @@
 {{ $appcss := resources.Get "app.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $appcss.Permalink | relURL }}">
 
+{{ $appjs := resources.Get "app.js" | fingerprint }}
+<script defer src="{{ $appjs.Permalink | relURL }}"></script>
+
 {{ with .Params.hascode }}
   {{ if . }}
   {{ $highlightcss := resources.Get "highlighter.css" | minify | fingerprint }}

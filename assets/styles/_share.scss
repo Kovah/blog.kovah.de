@@ -9,7 +9,6 @@
     flex: 0 1 100%;
     margin-bottom: $spacer;
     text-align: center;
-    color: $body-color-muted;
 
     @media screen and (min-width: $screen-bp-sm) {
       flex: 0 1 auto;
@@ -48,11 +47,5 @@
       z-index: 10;
       position: relative;
     }
-  }
-
-  &__webmentions {
-    margin-top: $spacer;
-    text-align: center;
-    color: $body-color-muted;
   }
 }

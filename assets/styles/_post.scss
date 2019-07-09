@@ -58,6 +58,14 @@
     }
   }
 
+  &__content-wrapper {
+    padding-bottom: $spacer-md;
+
+    @media screen and (min-width: $screen-bp) {
+      padding-bottom: $spacer-lg;
+    }
+  }
+
   &__content {
     font-size: $font-size-md;
 
