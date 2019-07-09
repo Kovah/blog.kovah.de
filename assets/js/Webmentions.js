@@ -19,7 +19,6 @@ export default class Webmentions {
     fetch(url)
       .then(res => res.json())
       .then((counts) => {
-        console.log(counts);
         this.counts = counts;
         this.updateCounts();
       })

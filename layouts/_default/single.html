@@ -1,11 +1,16 @@
 {{ define "main" }}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <meta class="u-url" content='{{ .Permalink | absURL }}'>
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
-  <meta class="p-summary" itemprop="description" content="{{ .Description }}"/>
-  <meta class="p-author h-card" itemprop="author" content='{{ .Param "author" }}'/>
+  <meta itemprop="description" content="{{ .Description }}"/>
+  <meta itemprop="author" content='{{ .Param "author" }}'/>
   <meta itemprop="publisher" content="{{ $.Site.Params.Publisher }}"/>
+
+  <span class="meta-info u-url">{{ .Permalink | absURL }}</span>
+  <span class="meta-info p-summary">{{ .Description }}</span>
+  <span class="meta-info p-author h-card">
+    <a class="p-name u-url" href="https://kovah.de/">{{ $.Site.Params.Publisher }}</a>
+  </span>
 
   <header class="post__header">
     <div class="container">
