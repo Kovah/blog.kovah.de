@@ -1,11 +1,25 @@
 const mix = require('laravel-mix');
 require('laravel-mix-polyfill');
 
+// Config
+
 mix.options({
   processCssUrls: false
 });
 
+mix.webpackConfig({
+  watchOptions: {
+    ignored: ['public', 'node_modules']
+  }
+});
+
+mix.browserSync({
+  proxy: 'localhost:1313'
+});
+
 mix.disableNotifications();
+
+// Asset tasks
 
 mix.js('assets/js/app.js', 'assets/dist/app.js')
   .polyfill({
@@ -30,7 +44,3 @@ mix.combine([
 
 mix.sass('assets/styles/app.scss', 'assets/dist');
 mix.sass('assets/styles/highlighter.scss', 'assets/dist');
-
-mix.browserSync({
-  proxy: 'localhost:1313'
-});
