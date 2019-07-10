@@ -55,8 +55,9 @@ dat keys export public
 ### Update an existing DAT site
 
 ```
-# Generate the blog
-hugo -b 'dat://fd1c022637e708328f44427cb04b1ebda3c41ff2044403fcfc188885a499ce8c/'
+# Generate assets and the blog
+npm run production
+hugo --gc -b 'dat://fd1c022637e708328f44427cb04b1ebda3c41ff2044403fcfc188885a499ce8c/'
 
 # Generate webp images if new images were added
 find public/en -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt -quiet {} -o {}.webp
