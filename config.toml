@@ -12,6 +12,7 @@ defaultContentLanguageInSubdir = true
 [params]
   defaultAuthor = "Kevin Woblick"
   publisher = "Kevin Woblick"
+  webmentionUrl = "https://blog.kovah.de"
 
 [imaging]
 quality = 85

@@ -1,4 +1,4 @@
-<div class="webmentions" data-entry-url='{{ .Permalink | absURL }}'>
+<div class="webmentions" data-entry-url='{{ $.Site.Params.webmentionUrl }}{{ .Permalink | relURL }}'>
   <p class="webmentions__hint">{{ i18n "webmentions_hint" }}</p>
   <p class="webmentions__details">
     <span class='webmentions__mention-count'>0</span> {{ i18n "webmentions_mentions" }}
