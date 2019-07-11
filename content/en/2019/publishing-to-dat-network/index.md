@@ -1,6 +1,6 @@
 ---
 title: 'Publishing a static website to the dat:// network'
-description: 'A detailed tutorial on publishing a static website to the dat:// P2P internet network.'
+description: 'A detailed tutorial about publishing a static website to the dat:// network, a new P2P internet network.'
 
 author: Kevin Woblick
 date: 2019-07-11T13:00:43+02:00
@@ -20,7 +20,7 @@ There are numerous new protocols to build a new internet. The intention is clear
 I rebuilt my blog recently and tried the Dat network for experimenting with the new P2P web. This blog is available via [dat://fd1...e8c/](dat://fd1c022637e708328f44427cb04b1ebda3c41ff2044403fcfc188885a499ce8c/).
 
 
-## Why I choose Dat
+## Why I chose Dat
 
 I did not do a lot of research about this topic. Maybe IPFS is better, but I read a some posts on Reddit and Twitter about how easy it is to use Dat and that it's quite performant in comparison with IPFS. Maybe I will try alternatives later, but for now I just use Dat to publish my blog.
 
