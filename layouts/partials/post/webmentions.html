@@ -1,6 +1,14 @@
 <div class="webmentions" data-entry-url='{{ $.Site.Params.webmentionUrl }}{{ .Permalink | relURL }}'>
   <p class="webmentions__hint">{{ i18n "webmentions_hint" }}</p>
-  <p class="webmentions__details">
-    <span class='webmentions__mention-count'>0</span> {{ i18n "webmentions_mentions" }}
-  </p>
+  <div class="webmentions__details">
+    <div class="webmentions__count">
+      <span class='webmentions__mention-count'>0</span> {{ i18n "webmentions_mentions" }}
+    </div>
+    <div class="webmentions__count">
+      <span class='webmentions__repost-count'>0</span> {{ i18n "webmentions_reposts" }}
+    </div>
+    <div class="webmentions__count">
+      <span class='webmentions__like-count'>0</span> {{ i18n "webmentions_likes" }}
+    </div>
+  </div>
 </div>

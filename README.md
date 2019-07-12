@@ -55,8 +55,11 @@ dat keys export public
 ### Update an existing DAT site
 
 ```
-# Generate assets and the blog
+# Generate assets and delete deprecated ones
 npm run production
+find public -type f -maxdepth 1 -name "*.css" -o -name "*.js" | xargs rm
+
+# Generate the blog
 hugo --gc -b 'dat://fd1c022637e708328f44427cb04b1ebda3c41ff2044403fcfc188885a499ce8c/'
 
 # Generate webp images if new images were added

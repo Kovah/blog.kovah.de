@@ -3,6 +3,8 @@ export default class Webmentions {
   constructor ($el) {
     this.$el = $el;
     this.$mentionCount = $el.querySelector('.webmentions__mention-count');
+    this.$repostCount = $el.querySelector('.webmentions__repost-count');
+    this.$likeCount = $el.querySelector('.webmentions__like-count');
 
     this.entryUrl = this.$el.dataset.entryUrl;
     this.counts = null;
@@ -28,6 +30,14 @@ export default class Webmentions {
   updateCounts () {
     if (typeof this.counts.type.mention !== 'undefined') {
       this.$mentionCount.innerHTML = this.counts.type.mention;
+    }
+
+    if (typeof this.counts.type.repost !== 'undefined') {
+      this.$repostCount.innerHTML = this.counts.type.repost;
+    }
+
+    if (typeof this.counts.type.like !== 'undefined') {
+      this.$likeCount.innerHTML = this.counts.type.like;
     }
   }
 }

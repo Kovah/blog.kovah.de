@@ -22,6 +22,8 @@ other = "This article is also available in English:"
 other = "Dieser Blog empfängt auch Webmentions"
 [webmentions_mentions]
 other = "Mentions"
+[webmentions_likes]
+other = "Likes"
 
 [404_title]
 other = "404 - Seite nicht gefunden"

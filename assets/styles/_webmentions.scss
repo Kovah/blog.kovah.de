@@ -6,4 +6,12 @@
     margin-bottom: $spacer;
     font-size: $font-size-lg;
   }
+
+  &__count {
+    display: inline-block;
+
+    & + & {
+      margin-left: $spacer;
+    }
+  }
 }
