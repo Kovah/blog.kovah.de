@@ -24,9 +24,9 @@ To start the process of enabling DNSSEC with Cloudflare, choose the DNS tab of y
 
 ## Set up DNSSEC on the INWX site
 
-After logging into INWX, search for the DNSSEC tab in the sidebar and click "DNSSEC hinzufügen" which will open a popup. In that popup, uncheck the "automatischer Modus" checkbox first which will bring up two additional fields. You will only need the first field.
+After logging into INWX, search for the DNSSEC tab in the sidebar and click "DNSSEC hinzufügen" on the opened page, which will open a popup. In that popup, uncheck the "automatischer Modus" checkbox first, which will bring up two additional fields. You will only need the first field.
 
-Unfortunately, INWX requests the DNSKEY RR record here which is not available as copy & paste in the Cloudflare admin panel. We have to build that on our own. Which helped here is indeed the [official specification](https://tools.ietf.org/html/rfc4034#section-2.3) for DNSSEC. A DNSKEY RR record looks like this, the second line works as a reference here to explain the parts:
+Unfortunately, INWX requests the DNSKEY RR record here, which is not available as copy & paste in the Cloudflare admin panel. We have to build that on our own. The [official specification](https://tools.ietf.org/html/rfc4034#section-2.3) for DNSSEC helped a lot. A DNSKEY RR record looks like this (the second line works as a reference here to explain the parts):
 
 ```
 example.com. 86400 IN DNSKEY 256  3   5   AQPSKmynfzW4kyB[...]aNvv4w==
@@ -47,7 +47,7 @@ As I said, Cloudflare provides a lot of values but not the ready-to-copy DNSKEY 
 1. First, copy the `DS Record` value from Cloudflare.
 2. Replace `IN DS` with `IN DNSKEY`.
 3. Replace the number after that string which is specified as the *Key Tag* (i.e. `2345`), with the value of the *Flags* value (i.e. `257`).
-4. Replace the last two numbers, e.g. `13 2` with `3 13`, as the 3 is a fixed value in the DNSKEY record and the 13 is the official algorithm used by Cloudflare.
+4. Replace the last two numbers, e.g. `13 2`, with `3 13`, as the 3 is a fixed value in the DNSKEY record and the 13 is the official algorithm used by Cloudflare.
 5. Replace the long, last string with the value of the *Public Key* field.
 
 You should now have a Record that looks like this:
