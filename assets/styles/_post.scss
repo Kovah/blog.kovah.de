@@ -159,12 +159,10 @@
       }
     }
 
-    p {
-      code {
-        padding: 2px 3px;
-        background-color: $gray-200;
-        font-size: 85%;
-      }
+    :not(pre) > code {
+      padding: 2px 3px;
+      background-color: $gray-200;
+      font-size: 85%;
     }
 
     hr {
