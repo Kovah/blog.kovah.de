@@ -69,7 +69,7 @@ syncs:
     sync_excludes: ['.git', '.idea', 'node_modules']
 ```
 
-First, under the `syncs` option, you specify which volumes to create. Please note that the name of the volume (`your-app-files` here), must be unique on your whole machine. The `src` option defines which files should be copied into the volume by default, you can exclude specific directories or files with the `` option. I excluded the Git, the PhpStorm and the node_modules folders here. Neither git nor the IDE folders have anything to do with the app itself, so they are not needed in the container. Node_modules are excluded because they are also not needed for regular PHP apps and thus can be removed, especially because it may take a lot of time until the 4596895 files and folders are synced...
+First, under the `syncs` option, you specify which volumes to create. Please note that the name of the volume (`your-app-files` here), must be unique on your whole machine. The `src` option defines which files should be copied into the volume by default, you can exclude specific directories or files with the `sync_excludes` option. I excluded the Git, the PhpStorm and the node_modules folders here. Neither git nor the IDE folders have anything to do with the app itself, so they are not needed in the container. Node_modules are excluded because they are also not needed for regular PHP apps and thus can be removed, especially because it may take a lot of time until the 4596895 files and folders are synced...
 
 You can find additional configuration params for volumes in the [official documentation](https://docker-sync.readthedocs.io/en/latest/getting-started/configuration.html).
 
