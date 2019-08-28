@@ -39,7 +39,8 @@ mix.combine([
   'node_modules/prismjs/components/prism-markdown.js',
   'node_modules/prismjs/components/prism-php.js',
   'node_modules/prismjs/components/prism-scss.js',
-  'node_modules/prismjs/components/prism-sql.js'
+  'node_modules/prismjs/components/prism-sql.js',
+  'node_modules/prismjs/components/prism-bash.js'
 ], 'assets/dist/highlighter.js');
 
 mix.sass('assets/styles/app.scss', 'assets/dist');
