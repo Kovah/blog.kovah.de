@@ -44,6 +44,9 @@ alias dcr="docker-compose restart"
 # May be extended with the service name to get service-specific logs, like
 # 'dcl php' to get the logs of the php container
 alias dcl="docker-compose logs"
+
+# Quickly run the docker exec command like this: 'dex container-name bash'
+alias dex="docker exec -it"
 ```
 
 **System-wide management**
