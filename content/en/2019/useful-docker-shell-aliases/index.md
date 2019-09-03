@@ -1,6 +1,6 @@
 ---
 title: Useful Docker shell aliases
-description: A collection of useful shell aliases for Docker and Docker Compose
+description: A collection of useful shell aliases for Docker and Docker Compose to speed up the development workflows.
 
 author: Kevin Woblick
 date: 2019-08-28T11:35:04+02:00
@@ -15,7 +15,7 @@ tags:
 - Bash
 ---
 
-I work with Docker all the time. Ditching my MAMP stack for Docker was one of the most convenient nad useful decisions
+I work with Docker all the time. Ditching my MAMP stack for Docker was one of the most convenient and useful decisions
 I've ever made. If you are interested in Docker you should take a look at my current 
 [Docker Stack]({{< relref path="/2019/drop-in-docker-stack-for-php" lang="en" >}}) which describes how I use Docker for
 PHP projects.
