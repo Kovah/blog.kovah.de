@@ -33,10 +33,20 @@ me generating 131 screenshots for almost all built-in themes.
 
 {{< image img="robbyrussell-theme.jpg" alt="Screenshot of the robbyrussel theme" >}}
 
+
 ### Assets
 
 👉 Download the script [here](ZSH_Themes.app.zip)  
 👉 Repository with sample files: [Kovah/oh-my-zsh-theme-test](https://github.com/Kovah/oh-my-zsh-theme-test)
+
+
+### Terminal test setup
+
+All screenshots were generated with the standard macOS Terminal.app application with all settings set to the default
+ones. The only significant change is the font. I used Fira Code at 13pt size to enable advanced support for some
+themes which use special characters for their look and feel.  
+All terminal windows have a size of 100x31.
+
 
 ### The Automator script
 
