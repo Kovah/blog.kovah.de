@@ -36,7 +36,7 @@ me generating 131 screenshots for almost all built-in themes.
 
 ### Assets
 
-👉 Download the script [here](ZSH_Themes.app.zip)  
+👉 Download the script [here](https://github.com/Kovah/oh-my-zsh-theme-test/raw/master/ZSH_Themes.app.zip)  
 👉 Repository with sample files: [Kovah/oh-my-zsh-theme-test](https://github.com/Kovah/oh-my-zsh-theme-test)
 
 
