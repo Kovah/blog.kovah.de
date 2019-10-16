@@ -37,15 +37,15 @@ services:
       - 9200:9200 # <<<
 ```
 
-At the first glance, this did not look like any issue at all. I knew that I had blocked all incoming ports except HTTP(S) with the firewall, which is UFW in my case. The problem is that with this configuration, Docker binds the 9200 port on the host machine to the 9200 port in the container, and makes it available for all incoming connections. Again, I thought that this wouldn't be a problem because I blocked the ports anyway. Docker, however, does not respect UFW or maybe any other firewall at all, because it directly edits the iptables configuration. This way, connections for the used port are kinda routed besides the firewall, directly to the container. Port 9200 was now open to all incoming connections.
+At the first glance, this did not look like any issue at all. I knew that I had blocked all incoming ports except HTTP(S) with the firewall, which is UFW in my case. The problem is that with this configuration, Docker binds the 9200 port on the host machine to the 9200 port in the container. Again, I thought that this wouldn't be a problem, because I blocked all other ports anyway. Docker, however, does not respect UFW or maybe any other firewall at all, because it directly edits the iptables configuration. This way, connections for the used port are kinda bypassing the firewall and reach the container directly. Port 9200 was now open for _all_ incoming connections.
 
-Unfortunately, this fact is kinda buried in the [Docker documentation](https://docs.docker.com/network/iptables/), so I wasn't aware of this fact. In the meantime, I created pull requests for the documentation of both the Docker CLI and Docker Compose with a small warning for the port configuration section. Just today I also submitted a pull request to the Elasticsearch docs itself with another hint.
+Unfortunately, this fact is kinda buried in the [Docker documentation](https://docs.docker.com/network/iptables/), so I wasn't aware of this behavior. In the meantime, I created pull requests for the documentation of both the Docker CLI and Docker Compose with a small warning for the port configuration section. Just today I also submitted a pull request to the Elasticsearch docs itself with another hint.
 
 ### The better way to configure Docker ports
 
 Of course, I took down Elasticsearch the moment I got the email, only to find out about the port issue much later after searching for the issue on the internet. My initial intention was to run both Elasticsearch and Kibana behind a reverse proxy, nginx in my case. Nginx should have routed all requests from the outside to the app, while enabling basic authentication.
 
-To do this, bind the 9200 port to the host machine. This way it will not be exposed and only the host can interact with that port. It may look like this in the docker-compose file:
+To do exactly this, bind the 9200 port to the host machine directly. It will not be exposed to the public and only the host can interact with that port. It may look like this in the docker-compose file:
 
 ```yaml
 version: '2.2'
@@ -58,4 +58,4 @@ services:
       - 127.0.0.1:9200:9200 # <<<
 ```
 
-At this time, I am pretty sure that huge security issues like this, could be prevented by warnings in the documentation. If there is no warning, or a notice, how should people know about these specific behaviors? I hope the pull requests will be merged.
+I am pretty sure that huge security issues like this could be prevented by simple warnings in the documentation. If there is no warning, or a notice, how should people know about these specific behaviors? I hope the pull requests will be merged so nobody else trips into this hole and maybe makes sensible company data public.
