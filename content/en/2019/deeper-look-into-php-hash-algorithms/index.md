@@ -20,7 +20,7 @@ In my first article about [PHP Hash Algorithms]({{< relref path="2019/php-hash-a
 Like with the first version of the results, the code and the generated .csv file can be found in the [repository](https://github.com/Kovah/php-hashes).
 
 
-## An updated generation of results for all Hash Algorithms
+## Updated results for all Hash Algorithms
 
 As explained in the first post, I wanted to generate more results based on the different string lengths passed into the `hash()` function. Besides the normal generation of hashes for the CLI, I added another file containing the code for generating a complex .csv file. This file contains the time it takes for each algorithm to generate strings from a length of `512` up to a length of `33554432`, which equals `2^25`. The hash is generated for the string lengths in steps of the last length times two, so `512`, `1024`, `2048` and so on.
 
@@ -47,7 +47,7 @@ I took 5 different string lengths out of all generated ones to get a simple over
 
 {{< / table >}}
 
-As you can see, [MD2](https://en.wikipedia.org/wiki/MD2_(hash_function)) is the slowest algorithm except for the shortest string length. It is followed by SHA3-513 but with a larger gap in between. For the longest string length of `2^25`, MD2 tool almost twice as long to generate a hash as SHA3-512.
+As you can see, [MD2](https://en.wikipedia.org/wiki/MD2_(hash_function)) is the slowest algorithm, except for the shortest string length. It is followed by SHA3-513 but with a large gap in between. For the longest string length of `2^25`, MD2 tool almost twice as long to generate a hash as SHA3-512.
 
 
 ### Fastest Algorithms
@@ -76,7 +76,7 @@ Just to make sure, let's have another look at our data and pick the next fastest
 
 ### A word about Security
 
-Hashes are meant to convert an input string into a fixed-length output string. Regarding security, we can divide hash algorithms into two groups: cryptographically and non-cryptographically algorithms. The former is used, for example, to generate password hashes with the `password_hash()` function and can be considered secure. The latter, in contrast, are used to store information in a more dense way or verify that a large given value matches another one by computing and comparing their hashes.
+Hashes are meant to convert an input string into a fixed-length output string. Regarding security, we can divide hash algorithms into two groups: cryptographically and non-cryptographically algorithms. The former are used, for example, to generate password hashes with the `password_hash()` function and can be considered secure. The latter, in contrast, are used to store information in a more dense way or verify that a large given value matches another one by computing and comparing their hashes.
 
 If you are new to the programming world and want to take off by storing your first user passwords in the database, then **never ever** use something like `hash('md5', $user_password)`!!! The only correct way to properly generate a secure and trustworthy hash of a user password, is to use the function mentioned above:
 
@@ -84,7 +84,7 @@ If you are new to the programming world and want to take off by storing your fir
 // PHP < 7.2
 $hash = password_hash(PASSWORD_BCRYPT, $user_password);
 
-// PHP > 7.2
+// or for PHP starting at 7.2
 $hash = password_hash(PASSWORD_ARGON2I, $user_password);
 ```
 
