@@ -82,10 +82,10 @@ If you are new to the programming world and want to take off by storing your fir
 
 ```php
 // PHP < 7.2
-$hash = password_hash(PASSWORD_BCRYPT, $user_password);
+$hash = password_hash($user_password, PASSWORD_BCRYPT);
 
 // or for PHP starting at 7.2
-$hash = password_hash(PASSWORD_ARGON2I, $user_password);
+$hash = password_hash($user_password, PASSWORD_ARGON2I);
 ```
 
 To be able to verify the resulting hash when a user wants to login again, use the corresponding function for this:
