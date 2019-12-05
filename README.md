@@ -59,12 +59,14 @@ dat keys export public
 npm run production
 find public -type f -maxdepth 1 -name "*.css" -o -name "*.js" | xargs rm
 
+# Delete old images
+find public -type f -name "*.jpg" -o -name "*.png" | xargs rm
+
 # Generate the blog
 hugo --gc -b 'dat://fd1c022637e708328f44427cb04b1ebda3c41ff2044403fcfc188885a499ce8c/'
 
 # Generate webp images if new images were added
-find public/en -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt -quiet {} -o {}.webp
-find public/de -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt -quiet {} -o {}.webp
+find public/{en,de} -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt -quiet {} -o {}.webp
 
 # Sync the new version if syncing is not running
 dat sync public
