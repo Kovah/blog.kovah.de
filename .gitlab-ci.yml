@@ -48,7 +48,7 @@ deploy:
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
     # Generate webp versions of all images
-    - find public/{en,de} -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt {} -o {}.webp
+    - find public/en public/de -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt {} -o {}.webp
     # Deploy the page to the server
     - export DEPLOY_TS=$(date +%s)
     - export DEPLOY_DEST=$DEPLOY_PATH/releases/$DEPLOY_TS
