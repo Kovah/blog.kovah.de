@@ -44,7 +44,7 @@ deploy:
     - apk add openssh-client libwebp libwebp-tools
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+    - echo "$DEPLOY_PRIVATE_KEY" | ssh-add -
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
     # Generate webp versions of all images
