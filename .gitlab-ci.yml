@@ -40,7 +40,7 @@ deploy:
     - master
   before_script:
     # Setup SSH
-    - apt update
+    - apk update
     - apk add openssh-client libwebp libwebp-tools
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
