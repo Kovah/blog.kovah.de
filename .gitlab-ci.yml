@@ -50,7 +50,7 @@ deploy:
     # Generate webp versions of all images
     - find public/en public/de -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt {} -o {}.webp
     # Deploy the page to the server
-    - export DEPLOY_TS=$(date +%s)
+    - export DEPLOY_TS=$(date +%Y-%m-%d_%H-%M-%S)
     - export DEPLOY_DEST=$DEPLOY_PATH/releases/$DEPLOY_TS
     - tar -czf /tmp/build.tar.gz public
     - ssh $DEPLOY_HOST "mkdir -p $DEPLOY_DEST"
