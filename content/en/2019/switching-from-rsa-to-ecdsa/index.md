@@ -34,20 +34,20 @@ One could argument, that simply using longer key lengths would solve this proble
 To solve the problem that long keys lead to much higher processing times while only increasing security a bit, some really smart people figured out algorithms based on elliptic curves. Sadly, I cannot explain how those mathematical constructs work in detail. Based on the information available about the topic, those elliptic curves can be used to generate strong secure keys while keeping them shorter than regular RSA keys. For example, a key with a length of 256 bit is equal to a AES key of 128 bit which is considered quite secure. This way shorter keys, while granting a stronger security than RSA, are also easier to process on low-powered machines.
 
 Elliptic curves cryptography ist just the theory, which [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) (Elliptic Curve Digital Signature Algorithm) and [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman) (Elliptic-curve Diffie–Hellman) are based on. Both technologies are used in SSH to connect two peers: ECDSA to generate the keys and ECDH as the key exchange protocol.  
-When generating a key, you can choose between two variants: the NIST-standardized ECDSA and Curve25519. Although the latter is considered the better choice for new keys in the cryptography community, the former is implemented into more systems and applications, leading to a higher compatibility.
+When generating a key, you can choose between two variants: the NIST-standardized ECDSA, and Curve25519. Although the latter is considered the better choice for new keys in the cryptography community, the former is implemented into more systems and applications, leading to a higher compatibility.
 
 Given all those aspects, switching from RSA to ECDSA might be a good idea. And if you know that your RSA-based key is just 1024 bit long, please switch as soon as possible!
 
 
 ## How to switch from RSA to ECDSA
 
-Before switching, a word of caution: the following process may take some time, depending on the number of server you connect to and where your public keys are stored. Also, please do yourself a favor and make a backup of both your `id_rsa` and `id_rsa.pub` files right now. Copy them to a `.backup` directory inside your `.ssh` folder, copy them to a secure USB stick.
+Before switching, a word of caution: the following process may take some time, depending on the number of server you connect to and where your public keys are stored. Also, please do yourself a favor and make a backup of both your `id_rsa` and `id_rsa.pub` files right now. Copy them to a `.backup` directory inside your `.ssh` folder, copy them to a secure USB stick, whatever fits you most. Just keep them secure at all times.
 
-You're done? Fine.  
+Done? Fine.  
 
 ### Generate a new ECDSA key
 
-Generating a new key based on ECDSA is the first step. The following command is an example and you may customize it:
+Generating a new key based on ECDSA is the first step. The following command is an example and you should customize it:
 
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "mail@example.com"
