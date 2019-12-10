@@ -47,19 +47,19 @@
 }
 
 .footer {
-  color: rgba($body-color-light, .5);
+  color: $body-color-light;
 
   p {
     margin-bottom: $spacer-sm;
   }
 
   a {
-    color: rgba($body-color-light, .75);
+    color: $body-color-muted;
 
     &:active,
     &:hover,
     &:focus {
-      color: rgba($body-color-light, 1);
+      color: $body-color;
     }
   }
 }
