@@ -2,7 +2,7 @@ title = "Kovah.de Blog"
 baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
 paginate = 5
-relativeURLs = true
+relativeURLs = false
 
 pygmentsCodeFences = false
 
@@ -13,6 +13,7 @@ defaultContentLanguageInSubdir = true
   defaultAuthor = "Kevin Woblick"
   publisher = "Kevin Woblick"
   webmentionUrl = "https://blog.kovah.de"
+  gumletUrl = "https://kvh-blog.gumlet.com"
 
 [imaging]
 quality = 85

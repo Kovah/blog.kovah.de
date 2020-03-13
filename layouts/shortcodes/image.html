@@ -1,13 +1,18 @@
-{{ $original := .Page.Resources.GetMatch (.Get "img") }}
-{{ $image := $original.Resize "768x" }}
+{{ $img := .Page.Resources.GetMatch (.Get "img") }}
+
+{{ $prefix := "" }}
+{{ if ne .Site.IsServer true }}
+{{ $prefix = $.Site.Params.gumletUrl }}
+{{ end }}
+
 <figure{{ with .Get "modifier"}} class="figure--{{.}}"{{ end }}>
   <picture>
-    {{ if ne .Site.IsServer true }}
-    <source srcset='{{ $image.RelPermalink }}.webp' media="(max-width: 768px)" type="image/webp"/>
-    {{ end }}
-    <source srcset='{{ $image.RelPermalink }}' media="(max-width: 768px)"/>
-    <img src='{{ $original.RelPermalink }}'
-        width="{{ $original.Width }}" height="{{ $original.Height }}"
+    <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=372 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=744 2x'
+        media="(max-width: 500px)"/>
+    <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=768 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=1536 2x'
+        media="(max-width: 960px)"/>
+    <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1536'
+        width="{{ $img.Width }}" height="{{ $img.Height }}"
         {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
   {{ with .Get "caption"}}<figcaption>{{ . }}</figcaption>{{ end }}
