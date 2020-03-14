@@ -41,14 +41,12 @@ deploy:
   before_script:
     # Setup SSH
     - apk update
-    - apk add openssh-client libwebp libwebp-tools
+    - apk add openssh-client
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
     - echo "$DEPLOY_PRIVATE_KEY" | ssh-add -
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    # Generate webp versions of all images
-    - find public/en public/de -name "*.jpg" -o -name "*.png" | xargs -I{} cwebp -mt {} -o {}.webp
     # Deploy the page to the server
     - export DEPLOY_TS=$(date +%Y-%m-%d_%H-%M-%S)
     - export DEPLOY_DEST=$DEPLOY_PATH/releases/$DEPLOY_TS
