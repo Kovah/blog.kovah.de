@@ -6,6 +6,7 @@
 {{ end }}
 
 <figure{{ with .Get "modifier"}} class="figure--{{.}}"{{ end }}>
+  {{ with .Get "link"}} <a href="{{.}}"> {{ end }}
   <picture>
     <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=372 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=744 2x'
         media="(max-width: 500px)"/>
@@ -15,5 +16,6 @@
         width="{{ $img.Width }}" height="{{ $img.Height }}"
         {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
+  {{ with .Get "link"}} </a> {{ end }}
   {{ with .Get "caption"}}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>

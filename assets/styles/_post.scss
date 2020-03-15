@@ -142,8 +142,12 @@
         }
       }
 
+      a, img {
+        display: block;
+      }
+
       figcaption {
-        margin: $spacer-sm 0 0;
+        margin: $spacer-xs 0 0;
         color: $body-color-muted;
         font-size: $font-size-sm;
       }
