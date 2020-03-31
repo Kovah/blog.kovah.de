@@ -17,6 +17,10 @@ tags:
 - Webservice
 ---
 
+{{< alert type="info" >}}
+Letztes Update: 31.03.2020
+{{</ alert >}}
+
 Erst ein mal: was ist Hide.me überhaupt? Es handelt sich um einen Anbieter für Proxies und VPN Verbindungen und ist 2013 als Hide.io gestartet. Damals steckte der Service quasi noch in den Kinderschuhen, trotzdem habe ich mir einen Account zugelegt, der fast drei Jahre lang im Einsatz gewesen ist.
 
 
@@ -33,20 +37,37 @@ Um es einfach zu machen: VPN Zugänge über verschiedene gängige Protokolle, in
 
 ### Die Hide.me Tarife im Überblick
 
-Hide.me bietet neben dem kostenfreien Testaccount zwei Tarife an. Während der Plus Tarif bis zu 75 GB Datenvolumen und eine einzige gleichzeitige VPN Verbindung bietet, kann man mit dem Premium Tarif unbegrenzt mit bis zu 5 verschiedenen Geräten surfen. Die Bandbreite ist bei beiden bezahlten Tarifen nicht begrenzt.
-Folgende Abrechnungsmodelle stehen zur Verfügung.
+Hide.me bietet neben dem kostenfreien "Free" Account mit beschränkten Features und limitiertem Datenvolumen auch einen Premium Tarif an.
 
 {{< table >}}
 
-| Abrechnungszeitraum | Plus | Premium | Abrechnung |
-| ------------------- | ---- | ------- | ---------- |
-| 1 Monat | 7,99 € | 16,99 € | monatlich |
-| 6 Monate | 4,99 € | 10,83 € | monatlich |
-| 12 Monate | 4,16 € | 9,16 € | monatlich |
+| Feature                    | Premium      | Free        |
+| -------------------------- | ------------ | ----------- |
+| Datenvolumen               | Unbegrenzt   | 10 GB       |
+| verfügbare Standorte       | 60 Standorte | 5 Standorte |
+| gleichzeitige Verbindungen | 10 Geräte    | 1 Gerät     |
+| Portweiterleitungen        |  ✅          |  ❌          |
+| fixe IP Adresse            |  ✅          |  ❌          |
+| P2P Support                |  ✅          |  ❌          |
+| keine Logs                 |  ✅          |  ✅          |
+| keine Werbung              |  ✅          |  ✅          |
 
 {{< / table >}}
 
-Gezahlt werden kann mit Kreditkarte, PayPal, in Deutschland auch via SofortÜberweisung sowie Bitcoin. Paysavecard oder ähnliche Zahlkarten werden nicht mehr akzeptiert.
+Folgende Abrechnungsmodelle stehen für den Premium Account zur Verfügung.
+
+{{< table >}}
+
+| Abrechnungszeitraum | € / Monat | € / Jahr | Abrechnung   |
+| ------------------- | --------: | -------: | ------------ |
+| 1 Monat             |   12,99 € | 155,88 € | monatlich    |
+| 6 Monat             |    9,16 € | 109,98 € | halbjährlich |
+| 12 Monate           |    8,33 € |  99,99 € | jährlich     |
+| 24 Monate           |    4,99 € | ~64,99 € | alle 2 Jahre |
+
+{{< / table >}}
+
+Gezahlt werden kann mit Kreditkarte, PayPal, in Deutschland auch via Lastschrift sowie Bitcoin. Paysavecard oder ähnliche Zahlkarten werden nicht mehr akzeptiert.
 
 
 ### Features im Überblick
@@ -59,12 +80,12 @@ Gezahlt werden kann mit Kreditkarte, PayPal, in Deutschland auch via SofortÜber
 
 ### Übersicht der Serverstandorte
 
-{{< image img="hidememap.jpg" alt="Hide.me Standorte" >}}
+{{< image img="hideme_locations.jpg" alt="Hide.me Standorte" >}}
 
 
 ## Anmerkung zum Thema Anonymität
 
-Sicherlich kann niemand - auch nicht Hide.me! - garantieren, dass man komplett anonym im Netz unterwegs ist. Ziel des Anbieter ist es jedoch, den Nutzer _so anonym wie möglich_ durch das Netz zu schicken. Angefangen bei der Erstellung des Accounts bis hin zur Bezahlung und der Speicherung von Nutzerdaten bietet Hide.me meiner Meinung nach wesentlich mehr Sicherheit als viele andere Anbieter.
+Sicherlich kann niemand - auch nicht Hide.me - garantieren, dass man komplett anonym im Netz unterwegs ist. Ziel des Anbieter ist es jedoch, den Nutzer _so anonym wie möglich_ durch das Netz zu schicken. Angefangen bei der Erstellung des Accounts bis hin zur Bezahlung und der Speicherung von Nutzerdaten bietet Hide.me meiner Meinung nach wesentlich mehr Sicherheit als viele andere Anbieter.
 In den Datenschutzrichtlinien wird darauf hingewiesen, dass keine personenbezogenen Daten gespeichert werden. So heißt es wie folgt:
 
 > Alle Nutzungsdaten sind anonym und nicht mit deiner echten, öffentlichen IP-Adresse verbunden.
