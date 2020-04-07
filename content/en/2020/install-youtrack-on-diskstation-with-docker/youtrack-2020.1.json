@@ -1,0 +1,70 @@
+{
+   "cap_add" : [],
+   "cap_drop" : [],
+   "cmd" : "",
+   "cpu_priority" : 50,
+   "devices" : null,
+   "enable_publish_all_ports" : false,
+   "enable_restart_policy" : true,
+   "enabled" : true,
+   "entrypoint_default" : "/bin/bash /run.sh",
+   "env_variables" : [
+      {
+         "key" : "PATH",
+         "value" : "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      },
+      {
+         "key" : "JAVA_HOME",
+         "value" : "/opt/youtrack/internal/java/linux-x64"
+      }
+   ],
+   "exporting" : false,
+   "id" : "cd47921a9e01de2cd784c6593fae9ccb20259d3c3de8972a168f20c956db4c19",
+   "image" : "jetbrains/youtrack:2020.1.659",
+   "is_ddsm" : false,
+   "is_package" : false,
+   "links" : [],
+   "memory_limit" : 0,
+   "name" : "youtrack",
+   "network" : [
+      {
+         "driver" : "bridge",
+         "name" : "bridge"
+      }
+   ],
+   "network_mode" : "bridge",
+   "port_bindings" : [
+      {
+         "container_port" : 8080,
+         "host_port" : 8080,
+         "type" : "tcp"
+      }
+   ],
+   "privileged" : false,
+   "shortcut" : {
+      "enable_shortcut" : false
+   },
+   "use_host_network" : false,
+   "volume_bindings" : [
+      {
+         "host_volume_file" : "/your-diskstation-folder/youtrack/logs",
+         "mount_point" : "/opt/youtrack/logs",
+         "type" : "rw"
+      },
+      {
+         "host_volume_file" : "/your-diskstation-folder/youtrack/data",
+         "mount_point" : "/opt/youtrack/data",
+         "type" : "rw"
+      },
+      {
+         "host_volume_file" : "/your-diskstation-folder/youtrack/conf",
+         "mount_point" : "/opt/youtrack/conf",
+         "type" : "rw"
+      },
+      {
+         "host_volume_file" : "/your-diskstation-folder/youtrack/backups",
+         "mount_point" : "/opt/youtrack/backups",
+         "type" : "rw"
+      }
+   ]
+}
