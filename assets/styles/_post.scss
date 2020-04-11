@@ -98,17 +98,20 @@
     }
 
     h1, h2, h3, h4, h5 {
+      margin-top: $spacer-md;
       margin-bottom: $spacer-sm;
+    }
+
+    h2 + h3,
+    h3 + h4,
+    h4 + h5 {
+      margin-top: 0;
     }
 
     p, pre, .table__wrapper,
     ol, ul, figure, blockquote,
     .reviewbox, .alert {
       margin-bottom: $spacer;
-
-      & + h1, & + h2, & + h3, & + h4, & + h5{
-        margin-top: $spacer-md;
-      }
     }
 
     figure {
