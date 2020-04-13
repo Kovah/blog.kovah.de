@@ -25,9 +25,10 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: $font-family;
-  font-weight: 500;
+  font-family: $font-family-special;
+  font-weight: 700;
   line-height: $line-height-headings;
+  letter-spacing: -.5px;
   margin: 0;
   padding: 0;
 }
