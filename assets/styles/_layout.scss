@@ -1,11 +1,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 $container-spacing-sm;
-
-  @media screen and (min-width: $screen-bp-sm) {
-    padding: 0 $container-spacing;
-  }
+  padding: 0 $container-spacing;
 
   @media screen and (min-width: $screen-bp) {
     max-width: $screen-bp;
