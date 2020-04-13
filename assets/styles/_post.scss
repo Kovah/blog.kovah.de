@@ -98,8 +98,25 @@
     }
 
     h1, h2, h3, h4, h5 {
+      position: relative;
       margin-top: $spacer-md;
       margin-bottom: $spacer-sm;
+
+      &:before {
+        position: absolute;
+        left: -1.7rem;
+        top: .2rem;
+        width: 1rem;
+        letter-spacing: -3px;
+        font-size: 80%;
+        font-style: italic;
+        color: $c-primary;
+        text-align: right;
+
+        @media screen and (min-width: $screen-bp-sm) {
+          content: '>>';
+        }
+      }
     }
 
     h2 + h3,
