@@ -52,8 +52,13 @@
   &__logo {
     display: block;
     flex: 0 1 auto;
-    height: 50px;
-    width: 125px;
+    height: 35px;
+    width: 155px;
+
+    @media screen and (min-width: $screen-bp-sm) {
+      height: 40px;
+      width: 177px;
+    }
 
     a {
       display: inline-block;
