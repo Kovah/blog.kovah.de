@@ -38,10 +38,6 @@
     font-size: $font-size-sm;
     color: $body-color-muted;
     margin-top: $spacer-sm;
-
-    @media screen and (min-width: $screen-bp) {
-      margin-top: $spacer;
-    }
   }
 
   &__category {
