@@ -1,14 +1,22 @@
-<footer class="footer block block--small text--center">
+<footer class="footer block text--center">
   <div class="container">
 
-      <p>
-        <small>
-          <em>Taikonauten / Laravel / PHP / HTML / CSS / JS / Docker</em>
-        </small>
-      </p>
+    <div class="footer__icon">
+      <a href="https://kovah.de/">{{ partial "icons/kvh-insignia.html" }}</a>
+    </div>
 
-      &copy; {{ now.Format "2006" }} Kovah.de | <a href="https://kovah.de/info/impress">Impress</a> | <a
-        href="https://kovah.de/info/privacy">Privacy</a>
+    <div class="footer__links">
+      <div class="footer__link">
+        &copy; {{ now.Format "2006" }} Kovah.de
+      </div>
+      <div class="footer__link">
+        <a href="https://kovah.de/info/impress">Impress</a>
+      </div>
+      <div class="footer__link">
+        <a href="https://kovah.de/info/privacy">Privacy</a>
+      </div>
+    </div>
+  </div>
 
   </div>
 </footer>

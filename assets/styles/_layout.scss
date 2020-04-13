@@ -43,19 +43,29 @@
 }
 
 .footer {
-  color: $body-color-light;
+  opacity: .5;
 
-  p {
-    margin-bottom: $spacer-sm;
+  &__icon {
+
+    svg {
+      max-height: 2rem;
+      width: auto;
+    }
+
+    path {
+      fill: $body-color-light;
+    }
   }
 
-  a {
-    color: $body-color-muted;
+  &__links {
+    margin-top: $spacer-md;
+  }
 
-    &:active,
-    &:hover,
-    &:focus {
-      color: $body-color;
+  &__link {
+    display: inline-block;
+
+    & + & {
+      margin-left: $spacer;
     }
   }
 }
