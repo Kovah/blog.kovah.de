@@ -14,7 +14,7 @@ other = "Tags"
 [share]
 other = "Diesen Artikel teilen"
 [share_via]
-other = "Artikel über  {{ . }} teilen"
+other = "Artikel über {{ .Count }} teilen"
 [translation_for_post]
 other = "This article is also available in English:"
 
