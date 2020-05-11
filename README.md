@@ -17,6 +17,12 @@ You may find some useful shortcodes and configurations in this repo but besides 
 * Publishable to the [dat:// network](https://dat.foundation/)
 
 
+## License
+
+The content is licensed as [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) if not stated otherwise.
+The source code of this blog is licensed as [MIT](https://opensource.org/licenses/MIT).
+
+
 ---
 
 
