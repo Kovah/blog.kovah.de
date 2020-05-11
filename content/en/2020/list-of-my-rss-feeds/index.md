@@ -1,6 +1,6 @@
 ---
-title: A List of all my favourite RSS Feeds
-description: Inspired by a Tweet of David McKay, I decided to put together a list of my favourite blogs and magazines, consumable via RSS feeds.
+title: A List of all my favorite RSS Feeds
+description: Inspired by a Tweet of David McKay, I decided to put together a list of my favorite blogs and magazines, consumable via RSS feeds.
 
 author: Kevin Woblick
 date: 2020-05-10T23:13:25+02:00
@@ -14,7 +14,7 @@ tags:
 - recommendations
 ---
 
-RSS once was _the_ way to gather all the news you are interested in, in one place. Like a Facebook feed, but entirely manages by yourself. Over the past decade I maintained a pretty solid list of feeds for various topics. Inspired by the [Tweet of David McKay](https://twitter.com/i/status/1259588008283713536) I decided to publish this list of all the interesting feeds I currently follow and regularly read.
+RSS once was _the_ way to gather all the news you are interested in, in one place. Like a Facebook feed, but entirely managed by yourself. Over the past decade I maintained a pretty solid list of feeds for various topics. Inspired by the [Tweet of David McKay](https://twitter.com/i/status/1259588008283713536) I decided to publish this list of all the interesting feeds I currently follow and regularly read.
 
 ## Web Development and the Web
 
