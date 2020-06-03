@@ -27,13 +27,11 @@ $body-color-muted: $gray-600;
 $body-color-light: $gray-400;
 $body-color-white: $white;
 
-$link-color: $c-primary;
-$link-decoration: none;
+$link-color: $body-color;
 $link-hover-color: $c-primary-dark;
-$link-hover-decoration: none;
 
-$link-blue-color: $gray-200;
-$link-blue-hover-color: $white;
+$link-light-color: $gray-200;
+$link-light-hover-color: $white;
 
 // Spacing
 $spacer-xs: .5rem;
