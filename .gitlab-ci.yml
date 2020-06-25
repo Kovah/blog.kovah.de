@@ -12,9 +12,6 @@ build-assets:
   artifacts:
     paths:
       - assets/dist
-  before_script:
-    - echo "@fortawesome:registry=https://npm.fontawesome.com/" >> .npmrc
-    - echo "//npm.fontawesome.com/:_authToken=$NPM_FA_TOKEN" >> .npmrc
   script:
     - npm install
     - npm run production
