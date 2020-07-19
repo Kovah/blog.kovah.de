@@ -1,7 +1,7 @@
 {{ $img := .Page.Resources.GetMatch (.Get "img") }}
 
 {{ $prefix := "" }}
-{{ if ne .Site.IsServer false }}
+{{ if ne .Site.IsServer true }}
 {{ $prefix = $.Site.Params.imgCDNUrl }}
 {{ end }}
 
