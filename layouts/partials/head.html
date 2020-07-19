@@ -1,3 +1,7 @@
+<link rel="dns-prefetch" href="//{{ .Site.Params.imgCDNDomain }}">
+<link rel="dns-prefetch" href="//stats.kovah.de">
+<link rel="dns-prefetch" href="//webmention.io">
+
 {{ if .IsPage }}
 <title>{{ .Page.Title }} - {{ i18n "site_title" }}</title>
 {{ else }}
