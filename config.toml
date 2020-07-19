@@ -13,7 +13,7 @@ defaultContentLanguageInSubdir = true
   defaultAuthor = "Kevin Woblick"
   publisher = "Kevin Woblick"
   webmentionUrl = "https://blog.kovah.de"
-  imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/kovah.de"
+  imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/blog.kovah.de"
 
 [imaging]
 quality = 85
