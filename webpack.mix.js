@@ -1,32 +1,22 @@
 const mix = require('laravel-mix');
-require('laravel-mix-polyfill');
 
 // Config
-
-mix.options({
-  processCssUrls: false
-});
-
-mix.webpackConfig({
-  watchOptions: {
-    ignored: ['public', 'node_modules']
-  }
-});
-
-mix.browserSync({
-  proxy: 'localhost:1313'
-});
-
-mix.disableNotifications();
+mix
+  .options({
+    processCssUrls: false
+  })
+  .webpackConfig({
+    watchOptions: {
+      ignored: ['public', 'node_modules']
+    }
+  })
+  .browserSync({
+    proxy: 'localhost:1313'
+  })
+  .disableNotifications();
 
 // Asset tasks
-
-mix.js('assets/js/app.js', 'assets/dist/app.js')
-  .polyfill({
-    enabled: true,
-    useBuiltIns: 'usage',
-    targets: ['> 2%']
-  });
+mix.js('assets/js/app.js', 'assets/dist/app.js');
 
 mix.combine([
   'node_modules/prismjs/components/prism-core.js',

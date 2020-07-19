@@ -14,7 +14,7 @@ You may find some useful shortcodes and configurations in this repo but besides 
 ### Special Features
 
 * Accepts Webmentions via [Webmention.io](https://webmention.io/)
-* Publishable to the [dat:// network](https://dat.foundation/)
+* ~Publishable to the [dat:// network](https://dat.foundation/)~
 
 
 ## License
@@ -25,8 +25,31 @@ The source code of this blog is licensed as [MIT](https://opensource.org/license
 
 ---
 
+## Installation and local development
 
-## Publish to DAT
+Install all dependencies:
+```
+brew install hugo
+npm install
+```
+
+To build the frontend:
+```
+npm run production
+# or for continious development
+npm run watch
+```
+
+To start the Hugo server and view the site in your browser:
+```
+npm run serve
+```
+
+
+---
+
+
+## Publish to DAT (Deprecated)
 
 The following information are useful when publishing to the dat:// network but are written exclusively for my site.
 
