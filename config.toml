@@ -1,7 +1,7 @@
 title = "Kovah.de Blog"
 baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
-paginate = 5
+paginate = 10
 relativeURLs = false
 
 pygmentsCodeFences = false
