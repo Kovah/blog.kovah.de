@@ -13,7 +13,7 @@ defaultContentLanguageInSubdir = true
   defaultAuthor = "Kevin Woblick"
   publisher = "Kevin Woblick"
   webmentionUrl = "https://blog.kovah.de"
-  gumletUrl = "https://kvh-blog.gumlet.com"
+  imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/kovah.de"
 
 [imaging]
 quality = 85

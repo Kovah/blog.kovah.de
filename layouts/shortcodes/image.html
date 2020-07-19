@@ -1,18 +1,18 @@
 {{ $img := .Page.Resources.GetMatch (.Get "img") }}
 
 {{ $prefix := "" }}
-{{ if ne .Site.IsServer true }}
-{{ $prefix = $.Site.Params.gumletUrl }}
+{{ if ne .Site.IsServer false }}
+{{ $prefix = $.Site.Params.imgCDNUrl }}
 {{ end }}
 
 <figure{{ with .Get "modifier"}} class="figure--{{.}}"{{ end }}>
   {{ with .Get "link"}} <a href="{{.}}"> {{ end }}
   <picture>
-    <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=372 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=744 2x'
+    <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=372&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=744&org_if_sml=1 2x'
         media="(max-width: 500px)"/>
-    <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=768 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=1536 2x'
+    <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=768&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=1536&org_if_sml=1 2x'
         media="(max-width: 960px)"/>
-    <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1536'
+    <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1536&org_if_sml=1'
         width="{{ $img.Width }}" height="{{ $img.Height }}"
         {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
