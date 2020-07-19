@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: $spacer-lg 0 0;
+  margin: $spacer-lg 0 $spacer-md;
   padding: 0;
   list-style: none;
 
@@ -14,7 +14,7 @@
   }
 
   @media screen and (min-width: $screen-bp) {
-    margin: $spacer-xl 0 0;
+    margin: $spacer-xl 0 $spacer-lg;
   }
 
   &__item {

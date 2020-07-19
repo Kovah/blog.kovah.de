@@ -33,14 +33,13 @@
     cursor: pointer;
     font-size: $font-size-lg;
     line-height: 1;
-    transition: font-size 200ms ease, color 200ms ease;
+    transition: transform 200ms ease, color 200ms ease;
 
     &:hover,
     &:focus,
     &:active {
-      font-size: $font-size-xl;
+      transform: scale(1.2);
       color: $c-primary;
-      transition: font-size 300ms ease, color 300ms ease;
     }
 
     [data-fa-i2svg] {

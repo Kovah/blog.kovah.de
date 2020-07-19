@@ -43,7 +43,9 @@
 }
 
 .footer {
-  opacity: .5;
+  .container {
+    opacity: .75;
+  }
 
   &__icon {
 
@@ -53,7 +55,7 @@
     }
 
     path {
-      fill: $body-color-light;
+      fill: $body-color-white;
     }
   }
 

@@ -19,7 +19,7 @@ other = "Artikel über {{ .Count }} teilen"
 other = "This article is also available in English:"
 
 [webmentions_hint]
-other = "Dieser Blog empfängt auch Webmentions"
+other = "Webmentions:"
 [webmentions_mentions]
 other = "Mentions"
 [webmentions_likes]
