@@ -31,7 +31,7 @@ Both services offer hosting of static websites which are generated based on a Gi
 
 {{< image img="netlify-deploy-process.png" alt="Netlify deployment process" modifier="right" >}}
 
-First, both Vercel and Netlify offer a _very_ similar free plan. Both make money with paid plans targeted at teams or high-volume sites, as well with add-ons like analytics or dynamic forms. As I run very small sites, don't have any specific requirements and also don't work in a team, the free plan is totally enough for me. Here are the key takeaways:
+First, both Vercel and Netlify offer a _very_ similar free plan. Both make money with paid plans targeted at teams or high-volume sites, as well with add-ons like analytics or dynamic forms. As I run very small sites, don't have any specific requirements and also don't work in a team, the free plan is totally enough for me. Here are the key insights:
 
 * Netlify offers an expensive separate plan for their "High-Performance Edge network". Free websites are only deployed to 6 different locations around the world.
 * Both services have a 100 GB bandwidth limit for free plans.
@@ -44,7 +44,7 @@ From my experience, there are some differences between Vercel and Netlify in ter
 * The setup process failed several times at Vercel, because you can't limit access to a few single repositories via the Github integration. I had to give Vercel full access to all repositories. Not cool.
 * There are only minor differences in their interfaces. They are simple, it's easy to find your way around. Plus for both.
 * Both offer notifications and integrations with other services like Slack. While Vercel won't let you configure any notifications, Netlify allows configuration per site, but heavily limits the possible integrations. Not really satisfying for both.
-* Vercel allows you to actually browser the generated output that is being deployed. You can browse the file system and inspect contents of the HTML files.
+* Vercel allows you to actually browse the generated output that is being deployed. You can browse the file system and inspect contents of the HTML files.
 * Deployments take a little longer on Vercel: 2 seconds versus 1 second at Netlify.
 
 
