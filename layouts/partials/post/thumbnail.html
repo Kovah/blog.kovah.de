@@ -3,15 +3,15 @@
 
   {{ $prefix := "" }}
   {{ if ne $.Site.IsServer true }}
-  {{ $prefix = $.Site.Params.gumletUrl }}
+  {{ $prefix = $.Site.Params.imgCDNUrl }}
   {{ end }}
 
   <div class="post__thumbnail">
     <picture>
-      <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=452 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=904 2x'
+      <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=452&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=904&org_if_sml=1 2x'
           media="(max-width: 500px)"/>
-      <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=912 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=1824 2x' media="(max-width: 960px)"/>
-      <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1824' alt="{{ $.Params.Title }}" itemprop="image"
+      <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=912&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=1824&org_if_sml=1 2x' media="(max-width: 960px)"/>
+      <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1824&org_if_sml=1' alt="{{ $.Params.Title }}" itemprop="image"
           width="{{ $img.Width }}" height="{{ $img.Height }}"/>
     </picture>
   </div>
