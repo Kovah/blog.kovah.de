@@ -4,7 +4,7 @@ description: I recently moved my static sites (including this blog) to Netlify. 
 
 author: Kevin Woblick
 date: 2020-07-19T16:05:51+02:00
-draft: true
+draft: false
 
 categories:
 - Test
