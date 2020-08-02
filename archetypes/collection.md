@@ -7,6 +7,8 @@ draft: true
 hascode: true
 translationKey: some-translation-string
 
+categories:
+- Collection
 tags:
 - 
 
