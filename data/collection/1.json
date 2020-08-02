@@ -1,0 +1,13 @@
+[
+  {
+    "title": "DevLorem & CorporateLorem",
+    "description": "I have recently rewritten my two tools DevLorem and CorporateLorem in Go. Both offer Lorem Ipsum text generation from the CLI, as a website or as a web api.",
+    "link": "https://github.com/Kovah/DevLorem",
+    "linkTitle": "DevLorem on Github"
+  },
+  {
+    "title": "100% in CSS",
+    "description": "The value '100%' does not mean the same for all CSS properties. Amelia Wattenberger did an excellent writeup of all the different meanings for different properties.",
+    "link": "https://wattenberger.com/blog/css-percents"
+  }
+]

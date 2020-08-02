@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<header class="block block--primary block--small text--center">
+  <div class="container">
+
+    <h2>{{ .Title }}</h2>
+
+  </div>
+</header>
+
+<section class="block block--small">
+  <div class="container">
+
+    {{ partial "postlist.html" . }}
+
+  </div>
+</section>
+
+{{ end }}

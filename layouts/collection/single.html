@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
+  <meta itemprop="description" content='{{ i18n "collection_description" .Params.edition }}'/>
+  <meta itemprop="author" content='{{ .Param "author" }}'/>
+  <meta itemprop="publisher" content="{{ $.Site.Params.Publisher }}"/>
+
+  <span class="meta-info u-url">{{ .Permalink | absURL }}</span>
+  <span class="meta-info p-summary">{{ i18n "collection_description" .Params.edition }}</span>
+  <span class="meta-info p-author h-card">
+    <a class="p-name u-url" href="https://kovah.de/">{{ $.Site.Params.Publisher }}</a>
+  </span>
+
+  <header class="post__header">
+    <div class="container">
+
+      <div class="post__inner">
+
+        <h1 class="post__title p-name" itemprop="headline">{{ i18n "collection_title" .Params.edition }}</h1>
+
+        <div class="post__meta">
+          <time class="post__published dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+            {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+          </time>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="post__content-wrapper">
+    <div class="container">
+
+      <div class="post__inner post__content e-content" itemprop="articleBody">
+        {{ .Content }}
+
+        <dl class="collection-list">
+          {{ range index $.Site.Data.collection (string .Params.edition) }}
+          <dt>{{ .title }}</dt>
+          <dd>
+            <p>{{ .description }}</p>
+            <a href="{{ .link }}">
+              {{- with .linkTitle -}}
+              {{ . }}
+              {{- else -}}
+              {{ i18n "collection_more_link" }}
+              {{- end -}}
+            </a>
+          </dd>
+          {{ end }}
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+</article>
+
+<section class="block block--primary block--small">
+  <div class="container">
+
+    {{ partial "post/sharing.html" . }}
+
+    {{ partial "post/webmentions.html" . }}
+
+  </div>
+</section>
+
+{{ end }}

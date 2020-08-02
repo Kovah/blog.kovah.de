@@ -5,11 +5,17 @@
 
     <h2 class="post-excerpt__headline">
       <a href="{{ .Permalink  | relURL }}" itemprop="url">
+        {{ if eq .Section "collection" }}
+        <span itemprop="name">{{ i18n "collection_title" .Params.edition }}</span>
+        {{ else }}
         <span itemprop="name">{{.Title}}</span>
+        {{ end }}
       </a>
     </h2>
 
-    {{ if .Description }}
+    {{ if eq .Section "collection" }}
+    <p class="post-excerpt__description" itemprop="description">{{ i18n "collection_description" .Params.edition }}</p>
+    {{ else if  .Description}}
     <p class="post-excerpt__description" itemprop="description">{{ .Description }}</p>
     {{ end }}
 
