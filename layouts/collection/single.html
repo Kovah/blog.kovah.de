@@ -35,21 +35,26 @@
       <div class="post__inner post__content e-content" itemprop="articleBody">
         {{ .Content }}
 
-        <dl class="collection-list">
+        <div class="collection-list">
           {{ range index $.Site.Data.collection (string .Params.edition) }}
-          <dt>{{ .title }}</dt>
-          <dd>
-            <p>{{ .description }}</p>
-            <a href="{{ .link }}">
-              {{- with .linkTitle -}}
-              {{ . }}
-              {{- else -}}
-              {{ i18n "collection_more_link" }}
-              {{- end -}}
-            </a>
-          </dd>
+          <div class="collection-list__item">
+            <h2 class="collection-list__item-title">{{ .title }}</h2>
+            <div class="collection-list__item-content">
+              <p>{{ .description }}</p>
+            </div>
+            <div class="collection-list__item-link">
+              <span>>></span>
+              <a href="{{ .link }}">
+                {{- with .linkTitle -}}
+                {{ . }}
+                {{- else -}}
+                {{ i18n "collection_more_link" }}
+                {{- end -}}
+              </a>
+            </div>
+          </div>
           {{ end }}
-        </dl>
+        </div>
       </div>
 
     </div>

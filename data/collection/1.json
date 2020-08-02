@@ -9,5 +9,10 @@
     "title": "100% in CSS",
     "description": "The value '100%' does not mean the same for all CSS properties. Amelia Wattenberger did an excellent writeup of all the different meanings for different properties.",
     "link": "https://wattenberger.com/blog/css-percents"
+  },
+  {
+    "title": "this vs. that",
+    "description": "this vs. that is a collection of dozens of different concepts in frontend development with detailed explanations of the actual differences between them.",
+    "link": "https://thisthat.dev/"
   }
 ]
