@@ -1,0 +1,51 @@
+[
+  {
+    "title": "DevLorem & CorporateLorem",
+    "description": "I have recently rewritten my two tools DevLorem and CorporateLorem in Go. Both offer Lorem Ipsum text generation from the CLI, as a website or as a web api.",
+    "link": "https://github.com/Kovah/DevLorem",
+    "linkTitle": "DevLorem on Github"
+  },
+  {
+    "title": "GPU.js - GPU accelerated JavaScript",
+    "description": "Perform massively parallel GPG computations using GPU.js for Node.js. It provides a graceful fallback to plain Javascript if the GPU is not available.",
+    "link": "https://gpu.rocks"
+  },
+  {
+    "title": "100% in CSS",
+    "description": "The value '100%' does not mean the same for all CSS properties. Amelia Wattenberger did an excellent writeup of all the different meanings for different properties.",
+    "link": "https://wattenberger.com/blog/css-percents"
+  },
+  {
+    "title": "this vs. that",
+    "description": "this vs. that is a collection of dozens of different concepts in frontend development with detailed explanations of the actual differences between them.",
+    "link": "https://thisthat.dev/"
+  },
+  {
+    "title": "tinykeys",
+    "description": "Ever needed to add keyboard shortcuts in your web app? Tinykeys is a <1kb library that helps you with exactly that.",
+    "link": "https://jamiebuilds.github.io/tinykeys/",
+    "linkTitle": "tinykeys on Github"
+  },
+  {
+    "title": "CORS visualized",
+    "description": "I spent countless hours on getting CORS right. Lydia Hallie wrote a super helpful article that visualizes how CORS really works.",
+    "link": "https://dev.to/lydiahallie/cs-visualized-cors-5b8h"
+  },
+  {
+    "title": "Webpack: A gentle introduction",
+    "description": "You hear a lot how people spent days configuring Webpack. To make your first steps with it easier, read this beginner-friendly guide by Tyler McGinnis.",
+    "link": "https://ui.dev/webpack/"
+  },
+  {
+    "title": "Snippetshot",
+    "description": "We all used Carbon.now.sh at least once to share a piece of code the fancy way. Now there is Snippetshot, a great alternative to Carbon.",
+    "link": "https://www.snippetshot.com/",
+    "linkTitle": "Try Snippetshot"
+  },
+  {
+    "title": "Typeculator",
+    "description": "Typeculator is a helpful tool to get the sizing of your headlines just right. It calculates the sizes based on the Golden Ratio and provides easy-to-copy CSS snippets in both px and rem.",
+    "link": "https://typeculator.alexpaul.me/",
+    "linkTitle": "Try Typeculator"
+  }
+]

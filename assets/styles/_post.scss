@@ -49,10 +49,10 @@
   }
 
   &__content-wrapper {
-    padding-bottom: $spacer-md;
+    padding-bottom: $spacer-lg;
 
     @media screen and (min-width: $screen-bp) {
-      padding-bottom: $spacer-lg;
+      padding-bottom: $spacer-xl;
     }
   }
 

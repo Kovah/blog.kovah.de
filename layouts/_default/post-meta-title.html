@@ -1,0 +1,5 @@
+{{- if eq .Section "collection" -}}
+{{- i18n "collection_title" .Params.edition -}}
+{{- else -}}
+{{- .Page.Title -}}
+{{- end -}}

@@ -1,6 +1,12 @@
 .navigation {
   $block: &;
 
+  padding: $spacer-md 0 $spacer-lg;
+
+  @media screen and (min-width: $screen-bp) {
+    padding: $spacer-lg 0 $spacer-xl;
+  }
+
   &__top {
     display: flex;
     flex-wrap: wrap;

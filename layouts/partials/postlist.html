@@ -5,21 +5,31 @@
 
     <h2 class="post-excerpt__headline">
       <a href="{{ .Permalink  | relURL }}" itemprop="url">
+        {{ if eq .Section "collection" }}
+        <span itemprop="name">{{ i18n "collection_title" .Params.edition }}</span>
+        {{ else }}
         <span itemprop="name">{{.Title}}</span>
+        {{ end }}
       </a>
     </h2>
 
-    {{ if .Description }}
+    {{ if eq .Section "collection" }}
+    <p class="post-excerpt__description" itemprop="description">{{ i18n "collection_description" .Params.edition }}</p>
+    {{ else if  .Description}}
     <p class="post-excerpt__description" itemprop="description">{{ .Description }}</p>
     {{ end }}
 
     <div class="post-excerpt__meta">
-      {{ range .Params.Categories }}
-      <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post-excerpt__category">
-        {{- . -}}
-      </a>
+      {{ with .Params.Categories }}
+        {{ range . }}
+        <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post-excerpt__category">
+          {{- . -}}
+        </a>
+        {{ end }}
       {{ end }}
+      {{ if not (eq .Section "collection") }}
       <span class="post-excerpt__readtime">{{ i18n "readtime" . }}</span>
+      {{ end }}
       <time class="post-excerpt__published" datetime='{{.Date.Format "2006-01-02"}}'>
         {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
       </time>

@@ -42,3 +42,12 @@ other = "Page"
 other = "Next page"
 [page_last]
 other = "Last page"
+
+[collection_title]
+other = "Collection #{{ .Count }}"
+[collection_description]
+other = "This is Collection #{{ .Count }}, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
+[collection_more_link]
+other = "Read more"
+[collection_share]
+other = "Share this Collection"

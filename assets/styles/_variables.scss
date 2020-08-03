@@ -34,19 +34,19 @@ $link-light-color: $gray-200;
 $link-light-hover-color: $white;
 
 // Spacing
-$spacer-xs: .5rem;
-$spacer-sm: .75rem;
 $spacer: 1.5rem;
-$spacer-md: 2.5rem;
-$spacer-lg: 4rem;
-$spacer-xl: 8rem;
+$spacer-xs: $spacer * .6;
+$spacer-sm: $spacer * .8;
+$spacer-md: $spacer * 2;
+$spacer-lg: $spacer * 3;
+$spacer-xl: $spacer * 4;
 
 $table-spacing-x: $spacer;
 $table-spacing-y: $spacer-sm;
 $table-spacing: $table-spacing-y $table-spacing-x;
 $table-border: darken($gray-200, 5%);
 
-$nav-spacing-x: $spacer-sm;
+$nav-spacing-x: $spacer-xs;
 $nav-spacing-y: $spacer-sm;
 $nav-spacing: $nav-spacing-y $nav-spacing-x;
 $nav-spacing-sm: $nav-spacing-y $nav-spacing-x 0;
