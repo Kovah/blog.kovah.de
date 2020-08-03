@@ -1,6 +1,6 @@
 <div class="share">
 
-  <span class="share__title">{{ if eq .Section "collection" }}{{ i18n "collection_share" }}{{ else }}{{ i18n "share" }}{{ end }}</span>
+  <span class="share__title">{{ if eq .Section "collection" }}{{ i18n "collection_share" }}{{ else }}{{ i18n "share" }}{{ end }}:</span>
 
   {{ $share_title := replace .Title "&" "and" }}
   {{ $share_description := replace .Description "&" "and" }}
