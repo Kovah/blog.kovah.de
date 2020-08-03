@@ -33,7 +33,7 @@ quality = 85
   weight = 2
 
 [[languages.en.menu.main]]
-url    = "/categories/collection"
+url    = "/collection"
 name   = "Collections"
 weight = 1
 

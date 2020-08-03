@@ -20,6 +20,18 @@
         <h1 class="post__title p-name" itemprop="headline">{{ i18n "collection_title" .Params.edition }}</h1>
 
         <div class="post__meta">
+          <span class="post__tags">
+            {{ with .Params.Tags }}
+              {{ $len := (len .) }}
+              {{ i18n "tags" . }}:
+              {{ range $index, $element := . }}
+                <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="post__tag">
+                  {{- $element -}}
+                </a>{{ if ne (add $index 1) $len }} | {{ end }}
+              {{ end }}
+            {{ end }}
+          </span>
+
           <time class="post__published dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
             {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
           </time>
