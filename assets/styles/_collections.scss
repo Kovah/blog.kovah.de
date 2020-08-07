@@ -53,3 +53,11 @@
     }
   }
 }
+
+.collection-releases {
+  margin-top: $spacer-lg;
+
+  @media screen and (min-width: $screen-bp) {
+    margin-top: $spacer-xl;
+  }
+}
