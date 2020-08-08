@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "dependencies": {
-    "prismjs": "^1.17.1"
+    "prismjs": "^1.21.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.10",
