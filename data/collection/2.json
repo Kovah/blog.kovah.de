@@ -1,0 +1,59 @@
+{
+  "links": [
+    {
+      "title": "What Web Designers need to know about SEO",
+      "description": "An interview with Edwin Toonen of Yoast SEO with helpful advice about the most important techniques.",
+      "link": "https://speckyboy.com/what-web-designers-clients-know-about-seo/"
+    },
+    {
+      "title": "Funny Github Actions",
+      "description": "A small collection of Github Actions which are either plain stupid, funny, or at least a little bit useful.",
+      "link": "https://devopsdirective.com/posts/2020/07/stupid-github-actions/"
+    },
+    {
+      "title": "TextDB",
+      "description": "A simple way to share small amounts of data with everyone, based on simple Curl commands.",
+      "link": "https://textdb.dev/"
+    },
+    {
+      "title": "The Need for Speed",
+      "description": "Short article with some details about why internet speeds improve, but webpage speeds have not improved over time.",
+      "link": "https://www.nngroup.com/articles/the-need-for-speed/"
+    },
+    {
+      "title": "From a legacy PHP app to Laravel",
+      "description": "Andrew Morgan shares details on how to migrate a legacy PHP application to Laravel.",
+      "link": "https://tighten.co/blog/converting-a-legacy-app-to-laravel/"
+    },
+    {
+      "title": "The content-visibility CSS property",
+      "description": "The Chrome team announces support for `content-visibility`, a new CSS property that will improve page rendering times.",
+      "link": "https://web.dev/content-visibility/"
+    },
+    {
+      "title": "CSS Grid solutions for common layout problems",
+      "description": "Feeling lost with CSS Grids? This short article gives you a rough idea on how powerful Grids can be when solving common layout problems.",
+      "link": "https://vycke.dev/blog/css-layout-patterns/"
+    },
+    {
+      "title": "Node Modules at War: CommonJS vs ES Modules",
+      "description": "Modern JS is hard to master. Dan Fabulich writes about the differences between CommonJS and ES Modules to help you understand their usage.",
+      "link": "https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1"
+    },
+    {
+      "title": "macOS Keyboard Shortcuts",
+      "description": "Are you a fellow macOS user? Then this Keyboard Shortcuts page is a must-read for you.",
+      "link": "https://support.apple.com/en-us/HT201236"
+    }
+  ],
+  "releases": [
+    {
+      "title": "PHP 8.0 Beta 1",
+      "link": "https://www.php.net/archive/2020.php#2020-08-06-3"
+    },
+    {
+      "title": "Django 3.1",
+      "link": "https://www.djangoproject.com/weblog/2020/aug/04/django-31-released/"
+    }
+  ]
+}
