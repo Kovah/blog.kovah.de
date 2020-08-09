@@ -168,8 +168,9 @@
     }
 
     :not(pre) > code {
-      padding: 2px 3px;
-      background-color: $gray-200;
+      padding: $code-padding;
+      background-color: $code-bg;
+      border-radius: $code-border-radius;
       font-size: 85%;
     }
 
@@ -177,7 +178,7 @@
       margin: $spacer-md $spacer;
       border: 0;
       background-color: $gray-200;
-      height: 2px;
+      height: 0.125rem;
 
       @media screen and (min-width: $screen-bp) {
         margin: $spacer-lg;
