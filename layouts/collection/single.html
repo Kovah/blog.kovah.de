@@ -25,9 +25,9 @@
               {{ $len := (len .) }}
               {{ i18n "tags" . }}:
               {{ range $index, $element := . }}
-                <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="post__tag">
+                <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="tag post__tag">
                   {{- $element -}}
-                </a>{{ if ne (add $index 1) $len }} | {{ end }}
+                </a>
               {{ end }}
             {{ end }}
           </span>
@@ -53,7 +53,7 @@
           <div class="collection-list__item">
             <h2 class="collection-list__item-title">{{ .title }}</h2>
             <div class="collection-list__item-content">
-              <p>{{ .description }}</p>
+              <p>{{ .description | markdownify }}</p>
             </div>
             <div class="collection-list__item-link">
               <span>>></span>

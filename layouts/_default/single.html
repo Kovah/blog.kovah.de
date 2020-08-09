@@ -34,9 +34,9 @@
           {{ if gt $len 0 }}
             {{ i18n "tags" . }}:
             {{ range $index, $element := $list }}
-            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="post__tag">
+            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="tag post__tag">
               {{- $element -}}
-            </a>{{ if ne (add $index 1) $len }} | {{ end }}
+            </a>
             {{ end }}
           {{ end }}
         </span>

@@ -1,0 +1,9 @@
+.tag {
+  display: inline-block;
+  padding: $tag-padding;
+
+  &:hover {
+    background: $tag-hover-bg;
+    border-radius: $tag-border-radius;
+  }
+}
