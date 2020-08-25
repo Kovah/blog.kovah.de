@@ -1,0 +1,72 @@
+{
+  "links": [
+    {
+      "title": "Plop",
+      "description": "Be more productive by using Plop to generate boilerplate code for almost any application you code.",
+      "link": "https://hackernoon.com/how-to-boost-your-coding-productivity-with-plop-hr1t3u2c"
+    },
+    {
+      "title": "Docker introduces Image Retention",
+      "description": "Starting in November, Docker start image retention policies which delete inactive images after some time.",
+      "link": "https://www.docker.com/pricing/resource-consumption-updates"
+    },
+    {
+      "title": "Askgit",
+      "description": "Wouldn't it be cool to query your Git commit history with SQL? Like `select min(author_when) from commits`? Try Askgit.",
+      "link": "https://willschenk.com/articles/2020/using_askgit/"
+    },
+    {
+      "title": "Enterprise UI",
+      "description": "Things you can learn from the UI-research done by enterprise companies.",
+      "link": "https://luckyduck.digital/blog/enterprise-ui"
+    },
+    {
+      "title": "Wordpress 5.5",
+      "description": "A new large version of wordpress is out. Carlo Daniele outlines all new features and highlights the most imporant changes.",
+      "link": "https://kinsta.com/blog/wordpress-5-5/"
+    },
+    {
+      "title": "How I structure my CSS",
+      "description": "Feeling lost with your CSS organization? Matthias Ott shares his approach on organizing the styles for his projects.",
+      "link": "https://matthiasott.com/notes/how-i-structure-my-css"
+    },
+    {
+      "title": "Previewed",
+      "description": "You really had this moment when you wanted to showcase a website or app on a device. Previewed helps you with exactly that.",
+      "link": "https://previewed.app/"
+    },
+    {
+      "title": "Isoflow",
+      "description": "Easily create isometric diagrams of networks and IT infrastructure, for presentations, documentation and illustrations.",
+      "link": "https://isoflow.io/"
+    },
+    {
+      "title": "Tools for PHP development",
+      "description": "Jascha Silbermann shares all possible ways to develop PHP applications on your local computer, with their pros and cons.",
+      "link": "https://blog.fortrabbit.com/tools-for-php-development-local-dev-site-setup"
+    },
+    {
+      "title": "Khroma",
+      "description": "Khroma uses AI to generate color combinations based on your personal preferences. Pick some favorite colors and get started.",
+      "link": "http://khroma.co/"
+    }
+  ],
+  "releases": [
+    {
+      "title": "PhpStorm 2020.2",
+      "link": "https://www.jetbrains.com/phpstorm/whatsnew/"
+    },
+    {
+      "title": "Statamic 3",
+      "link": "https://statamic.com/blog/statamic-3-launch-announcement"
+    },
+    {
+      "title": "PHP 8 Beta 2",
+      "link": "https://www.php.net/archive/2020.php#2020-08-21-1"
+    },
+    {
+      "title": "Typescript 4",
+      "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/"
+    }
+  ]
+}
