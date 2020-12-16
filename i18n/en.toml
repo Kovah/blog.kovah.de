@@ -14,7 +14,7 @@ other = "Tags"
 [share]
 other = "Share this article"
 [share_via]
-other = "Share article via {{ .Count }}"
+other = "Share article via {{ . }}"
 [translation_for_post]
 other = "Dieser Artikel ist auch in Deutsch verfügbar:"
 
@@ -44,8 +44,10 @@ other = "Next page"
 other = "Last page"
 
 [collection_title]
+one = "Collection #{{ .Count }}"
 other = "Collection #{{ .Count }}"
 [collection_description]
+one = "This is Collection #{{ .Count }}, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
 other = "This is Collection #{{ .Count }}, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
 [collection_more_link]
 other = "Read more"

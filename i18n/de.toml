@@ -14,7 +14,7 @@ other = "Tags"
 [share]
 other = "Diesen Artikel teilen"
 [share_via]
-other = "Artikel über {{ .Count }} teilen"
+other = "Artikel über {{ . }} teilen"
 [translation_for_post]
 other = "This article is also available in English:"
 
@@ -40,3 +40,14 @@ other = "Seite"
 other = "Nächste Seite"
 [page_last]
 other = "Letzte Seite"
+
+[collection_title]
+other = "Collection #{{ .Count }}"
+[collection_description]
+other = "This is Collection #{{ .Count }}, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
+[collection_more_link]
+other = "Read more"
+[collection_releases]
+other = "Notable Releases"
+[collection_share]
+other = "Share this Collection"
