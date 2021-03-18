@@ -1,0 +1,55 @@
+{
+  "links": [
+    {
+      "title": "Laravel Octane",
+      "description": "I am so excited to try Laravel Octane when it's released: a package to use Swoole or Roadrunner with Laravel and boost your app performance.",
+      "link": "https://laravel-news.com/laravel-octane"
+    },
+    {
+      "title": "The Internet Archive infrastructure",
+      "description": "Ever wondered how the Internet Archive looks under the coat? Jonah Edwards shares some details about their servers.",
+      "link": "https://archive.org/details/jonah-edwards-presentation"
+    },
+    {
+      "title": "How to build a billion dollar audio app in a weekend",
+      "description": "An interesting story about the build process of a Clubhouse clone, which was built in a couple of days.",
+      "link": "https://www.daily.co/blog/how-to-build-a-billion-dollar-audio-app-in-a-weekend/"
+    },
+    {
+      "title": "The Kilobyte’s Gambit",
+      "description": "Can you beat 1024 bytes of JavaScript in this chess game?",
+      "link": "https://vole.wtf/kilobytes-gambit/"
+    },
+    {
+      "title": "„User Engagement“ is Code for „Addiction“",
+      "description": "A great article about recent application design that is worrisome and affects everyone.",
+      "link": "https://medium.com/swlh/user-engagement-is-code-for-addiction-a2f50d36d7ac"
+    },
+    {
+      "title": "Six secret GitHub Easter Eggs",
+      "description": "UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A - What Easter eggs can you find on GitHub?",
+      "link": "https://dev.to/github/six-secret-easter-eggs-in-github-2j17"
+    },
+    {
+      "title": "How to make badass shadows",
+      "description": "Creating shadows for elements are some sort of art when it comes to looking realistic and \"sexy\".",
+      "link": "https://blog.prototypr.io/how-to-make-badass-shadows-564b3a30aba4"
+    },
+    {
+      "title": "Image optimization for the web in 2021",
+      "description": "An absolutely great guide by Malte Ubl about maximizing image optimization for your websites in 2021.",
+      "link": "https://www.industrialempathy.com/posts/image-optimizations/"
+    },
+    {
+      "title": "Managing your DNS with Github",
+      "description": "Sven Luijten compiled an interesting article about managing your DNS entries with Github Actions.",
+      "link": "https://svenluijten.com/manage-your-dns-from-github-with-dnscontrol"
+    }
+  ],
+  "releases": [
+    {
+      "title": "PHP 8",
+      "link": "https://www.php.net/releases/8.0/en.php"
+    }
+  ]
+}
