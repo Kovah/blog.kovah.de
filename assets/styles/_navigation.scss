@@ -80,12 +80,14 @@
   svg {
     margin-right: $spacer;
     height: 4rem;
-    margin-top: -.5rem;
+    margin-top: -1rem;
     width: auto;
   }
 
   h1 {
-    font-size: $font-size-xl;
-    color: $c-primary
+    font-size: $font-size-h3;
+    color: $c-primary;
+    line-height: 1;
+    font-weight: 800;
   }
 }

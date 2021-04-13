@@ -1,9 +1,19 @@
 @font-face {
   font-family: 'Nexa';
   src: local('Nexa XBold'), local('Nexa-XBold'),
-  url('fonts/Nexa-XBold.woff2') format('woff2'),
-  url('fonts/Nexa-XBold.woff') format('woff');
-  font-weight: 700;
+  url('assets/fonts/subset-Nexa-XBold.woff2') format('woff2'),
+  url('assets/fonts/subset-Nexa-XBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Black'), local('NexaBlack'),
+  url('assets/fonts/subset-NexaBlack.woff2') format('woff2'),
+  url('assets/fonts/subset-NexaBlack.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }

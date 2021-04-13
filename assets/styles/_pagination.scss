@@ -53,7 +53,7 @@
   &__link {
     display: block;
     padding: $pagination-spacing;
-    background-color: $gray-100;
+    background-color: rgba($c-primary-light, .1);
     color: $c-primary;
     text-align: center;
     cursor: pointer;
@@ -63,12 +63,12 @@
     &:focus,
     &:active {
       color: $c-primary-dark;
-      background-color: $white;
+      background-color: rgba($c-primary-light, .25);
     }
 
     #{$block}__item--current & {
       color: $c-primary-dark;
-      background-color: $white;
+      background-color: rgba($c-primary-light, .25);
     }
   }
 }
