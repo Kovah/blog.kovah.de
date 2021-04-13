@@ -43,9 +43,7 @@
 }
 
 .footer {
-  .container {
-    opacity: .75;
-  }
+  color: rgba($body-color-white, .5);
 
   &__icon {
 
@@ -65,6 +63,15 @@
 
   &__link {
     display: inline-block;
+
+    a {
+      color: rgba($link-light-color, .75);
+
+      &:hover,
+      &:focus {
+        color: rgba($link-light-color, 1);
+      }
+    }
 
     & + & {
       margin-left: $spacer;
