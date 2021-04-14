@@ -1,5 +1,5 @@
 ---
-title: "Refactor or Rewrite - The Story of Game-Quotes.com"
+title: "Why I have chosen to rewrite one of my Projects from Scratch"
 description: Game Quotes is one of my oldest projects and in early 2021 I decided to pull the plug on the old version and rebuild the complete website.
 
 author: Kevin Woblick
