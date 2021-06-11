@@ -1,0 +1,12 @@
+{
+  "site_name": "Kevin Woblick - Web Engineer and Open Source Creator",
+  "title": "Kevin Woblick",
+  "description": "Web Engineer and Open Source Creator",
+  "url": "https://kovah.de",
+  "locale": "en",
+  "locales": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "author": "Kevin Woblick"
+}

@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa XBold'), local('Nexa-XBold'),
+  url('../fonts/subset-Nexa-XBold.woff2') format('woff2'),
+  url('../fonts/subset-Nexa-XBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Regular'), local('NexaRegular'),
+  url('../fonts/subset-NexaRegular.woff2') format('woff2'),
+  url('../fonts/subset-NexaRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Black'), local('NexaBlack'),
+  url('../fonts/subset-NexaBlack.woff2') format('woff2'),
+  url('../fonts/subset-NexaBlack.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.aurora-bg {
+  background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQFBQQGBgYGBgkIBwcICQ0KCgoKCg0UDQ8NDQ8NFBIWEhESFhIgGRcXGSAlHx4fJS0pKS05NjlLS2QBBAQEBAQEBAUFBAYGBgYGCQgHBwgJDQoKCgoKDRQNDw0NDw0UEhYSERIWEiAZFxcZICUfHh8lLSkpLTk2OUtLZP/CABEIAGQAZAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAEAwUAAQIIBgf/2gAIAQEAAAAA/T+c7lQuxs7W0tF+aszcyXWNpbW9o3y/rO5Vusra3t7Jnl3nfcrXWlrbWlknzNrO5lPsLOytHp89Zrfc62WFhYuX+Ic65zuZa3tan8r44j45kmUtrE/Bxwwwx67QlalfPQHOWDjJEpWuAxBjLBrc6VMtxDr68Bo9yqYz7EVdXVtaKDJFvb//xAAbAQABBQEBAAAAAAAAAAAAAAADAAECBAUHBv/aAAgBAhAAAADsiBRysmn1xAzsjIp9bQKGTnV+iNCrQpj9KmCAbyk8WlPLKSaIT//EABsBAAEFAQEAAAAAAAAAAAAAAAMAAQIEBQcG/9oACAEDEAAAAOROa7p6l3lDmv62tb5S572npH5+87V20Xzqcp5qLMpQjpQFFDH/AP/EABsQAQEBAQEBAQEAAAAAAAAAAAMCAQQAExIR/9oACAEBAAECAPp9PpiYkWdjY2NFpbm/X6/XFlYQkKxsaKhqa1Pr9ZSUhCsKGgsbK8T9/vLy4s7GxsEFCUlxv1/f1lTR0SEgsLi5vj+/v9ysuENTY3Jz6T6c6f7+tv8AeXiy8Obl0H0n1T1bWpqberr489EdMdJ9UdWde3qaurTa33zojojpjqjqzqqqulpqbW1sfOieiemOmemtTUpLtLbW+2PPRHRHRj1iYnkpEtaX7Y0sbG2Knk8vl8vk9ft3NjY0/T7/xAAcEAACAgMBAQAAAAAAAAAAAAAAMREhECBhAUH/2gAIAQEAAz8A0RMYsQhCKx6e6X4TAiYFisQT9xeL8JgiBCIgrHmbEIiBFZra9IgVisp6RiPSIFYrFYrOlPaDp0iLI+isVlMjSCIOkfTp06dKeI1j6dI+nTp0p4jD0j6WzorFZTxWl46dOisVnShjIkY96GMY82enp6eiKP/EAB4RAAEEAgMBAAAAAAAAAAAAAAABAgMREyEQEjFh/9oACAECAQE/AMXwWL4PiJo9KTsJW+nUxix6JI9EzKsnYSxmMpBU0PbomZdk0eySH3Rh+HZBXaHLaEiWSx3Y6EwHdDugrhyjkOlmMzCSmQVxY33hBBOWcf/EAB4RAAICAgMBAQAAAAAAAAAAAAACAQMREhATIWEx/9oACAEDAQE/AOwiwSz0qcpYqY2Js+kWCWelTlDlVn4dhkiRJKnwU2CW4x6d30wYFK5K2xMC3HcaGhCiwLODbBudXwms0IQwNxIxPL8f/9k=") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.aurora-bg-2 {
+  background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQFBQQGBgYGBgkIBwcICQ0KCgoKCg0UDQ8NDQ8NFBIWEhESFhIgGRcXGSAlHx4fJS0pKS05NjlLS2QBBAQEBAQEBAUFBAYGBgYGCQgHBwgJDQoKCgoKDRQNDw0NDw0UEhYSERIWEiAZFxcZICUfHh8lLSkpLTk2OUtLZP/CABEIAGQAZAMBIgACEQEDEQH/xAAcAAADAQADAQEAAAAAAAAAAAADBAUCAAEIBgf/2gAIAQEAAAAA+aq17Nq1Zr06DzJvD1OrYtWLFWm84yTxbRq1rFerUouNHJ5Afp1KtSpQebYKTy24/Ro0n3m2D7159YbdddcaZKTXf5GUp2GTnLvfOfF675ve977510j1geM85111nNHAQgCPGMjx19YECyq4AiFgeP0ICyaiyq4Q4Fj9TXUTTTUWAIQs/wD/xAAaAQACAwEBAAAAAAAAAAAAAAADBAIFBwEG/9oACAECEAAAANqWr65BQOogQr69QWnCTr0lRaDxZJRYXsYiXWBC/gIYRRtoCEOEf//EABoBAQEBAAMBAAAAAAAAAAAAAAQDAgUGBwH/2gAIAQMQAAAA8cS7kHLp5ohr3Kr5vVbmqp0P6ha076nqiEX1wVKUtTfEVpXdNf/EABsQAAMBAQEBAQAAAAAAAAAAAAECAxQAEwQR/9oACAEBAAECAJLEQWAgIdDo9Hp8hUgyWKwEBDodHomRmUZWDyWIiIdDo9IxabI6OKes1kIiPRMTJ50SiVWosLIsxLpGRm06Tqllut/f3VEVOmZvOiVSy3F9A+nSqADkZaLVbC6/Rp1adX5+cGFBUWF9GnTq09+kl/Q19vfRp06tJJLMzs7V9jc30H6NOgszM70ejVaxsbm7XN/dmd3d3ej0arVapq1jb2cuaFzRnZyzMxYsWLf/xAAcEAADAAMBAQEAAAAAAAAAAAAAMWEBECARMCH/2gAIAQEAAz8AQhCEIWkLhCEIQhCFytIQhCEYx4LjzzSEIQtY6wIQtecXV0haW1qlKXnzzmlKXHwpSlKX4XVKUvwpSl1eHzSlKXh/Rmf0yZMmTJnBkyZP/8QAHBEAAwEAAwEBAAAAAAAAAAAAAAECAxARExIx/9oACAECAQE/AHJpJrJrJpJcnyOS4NYNczTMvM8zoqDTM1yLyKyPI6Gi5NMy8ysjy4bKKRcjk+BsbHQ2UPl/gxj5/8QAGxEAAwEAAwEAAAAAAAAAAAAAAAECAxASExH/2gAIAQMBAT8AVEUZ0ZUZ0TR2FRFmdmdkWToeh2Jszsz0I0J1PXhMiiLI0J0PU+Hwkhk0KjuJCQkShC4kkQuFx//Z") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.project-card {
+  padding-bottom: 100%;
+  /* Fix overflow issue on Safari */
+  transform: perspective(0);
+}
+
+.project-card:hover .project-img,
+.project-card:focus .project-img {
+  transform: scale(1.5);
+}
+
+.project-card:hover .project-content,
+.project-card:focus .project-content {
+  @apply opacity-100;
+}
+
+.text-shadow-lg {
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.text-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link-hover-left {
+  background: linear-gradient(currentColor, currentColor) 100% 100% / var(--d, 0) 2px no-repeat;
+  transition: .3s;
+}
+.link-hover-left:hover,
+.link-hover-left:focus {
+  --d: 100%;
+}
+
+.link-hover-right {
+  background: linear-gradient(currentColor, currentColor) 0 100% / var(--d, 0) 2px no-repeat;
+  transition: .3s;
+}
+.link-hover-right:hover,
+.link-hover-right:focus {
+  --d: 100%;
+}
+
+.icon {
+  display: inline-block;
+  font-size: inherit;
+  width: 1em;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.icon-filled path {
+  fill: currentColor;
+}

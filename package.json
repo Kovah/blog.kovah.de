@@ -1,21 +1,10 @@
 {
   "name": "kovah.de-blog",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Kovah.de Blog source",
   "author": "Kevin Woblick <mail@kovah.de>",
   "private": true,
   "license": "UNLICENSED",
-  "dependencies": {
-    "prismjs": "^1.23.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "laravel-mix": "^6.0.13",
-    "postcss": "^8.2.10",
-    "sass": "^1.32.8",
-    "sass-loader": "^11.0.1"
-  },
   "scripts": {
     "dev": "npm run development",
     "development": "mix",
@@ -24,7 +13,19 @@
     "hot": "mix watch --hot",
     "prod": "npm run production",
     "production": "mix --production",
-    "serve": "hugo serve -D --bind 0.0.0.0",
-    "build": "npm run production && hugo -D --gc"
+    "serve": "eleventy --serve",
+    "serve-dev": "DEBUG=Eleventy* eleventy --serve",
+    "build": "npm run production && ELEVENTY_PRODUCTION=true eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.8.3",
+    "@tailwindcss/typography": "^0.4.0",
+    "date-fns": "^2.21.3",
+    "html-minifier": "^4.0.0",
+    "laravel-mix": "^6.0.19",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1"
   }
 }

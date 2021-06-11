@@ -2,36 +2,13 @@ const mix = require('laravel-mix');
 
 // Config
 mix
+  .setPublicPath('./dist/assets')
   .options({
     processCssUrls: false
-  })
-  .webpackConfig({
-    watchOptions: {
-      ignored: ['public', 'node_modules']
-    }
-  })
-  .browserSync({
-    proxy: 'localhost:1313'
   })
   .disableNotifications();
 
 // Asset tasks
-mix.js('assets/js/app.js', 'assets/dist/app.js');
-
-mix.combine([
-  'node_modules/prismjs/components/prism-core.js',
-  'node_modules/prismjs/components/prism-markup.js',
-  'node_modules/prismjs/components/prism-markup-templating.js',
-  'node_modules/prismjs/components/prism-css.js',
-  'node_modules/prismjs/components/prism-clike.js',
-  'node_modules/prismjs/components/prism-javascript.js',
-  'node_modules/prismjs/components/prism-git.js',
-  'node_modules/prismjs/components/prism-markdown.js',
-  'node_modules/prismjs/components/prism-php.js',
-  'node_modules/prismjs/components/prism-scss.js',
-  'node_modules/prismjs/components/prism-sql.js',
-  'node_modules/prismjs/components/prism-bash.js'
-], 'assets/dist/highlighter.js');
-
-mix.sass('assets/styles/app.scss', 'assets/dist');
-mix.sass('assets/styles/highlighter.scss', 'assets/dist');
+mix.postCss('src/assets/styles/main.css', 'styles')
+  .postCss('src/assets/styles/highlighter.css', 'styles')
+  .js('src/assets/scripts/app.js', 'scripts');
