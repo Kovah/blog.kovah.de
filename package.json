@@ -10,11 +10,11 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "laravel-mix": "^6.0.13",
-    "postcss": "^8.2.10",
-    "sass": "^1.32.8",
-    "sass-loader": "^11.0.1"
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.22",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.1",
+    "sass-loader": "^11.1.1"
   },
   "scripts": {
     "dev": "npm run development",
