@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Nexa"', ...defaultTheme.fontFamily.sans]
+        special: ['"Nexa"', ...defaultTheme.fontFamily.sans]
       },
       spacing: {
         '68': '17rem',

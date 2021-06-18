@@ -6,16 +6,20 @@
   {% if description %}
     <meta name="description" content="{{ description }}"/>
   {% endif %}
+
   <meta http-equiv="x-ua-compatible" content="ie=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+
   <link rel="stylesheet" href="/assets/styles/main.css?v={% version %}">
   <link rel="stylesheet" href="/assets/styles/highlighter.css?v={% version %}">
   <script defer src="/assets/scripts/app.js?v={% version %}"></script>
   {% block head %}{% endblock %}
 </head>
-<body>
-{% block content %}
-  {{ content | safe }}
-{% endblock %}
+<body class="text-gray-900 antialiased">
+<main class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 py-8">
+  {% block content %}
+    {{ content | safe }}
+  {% endblock %}
+</main>
 </body>
 </html>

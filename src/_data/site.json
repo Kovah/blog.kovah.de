@@ -3,10 +3,13 @@
   "title": "Kevin Woblick",
   "description": "Web Engineer and Open Source Creator",
   "url": "https://kovah.de",
-  "locale": "en",
-  "locales": {
-    "en": "English",
-    "de": "Deutsch"
-  },
-  "author": "Kevin Woblick"
+  "author": "Kevin Woblick",
+  "defaultLang": "en",
+  "langs": [{
+    "id": "en",
+    "name": "English"
+  }, {
+    "id": "de",
+    "name": "Deutsch"
+  }]
 }
