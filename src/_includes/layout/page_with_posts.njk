@@ -14,7 +14,7 @@ layout: layout/base.njk
     {% for post in posts %}
       <article itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
         <a href="{{ post.url | url }}" itemprop="url"
-          class="block text-blue-600 hover:text-blue-800 focus:text-blue-800 transition">
+          class="block text-blue-500 hover:text-blue-800 focus:text-blue-800 transition">
           <h2 class="text-2xl lg:text-3xl font-special font-bold" itemprop="name">
             {%- if post.data.edition -%}
               Collection #{{ post.data.edition }}
@@ -39,53 +39,70 @@ layout: layout/base.njk
     {% endfor %}
   </div>
 
-  <nav class="mt-12 lg:mt-16">
+  <nav class="mt-12 lg:mt-20">
+
+    {# Mobile pagination #}
     <ol class="flex justify-between sm:hidden">
       <li class="inline-block">
         {%- if pagination.href.previous -%}
-          <a href="{{ pagination.href.previous }}" class="inline-block py-2 px-3 border border-r-0rounded ">Previous</a>
+          <a href="{{ pagination.href.previous }}"
+            class="inline-block py-2 px-3 border rounded hover:bg-blue-50 focus:bg-blue-50"
+          >{% include 'icons/angle-left.svg' %} {{ site[locale]._t.previous }}</a>
         {%- else -%}
-          <span class="inline-block py-2 px-3 border border-r-0 rounded text-gray-500">Previous</span>
+          <span class="inline-block py-2 px-3 border rounded text-gray-500"
+          >{% include 'icons/angle-left.svg' %} {{ site[locale]._t.previous }}</span>
         {%- endif -%}
       </li>
       <li class="inline-block">
         {%- if pagination.href.next -%}
-          <a href="{{ pagination.href.next }}" class="inline-block py-2 px-3 border border-r-0rounded ">Next</a>
+          <a href="{{ pagination.href.next }}"
+            class="inline-block py-2 px-3 border rounded hover:bg-blue-50 focus:bg-blue-50"
+          >{{ site[locale]._t.next }} {% include 'icons/angle-right.svg' %}</a>
         {%- else -%}
-          <span class="inline-block py-2 px-3 border border-r-0 rounded text-gray-500">Next</span>
+          <span class="inline-block py-2 px-3 border rounded text-gray-500"
+          >{{ site[locale]._t.next }} {% include 'icons/angle-right.svg' %}</span>
         {%- endif -%}
       </li>
     </ol>
-    <ol class="hidden sm:block">
+
+    {# Desktop pagination #}
+    <ol class="hidden sm:block text-center lg:text-lg">
       <li class="inline-block">
         {%- if pagination.href.previous -%}
           <a href="{{ pagination.href.previous }}"
-            class="inline-block py-2 px-3 border border-r-0rounded-l ">Previous</a>
+            class="inline-block py-2 px-3 lg:py-3 lg:px-4 border border-r-0 rounded-l hover:bg-blue-50 focus:bg-blue-50"
+          >{% include 'icons/angle-left.svg' %}</a>
         {%- else -%}
-          <span class="inline-block py-2 px-3 border border-r-0 rounded-l text-gray-500">Previous</span>
+          <span
+            class="inline-block py-2 px-3 lg:py-3 lg:px-4 border border-r-0 rounded-l text-gray-400">{% include 'icons/angle-left.svg' %}</span>
         {%- endif -%}
       </li>
 
-      {%- for pageEntry in pagination.pages %}
+      {%- for pageEntry in pagination | paginationPages(page) %}
         <li class="inline-block">
-          {%- if page.url == pagination.hrefs[ loop.index0 ] -%}
-            <span class="inline-block py-2 px-3 border border-r-0 text-gray-500"
+          {%- if page.url == pagination.hrefs[ loop.index ] -%}
+            <span class="inline-block py-2 px-3 lg:py-3 lg:px-4 border border-r-0 text-gray-400"
               aria-current="page">{{ loop.index }}</span>
           {%- else -%}
-            <a href="{{ pagination.hrefs[ loop.index0 ] }}"
-              class="inline-block py-2 px-3 border border-r-0">{{ loop.index }}</a>
+            <a href="{{ pagination.hrefs[ loop.index ] }}"
+              class="inline-block py-2 px-3 lg:py-3 lg:px-4 border border-r-0 hover:bg-blue-50 focus:bg-blue-50"
+            >{{ loop.index }}</a>
           {%- endif -%}
         </li>
       {%- endfor %}
 
       <li class="inline-block">
         {%- if pagination.href.next -%}
-          <a href="{{ pagination.href.next }}" class="inline-block py-2 px-3 border rounded-r">Next</a>
+          <a href="{{ pagination.href.next }}"
+            class="inline-block py-2 px-3 lg:py-3 lg:px-4 border rounded-r hover:bg-blue-50 focus:bg-blue-50"
+          >{% include 'icons/angle-right.svg' %}</a>
         {%- else -%}
-          <span class="inline-block py-2 px-3 border  rounded-rtext-gray-500">Next</span>
+          <span
+            class="inline-block py-2 px-3 lg:py-3 lg:px-4 border  rounded-r text-gray-400">{% include 'icons/angle-right.svg' %}</span>
         {%- endif -%}
       </li>
     </ol>
+
   </nav>
 
 </div>

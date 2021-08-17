@@ -1,6 +1,8 @@
 {
   "published_on": "Veröffentlicht am :date",
   "and": "und",
+  "previous": "Zurück",
+  "next": "Vor",
   "category": "Kategorie",
   "topics": "Themen",
   "webmention_hint": "Webmentions",

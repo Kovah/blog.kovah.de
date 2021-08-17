@@ -1,11 +1,11 @@
 const {DateTime} = require('luxon');
-const htmlmin = require('html-minifier');
+const htmlMin = require('html-minifier');
 const site = require('./src/_data/site.json');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const {imageShortcode, linkedImageShortcode} = require('./src/_includes/shortcodes/images');
 
-const OUTDIR = 'dist';
+const OUTPUT_DIR = 'dist';
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -31,13 +31,20 @@ module.exports = function (eleventyConfig) {
     return site.url + page.url;
   });
 
+  eleventyConfig.addFilter('paginationPages', function (pagination, currentPage) {
+    const currentPageIndex = pagination.pages.findIndex(page => page.url === currentPage.url);
+    const startPage = currentPageIndex < 5 ? 0 : currentPageIndex - 4;
+    const endPage = startPage + 9 < pagination.pages.length ? startPage + 9 : pagination.pages.length - 1;
+    return pagination.pages.slice(startPage, endPage);
+  });
+
   eleventyConfig.setBrowserSyncConfig({
-    files: `./${OUTDIR}/assets/styles/main.css`
+    files: `./${OUTPUT_DIR}/assets/styles/main.css`
   });
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
-      return htmlmin.minify(content, {
+      return htmlMin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
@@ -58,6 +65,6 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    dir: {input: 'src', output: OUTDIR, data: '_data'}
+    dir: {input: 'src', output: OUTPUT_DIR, data: '_data'}
   };
 };
