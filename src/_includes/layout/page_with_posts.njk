@@ -8,74 +8,84 @@ layout: layout/base.njk
 #  alias: posts
 ---
 
-<div class="grid grid-cols-1 gap-12 lg:gap-16">
-  {% for post in posts %}
-    <article>
-      <a href="{{ post.url | url }}" class="block text-blue-600 hover:text-blue-800 focus:text-blue-800 transition">
-        <h2 class="text-2xl lg:text-3xl font-special font-bold">
+<div class="max-w-4xl mx-auto">
+
+  <div class="grid grid-cols-1 gap-12 lg:gap-16">
+    {% for post in posts %}
+      <article itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <a href="{{ post.url | url }}" itemprop="url"
+          class="block text-blue-600 hover:text-blue-800 focus:text-blue-800 transition">
+          <h2 class="text-2xl lg:text-3xl font-special font-bold" itemprop="name">
+            {%- if post.data.edition -%}
+              Collection #{{ post.data.edition }}
+            {%- else -%}
+              {{ post.data.title }}
+            {%- endif -%}
+          </h2>
+        </a>
+        <div class="mt-2 text-gray-500 text-sm">
+          <time datetime='{{ post.date | formatDate("yyyy-LL-dd HH:mm:ss.u", locale) }}' itemprop="datePublished">
+            {{ site[locale]._t.published_on | replace(":date", post.date | formatDate("D", locale)) }}
+          </time>
+        </div>
+        <p class="mt-3" itemprop="description">
           {%- if post.data.edition -%}
-            Collection #{{ post.data.edition }}
+            {{ site[locale]._t.collection_description | replace(":edition", post.data.edition) }}
           {%- else -%}
-            {{ post.data.title }}
+            {{ post.data.description | safe }}
           {%- endif -%}
-        </h2>
-      </a>
-      <p class="mt-3">
-        {%- if post.data.edition -%}
-          {{ site[locale]._t.collection_description | replace(":edition", post.data.edition) }}
-        {%- else -%}
-          {{ post.data.description | safe }}
-        {%- endif -%}
-      </p>
-      <div class="mt-3 text-gray-500 text-sm">
-        {{ site[locale]._t.published_on | replace(":date", post.date | formatDate("DD", locale)) }}
-      </div>
-    </article>
-  {% endfor %}
-</div>
+        </p>
+      </article>
+    {% endfor %}
+  </div>
 
-<nav class="mt-12 lg:mt-16">
-  <ol class="flex justify-between sm:hidden">
-    <li class="inline-block">
-      {%- if pagination.href.previous -%}
-        <a href="{{ pagination.href.previous }}" class="inline-block py-2 px-3 border border-r-0rounded ">Previous</a>
-      {%- else -%}
-        <span class="inline-block py-2 px-3 border border-r-0 rounded text-gray-500">Previous</span>
-      {%- endif -%}
-    </li>
-    <li class="inline-block">
-      {%- if pagination.href.next -%}
-        <a href="{{ pagination.href.next }}" class="inline-block py-2 px-3 border border-r-0rounded ">Next</a>
-      {%- else -%}
-        <span class="inline-block py-2 px-3 border border-r-0 rounded text-gray-500">Next</span>
-      {%- endif -%}
-    </li>
-  </ol>
-  <ol class="hidden sm:block">
-    <li class="inline-block">
-      {%- if pagination.href.previous -%}
-        <a href="{{ pagination.href.previous }}" class="inline-block py-2 px-3 border border-r-0rounded-l ">Previous</a>
-      {%- else -%}
-        <span class="inline-block py-2 px-3 border border-r-0 rounded-l text-gray-500">Previous</span>
-      {%- endif -%}
-    </li>
-
-    {%- for pageEntry in pagination.pages %}
+  <nav class="mt-12 lg:mt-16">
+    <ol class="flex justify-between sm:hidden">
       <li class="inline-block">
-        {%- if page.url == pagination.hrefs[ loop.index0 ] -%}
-          <span class="inline-block py-2 px-3 border border-r-0 text-gray-500" aria-current="page">{{ loop.index }}</span>
+        {%- if pagination.href.previous -%}
+          <a href="{{ pagination.href.previous }}" class="inline-block py-2 px-3 border border-r-0rounded ">Previous</a>
         {%- else -%}
-          <a href="{{ pagination.hrefs[ loop.index0 ] }}" class="inline-block py-2 px-3 border border-r-0">{{ loop.index }}</a>
+          <span class="inline-block py-2 px-3 border border-r-0 rounded text-gray-500">Previous</span>
         {%- endif -%}
       </li>
-    {%- endfor %}
+      <li class="inline-block">
+        {%- if pagination.href.next -%}
+          <a href="{{ pagination.href.next }}" class="inline-block py-2 px-3 border border-r-0rounded ">Next</a>
+        {%- else -%}
+          <span class="inline-block py-2 px-3 border border-r-0 rounded text-gray-500">Next</span>
+        {%- endif -%}
+      </li>
+    </ol>
+    <ol class="hidden sm:block">
+      <li class="inline-block">
+        {%- if pagination.href.previous -%}
+          <a href="{{ pagination.href.previous }}"
+            class="inline-block py-2 px-3 border border-r-0rounded-l ">Previous</a>
+        {%- else -%}
+          <span class="inline-block py-2 px-3 border border-r-0 rounded-l text-gray-500">Previous</span>
+        {%- endif -%}
+      </li>
 
-    <li class="inline-block">
-      {%- if pagination.href.next -%}
-        <a href="{{ pagination.href.next }}" class="inline-block py-2 px-3 border rounded-r">Next</a>
-      {%- else -%}
-        <span class="inline-block py-2 px-3 border  rounded-rtext-gray-500">Next</span>
-      {%- endif -%}
-    </li>
-  </ol>
-</nav>
+      {%- for pageEntry in pagination.pages %}
+        <li class="inline-block">
+          {%- if page.url == pagination.hrefs[ loop.index0 ] -%}
+            <span class="inline-block py-2 px-3 border border-r-0 text-gray-500"
+              aria-current="page">{{ loop.index }}</span>
+          {%- else -%}
+            <a href="{{ pagination.hrefs[ loop.index0 ] }}"
+              class="inline-block py-2 px-3 border border-r-0">{{ loop.index }}</a>
+          {%- endif -%}
+        </li>
+      {%- endfor %}
+
+      <li class="inline-block">
+        {%- if pagination.href.next -%}
+          <a href="{{ pagination.href.next }}" class="inline-block py-2 px-3 border rounded-r">Next</a>
+        {%- else -%}
+          <span class="inline-block py-2 px-3 border  rounded-rtext-gray-500">Next</span>
+        {%- endif -%}
+      </li>
+    </ol>
+  </nav>
+
+</div>

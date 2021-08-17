@@ -1,6 +1,8 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+const fontSpecial = `"Nexa", ${defaultTheme.fontFamily.sans.join(',')}`
+
 module.exports = {
   purge: [
     './src/**/*.html',
@@ -41,7 +43,20 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.800'),
+            h1: {
+              fontFamily: fontSpecial,
+            },
+            h2: {
+              fontFamily: fontSpecial,
+            },
+            h3: {
+              fontFamily: fontSpecial,
+            },
+            h4: {
+              fontFamily: fontSpecial,
+            },
             h5: {
+              fontFamily: fontSpecial,
               color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
               fontWeight: '600',
               marginTop: '1.5em',
