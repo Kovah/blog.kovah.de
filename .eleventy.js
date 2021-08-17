@@ -2,12 +2,15 @@ const {DateTime} = require('luxon');
 const htmlmin = require('html-minifier');
 const site = require('./src/_data/site.json');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const {imageShortcode, linkedImageShortcode} = require('./src/_includes/shortcodes/images');
+const util = require('util');
 
 const OUTDIR = 'dist';
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPassthroughCopy({'public': '/'});
 
@@ -23,6 +26,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('formatDate', function (date, format, locale) {
     locale = locale ? locale : 'en';
     return DateTime.fromJSDate(date).toFormat(format, {locale});
+  });
+
+  eleventyConfig.addFilter('permalink', function (page) {
+    return site.url + page.url;
   });
 
   eleventyConfig.setBrowserSyncConfig({

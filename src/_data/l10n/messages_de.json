@@ -1,3 +1,16 @@
 {
-    "published_on": "Veröffentlicht am :date"
+  "published_on": "Veröffentlicht am :date",
+  "and": "und",
+  "category": "Kategorie",
+  "topics": "Themen",
+  "webmention_hint": "Webmentions",
+  "webmention_mentions": "Mentions",
+  "webmention_reposts": "Reposts",
+  "webmentions_likes": "Likes",
+  "share_article": "Teile diesen Article",
+  "share_via_twitter": "Teile über Twitter",
+  "share_via_hn": "Teile über Hacker News",
+  "share_via_linkedin": "Teile über LinkedIn",
+  "share_via_reddit": "Teile über Reddit",
+  "share_via_email": "Share via Email"
 }

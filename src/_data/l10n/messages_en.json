@@ -1,4 +1,18 @@
 {
-    "published_on": "Published on :date",
-    "collection_description": "This is Collection #:edition, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
+  "published_on": "Published on :date",
+  "and": "and",
+  "category": "Category",
+  "topics": "Topics",
+  "webmention_hint": "Webmentions",
+  "webmention_mentions": "Mentions",
+  "webmention_reposts": "Reposts",
+  "webmentions_likes": "Likes",
+  "share_collection": "Share this Collection",
+  "share_article": "Share this Article",
+  "share_via_twitter": "Share via Twitter",
+  "share_via_hn": "Share via Hacker News",
+  "share_via_linkedin": "Share via LinkedIn",
+  "share_via_reddit": "Share via Reddit",
+  "share_via_email": "Share via Email",
+  "collection_description": "This is Collection #:edition, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
 }
