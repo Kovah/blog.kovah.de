@@ -22,21 +22,51 @@ module.exports = {
       },
       colors: {
         gray: {
-          ...colors.blueGray,
+          ...colors.blueGray
         },
         'blue': {
-          '50': '#F0F8FF',
-          '100': '#CDE7FE',
-          '200': '#9CCFFC',
-          '300': '#6AB7FB',
-          '400': '#389FFA',
-          '500': '#0687F9',
-          '600': '#056CC7',
+          '50': '#f0f8ff',
+          '100': '#cde7fe',
+          '200': '#9ccffc',
+          '300': '#6ab7fb',
+          '400': '#389ffa',
+          '500': '#0687f9',
+          '600': '#056cc7',
           '700': '#045195',
           '800': '#033663',
-          '900': '#011B32'
+          '900': '#011b32'
         }
-      }
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.800'),
+            h5: {
+              color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+              fontWeight: '600',
+              marginTop: '1.5em',
+              marginBottom: '0.5em',
+              lineHeight: '1.5'
+            }
+          }
+        },
+        lg: {
+          css: {
+            h5: {
+              marginTop: '1.7em',
+              marginBottom: '0.5em'
+            }
+          }
+        },
+        xl: {
+          css: {
+            h5: {
+              marginTop: '1.8em',
+              marginBottom: '0.5em'
+            }
+          }
+        }
+      })
     }
   },
   variants: {

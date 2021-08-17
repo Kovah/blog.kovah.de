@@ -20,7 +20,7 @@ tags:
 
 After switching from Wordpress to a custom Laravel application in 2013, the site was basically in a maintenance-only mode. I rarely added new games and only a couple of quotes through the year. The system was first built with Laravel 4.2, which ran out of support and maintenance years ago. Development of the site took quite a while because I had to do so much stuff entirely on my own. But I learned a lot and then the site launched successfully. The following is a screenshot of the site displaying some video game quotes.
 
-{{< image img="game-quotes-net.jpg" alt="Screenshot of the old version of Game Quotes" >}}
+{% image "en/2021/game-quotes-refactoring-story/game-quotes-net.jpg", "Screenshot of the old version of Game Quotes" %}
 
 I started rebuilding the website with a newer version of Laravel, because the framework made some significant changes, so upgrading was not that easy. Around 2016 I started working on Game Quotes 2 and invested a lot of time into it. Unfortunately, I was _too motivated_ and wanted to build a very sophisticated new site, with some community features like friend requests, teams and chat. Video game quotes should be translatable, and I built a large admin dashboard.
 The relaunch was too sophisticated, I spent too much time with details and was just exhausted after some time. Burnout. Game Quotes had to wait, I abandoned the new version, and the old site became a pile of old technical debt. Laravel 4.2 had literally no supported packages anymore and adding new features was risky as I had no tests at all.
@@ -48,7 +48,7 @@ In February 2021 I made the final decision to throw the old Game Quotes into the
 
 After two weeks of work, I had the first fully working version of Game Quotes based on the completely new foundation.
 
-{{< image img="game-quotes-2021.jpg" alt="Screenshot of the new version of Game Quotes" >}}
+{% image "en/2021/game-quotes-refactoring-story/game-quotes-2021.jpg", "Screenshot of the new version of Game Quotes" %}
 
 ## The new Game-Quotes.com
 

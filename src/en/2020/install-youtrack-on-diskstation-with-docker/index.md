@@ -58,15 +58,15 @@ I cover both examples in the following steps.
 
 To create a new container, double click on the YouTrack image in the image list. This will open the creation wizard. Choose a name for the container and click "Advanced Settings".
 
-{{< image img="diskstation_youtrack-setup-step-1.jpg" alt="YouTrack container wizard step 1" >}}
+{% image "en/2020/install-youtrack-on-diskstation-with-docker/diskstation_youtrack-setup-step-1.jpg" "YouTrack container wizard step 1" %}
 
 In the advanced settings we need to configure some options to be able to run YouTrack correctly. I do not recommend enabling auto restart for now to prevent issues when the container is not able to start for some reason.
 
-{{< image img="diskstation_youtrack-setup-step-2.jpg" alt="YouTrack container configuration - advanced settings" >}}
+{% image "en/2020/install-youtrack-on-diskstation-with-docker/diskstation_youtrack-setup-step-2.jpg" "YouTrack container configuration - advanced settings" %}
 
 Switch to the "Volumes" tab in the advanced settings now. You will need to have folder containing several subfolders where YouTrack data is stored. This is very important! If you do not sync the data from the container to your Diskstation you will lose data. I created a new shared folder for Docker containers but you can choose any other location. Add the following folders and their container counterparts to the volumes list:
 
-{{< table >}}
+{% table %}
 
 | Local folder                        | Container folder      |
 |-------------------------------------|-----------------------|
@@ -75,7 +75,7 @@ Switch to the "Volumes" tab in the advanced settings now. You will need to have 
 | /diskstaion-folder/youtrack/data    | /opt/youtrack/data    |
 | /diskstaion-folder/youtrack/logs    | /opt/youtrack/logs    |
 
-{{< / table >}}
+{% endtable %}
 
 {{< image img="diskstation_youtrack-setup-step-3.jpg" alt="YouTrack container configuration - advanced settings" >}}
 
@@ -139,7 +139,7 @@ In the following screen YouTrack asks you about the connection settings. If you 
 
 If you passed this screen, the rest is basically self-explaining. Create a new administrator account. You may want to uncheck the "Enable guest login" box to prevent other accessing your YouTrack.
 
-{{< image img="youtrack_setup-admin-account.jpg" alt="YouTrack setup admin account" >}}
+{% linkedimage "en/2020/install-youtrack-on-diskstation-with-docker/youtrack_setup-admin-account.jpg" "YouTrack setup admin account" %}
 
 The last screen asks you for a license. If you bought one, enter it here. Otherwise, just save and you are done.
 

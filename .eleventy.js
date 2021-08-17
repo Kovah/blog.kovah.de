@@ -1,32 +1,10 @@
+const {DateTime} = require('luxon');
 const htmlmin = require('html-minifier');
-const Image = require('@11ty/eleventy-img');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const { DateTime } = require('luxon');
+const site = require('./src/_data/site.json');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const {imageShortcode, linkedImageShortcode} = require('./src/_includes/shortcodes/images');
 
 const OUTDIR = 'dist';
-const site = require('./src/_data/site.json');
-
-async function imageShortcode (src, alt, attributes = '{}', sizes = '768,1024') {
-  sizes = sizes.split(',').map(size => parseInt(size));
-  const path = src.substring(0, src.lastIndexOf("/"));
-
-  let metadata = await Image('src/' + src, {
-    widths: sizes,
-    formats: ['avif', 'jpeg', 'webp'],
-    outputDir: `${OUTDIR}/${path}`,
-    urlPath: `/${path}/`
-  });
-
-  let imageAttributes = {
-    alt,
-    sizes: sizes.map(size => `(max-width: ${size}px)`).toString(),
-    loading: 'lazy',
-    decoding: 'async',
-    ...JSON.parse(attributes)
-  };
-
-  return Image.generateHTML(metadata, imageAttributes);
-}
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -34,12 +12,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'public': '/'});
 
   eleventyConfig.addShortcode('image', imageShortcode);
+  eleventyConfig.addShortcode('linkedimage', linkedImageShortcode);
   eleventyConfig.addShortcode('currentYear', () => (new Date()).getFullYear());
-  eleventyConfig.addShortcode('version', () => String(Date.now()))
+  eleventyConfig.addShortcode('version', () => String(Date.now()));
+
+  eleventyConfig.addPairedShortcode('table', (content) => {
+    return `<div class="w-full overflow-x-auto">${content}</div>`;
+  });
 
   eleventyConfig.addFilter('formatDate', function (date, format, locale) {
-    locale = locale ? locale : "en";
-    return DateTime.fromJSDate(date).toFormat(format, { locale });
+    locale = locale ? locale : 'en';
+    return DateTime.fromJSDate(date).toFormat(format, {locale});
   });
 
   eleventyConfig.setBrowserSyncConfig({
