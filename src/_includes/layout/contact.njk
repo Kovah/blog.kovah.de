@@ -1,0 +1,43 @@
+<section id="contact">
+
+  <div class="container py-40 lg:py-48 text-center">
+
+    <h1 class="mb-28 text-4xl lg:text-5xl text-center font-extrabold">Get in touch!</h1>
+
+    <div class="grid grid-cols-4 md:grid-cols-5 gap-10 gap-y-16 text-5xl text-blue-500">
+      {% set contactClasses = "transform hover:scale-150 transition-transform duration-300" %}
+      <a href="mailto:mail@kovah.de" class="{{ contactClasses }}" title="Email" rel="me">
+        {% include 'icons/email.svg' %}
+      </a>
+      <a href="https://github.com/Kovah" class="{{ contactClasses }}" title="Github" rel="me">
+        {% include 'icons/github.svg' %}
+      </a>
+      <a href="https://twitter.com/kovah_kvh" class="{{ contactClasses }}" title="Twitter" rel="me">
+        {% include 'icons/twitter.svg' %}
+      </a>
+      <a href="https://patreon.com/Kovah" class="{{ contactClasses }}" title="Patreon">
+        {% include 'icons/patreon.svg' %}
+      </a>
+      <a href="https://unsplash.com/@kovah" class="{{ contactClasses }}" title="Unsplash">
+        {% include 'icons/unsplash.svg' %}
+      </a>
+      <a href="https://www.producthunt.com/@kovah_kvh" class="{{ contactClasses }}" title="Producthunt">
+        {% include 'icons/producthunt.svg' %}
+      </a>
+      <a href="https://www.linkedin.com/in/kovah/" class="{{ contactClasses }}" title="LinkedIn">
+        {% include 'icons/linkedin.svg' %}
+      </a>
+      <a href="https://goo.gl/ENt9y9" class="{{ contactClasses }}" title="Xing">
+        {% include 'icons/xing.svg' %}
+      </a>
+      <a href="https://www.behance.net/kvh" class="{{ contactClasses }}" title="Behance">
+        {% include 'icons/behance.svg' %}
+      </a>
+      <a href="https://dribbble.com/Kovah" class="{{ contactClasses }}" title="Dribbble">
+        {% include 'icons/dribbble.svg' %}
+      </a>
+    </div>
+
+  </div>
+
+</section>

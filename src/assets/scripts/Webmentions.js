@@ -24,15 +24,15 @@ export default class Webmentions {
   }
 
   updateCounts () {
-    if (!this.counts.type.mention) {
+    if (this.counts.type.mention) {
       this.$mentionCount.innerHTML = this.counts.type.mention;
     }
 
-    if (!this.counts.type.repost) {
+    if (this.counts.type.repost) {
       this.$repostCount.innerHTML = this.counts.type.repost;
     }
 
-    if (!this.counts.type.like) {
+    if (this.counts.type.like) {
       this.$likeCount.innerHTML = this.counts.type.like;
     }
   }

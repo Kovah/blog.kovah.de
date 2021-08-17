@@ -4,7 +4,6 @@ const site = require('./src/_data/site.json');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const {imageShortcode, linkedImageShortcode} = require('./src/_includes/shortcodes/images');
-const util = require('util');
 
 const OUTDIR = 'dist';
 
@@ -16,7 +15,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('image', imageShortcode);
   eleventyConfig.addShortcode('linkedimage', linkedImageShortcode);
-  eleventyConfig.addShortcode('currentYear', () => (new Date()).getFullYear());
+  eleventyConfig.addShortcode('currentYear', () => DateTime.now().year);
   eleventyConfig.addShortcode('version', () => String(Date.now()));
 
   eleventyConfig.addPairedShortcode('table', (content) => {

@@ -14,5 +14,7 @@
   "share_via_linkedin": "Share via LinkedIn",
   "share_via_reddit": "Share via Reddit",
   "share_via_email": "Share via Email",
-  "collection_description": "This is Collection #:edition, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet."
+  "collection_description": "This is Collection #:edition, a selection of interesting articles, stunning websites and cool tools around web development, technology and the internet.",
+  "legal_notice": "Legal Notice",
+  "privacy_policy": "Privacy Policy"
 }

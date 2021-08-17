@@ -13,23 +13,23 @@ layout: layout/base.njk
     <a class="p-name u-url" href="https://kovah.de/">{{ site.author }}</a>
   </span>
 
-  <header class="max-w-4xl mx-auto">
-    <h2 class="text-2xl lg:text-4xl font-bold font-special mt-8 lg:mt-12 md:text-center p-name"
+  <header class="container">
+    <h2 class="mt-12 lg:mt-20 text-3xl lg:text-5xl font-black font-special md:text-center p-name"
       itemprop="headline">{{ title }}</h2>
 
-    <div class="mt-4 lg:mt-8 mb-8 lg:mb-12 text-center text-gray-700">
+    <div class="mt-6 lg:mt-8 md:text-center text-gray-700">
       <time datetime='{{ date | formatDate("yyyy-LL-dd HH:mm:ss.u", locale) }}' itemprop="datePublished">
         {{ site[locale]._t.published_on | replace(":date", date | formatDate("D", locale)) }}
       </time>
     </div>
   </header>
 
-  <section class="prose prose-blue lg:prose-lg mx-auto e-content" itemprop="articleBody">
+  <section class="prose prose-blue lg:prose-lg mx-auto py-12 lg:py-20 px-4 lg:px-8 e-content" itemprop="articleBody">
     {{ content | safe }}
   </section>
 
-  <section class="mt-8 lg:mt-12 py-8 lg:py-12 bg-blue-500 text-white">
-    <div class="max-w-4xl mx-auto">
+  <section class="py-12 lg:py-20 text-gray-100 bg-blue-500">
+    <div class="container">
 
       <h3 class="mb-3 lg:mb-6 text-center text-xl font-special font-bold">
         {% if edition %}
@@ -40,39 +40,42 @@ layout: layout/base.njk
       </h3>
 
       <div class="grid gap-8 grid-cols-5 text-center text-xl lg:text-2xl">
-        <a class="transform hover:scale-150 focus:scale-150 transition-transform duration-300"
+        {% set shareClass = "text-white transform hover:scale-150 focus:scale-150 transition-transform duration-300" %}
+
+        <a class="{{ shareClass }}"
           target="_blank" rel="noopener noreferrer"
           href="https://twitter.com/share?url={{ page | permalink }}&text={{ title | replace('&', site[locale]._t.and) }}&via=kovah_kvh"
           title="{{ site[locale]._t.share_via_twitter }}">
           {% include '../icons/twitter.svg' %}
         </a>
-        <a class="transform hover:scale-150 focus:scale-150 transition-transform duration-300"
+        <a class="{{ shareClass }}"
           target="_blank" rel="noopener noreferrer"
           href="https://news.ycombinator.com/submitlink?u={{ page | permalink }}&t={{ title | replace('&', site[locale]._t.and) }}"
           title="{{ site[locale]._t.share_via_hn }}">
           {% include '../icons/hacker-news.svg' %}
         </a>
-        <a class="transform hover:scale-150 focus:scale-150 transition-transform duration-300"
+        <a class="{{ shareClass }}"
           target="_blank" rel="noopener noreferrer"
           href="https://www.linkedin.com/shareArticle?url={{ page | permalink }}&title={{ title | replace('&', site[locale]._t.and) }}&summary=&source={{ page | permalink }}"
           title="{{ site[locale]._t.share_via_linkedin }}">
           {% include '../icons/linkedin.svg' %}
         </a>
-        <a class="transform hover:scale-150 focus:scale-150 transition-transform duration-300"
+        <a class="{{ shareClass }}"
           target="_blank" rel="noopener noreferrer"
           href="https://reddit.com/submit?url={{ page | permalink }}&title={{ title }}"
           title="{{ site[locale]._t.share_via_reddit }}">
           {% include '../icons/reddit.svg' %}
         </a>
-        <a class="transform hover:scale-150 focus:scale-150 transition-transform duration-300"
+        <a class="{{ shareClass }}"
           target="_blank" rel="noopener noreferrer"
           href="mailto:?subject={{ title }}&body={{ description }} {{ page | permalink }}"
           title="{{ site[locale]._t.share_via_email }}">
           {% include '../icons/email.svg' %}
         </a>
+
       </div>
 
-      <div class="mt-10 lg:mt-16 webmentions" data-entry-url="{{ page | permalink }}">
+      <div class="mt-12 lg:mt-20 webmentions" data-entry-url="{{ page | permalink }}">
 
         <h3 class="mb-3 lg:mb-6 text-center text-xl font-special font-bold">
           {{ site[locale]._t.webmention_hint }}
