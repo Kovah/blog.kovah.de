@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2020-07-19T16:05:51+02:00
 draft: false
 
-categories:
-- Test
+category: test
 tags:
 - Netlify
 - Vercel

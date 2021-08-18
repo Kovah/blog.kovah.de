@@ -6,11 +6,10 @@ author: Kevin Woblick
 date: 2020-05-10T23:13:25+02:00
 draft: false
 
-categories:
-- Articles
+category: article
 tags:
 - RSS
-- inspiration
+- Inspiration
 - recommendations
 ---
 

@@ -6,8 +6,7 @@ draft: false
 title: Facebook is dead!
 type: post
 url: /de/facebook-is-dead/
-categories:
-- Artikel
+category: article
 tags:
 - About.me
 - Datenschutz

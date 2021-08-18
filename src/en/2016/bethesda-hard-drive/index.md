@@ -6,8 +6,7 @@ draft: false
 title: Bethesda's Hard Drive
 type: post
 url: /en/093b6-bethesdas-hard-drive/
-categories:
-- Article
+category: article
 tags:
 - Bethesda
 - E3

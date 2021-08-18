@@ -7,8 +7,7 @@ draft: false
 title: KeepSafe knacken - So einfach kommt man an die "versteckten" Bilder
 type: post
 url: /de/mit-keepsafe-bilder-verstecken-denkste/
-categories:
-- Artikel
+category: article
 tags:
 - Android
 - Bilder

@@ -6,8 +6,7 @@ draft: false
 title: 'OSX: Pocket Planes Geld / Bux Hack'
 type: post
 url: /de/mac-pocket-planes-geld-bux-hack-cheat-money/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Cheat
 - Game

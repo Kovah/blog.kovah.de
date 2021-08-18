@@ -6,8 +6,7 @@ draft: false
 title: Customize your GitLab installation
 type: post
 url: /en/customize-gitlab-installation/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Git
 - GitLab

@@ -6,8 +6,7 @@ draft: false
 title: The best copy protections within Games
 type: post
 url: /en/70893-best-copy-protections-within-games/
-categories:
-- Article
+category: article
 tags:
 - Games
 - Gaming

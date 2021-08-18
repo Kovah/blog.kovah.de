@@ -8,8 +8,7 @@ url: everything-game-short-review
 date: 2017-06-28
 draft: false
 
-categories:
-- Test
+category: test
 tags:
 - Everything
 - Game

@@ -7,8 +7,7 @@ title: Change the cursor on your website to an Emoji
 type: post
 url: /en/2d6ab-change-cursor-website-emoji/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - CSS
 - Development

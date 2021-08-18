@@ -6,8 +6,7 @@ draft: false
 title: 'In eigener Sache: Feedpress'
 type: post
 url: /de/in-eigener-sache-feedpress/
-categories:
-- News
+category: news
 tags:
 - Feed
 - Feedburner

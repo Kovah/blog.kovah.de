@@ -8,8 +8,7 @@ date: 2019-03-07
 draft: false
 thumbnail: tim-gouw-68319-unsplash.jpg
 
-categories:
-- Article
+category: article
 tags:
 - Development
 - Web Development

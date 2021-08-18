@@ -7,8 +7,7 @@ draft: false
 title: YouTube als Musikplayer für die Webseite
 type: post
 url: /de/youttube-als-musikplayer-fur-die-webseite/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - HTML
 - Video

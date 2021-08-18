@@ -7,8 +7,7 @@ draft: false
 title: The problem of finding an open source feature tracking software
 type: post
 url: /en/problem-finding-open-source-feature-tracking-software/
-categories:
-- Article
+category: article
 tags:
 - Drupal
 - Feature Requests

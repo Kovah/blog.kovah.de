@@ -7,8 +7,7 @@ description: You can add 10 new custom buttons to the Wordpress Richtext Editor 
 type: post
 url: /en/programmatically-add-custom-buttons-wordpress-tinymce-editor/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - JavaScript
 - PHP

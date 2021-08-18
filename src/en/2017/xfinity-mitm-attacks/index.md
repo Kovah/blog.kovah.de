@@ -6,8 +6,7 @@ title: Xfinity uses man-in-the-middle attacks
 description: The ISP injects scripts into websites with man-in-the-middle attacks to show messages to their customers.
 type: post
 url: /en/4nm9c-xfinity-uses-man-middle-attacks/
-categories:
-- News
+category: news
 tags:
 - Privacy
 - Xfinity

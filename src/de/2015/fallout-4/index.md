@@ -6,8 +6,7 @@ draft: false
 title: Fallout 4 - Die ersten 6 Stunden
 type: post
 url: /de/fallout-4-die-ersten-6-stunden/
-categories:
-- Test
+category: test
 tags:
 - Bethesda
 - Fallout

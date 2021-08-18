@@ -6,8 +6,7 @@ draft: false
 title: 'Die neue ownCloud Alternative: Nextcloud'
 type: post
 url: /de/die-neue-owncloud-alternative-nextcloud/
-categories:
-- News
+category: news
 tags:
 - Cloud
 - Nextcloud

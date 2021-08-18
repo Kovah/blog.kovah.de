@@ -6,8 +6,7 @@ draft: false
 title: Jappy.de Bilder speichern
 type: post
 url: /de/jappy-de-bilder-speichern-firefox/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Jappy
 - Snipping Tool

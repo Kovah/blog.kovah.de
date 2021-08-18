@@ -6,8 +6,7 @@ draft: false
 title: Management Probleme oder "Die Suche nach der Ordnung"
 type: post
 url: /de/management-probleme-oder-die-suche-nach-der-ordnung/
-categories:
-- Artikel
+category: article
 tags:
 - Aufgabenverwaltung
 - Management

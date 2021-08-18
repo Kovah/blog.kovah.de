@@ -6,8 +6,7 @@ draft: false
 title: Searching for a good class name?
 type: post
 url: /en/8dcc3-searching-good-class-name/
-categories:
-- Article
+category: article
 tags:
 - Development
 - Programming

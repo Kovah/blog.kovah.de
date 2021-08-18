@@ -7,8 +7,7 @@ draft: false
 title: Die Suche nach ownCloud Alternativen für die private Cloud
 type: post
 url: /de/die-suche-nach-owncloud-alternativen-fur-die-private-cloud/
-categories:
-- Artikel
+category: article
 tags:
 - AeroFS
 - Alternativen

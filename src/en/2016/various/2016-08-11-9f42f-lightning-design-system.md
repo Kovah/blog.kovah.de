@@ -6,8 +6,7 @@ draft: false
 title: Lightning Design System
 type: post
 url: /en/9f42f-lightning-design-system/
-categories:
-- News
+category: news
 tags:
 - Bootstrap
 - CSS

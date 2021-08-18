@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2019-12-11T12:24:50+01:00
 draft: false
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - PhpStorm
 ---

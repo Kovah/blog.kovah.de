@@ -6,8 +6,7 @@ draft: false
 title: 'Browser: Firefox immer noch vorne'
 type: post
 url: /de/browser-firefox-immer-noch-vorne/
-categories:
-- News
+category: news
 tags:
 - Browser
 - Chrome

@@ -6,8 +6,7 @@ draft: false
 title: The success of Pokèmon Go
 type: post
 url: /en/8057a-success-pokemon-go/
-categories:
-- News
+category: news
 tags:
 - Android
 - Apps

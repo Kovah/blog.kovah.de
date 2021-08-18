@@ -11,5 +11,11 @@
   }, {
     "id": "de",
     "name": "Deutsch"
-  }]
+  }],
+  "categories": [
+    "article",
+    "news",
+    "test",
+    "tutorial"
+  ]
 }

@@ -6,8 +6,7 @@ title: Smoothly animate particles with HTML5
 description: Peter Beshai explains how to efficiently animate thousands of points in canvas.
 type: post
 url: /en/xd2j8-smoothly-animate-particles-html5/
-categories:
-- Article
+category: article
 tags:
 - Canvas
 - D3

@@ -7,8 +7,7 @@ title: So schön könnte Facebook aussehen
 type: post
 url: /de/so-schon-konnte-facebook-aussehen/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Chrome
 - Code

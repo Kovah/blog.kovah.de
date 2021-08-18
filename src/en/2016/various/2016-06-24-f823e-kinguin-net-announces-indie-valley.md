@@ -6,8 +6,7 @@ draft: false
 title: Kinguin.net announces Indie Valley
 type: post
 url: /en/f823e-kinguin-net-announces-indie-valley/
-categories:
-- News
+category: news
 tags:
 - Games
 - Gaming

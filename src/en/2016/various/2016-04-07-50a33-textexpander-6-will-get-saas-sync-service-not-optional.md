@@ -6,8 +6,7 @@ draft: false
 title: Textexpander 6 will get a SaaS sync service that is not optional
 type: post
 url: /en/50a33-textexpander-6-will-get-saas-sync-service-not-optional/
-categories:
-- News
+category: news
 tags:
 - SaaS
 - TextExpander

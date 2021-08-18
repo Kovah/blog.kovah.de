@@ -6,11 +6,10 @@ draft: false
 title: 'Achtung: Neue PayPal Phishing eMail!'
 type: post
 url: /de/achtung-neue-paypal-phishing-email/
-categories:
-- News
+category: news
 tags:
 - Betrug
-- eMail
+- Email
 - Kreditkarte
 - PayPal
 - Phishing

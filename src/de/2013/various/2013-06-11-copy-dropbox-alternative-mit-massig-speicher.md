@@ -6,8 +6,7 @@ draft: false
 title: Copy - Dropbox Alternative mit massig Speicher
 type: post
 url: /de/copy-dropbox-alternative-mit-massig-speicher/
-categories:
-- Artikel
+category: article
 tags:
 - Cloud
 - Copy

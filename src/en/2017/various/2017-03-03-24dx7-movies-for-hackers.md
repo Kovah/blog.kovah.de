@@ -6,8 +6,7 @@ title: Movies for Hackers
 description: A curated list of movies every hacker & cyberpunk must watch.
 type: post
 url: /en/24dx7-movies-for-hackers/
-categories:
-- Article
+category: article
 tags:
 - Hacker
 - Lists

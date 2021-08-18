@@ -7,8 +7,7 @@ draft: false
 title: The Vivaldi browser
 type: post
 url: /en/3139b-the-vivaldi-browser/
-categories:
-- News
+category: news
 tags:
 - Browser
 - Vivaldi

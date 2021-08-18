@@ -7,8 +7,7 @@ title: Duplikate finden mit PHP, MySQL, Levenshtein und jQuery
 type: post
 url: /de/duplikate-finden-mit-php-mysql-levenshtein-und-jquery/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - JavaScript
 - jQuery

@@ -6,8 +6,7 @@ title: Vivus Instant
 description: Need inline SVG animations but don’t want to use Javascript? Try Vivus Instant.
 type: post
 url: /en/4h8a1-vivus-instant/
-categories:
-- Article
+category: article
 tags:
 - CSS
 - JavaScript

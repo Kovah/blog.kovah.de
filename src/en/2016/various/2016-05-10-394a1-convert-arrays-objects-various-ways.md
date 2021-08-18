@@ -7,8 +7,7 @@ title: Convert arrays to objects in various ways
 type: post
 url: /en/394a1-convert-arrays-objects-various-ways/
 hascode: true
-categories:
-- Article
+category: article
 tags:
 - PHP
 - Programming

@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2021-04-03T13:01:11+02:00
 draft: false
 
-categories:
-- Articles
+category: article
 tags:
 - refactoring
 - legacy code

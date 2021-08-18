@@ -6,8 +6,7 @@ draft: false
 title: Polyscapes
 type: post
 url: /en/04e8d-polyscapes/
-categories:
-- Article
+category: article
 tags:
 - Polyscapes
 - Wallpaper

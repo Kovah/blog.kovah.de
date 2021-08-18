@@ -6,8 +6,7 @@ draft: false
 title: 'Private Cloud: OwnCloud Alternativen Teil 2'
 type: post
 url: /de/private-cloud-owncloud-alternativen-teil-2/
-categories:
-- Artikel
+category: article
 tags:
 - AeroFS
 - Alternativen

@@ -6,8 +6,7 @@ draft: false
 title: Warum "Ich hab nichts zu verbergen" für alle gefährlich ist
 type: post
 url: /de/warum-ich-hab-nichts-zu-verbergen-fuer-alle-gefaehrlich-ist/
-categories:
-- Artikel
+category: article
 tags:
 - Edward Snowden
 - Medien

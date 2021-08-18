@@ -6,8 +6,7 @@ draft: false
 title: Die Suche nach Ordnung Teil 2
 type: post
 url: /de/die-suche-nach-ordnung-teil-2/
-categories:
-- Artikel
+category: article
 tags:
 - Bugtracker
 - Management

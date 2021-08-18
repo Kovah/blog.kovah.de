@@ -7,8 +7,7 @@ draft: false
 title: Unsplash.com costs about $ 18k per month
 type: post
 url: /en/127e5-unsplash-com-costs-18k-per-month/
-categories:
-- Article
+category: article
 tags:
 - Development
 - Unsplash.com

@@ -8,8 +8,7 @@ title: Install Kandan on Ubuntu 12.04 Server with Apache / Plesk
 type: post
 url: /en/install-kandan-ubuntu-12-04-server-apache-plesk/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Apache
 - chat

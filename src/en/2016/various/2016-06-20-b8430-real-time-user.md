@@ -6,8 +6,7 @@ draft: false
 title: Real Time User
 type: post
 url: /en/b8430-real-time-user/
-categories:
-- Article
+category: article
 tags:
 - Development
 - JavaScript

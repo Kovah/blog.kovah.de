@@ -7,8 +7,7 @@ date: 2019-08-28T11:35:04+02:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Docker
 - Shell

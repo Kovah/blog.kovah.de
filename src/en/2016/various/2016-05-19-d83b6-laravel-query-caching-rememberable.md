@@ -7,8 +7,7 @@ title: Laravel query caching with Rememberable
 type: post
 url: /en/d83b6-laravel-query-caching-rememberable/
 hascode: true
-categories:
-- Article
+category: article
 tags:
 - Caching
 - Laravel

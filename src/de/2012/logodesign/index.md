@@ -6,8 +6,7 @@ draft: false
 title: Logodesign heute
 type: post
 url: /de/logodesign-heute/
-categories:
-- Artikel
+category: article
 tags:
 - eBay
 - Logos

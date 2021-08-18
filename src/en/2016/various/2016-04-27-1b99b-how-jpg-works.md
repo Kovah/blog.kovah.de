@@ -6,8 +6,7 @@ draft: false
 title: How .jpg works
 type: post
 url: /en/1b99b-how-jpg-works/
-categories:
-- Article
+category: article
 tags:
 - jpg
 ---

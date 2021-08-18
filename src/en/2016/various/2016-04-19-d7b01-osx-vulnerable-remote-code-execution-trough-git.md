@@ -6,8 +6,7 @@ draft: false
 title: OSX vulnerable to remote code execution trough Git
 type: post
 url: /en/d7b01-osx-vulnerable-remote-code-execution-trough-git/
-categories:
-- News
+category: news
 tags:
 - Git
 - Mac OSX

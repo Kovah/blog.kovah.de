@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2020-03-15T18:35:19+01:00
 draft: false
 
-categories:
-- Artikel
+category: article
 tags:
 - Corona
 - Gesellschaft

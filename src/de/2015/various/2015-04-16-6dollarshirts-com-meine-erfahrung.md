@@ -6,8 +6,7 @@ draft: false
 title: 6DollarShirts.com - Meine Erfahrungen
 type: post
 url: /de/6dollarshirts-com-meine-erfahrung/
-categories:
-- Test
+category: test
 tags:
 - 6DollarShirts
 - PayPal

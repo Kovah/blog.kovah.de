@@ -6,8 +6,7 @@ draft: false
 title: Stop feeling dumb about pairing fonts
 type: post
 url: /en/e8d89-stop-feeling-dumb-pairing-fonts/
-categories:
-- Article
+category: article
 tags:
 - Development
 - Fonts

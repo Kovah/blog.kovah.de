@@ -7,8 +7,7 @@ draft: false
 title: Frontend Performance from Beginner to Expert to Insanity
 type: post
 url: /en/3ca50-frontend-performance-beginner-expert-insanity/
-categories:
-- Article
+category: article
 tags:
 - Performance
 - Web Development

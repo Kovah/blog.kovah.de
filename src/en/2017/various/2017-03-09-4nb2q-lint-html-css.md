@@ -7,8 +7,7 @@ description: Visually mark HTML elements with the help of CSS if the elements ar
 type: post
 url: /en/4nb2q-lint-html-css/
 hascode: true
-categories:
-- Article
+category: article
 tags:
 - CSS
 - Development

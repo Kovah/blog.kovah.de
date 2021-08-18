@@ -6,8 +6,7 @@ draft: false
 title: Gimme Bar, die Pinterest Alternative
 type: post
 url: /de/gimme-bar-pinterest-alternative/
-categories:
-- Artikel
+category: article
 tags:
 - Bookmarklet
 - DeviantArt

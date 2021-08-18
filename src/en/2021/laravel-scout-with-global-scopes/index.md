@@ -7,8 +7,7 @@ date: 2021-02-08T22:59:52+01:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Laravel
 - PHP

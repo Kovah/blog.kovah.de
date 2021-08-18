@@ -7,8 +7,7 @@ date: 2020-12-17T13:44:32+01:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - LinkAce
 - iOS

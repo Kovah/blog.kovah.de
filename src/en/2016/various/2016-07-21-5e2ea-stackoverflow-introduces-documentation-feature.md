@@ -7,8 +7,7 @@ draft: false
 title: Stack Overflow introduces it's Documentation feature
 type: post
 url: /en/5e2ea-stackoverflow-introduces-documentation-feature/
-categories:
-- News
+category: news
 tags:
 - Documentation
 - Internet

@@ -7,8 +7,7 @@ date: 2019-07-11T13:00:43+02:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - dat Network
 - Static Site

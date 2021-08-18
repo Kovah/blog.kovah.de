@@ -7,8 +7,7 @@ url: 5jnc2y-starting-into-web-development-a-small-guide
 date: 2019-03-05
 draft: false
 
-categories:
-- Article
+category: article
 tags:
 - Development
 - Backend

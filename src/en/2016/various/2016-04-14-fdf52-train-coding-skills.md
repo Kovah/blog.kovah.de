@@ -6,8 +6,7 @@ draft: false
 title: Train your coding skills
 type: post
 url: /en/fdf52-train-coding-skills/
-categories:
-- Article
+category: article
 tags:
 - Coding
 - Programming

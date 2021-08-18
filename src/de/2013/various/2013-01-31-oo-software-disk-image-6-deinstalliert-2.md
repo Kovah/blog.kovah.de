@@ -6,8 +6,7 @@ draft: false
 title: O&O Software Disk Image 6 deinstalliert!
 type: post
 url: /de/oo-software-disk-image-6-deinstalliert-2/
-categories:
-- Artikel
+category: article
 tags:
 - Acronis
 - Backup

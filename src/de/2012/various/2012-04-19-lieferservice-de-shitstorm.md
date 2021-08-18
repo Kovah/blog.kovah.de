@@ -6,8 +6,7 @@ draft: false
 title: Lieferservice.de - Aus Rabatt-Aktion wird Shitstorm
 type: post
 url: /de/lieferservice-de-aus-rabatt-aktion-wird-shitstorm/
-categories:
-- News
+category: news
 tags:
 - Facebook
 - Lieferservice.de

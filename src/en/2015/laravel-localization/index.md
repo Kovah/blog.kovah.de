@@ -7,8 +7,7 @@ title: 'Laravel 5: Localization based on the subdomain'
 type: post
 url: /en/laravel-5-localization-based-on-the-subdomain/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Laravel
 - localization

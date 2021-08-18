@@ -7,8 +7,7 @@ draft: false
 title: Fallout 4 Power Armor Helmets
 type: post
 url: /en/bd384-fallout-4-power-armor-helmets/
-categories:
-- News
+category: news
 tags:
 - Fallout
 - Fallout 4

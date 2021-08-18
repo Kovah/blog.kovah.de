@@ -8,8 +8,7 @@ draft: false
 title: Sicherheitsbedenken beim Cloud Computing
 type: post
 url: /de/sicherheitsbedenken-beim-cloud-computing/
-categories:
-- Artikel
+category: article
 tags:
 - Anti-Virus
 - Cloud

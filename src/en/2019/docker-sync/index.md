@@ -8,8 +8,7 @@ draft: false
 hascode: true
 thumbnail: chuttersnap-eH_ftJYhaTY-unsplash.jpg
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Docker
 - docker-sync

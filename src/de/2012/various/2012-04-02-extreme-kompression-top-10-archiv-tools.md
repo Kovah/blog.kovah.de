@@ -6,8 +6,7 @@ draft: false
 title: Extreme Kompression - Top 10 Archiv Tools
 type: post
 url: /de/extreme-kompression-top-10-archiv-tools/
-categories:
-- Test
+category: test
 tags:
 - Archive
 - Backup

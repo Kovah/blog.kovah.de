@@ -8,14 +8,13 @@ title: Why Apple may lose its status as a top tech company
 type: post
 url: /en/why-apple-may-lose-its-status-as-a-top-tech-company/
 thumbnail: 4098234995_56eb79dda7_o-1200x420.jpg
-categories:
-- Article
+category: article
 tags:
 - Amazon
 - Apple
 - Google
 - innovations
-- software
+- Software
 - Tesla
 ---
 

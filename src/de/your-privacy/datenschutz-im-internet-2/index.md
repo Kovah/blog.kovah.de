@@ -8,8 +8,7 @@ type: post
 url: /de/your-privacy/datenschutz-im-internet-teil-2
 aliases:
 - /de/datenschutz-im-internet-teil-2
-categories:
-- Artikel
+category: article
 tags:
 - Datenschutz
 - Online Shopping

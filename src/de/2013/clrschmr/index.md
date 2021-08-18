@@ -6,11 +6,10 @@ draft: false
 title: CLRSCHMR
 type: post
 url: /de/clrschmr/
-categories:
-- News
+category: news
 tags:
 - Farben
-- GitHub
+- Github
 - Webtool
 ---
 

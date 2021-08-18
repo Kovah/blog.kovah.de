@@ -6,8 +6,7 @@ draft: false
 title: InlineTweet.js
 type: post
 url: /en/52e44-inlinetweet-js/
-categories:
-- News
+category: news
 tags:
 - Development
 - JavaScript

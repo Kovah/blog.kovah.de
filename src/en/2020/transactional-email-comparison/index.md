@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2020-10-20T09:53:22+02:00
 draft: false
 
-categories:
-- Test
+category: test
 tags:
 - Email
 - Programming

@@ -7,8 +7,7 @@ date: 2019-07-19T23:51:03+02:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - DNSSEC
 - Cloudflare

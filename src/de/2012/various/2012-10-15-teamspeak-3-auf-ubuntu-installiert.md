@@ -6,8 +6,7 @@ draft: false
 title: TeamSpeak 3 auf Ubuntu installiert
 type: post
 url: /de/teamspeak-3-auf-ubuntu-installiert/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Installation
 - Server

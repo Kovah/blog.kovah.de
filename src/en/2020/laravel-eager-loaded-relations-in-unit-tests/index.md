@@ -7,8 +7,7 @@ date: 2020-02-04T12:24:08+01:00
 draft: false
 hascode: true
 
-categories:
-- Articles
+category: article
 tags:
 - Laravel
 - PHP

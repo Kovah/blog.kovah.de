@@ -6,8 +6,7 @@ draft: false
 title: Drupal 7 - Berechtigungen neu aufbauen bei Content Access Problemen
 type: post
 url: /de/drupal-7-berechtigungen-neu-aufbauen-bei-content-access-problemen/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Berechtigungen
 - Content Access

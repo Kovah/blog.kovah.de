@@ -7,8 +7,7 @@ title: '3 Jahre Hide.me VPN: meine Erfahrungen'
 type: post
 url: /de/1-jahr-hide-me-vpn-meine-erfahrungen/
 thumbnail: hidemebanner.jpg
-categories:
-- Test
+category: test
 tags:
 - Anonymität
 - Hide.me

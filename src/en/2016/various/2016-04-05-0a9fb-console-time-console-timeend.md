@@ -8,8 +8,7 @@ title: console.time and console.timeEnd
 type: post
 url: /en/0a9fb-console-time-console-timeend/
 hascode: true
-categories:
-- Article
+category: article
 tags:
 - Console
 - Development

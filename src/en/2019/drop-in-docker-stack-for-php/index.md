@@ -8,8 +8,7 @@ date: 2019-06-18
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Development
 - Docker

@@ -8,12 +8,11 @@ title: Some fresh themes to spice up Hacker News
 type: post
 url: /en/some-fresh-themes-to-spice-up-hacker-news/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - CSS
 - Hacker News
-- themes
+- Themes
 ---
 
 If you already know [Hacker News](https://news.ycombinator.com) there's not much to say, just skip to the Themes section. If you don't know what Hackers News is: it's like Buzzfeed but with serious news dedicated to developers, hackers and tech enthusiasts, hosted by [YCombinator](http://www.ycombinator.com/). It's one of these sites I visit at least once per day to get some fresh news. The problem is that the site is quite horrible developed with tables and inline-styles and a very basic design. So I decided to use Stylebot, a chrome extension to edit a sites CSS, to apply a new look to HN. You should be able to use the code for the theme with any browser extension that can insert custom CSS into a website, like [Userstyles](https://userstyles.org/) with Stylish.

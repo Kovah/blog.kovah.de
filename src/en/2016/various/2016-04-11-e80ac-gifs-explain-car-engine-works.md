@@ -6,8 +6,7 @@ draft: false
 title: GIFs that explain how a car engine works
 type: post
 url: /en/e80ac-gifs-explain-car-engine-works/
-categories:
-- Article
+category: article
 tags:
 - Cars
 - GIF

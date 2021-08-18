@@ -6,8 +6,7 @@ draft: false
 title: Deutsche Übersetzung für Fusion Invoice
 type: post
 url: /de/deutsche-uebersetzung-fuer-fusion-invoice/
-categories:
-- News
+category: news
 tags:
 - FusionInvoice
 - Kundenverwaltung

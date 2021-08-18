@@ -6,8 +6,7 @@ draft: false
 title: Blizzard just released a new patch for Diablo II
 type: post
 url: /en/ae724-blizzard-just-released-new-patch-diablo-ii/
-categories:
-- News
+category: news
 tags:
 - Diablo
 - Games

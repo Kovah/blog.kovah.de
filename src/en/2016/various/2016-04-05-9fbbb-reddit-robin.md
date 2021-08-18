@@ -7,8 +7,7 @@ draft: false
 title: Reddit Robin
 type: post
 url: /en/9fbbb-reddit-robin/
-categories:
-- News
+category: news
 tags:
 - Reddit
 ---

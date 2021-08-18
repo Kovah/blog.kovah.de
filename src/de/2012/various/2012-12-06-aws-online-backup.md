@@ -6,8 +6,7 @@ draft: false
 title: 'Günstiges Online-Backup: Amazon Web Services (AWS)'
 type: post
 url: /de/gunstiges-online-backup-amazon-web-services-aws/
-categories:
-- Artikel
+category: article
 tags:
 - Amazon
 - Amazon Web Services (AWS)

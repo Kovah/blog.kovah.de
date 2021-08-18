@@ -6,8 +6,7 @@ draft: false
 title: Page scrolling indication made easy
 type: post
 url: /en/c3ec1-page-scrolling-indication-made-easy/
-categories:
-- Article
+category: article
 tags:
 - CSS
 - Development

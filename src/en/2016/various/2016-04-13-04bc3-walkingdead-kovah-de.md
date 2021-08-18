@@ -6,8 +6,7 @@ draft: false
 title: walkingdead.kovah.de
 type: post
 url: /en/04bc3-walkingdead-kovah-de/
-categories:
-- News
+category: news
 tags:
 - Kovah.de
 - Walking Dead

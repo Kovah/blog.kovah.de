@@ -6,8 +6,7 @@ draft: false
 title: Meine Cloud - Welche Dienste ich nutze
 type: post
 url: /de/meine-cloud-welche-dienste-ich-nutze/
-categories:
-- Artikel
+category: article
 tags:
 - Anbieter
 - Cloud

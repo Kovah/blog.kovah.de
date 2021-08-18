@@ -7,8 +7,7 @@ draft: false
 title: Heise Tippgeber
 type: post
 url: /en/29c5c-heise-tippgeber/
-categories:
-- News
+category: news
 tags:
 - Heise.de
 - Internet

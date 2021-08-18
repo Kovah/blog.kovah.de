@@ -6,8 +6,7 @@ draft: false
 title: Stöbern in den Archiven
 type: post
 url: /de/stobern-in-den-archiven/
-categories:
-- Artikel
+category: article
 tags:
 - Archive
 - DeviantArt

@@ -7,8 +7,7 @@ draft: false
 title: Some fresh ideas for logins, menus and other stuff
 type: post
 url: /en/1a8ea-fresh-ideas-logins-menus-stuff/
-categories:
-- News
+category: news
 tags:
 - Codepen
 - CSS

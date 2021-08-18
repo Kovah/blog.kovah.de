@@ -7,8 +7,7 @@ draft: false
 title: Classic Programmer Paintings
 type: post
 url: /en/8c81a-classic-programmer-paintings/
-categories:
-- Article
+category: article
 tags:
 - Blog
 - Programming

@@ -6,8 +6,7 @@ draft: false
 title: Translation Services compared
 type: post
 url: /en/dbba0-translation-services-compared/
-categories:
-- News
+category: news
 tags:
 - Translation
 - Video

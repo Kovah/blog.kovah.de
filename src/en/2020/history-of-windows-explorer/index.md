@@ -7,8 +7,7 @@ date: 2020-06-12T10:59:45+02:00
 draft: false
 hascode: false
 
-categories:
-- News
+category: news
 tags:
 - Windows Explorer
 - Windows

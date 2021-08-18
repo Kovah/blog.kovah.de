@@ -6,8 +6,7 @@ draft: false
 title: CSSPurge
 type: post
 url: /en/1dba9-csspurge/
-categories:
-- Article
+category: article
 tags:
 - CSS
 - Web Development

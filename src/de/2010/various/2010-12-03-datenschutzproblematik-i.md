@@ -6,8 +6,7 @@ draft: false
 title: Datenschutzproblematik I
 type: post
 url: /de/datenschutzproblematik-i/
-categories:
-- Artikel
+category: article
 tags:
 - Communities
 - Daten

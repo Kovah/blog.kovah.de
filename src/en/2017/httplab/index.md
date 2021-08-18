@@ -6,8 +6,7 @@ title: HTTPlab
 description: A web server that lets you inspect HTTP requests and modify responses.
 type: post
 url: /en/4g8jc-httplab/
-categories:
-- Article
+category: article
 tags:
 - HTTP
 - Learning

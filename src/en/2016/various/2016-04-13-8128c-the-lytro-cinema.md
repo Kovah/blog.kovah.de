@@ -6,8 +6,7 @@ draft: false
 title: The Lytro Cinema
 type: post
 url: /en/8128c-the-lytro-cinema/
-categories:
-- News
+category: news
 tags:
 - Lytro
 - Lytro Cinema

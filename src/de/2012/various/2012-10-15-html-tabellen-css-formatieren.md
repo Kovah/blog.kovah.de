@@ -6,8 +6,7 @@ draft: false
 title: HTML Tabellen mit CSS formatieren - in 10 Sekunden
 type: post
 url: /de/html-tabellen-mit-css-formatieren-in-10-sekunden/
-categories:
-- Artikel
+category: article
 tags:
 - CSS
 - HTML

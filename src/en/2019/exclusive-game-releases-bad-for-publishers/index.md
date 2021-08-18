@@ -8,8 +8,7 @@ date: 2019-03-19
 draft: false
 thumbnail: sean-do-782269-unsplash-1200x420.jpg
 
-categories:
-- Article
+category: article
 tags:
 - Epic Games
 - exclusive

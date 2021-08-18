@@ -7,8 +7,7 @@ draft: false
 title: Jumpstarting any Laravel app with Laracogs
 type: post
 url: /en/c4aba-jumpstarting-laravel-app-laracogs/
-categories:
-- Article
+category: article
 tags:
 - Development
 - Laravel

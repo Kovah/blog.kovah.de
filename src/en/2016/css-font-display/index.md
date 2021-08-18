@@ -7,8 +7,7 @@ title: The font-display CSS property
 type: post
 url: /en/72123-css-font-display-property/
 hascode: true
-categories:
-- Article
+category: article
 tags:
 - CSS
 - Fonts

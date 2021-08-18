@@ -7,8 +7,7 @@ draft: false
 title: 'Schnelle Webseiten: Starke Performance auch ohne CDN'
 type: post
 url: /de/schnelle-webseiten-starke-performance-auch-ohne-cdn/
-categories:
-- Artikel
+category: article
 tags:
 - CDN
 - Cloudflare

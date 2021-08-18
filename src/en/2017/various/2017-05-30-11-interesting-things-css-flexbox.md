@@ -5,8 +5,7 @@ draft: false
 title: 11 interesting things about CSS flexbox
 description: David Gilbertson published a small collection of 11 super useful tips for working with CSS flexbox.
 url: /en/11-interesting-things-css-flexbox/
-categories:
-- News
+category: news
 tags:
 - CSS
 - Flexbox

@@ -6,8 +6,7 @@ draft: false
 title: Realität bei der Sicherheit von Cloud Diensten
 type: post
 url: /de/realitaet-bei-der-sicherheit-von-cloud-diensten/
-categories:
-- Artikel
+category: article
 tags:
 - Cloud
 - Datenschutz

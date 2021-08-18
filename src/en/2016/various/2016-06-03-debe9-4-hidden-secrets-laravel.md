@@ -6,8 +6,7 @@ draft: false
 title: 4 hidden Secrets about Laravel
 type: post
 url: /en/debe9-4-hidden-secrets-laravel/
-categories:
-- Article
+category: article
 tags:
 - Laravel
 - PHP

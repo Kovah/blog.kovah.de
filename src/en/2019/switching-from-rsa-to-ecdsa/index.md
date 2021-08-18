@@ -8,10 +8,9 @@ draft: false
 hascode: true
 thumbnail: ssh-private-key.jpg
 
-categories:
-- Tutorial
+category: tutorial
 tags:
-- security
+- Security
 - RSA
 - ECDSA
 - SSH

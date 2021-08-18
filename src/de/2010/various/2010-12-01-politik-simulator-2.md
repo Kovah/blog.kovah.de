@@ -6,8 +6,7 @@ draft: false
 title: Politik Simulator 2
 type: post
 url: /de/politik-simulator-2/
-categories:
-- Test
+category: test
 tags:
 - PC
 - Politik Simulator 2

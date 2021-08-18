@@ -6,8 +6,7 @@ draft: false
 title: 'Das neue alte Projekt: Game-Zitate'
 type: post
 url: /de/das-neue-alte-projekt-game-zitate/
-categories:
-- Artikel
+category: article
 tags:
 - Drupal
 - Game-Zitate.de

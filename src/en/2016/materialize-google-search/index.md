@@ -6,8 +6,7 @@ draft: false
 title: Material Design for the Google Search
 type: post
 url: /en/bcc5e-material-design-google-search/
-categories:
-- Article
+category: article
 tags:
 - Google
 - Material Design

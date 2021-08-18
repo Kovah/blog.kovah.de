@@ -7,8 +7,7 @@ date: 2020-04-11T10:46:25+02:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Synology Diskstation
 - Cloudflare

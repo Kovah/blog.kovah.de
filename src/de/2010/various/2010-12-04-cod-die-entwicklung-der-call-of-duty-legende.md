@@ -6,8 +6,7 @@ draft: false
 title: CoD - Die Entwicklung der Call of Duty Legende
 type: post
 url: /de/cod-die-entwicklung-der-call-of-duty-legende/
-categories:
-- Artikel
+category: article
 tags:
 - Activision
 - Call of Duty

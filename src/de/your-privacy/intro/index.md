@@ -9,8 +9,7 @@ type: post
 url: /de/your-privacy/privatsphaere-und-datenschutz-kurze-einfuehrung/
 aliases:
 - /de/privatsphaere-und-datenschutz-eine-kurze-einfuehrung/
-categories:
-- Artikel
+category: article
 tags:
 - Datenschutz
 - Internet

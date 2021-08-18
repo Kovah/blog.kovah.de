@@ -7,8 +7,7 @@ url: 74knd-watch-a-unix-command-to-tail-directories
 date: 2018-05-15
 hascode: true
 
-categories:
-- Article
+category: article
 tags:
 - Bash
 - Console

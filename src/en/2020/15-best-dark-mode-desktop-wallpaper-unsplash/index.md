@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2020-03-15T18:56:31+01:00
 draft: false
 
-categories:
-- Article
+category: article
 tags:
 - Wallpaper
 - Unsplash

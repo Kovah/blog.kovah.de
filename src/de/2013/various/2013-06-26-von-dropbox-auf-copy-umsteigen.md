@@ -7,8 +7,7 @@ draft: false
 title: Von Dropbox auf Copy umsteigen - So geht's!
 type: post
 url: /de/von-dropbox-auf-copy-umsteigen-so-gehts/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Cloud
 - Copy

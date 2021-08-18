@@ -6,8 +6,7 @@ draft: false
 title: What happens if you let neural networks colorize grayscale images?
 type: post
 url: /en/527f9-happens-let-neural-networks-colorize-grayscale-images/
-categories:
-- Article
+category: article
 tags:
 - Neural Networks
 - Programming

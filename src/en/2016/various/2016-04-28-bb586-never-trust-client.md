@@ -7,8 +7,7 @@ draft: false
 title: Never trust the client
 type: post
 url: /en/bb586-never-trust-client/
-categories:
-- Article
+category: article
 tags:
 - FPS
 - Games

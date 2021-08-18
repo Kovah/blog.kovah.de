@@ -8,8 +8,7 @@ date: 2019-02-27
 draft: false
 thumbnail: ticwatchpro-1200x420.jpg
 
-categories:
-- Test
+category: test
 tags:
 - Android
 - Fitness Tracking

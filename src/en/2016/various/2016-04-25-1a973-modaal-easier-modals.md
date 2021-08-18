@@ -6,8 +6,7 @@ draft: false
 title: Modaal
 type: post
 url: /en/1a973-modaal-easier-modals/
-categories:
-- Article
+category: article
 tags:
 - Development
 - Web

@@ -6,8 +6,7 @@ draft: false
 title: Isometric GTA V
 type: post
 url: /en/87403-isometric-gta-v/
-categories:
-- Article
+category: article
 tags:
 - Games
 - Gaming

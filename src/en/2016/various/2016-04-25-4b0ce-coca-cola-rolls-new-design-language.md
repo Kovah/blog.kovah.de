@@ -6,8 +6,7 @@ draft: false
 title: Coca Cola rolls out their new design language
 type: post
 url: /en/4b0ce-coca-cola-rolls-new-design-language/
-categories:
-- News
+category: news
 tags:
 - Design
 ---

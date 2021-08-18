@@ -6,8 +6,7 @@ draft: false
 title: Every shot Kobe Bryant ever took
 type: post
 url: /en/2f216-every-shot-kobe-bryant-ever-took/
-categories:
-- Article
+category: article
 tags:
 - Big Data
 - Data

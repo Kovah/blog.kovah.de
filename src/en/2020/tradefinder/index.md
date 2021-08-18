@@ -7,11 +7,10 @@ date: 2020-10-12T13:32:11+02:00
 draft: false
 hascode: false
 
-categories:
-- News
+category: news
 tags:
 - React
-- Javascript
+- JavaScript
 - Gaming
 
 ---

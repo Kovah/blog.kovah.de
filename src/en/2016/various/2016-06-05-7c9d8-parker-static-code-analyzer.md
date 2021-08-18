@@ -6,8 +6,7 @@ draft: false
 title: Parker static Code Analyzer
 type: post
 url: /en/7c9d8-parker-static-code-analyzer/
-categories:
-- Article
+category: article
 tags:
 - CSS
 ---

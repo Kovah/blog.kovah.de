@@ -6,8 +6,7 @@ draft: false
 title: Umstellung von Virtual Server auf Root Server
 type: post
 url: /de/umstellung-von-virtual-server-auf-root-server/
-categories:
-- News
+category: news
 tags:
 - Backup
 - Host Europe

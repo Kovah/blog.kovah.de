@@ -6,8 +6,7 @@ draft: false
 title: OpenERP auf der Synology Diskstation personalisieren
 type: post
 url: /de/openerp-auf-der-synology-diskstation-personalisieren/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - CRM
 - CSS

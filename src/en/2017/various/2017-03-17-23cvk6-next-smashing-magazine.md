@@ -6,8 +6,7 @@ title: The next Smashing Magazine
 description: The Smashing Magazine is doing a complete overhaul of it’s website and print magazine. Here’s a sneak preview.
 type: post
 url: /en/23cvk6-next-smashing-magazine/
-categories:
-- News
+category: news
 tags:
 - Redesign
 - Smashing Magazine

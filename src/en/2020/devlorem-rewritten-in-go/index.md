@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2020-07-24T10:33:22+02:00
 draft: false
 
-categories:
-- News
+category: news
 tags:
 - Golang
 - DevLorem

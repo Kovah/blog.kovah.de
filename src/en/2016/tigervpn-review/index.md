@@ -8,8 +8,7 @@ title: My Experiences with TigerVPN
 type: post
 translationKey: "tigervpn-review"
 url: /en/my-experiences-with-tigervpn/
-categories:
-- Test
+category: test
 tags:
 - Internet
 - Privacy

@@ -5,8 +5,7 @@ description: osTicket als Support System
 title: osTicket als Support System
 type: post
 url: /de/osticket-als-support-system/
-categories:
-- Artikel
+category: article
 tags:
 - Help Desk
 - Kovah.de

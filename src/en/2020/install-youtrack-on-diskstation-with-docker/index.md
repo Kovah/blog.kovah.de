@@ -7,8 +7,7 @@ date: 2020-04-07T13:16:18+02:00
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Synology Diskstation
 - Docker

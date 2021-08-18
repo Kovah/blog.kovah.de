@@ -7,8 +7,7 @@ date: 2019-09-03T10:50:42+02:00
 draft: false
 hascode: true
 
-categories:
-- Article
+category: article
 tags:
 - Oh my ZSH
 - Shell

@@ -7,8 +7,7 @@ title: BitTorrent Sync
 type: post
 url: /de/bittorrent-sync/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - BitTorrent
 - BitTorrent Sync

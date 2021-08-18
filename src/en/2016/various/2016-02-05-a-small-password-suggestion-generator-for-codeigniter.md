@@ -8,8 +8,7 @@ title: A small password suggestion generator for Codeigniter
 type: post
 url: /en/a-small-password-suggestion-generator-for-codeigniter/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Codeigniter
 - passwords

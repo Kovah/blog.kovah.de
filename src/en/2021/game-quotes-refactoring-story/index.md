@@ -7,8 +7,7 @@ date: 2021-04-14T10:24:03+02:00
 draft: false
 hascode: true
 
-categories:
-- Articles
+category: article
 tags:
 - Game Quotes
 - refactoring

@@ -6,8 +6,7 @@ draft: false
 title: That's the hell of a PC mod!
 type: post
 url: /en/e113b-thats-hell-pc-mod/
-categories:
-- Article
+category: article
 tags:
 - Games
 - Gaming

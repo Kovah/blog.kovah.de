@@ -6,8 +6,7 @@ title: WD My Cloud is vulnerable to remote attacks
 description: A post on Exploitee.rs explains an exploit which makes WD My Cloud vulnerable to remote attacks.
 type: post
 url: /en/4g8jn-wd-my-cloud-vulnerable-remote-attacks/
-categories:
-- News
+category: news
 tags:
 - Exploit
 - NAS

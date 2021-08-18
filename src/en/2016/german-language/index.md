@@ -7,8 +7,7 @@ draft: false
 title: The German Language
 type: post
 url: /en/1c6df-the-german-language/
-categories:
-- Article
+category: article
 tags:
 - German
 - Language

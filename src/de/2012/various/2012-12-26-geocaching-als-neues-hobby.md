@@ -6,8 +6,7 @@ draft: false
 title: Geocaching als neues Hobby
 type: post
 url: /de/geocaching-als-neues-hobby/
-categories:
-- Artikel
+category: article
 tags:
 - Geocaching
 - Ingress

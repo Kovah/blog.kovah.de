@@ -7,8 +7,7 @@ date: 2020-12-15T17:48:26+01:00
 draft: false
 hascode: false
 
-categories:
-- News
+category: news
 tags:
 - Open Source
 - LinkAce

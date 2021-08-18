@@ -6,8 +6,7 @@ draft: false
 title: The Temple of No
 type: post
 url: /en/62469-the-temple-of-no/
-categories:
-- News
+category: news
 tags:
 - Games
 - Gaming

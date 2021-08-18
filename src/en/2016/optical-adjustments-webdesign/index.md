@@ -6,8 +6,7 @@ draft: false
 title: Optical Adjustments in Web Design
 type: post
 url: /en/b84b1-optical-adjustments-web-design/
-categories:
-- Article
+category: article
 tags:
 - Design
 - Web

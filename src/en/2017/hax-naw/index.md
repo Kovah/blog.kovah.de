@@ -6,8 +6,7 @@ title: Hex Naw
 description: Test your entire color systems for contrast and accessibility.
 type: post
 url: /en/9me26-hex-naw/
-categories:
-- Article
+category: article
 tags:
 - Accessibility
 - Colors

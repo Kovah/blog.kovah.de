@@ -7,8 +7,7 @@ draft: false
 title: 'InvoicePlane: New Devs wanted!'
 type: post
 url: /en/invoiceplane-new-devs-wanted/
-categories:
-- News
+category: news
 tags:
 - FusionInvoice
 - Github

@@ -6,13 +6,12 @@ draft: false
 title: Jam API
 type: post
 url: /en/46b2b-jam-api/
-categories:
-- Article
+category: article
 tags:
 - API
 - CSS
 - JSON
-- open source
+- Open Source
 - Web Development
 ---
 

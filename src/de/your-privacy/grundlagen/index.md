@@ -8,8 +8,7 @@ type: post
 url: /de/your-privacy/datenschutz-die-grundlagen/
 aliases:
 - /de/datenschutz-die-grundlagen/
-categories:
-- Artikel
+category: article
 tags:
 - Datenschutz
 - Privatsphäre

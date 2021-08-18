@@ -6,8 +6,7 @@ draft: false
 title: 'VMware - Ubuntu Installation: Fehler could not find kernel image vmlinuz64'
 type: post
 url: /de/vmware-ubuntu-installation-fehler-could-not-find-kernel-image-vmlinuz64/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Linux
 - Ubuntu

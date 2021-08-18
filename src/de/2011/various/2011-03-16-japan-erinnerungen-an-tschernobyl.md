@@ -6,8 +6,7 @@ draft: false
 title: Japan - Erinnerungen an Tschernobyl
 type: post
 url: /de/japan-erinnerungen-an-tschernobyl/
-categories:
-- News
+category: news
 tags:
 - Atomkraftwerk
 - Japan

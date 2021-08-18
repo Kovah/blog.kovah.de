@@ -6,8 +6,7 @@ draft: false
 title: WhatsApp - Schrecklicher Segen
 type: post
 url: /de/whatsapp-schrecklicher-segen/
-categories:
-- Artikel
+category: article
 tags:
 - Apps
 - iPad

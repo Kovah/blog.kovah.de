@@ -8,8 +8,7 @@ date: 2018-06-02
 draft: false
 thumbnail: simon-abrams-286276-unsplash.jpg
 
-categories:
-- Article
+category: article
 tags:
 - Development
 - FusionInvoice

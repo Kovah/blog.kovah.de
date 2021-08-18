@@ -6,8 +6,7 @@ draft: false
 title: A computer painted a new Rembrandt
 type: post
 url: /en/23700-computer-painted-new-rembrandt/
-categories:
-- News
+category: news
 tags:
 - AI
 - Art

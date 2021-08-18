@@ -8,8 +8,7 @@ title: A Progress bar for Impress.js
 type: post
 url: /en/a-progress-bar-for-impress-js/
 hascode: true
-categories:
-- Tutorial
+category: tutorial
 tags:
 - impress.js
 - JavaScript

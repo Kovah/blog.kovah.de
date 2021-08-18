@@ -6,8 +6,7 @@ author: Kevin Woblick
 date: 2020-01-03T11:37:02+01:00
 draft: false
 
-categories:
-- Articles
+category: article
 tags:
 - Predictions
 - Development

@@ -7,8 +7,7 @@ title: devbridge-styleguide
 type: post
 url: /en/22d92-devbridge-styleguide/
 hascode: true
-categories:
-- Article
+category: article
 tags:
 - Development
 - JavaScript

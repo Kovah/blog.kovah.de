@@ -7,8 +7,7 @@ date: 2019-08-22T13:32:20+02:00
 draft: false
 hascode: true
 
-categories:
-- Tutorials
+category: tutorial
 tags:
 - Github
 - Git

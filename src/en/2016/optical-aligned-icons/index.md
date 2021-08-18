@@ -7,8 +7,7 @@ draft: false
 title: Optical alignment of Icons
 type: post
 url: /en/563d0-optical-alignment-icons/
-categories:
-- Article
+category: article
 tags:
 - CSS
 - Design

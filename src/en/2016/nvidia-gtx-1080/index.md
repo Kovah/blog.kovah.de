@@ -6,8 +6,7 @@ draft: false
 title: The new Nvidia GTX 1080
 type: post
 url: /en/a5b84-new-nvidia-gtx-1080/
-categories:
-- News
+category: news
 tags:
 - Games
 - Gaming

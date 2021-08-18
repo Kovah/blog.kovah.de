@@ -6,8 +6,7 @@ draft: false
 title: The CSS property 'writing-mode'
 type: post
 url: /en/b4fc3-css-property-writing-mode/
-categories:
-- Article
+category: article
 tags:
 - CSS
 - Development

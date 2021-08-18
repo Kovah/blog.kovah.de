@@ -7,8 +7,7 @@ date: 2019-07-02T22:12:52+02:00
 draft: false
 hascode: true
 
-categories:
-- Article
+category: article
 tags:
 - Hugo
 - Static Site Generator

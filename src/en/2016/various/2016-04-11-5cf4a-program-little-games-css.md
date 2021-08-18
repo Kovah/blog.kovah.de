@@ -7,8 +7,7 @@ draft: false
 title: Program little games with CSS only
 type: post
 url: /en/5cf4a-program-little-games-css/
-categories:
-- News
+category: news
 tags:
 - CSS
 - Development

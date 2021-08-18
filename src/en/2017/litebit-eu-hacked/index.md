@@ -6,8 +6,7 @@ author: Kevin Woblick
 url: 34n62-litebit-eu-was-hacked
 date: 2017-09-13
 
-categories:
-- News
+category: news
 tags:
 - Bitcoin
 - Crypto Coins

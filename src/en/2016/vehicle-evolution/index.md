@@ -7,8 +7,7 @@ draft: false
 title: Testing Vehicle Evolution in your Browser
 type: post
 url: /en/53a60-testing-vehicle-evolution-browser/
-categories:
-- Article
+category: article
 tags:
 - Algorithm
 - Browser

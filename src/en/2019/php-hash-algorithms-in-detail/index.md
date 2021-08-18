@@ -7,11 +7,10 @@ date: 2019-10-24T17:31:10+02:00
 draft: false
 hascode: true
 
-categories:
-- Articles
+category: article
 tags:
 - PHP
-- algorithms
+- Algorithms
 - hashes
 ---
 

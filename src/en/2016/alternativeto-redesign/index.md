@@ -7,11 +7,10 @@ draft: false
 title: Alternativeto.net now comes with new design
 type: post
 url: /en/alternativeto-net-now-comes-with-new-design/
-categories:
-- News
+category: news
 tags:
 - Alternativeto
-- redesign
+- Redesign
 ---
 
 I know [Alternativeto.net](https://alternativeto.net/) for many years now and keep using it for finding alternatives for any kind of applications. Since the launch in 2009 the design was never changed too much. Now the team behind Alternativeto relaunched the site with a new and fresh design.

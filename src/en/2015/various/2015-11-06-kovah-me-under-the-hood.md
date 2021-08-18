@@ -7,8 +7,7 @@ title: Kovah.me - Under the Hood
 type: post
 url: /en/kovah-me-under-the-hood/
 hscode: true
-categories:
-- Article
+category: article
 tags:
 - Blog
 - Wordpress

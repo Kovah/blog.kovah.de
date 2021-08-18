@@ -7,8 +7,7 @@ title: 'TigerVPN: Meine Erfahrungen'
 type: post
 url: /de/tigervpn-meine-erfahrungen/
 translationKey: "tigervpn-review"
-categories:
-- Test
+category: test
 tags:
 - Anonymität
 - Sicherheit

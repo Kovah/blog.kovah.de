@@ -10,8 +10,7 @@ thumbnail: siarhei-horbach-xJc--frJbuw-unsplash.jpg
 url: /de/your-privacy/deine-privatsphaere-in-deiner-hand
 aliases:
 - /de/yourprivacy-deine-privatsphaere-in-deiner-hand
-categories:
-- Artikel
+category: article
 tags:
 - Datenschutz
 - Internet

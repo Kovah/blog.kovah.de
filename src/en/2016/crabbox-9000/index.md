@@ -6,8 +6,7 @@ draft: false
 title: The Crabbox 9000
 type: post
 url: /en/e34f1-the-crabbox-9000/
-categories:
-- Article
+category: article
 tags:
 - Consoles
 - Games

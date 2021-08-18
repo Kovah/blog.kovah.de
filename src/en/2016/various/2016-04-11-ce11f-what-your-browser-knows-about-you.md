@@ -6,8 +6,7 @@ draft: false
 title: What your Browser knows about you
 type: post
 url: /en/ce11f-what-your-browser-knows-about-you/
-categories:
-- News
+category: news
 tags:
 - Browser
 - Data

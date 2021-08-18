@@ -7,8 +7,7 @@ draft: false
 title: 'CSS: Left-align text if it''s using multiple lines'
 type: post
 url: /en/659ea-css-left-align-text-if-its-using-multiple-lines/
-categories:
-- Tutorial
+category: tutorial
 tags:
 - CSS
 - Text

@@ -7,8 +7,7 @@ url: roomba-vacuum-cleaner-may-sell-map-house
 date: 2017-07-25
 draft: false
 
-categories:
-- News
+category: news
 tags:
 - Amazon
 - Apple

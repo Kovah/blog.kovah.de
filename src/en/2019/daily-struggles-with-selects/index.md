@@ -7,8 +7,7 @@ date: 2019-09-24T10:08:57+02:00
 draft: false
 thumbnail: christopher-lemercier.jpg
 
-categories:
-- Articles
+category: article
 tags:
 - HTML
 - Select2

@@ -8,8 +8,7 @@ date: 2019-03-01
 draft: false
 hascode: true
 
-categories:
-- Tutorial
+category: tutorial
 tags:
 - Caching
 - Laravel

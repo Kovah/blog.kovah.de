@@ -6,8 +6,7 @@ draft: false
 title: Kurt Göbels Second Incompleteness Theorem
 type: post
 url: /en/466a5-kurt-gobels-second-incompleteness-theorem/
-categories:
-- Article
+category: article
 tags:
 - Philosophy
 ---

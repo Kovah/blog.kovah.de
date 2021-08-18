@@ -6,8 +6,7 @@ author: Kevin Woblick
 url: 45v33-instagrams-broken-links-help-center
 date: 2017-09-13
 
-categories:
-- Article
+category: article
 tags:
 - Instagram
 - Privacy

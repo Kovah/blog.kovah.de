@@ -6,8 +6,7 @@ draft: false
 title: Greenscreen? Check. VR? Check!
 type: post
 url: /en/15f05-greenscreen-check-vr-check/
-categories:
-- Article
+category: article
 tags:
 - Games
 - Gaming
