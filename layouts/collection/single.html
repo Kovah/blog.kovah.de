@@ -47,9 +47,8 @@
       <div class="post__inner post__content e-content" itemprop="articleBody">
         {{ .Content }}
 
-        {{ $data := index $.Site.Data.collection (string .Params.edition) }}
         <div class="collection-list">
-          {{ range $data.links }}
+          {{ range .Params.links }}
           <div class="collection-list__item">
             <h2 class="collection-list__item-title">{{ .title }}</h2>
             <div class="collection-list__item-content">
@@ -69,12 +68,12 @@
           {{ end }}
         </div>
 
-        {{ with $data.releases }}
+        {{ with .Params.releases }}
         <div class="collection-releases">
           <h3>{{ i18n "collection_releases" }}</h3>
 
           <ul>
-            {{ range $data.releases }}
+            {{ range . }}
             <li><a href="{{ .link }}">{{ .title }}</a></li>
             {{ end }}
           </ul>
