@@ -6,7 +6,7 @@
   {{ $prefix = $.Site.Params.imgCDNUrl }}
   {{ end }}
 
-  <div class="post__thumbnail">
+  <div class="mb-8 md:mb-10 lg:mb-16">
     <picture>
       <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=452&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=904&org_if_sml=1 2x'
           media="(max-width: 500px)"/>

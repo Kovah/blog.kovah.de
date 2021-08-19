@@ -1,14 +1,15 @@
-<div class="webmentions" data-entry-url='{{ $.Site.Params.webmentionUrl }}{{ .Permalink | relURL }}'>
-  <p class="webmentions__hint">{{ i18n "webmentions_hint" }}</p>
-  <div class="webmentions__details">
-    <div class="webmentions__count">
-      <span class='webmentions__mention-count'>0</span> {{ i18n "webmentions_mentions" }}
+<div class="webmentions mt-10 md:mt-16 lg:mt-20"
+    data-entry-url='{{ $.Site.Params.webmentionUrl }}{{ .Permalink | relURL }}'>
+  <h2 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-special font-bold text-center">{{ i18n "webmentions_hint" }}</h2>
+  <div class="flex justify-around text-lg">
+    <div>
+      <span class='mention-count'>0</span> {{ i18n "webmentions_mentions" }}
     </div>
-    <div class="webmentions__count">
-      <span class='webmentions__repost-count'>0</span> {{ i18n "webmentions_reposts" }}
+    <div>
+      <span class='repost-count'>0</span> {{ i18n "webmentions_reposts" }}
     </div>
-    <div class="webmentions__count">
-      <span class='webmentions__like-count'>0</span> {{ i18n "webmentions_likes" }}
+    <div>
+      <span class='like-count'>0</span> {{ i18n "webmentions_likes" }}
     </div>
   </div>
 </div>

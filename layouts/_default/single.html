@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $badge_class := "hover:text-gray-800 focus:text-gray-800 focus:outline-none transition" }}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
@@ -6,68 +7,70 @@
   <meta itemprop="author" content='{{ .Param "author" }}'/>
   <meta itemprop="publisher" content="{{ $.Site.Params.Publisher }}"/>
 
-  <span class="meta-info u-url">{{ .Permalink | absURL }}</span>
-  <span class="meta-info p-summary">{{ .Description }}</span>
-  <span class="meta-info p-author h-card">
+  <span class="hidden u-url">{{ .Permalink | absURL }}</span>
+  <span class="hidden p-summary">{{ .Description }}</span>
+  <span class="hidden p-author h-card">
     <a class="p-name u-url" href="https://kovah.de/">{{ $.Site.Params.Publisher }}</a>
   </span>
 
-  <header class="post__header">
+  <header>
     <div class="container">
 
       {{ partial "post/thumbnail.html" . }}
 
-      <div class="post__inner">
+      <h1 class="font-special font-bold text-2xl md:text-3xl lg:text-4xl p-name" itemprop="headline">{{ .Title }}</h1>
 
-        <h1 class="post__title p-name" itemprop="headline">{{ .Title }}</h1>
-
-        <div class="post__meta">
+      <div class="mt-4 lg:mt-4 sm:flex text-gray-500 text-sm">
+        <div class="flex">
           {{ range .Params.Categories }}
-            {{ i18n "category" . }}:
-            <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="post__category">
-              {{- . -}}
+          <div class="mr-1">{{ i18n "category" . }}:</div>
+          <div>
+            <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
+             {{- . -}}
             </a>
+          </div>
           {{ end }}
-          <span class="post__tags">
+        </div>
+
+        <div class="flex mt-2 sm:mt-0 sm:ml-4 lg:ml-6">
           {{ $list := .Params.Tags }}
           {{ $len := (len $list) }}
           {{ if gt $len 0 }}
-            {{ i18n "tags" . }}:
-            {{ range $index, $element := $list }}
-            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="tag post__tag">
-              {{- $element -}}
-            </a>
-            {{ end }}
+            <div class="mr-1">{{ i18n "tags" . }}:</div>
+            <div>
+              {{ range $index, $element := $list }}
+              <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
+                {{- $element -}}
+              </a>
+              {{ end }}
+            </div>
           {{ end }}
-        </span>
         </div>
-
-        <div class="post__meta">
-          <span class="post__readtime">{{ i18n "readtime" . }}</span>
-          <time class="post__published dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
-            {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
-          </time>
-        </div>
-
       </div>
+
+      <div class="mt-2 text-gray-500 text-sm">
+        <span class="mr-4 lg:mr-6">{{ i18n "readtime" . }}</span>
+        <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+          {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+        </time>
+      </div>
+
     </div>
   </header>
 
-  <section class="post__content-wrapper">
-    <div class="container">
+  <section class="container mt-8 md:mt-10 lg:mt-16">
 
-      <div class="post__inner post__content e-content" itemprop="articleBody">
-        {{ partial "post/translation-info.html" . }}
-        {{ .Content }}
-      </div>
-
+    <div class="prose prose-blue lg:prose-lg mx-auto e-content" itemprop="articleBody">
+      {{ partial "post/translation-info.html" . }}
+      {{ .Content }}
     </div>
+
   </section>
 
 </article>
 
-<section class="block block--primary block--small">
-  <div class="container">
+<section class="bg-blue-500 text-white mt-16 md:mt-20 lg:mt-24">
+  <div class="container py-16 md:py-20 lg:py-24">
 
     {{ partial "post/sharing.html" . }}
 

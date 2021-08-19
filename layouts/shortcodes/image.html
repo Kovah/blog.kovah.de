@@ -5,8 +5,8 @@
 {{ $prefix = $.Site.Params.imgCDNUrl }}
 {{ end }}
 
-<figure{{ with .Get "modifier"}} class="figure--{{.}}"{{ end }}>
-  {{ with .Get "link"}} <a href="{{.}}"> {{ end }}
+<figure{{ with .Get "modifier"}} class="figure-{{.}}"{{ end }}>
+  {{ with .Get "link"}} <a href="{{.}}" class="block"> {{ end }}
   <picture>
     <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=372&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=744&org_if_sml=1 2x'
         media="(max-width: 500px)"/>
@@ -17,5 +17,5 @@
         {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
   {{ with .Get "link"}} </a> {{ end }}
-  {{ with .Get "caption"}}<figcaption>{{ . }}</figcaption>{{ end }}
+  {{ with .Get "caption"}}<figcaption class="text-center">{{ . }}</figcaption>{{ end }}
 </figure>
