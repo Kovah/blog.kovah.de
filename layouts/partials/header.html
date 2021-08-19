@@ -1,52 +1,53 @@
-<div class="navigation block">
-  <div class="container">
+<div class="container py-10 md:py-16 lg:py-20">
 
-    <div class="navigation__top">
+  <div class="grid grid-cols-2 gap-4">
 
-      <h1 class="navigation__logo">
-        <a href='{{ "/" | relLangURL }}'>
-          {{ partial "logo.html" . }}
-        </a>
-      </h1>
+    <a href='{{ "/" | relLangURL }}' class="w-min">
+      {{ partial "logo.html" . }}
+    </a>
 
-      <div class="navigation__spacer"></div>
-
+    <div class="flex items-center justify-end">
       {{ with .OutputFormats.Get "rss" -}}
-        <a class="navigation__item" href="{{ .Permalink | relURL }}" title="Feed">
-          {{ partial "icons/rss.html" }}
-        </a>
+      <a class="lg:text-lg text-gray-500 hover:text-blue-500 focus:text-blue-500 transition"
+          href="{{ .Permalink | relURL }}" title="Feed">
+        {{ partial "icons/rss.html" }}
+      </a>
       {{ else }}
-        {{ with $.Site.Home.OutputFormats.Get "rss" -}}
-        <a class="navigation__item" href="{{ .Permalink | relURL }}" title="Feed">
-          {{ partial "icons/rss.html" }}
-        </a>
-        {{ end -}}
+      {{ with $.Site.Home.OutputFormats.Get "rss" -}}
+      <a class="lg:text-lg text-gray-500 hover:text-blue-500 focus:text-blue-500 transition"
+          href="{{ .Permalink | relURL }}" title="Feed">
+        {{ partial "icons/rss.html" }}
+      </a>
+      {{ end -}}
       {{ end -}}
 
       {{ range .Translations }}
-        <a class="navigation__item" href="{{ .Permalink | relURL }}" title="{{ .Language.LanguageName }}">
-          {{ .Language.LanguageName }}
-        </a>
+      <a class="ml-4 lg:ml-6 lg:text-lg font-special text-gray-500 hover:text-blue-500 focus:text-blue-500 transition"
+          href="{{ .Permalink | relURL }}" title="{{ .Language.LanguageName }}">
+        {{ .Language.LanguageName }}
+      </a>
       {{ else }}
-        {{ $currentLang := .Language.Lang }}
-        {{ range $.Site.Home.AllTranslations }}
-          {{ if eq $currentLang .Lang }}
-          {{ else }}
-          <a class="navigation__item" href='{{ .Permalink | relURL }}' title="{{ .Language.LanguageName }}">
-            {{ .Language.LanguageName }}
-          </a>
-          {{ end }}
-        {{ end }}
+      {{ $currentLang := .Language.Lang }}
+      {{ range $.Site.Home.AllTranslations }}
+      {{ if eq $currentLang .Lang }}
+      {{ else }}
+      <a class="ml-4 lg:ml-6 lg:text-lg font-special text-gray-500 hover:text-blue-500 focus:text-blue-500 transition"
+          href='{{ .Permalink | relURL }}' title="{{ .Language.LanguageName }}">
+        {{ .Language.LanguageName }}
+      </a>
       {{ end }}
-
+      {{ end }}
+      {{ end }}
     </div>
 
-    <div class="navigation__categories">
+  </div>
 
-      {{ range .Site.Menus.main -}}
-      <a class="navigation__item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-      {{- end }}
+  <div class="mt-10 md:mt-16 lg:mt-20 grid grid-cols-2 gap-y-1.5 gap-x-4 lg:gap-x-6 md:flex items-center">
 
-    </div>
+    {{ range .Site.Menus.main -}}
+    <a class="w-min lg:text-lg text-gray-700 font-special hover:text-blue-500 focus:text-blue-500 transition"
+        href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+    {{- end }}
+
   </div>
 </div>

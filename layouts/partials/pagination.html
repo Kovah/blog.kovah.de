@@ -15,64 +15,68 @@
   {{ end }}
 {{ end }}
 
+{{ $link_class := "py-3 lg:py-4 px-2 md:px-4 lg:px-5 lg:text-lg bg-gray-50 text-gray-700 hover:bg-blue-100 focus:bg-blue-100 transition" }}
+{{ $disabled_link_class := "py-3 lg:py-4 px-2 md:px-4 lg:px-5 lg:text-lg text-gray-300" }}
+
 {{ if gt $paginator.TotalPages 1 }}
-<ul class="pagination" data-current="{{ $paginator_current }}" data-start="{{ $paginator_start }}" data-total="{{ $paginator.TotalPages }}">
+<ul class="flex items-center justify-center py-10 md:py-16 lg:py-20" data-current="{{ $paginator_current }}"
+    data-start="{{ $paginator_start }}" data-total="{{ $paginator.TotalPages }}">
 
-  <li class="pagination__item pagination__arrow">
+  <li class="">
     {{ if ne $paginator.PageNumber 1 }}
-    <a class="pagination__link" href="{{ $paginator.First.URL | relLangURL }}" title='{{ i18n "page_first" }}'>
+    <a class="{{ $link_class }}" href="{{ $paginator.First.URL | relLangURL }}" title='{{ i18n "page_first" }}'>
       {{ partial "icons/angle-double-left.html" }}
     </a>
     {{ else }}
-    <span class="pagination__text pagination__text--disabled">
+    <span class="{{ $disabled_link_class }}">
       {{ partial "icons/angle-double-left.html" }}
     </span>
     {{ end }}
   </li>
 
-  <li class="pagination__item pagination__arrow">
+  <li class="p">
     {{ if $paginator.HasPrev }}
-    <a href="{{ $paginator.Prev.URL | relLangURL }}" class="pagination__link" title='{{ i18n "page_previous" }}'>
+    <a class="{{ $link_class }}" href="{{ $paginator.Prev.URL | relLangURL }}"  title='{{ i18n "page_previous" }}'>
       {{ partial "icons/angle-left.html" }}
     </a>
     {{ else }}
-    <span class="pagination__text pagination__text--disabled">
+    <span class="{{ $disabled_link_class }}">
       {{ partial "icons/angle-left.html" }}
     </span>
     {{ end }}
   </li>
 
-  <li class="pagination__divider"></li>
+  <li class="hidden md:inline-block w-5"></li>
 
   {{ range $index, $page := first $paginator_limit $pages }}
-  <li class="pagination__item{{ if eq $page $paginator }} pagination__item--current{{ end }}" data-index="{{ $index }}">
-    <a href="{{ $page.URL | relLangURL }}" class="pagination__link" title='{{ i18n "page_no" }} {{ .PageNumber }}'>
+  <li class="{{ if eq $page $paginator }}{{ end }}" data-index="{{ $index }}">
+    <a class="{{ $link_class }}" href="{{ $page.URL | relLangURL }}" title='{{ i18n "page_no" }} {{ .PageNumber }}'>
       {{ .PageNumber }}
     </a>
   </li>
   {{ end }}
 
-  <li class="pagination__divider"></li>
+  <li class="hidden md:inline-block w-5"></li>
 
-  <li class="pagination__item pagination__arrow">
+  <li class="">
     {{ if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL | relLangURL }}" class="pagination__link pagination__link--next" title='{{ i18n "page_next" }}'>
+    <a class="{{ $link_class }}" href="{{ $paginator.Next.URL | relLangURL }}" title='{{ i18n "page_next" }}'>
       {{ partial "icons/angle-right.html" }}
     </a>
     {{ else }}
-    <span class="pagination__text pagination__text--disabled">
+    <span class="{{ $disabled_link_class }}">
       {{ partial "icons/angle-right.html" }}
     </span>
     {{ end }}
   </li>
 
-  <li class="pagination__item pagination__arrow">
+  <li class="">
     {{ if ne $paginator.PageNumber $paginator.TotalPages }}
-    <a class="pagination__link pagination__link--last" href="{{ $paginator.Last.URL | relLangURL }}" title='{{ i18n "page_last" }}'>
+    <a class="{{ $link_class }}" href="{{ $paginator.Last.URL | relLangURL }}" title='{{ i18n "page_last" }}'>
       {{ partial "icons/angle-double-right.html" }}
     </a>
     {{ else }}
-    <span class="pagination__text pagination__text--disabled">
+    <span class="{{ $disabled_link_class }}">
       {{ partial "icons/angle-double-right.html" }}
     </span>
     {{ end }}
