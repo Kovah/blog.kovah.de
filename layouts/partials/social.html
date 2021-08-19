@@ -1,41 +1,40 @@
-<aside class="block  text--center">
-  <div class="container">
+{{ $link_class := "text-2xl lg:text-4xl text-gray-700 hover:text-blue-500 hover:scale-125 focus:text-blue-500 focus:scale-125 transition transform transition-transform duration-300" }}
+<aside class="text-center">
+  <div class="container py-10 md:py-16 lg:py-20">
 
-    <h2 class="social__header">Get in Touch!  👋</h2>
+    <h2 class="text-4xl font-black font-special">Get in Touch!  👋</h2>
 
-    <div class="social">
-      <a href="mailto:mail@kovah.de" class="social__icon" title="Email" rel="me">
+    <div class="mt-10 md:mt-16 lg:mt-20 grid grid-cols-5 gap-10 gap-y-16">
+
+      <a href="mailto:mail@kovah.de" class="{{ $link_class }} " title="Email" rel="me">
         {{ partial "icons/email.html" }}
       </a>
-      <a href="https://github.com/Kovah" class="social__icon" title="Github" rel="me">
+      <a href="https://github.com/Kovah" class="{{ $link_class }}" title="Github" rel="me">
         {{ partial "icons/github.html" }}
       </a>
-      <a href="https://twitter.com/kovah_kvh" class="social__icon" title="Twitter" rel="me">
+      <a href="https://twitter.com/kovah_kvh" class="{{ $link_class }}" title="Twitter" rel="me">
         {{ partial "icons/twitter.html" }}
       </a>
-      <a href="https://patreon.com/Kovah" class="social__icon" title="Patreon">
+      <a href="https://patreon.com/Kovah" class="{{ $link_class }}" title="Patreon">
         {{ partial "icons/patreon.html" }}
       </a>
-      <a href="https://unsplash.com/@kovah" class="social__icon" title="Unsplash">
+      <a href="https://unsplash.com/@kovah" class="{{ $link_class }}" title="Unsplash">
         {{ partial "icons/unsplash.html" }}
       </a>
-
-      <div class="social__divider"></div>
-
-      <a href="https://dev.to/kovah" class="social__icon" title="Dev.to">
-        {{ partial "icons/dev.html" }}
-      </a>
-      <a href="https://www.producthunt.com/@kovah_kvh" class="social__icon" title="Producthunt">
+      <a href="https://www.producthunt.com/@kovah_kvh" class="{{ $link_class }}" title="Producthunt">
         {{ partial "icons/producthunt.html" }}
       </a>
-      <a href="https://www.linkedin.com/in/kovah/" class="social__icon" title="LinkedIn">
+      <a href="https://www.behance.net/kvh" class="{{ $link_class }}" title="Behance">
+        {{ partial "icons/behance.html" }}
+      </a>
+      <a href="https://dribbble.com/Kovah" class="{{ $link_class }}" title="Dribble">
+        {{ partial "icons/dribble.html" }}
+      </a>
+      <a href="https://www.linkedin.com/in/kovah/" class="{{ $link_class }}" title="LinkedIn">
         {{ partial "icons/linkedin.html" }}
       </a>
-      <a href="https://goo.gl/ENt9y9" class="social__icon" title="Xing">
+      <a href="https://goo.gl/ENt9y9" class="{{ $link_class }}" title="Xing">
         {{ partial "icons/xing.html" }}
-      </a>
-      <a href="https://www.behance.net/kvh" class="social__icon" title="Behance">
-        {{ partial "icons/behance.html" }}
       </a>
     </div>
 

@@ -15,8 +15,8 @@
   {{ end }}
 {{ end }}
 
-{{ $link_class := "py-3 lg:py-4 px-2 md:px-4 lg:px-5 lg:text-lg bg-gray-50 text-gray-700 hover:bg-blue-100 focus:bg-blue-100 transition" }}
-{{ $disabled_link_class := "py-3 lg:py-4 px-2 md:px-4 lg:px-5 lg:text-lg text-gray-300" }}
+{{ $link_class := "py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg bg-gray-50 text-gray-700 hover:bg-blue-100 focus:bg-blue-100 transition" }}
+{{ $disabled_link_class := "py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg text-gray-300" }}
 
 {{ if gt $paginator.TotalPages 1 }}
 <ul class="flex items-center justify-center py-10 md:py-16 lg:py-20" data-current="{{ $paginator_current }}"
