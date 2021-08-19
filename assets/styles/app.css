@@ -1,0 +1,64 @@
+/*!
+ * Kovah.de CSS Styles
+ * All Rights Reserved
+ */
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Regular'), local('NexaRegular'),
+  url('../fonts/subset-NexaRegular.woff2') format('woff2'),
+  url('../fonts/subset-NexaRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa XBold'), local('Nexa-XBold'),
+  url('../fonts/subset-Nexa-XBold.woff2') format('woff2'),
+  url('../fonts/subset-Nexa-XBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa Black'), local('NexaBlack'),
+  url('../fonts/subset-NexaBlack.woff2') format('woff2'),
+  url('../fonts/subset-NexaBlack.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+@screen lg {
+  .container {
+    @apply px-8;
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-size: inherit;
+  width: 1em;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.icon path {
+  fill: currentColor;
+}

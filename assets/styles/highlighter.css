@@ -1,5 +1,3 @@
-@import "variables";
-
 /**
  * Dracula Theme originally by Zeno Rocha [@zenorocha]
  * https://draculatheme.com/
@@ -12,7 +10,7 @@ pre {
   color: #f8f8f2;
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: $font-family-mono;
+  @apply font-mono;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -95,4 +93,3 @@ pre {
 
 .token.entity {
   cursor: help; }
-

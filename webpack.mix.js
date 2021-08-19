@@ -33,5 +33,5 @@ mix.combine([
   'node_modules/prismjs/components/prism-bash.js'
 ], 'assets/dist/highlighter.js');
 
-mix.sass('assets/styles/app.scss', 'assets/dist');
-mix.sass('assets/styles/highlighter.scss', 'assets/dist');
+mix.css('assets/styles/app.css', 'assets/dist');
+mix.css('assets/styles/highlighter.css', 'assets/dist');
