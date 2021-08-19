@@ -15,14 +15,14 @@
   {{ end }}
 {{ end }}
 
-{{ $link_class := "py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg bg-gray-50 text-gray-700 hover:bg-blue-100 focus:bg-blue-100 transition" }}
-{{ $disabled_link_class := "py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg text-gray-300" }}
+{{ $link_class := "inline-block py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg bg-gray-50 text-gray-700 hover:bg-blue-100 focus:bg-blue-100 focus:outline-none transition" }}
+{{ $disabled_link_class := "inline-block py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg text-gray-300" }}
 
 {{ if gt $paginator.TotalPages 1 }}
-<ul class="flex items-center justify-center py-10 md:py-16 lg:py-20" data-current="{{ $paginator_current }}"
+<ul class="flex items-center justify-center pt-16 md:pt-20 lg:pt-24" data-current="{{ $paginator_current }}"
     data-start="{{ $paginator_start }}" data-total="{{ $paginator.TotalPages }}">
 
-  <li class="">
+  <li>
     {{ if ne $paginator.PageNumber 1 }}
     <a class="{{ $link_class }}" href="{{ $paginator.First.URL | relLangURL }}" title='{{ i18n "page_first" }}'>
       {{ partial "icons/angle-double-left.html" }}
@@ -34,7 +34,7 @@
     {{ end }}
   </li>
 
-  <li class="p">
+  <li>
     {{ if $paginator.HasPrev }}
     <a class="{{ $link_class }}" href="{{ $paginator.Prev.URL | relLangURL }}"  title='{{ i18n "page_previous" }}'>
       {{ partial "icons/angle-left.html" }}
@@ -58,7 +58,7 @@
 
   <li class="hidden md:inline-block w-5"></li>
 
-  <li class="">
+  <li>
     {{ if $paginator.HasNext }}
     <a class="{{ $link_class }}" href="{{ $paginator.Next.URL | relLangURL }}" title='{{ i18n "page_next" }}'>
       {{ partial "icons/angle-right.html" }}
@@ -70,7 +70,7 @@
     {{ end }}
   </li>
 
-  <li class="">
+  <li>
     {{ if ne $paginator.PageNumber $paginator.TotalPages }}
     <a class="{{ $link_class }}" href="{{ $paginator.Last.URL | relLangURL }}" title='{{ i18n "page_last" }}'>
       {{ partial "icons/angle-double-right.html" }}
