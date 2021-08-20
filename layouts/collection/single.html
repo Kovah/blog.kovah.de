@@ -41,17 +41,17 @@
     </div>
   </header>
 
-  <section class="container mt-10 lg:mt-16">
+  <section class="container mt-16">
 
     <div class="e-content" itemprop="articleBody">
       <div class="prose prose-blue lg:prose-lg">
         {{ .Content }}
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-y-16 mt-10 lg:mt-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-16 lg:gap-y-20 mt-10 lg:mt-16">
         {{ range .Params.links }}
         <div class="flex flex-col">
-          <h2 class="font-special font-bold text-xl md:text-2xl lg:text-3xl">{{ .title }}</h2>
+          <h2 class="font-special font-bold text-xl lg:text-2xl">{{ .title }}</h2>
           <div class="mt-1 lg:mt-2 prose prose-blue">
             {{ .description | markdownify }}
           </div>

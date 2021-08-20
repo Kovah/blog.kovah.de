@@ -1,4 +1,4 @@
-{{ $link_class := "text-2xl lg:text-4xl text-gray-700 hover:text-blue-500 hover:scale-150 focus:text-blue-500 focus:scale-150 focus:outline-none transition transform transition-transform duration-300" }}
+{{ $link_class := "text-2xl lg:text-4xl text-blue-500 hover:text-blue-600 hover:scale-150 focus:text-blue-600 focus:scale-150 focus:outline-none transition transform transition-all duration-300" }}
 <aside class="text-center">
   <div class="container py-20 md:py-28 lg:py-32">
 
@@ -6,7 +6,7 @@
 
     <div class="mt-10 md:mt-16 lg:mt-20 grid grid-cols-5 gap-10 gap-y-16">
 
-      <a href="mailto:mail@kovah.de" class="{{ $link_class }} " title="Email" rel="me">
+      <a href="mailto:mail@kovah.de" class="{{ $link_class }}" title="Email" rel="me">
         {{ partial "icons/email.html" }}
       </a>
       <a href="https://github.com/Kovah" class="{{ $link_class }}" title="Github" rel="me">

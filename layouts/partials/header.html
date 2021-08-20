@@ -1,4 +1,5 @@
-<div class="container pt-10 md:pt-16 lg:pt-20 pb-16 md:pb-20 lg:pb-24">
+{{ $secondary_link_class := "text-sm lg:text-base font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none transition" }}
+<div class="container pt-10 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24">
 
   <div class="grid grid-cols-2 gap-4 ">
 
@@ -8,13 +9,13 @@
 
     <div class="flex items-center justify-end">
       {{ with .OutputFormats.Get "rss" -}}
-      <a class="text-sm lg:text-base text-gray-500 hover:text-blue-500 focus:text-blue-500 focus:outline-none transition"
+      <a class="{{ $secondary_link_class }}"
           href="{{ .Permalink | relURL }}" title="Feed">
         {{ partial "icons/rss.html" }}
       </a>
       {{ else }}
       {{ with $.Site.Home.OutputFormats.Get "rss" -}}
-      <a class="text-sm lg:text-base text-gray-500 hover:text-blue-500 focus:text-blue-500 focus:outline-none transition"
+      <a class="{{ $secondary_link_class }}"
           href="{{ .Permalink | relURL }}" title="Feed">
         {{ partial "icons/rss.html" }}
       </a>
@@ -22,7 +23,7 @@
       {{ end -}}
 
       {{ range .Translations }}
-      <a class="ml-4 lg:ml-6 text-sm lg:text-base font-special font-bold text-gray-500 hover:text-blue-500 focus:text-blue-500 focus:outline-none transition"
+      <a class="ml-6 {{ $secondary_link_class }}"
           href="{{ .Permalink | relURL }}" title="{{ .Language.LanguageName }}">
         {{ .Language.LanguageName }}
       </a>
@@ -31,7 +32,7 @@
       {{ range $.Site.Home.AllTranslations }}
       {{ if eq $currentLang .Lang }}
       {{ else }}
-      <a class="ml-4 lg:ml-6 text-sm lg:text-base font-special font-bold text-gray-500 hover:text-blue-500 focus:text-blue-500 focus:outline-none transition"
+      <a class="ml-6 {{ $secondary_link_class }}"
           href='{{ .Permalink | relURL }}' title="{{ .Language.LanguageName }}">
         {{ .Language.LanguageName }}
       </a>
@@ -42,10 +43,10 @@
 
   </div>
 
-  <div class="mt-10 md:mt-12 lg:mt-26 grid grid-cols-2 gap-y-2 gap-x-4 lg:gap-x-6 md:flex items-center">
+  <div class="mt-10 md:mt-12 lg:mt-26 grid grid-cols-2 gap-y-3 gap-x-4 lg:gap-x-6 md:flex items-center">
 
     {{ range .Site.Menus.main -}}
-    <a class="inline-block leading-none w-min lg:text-lg font-special font-bold hover:text-blue-500 focus:text-blue-500 focus:outline-none transition"
+    <a class="inline-block leading-none w-min lg:text-lg font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none transition"
         href="{{ .URL | relLangURL }}">{{ .Name }}</a>
     {{- end }}
 
