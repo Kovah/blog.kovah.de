@@ -8,10 +8,11 @@
 
   <div class="mb-8 md:mb-10 lg:mb-16">
     <picture>
-      <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=452&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=904&org_if_sml=1 2x'
-          media="(max-width: 500px)"/>
-      <source srcset='{{ $prefix }}{{ $img.RelPermalink }}?w=912&org_if_sml=1 1x, {{ $prefix }}{{ $img.RelPermalink }}?w=1824&org_if_sml=1 2x' media="(max-width: 960px)"/>
-      <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1824&org_if_sml=1' alt="{{ $.Params.Title }}" itemprop="image"
+      <source type="image/jpeg" srcset="{{ $prefix }}{{ $img.RelPermalink }}?w=768&org_if_sml=1 768w, {{ $prefix }}{{ $img.RelPermalink }}?w=1024&org_if_sml=1 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
+      {{ if ne $.Site.IsServer true }}
+      <source type="image/webp" srcset="{{ $prefix }}{{ $img.RelPermalink }}?w=768&org_if_sml=1&force_format=webp 768w, {{ $prefix }}{{ $img.RelPermalink }}?w=1024&org_if_sml=1&force_format=webp 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
+      {{ end }}
+      <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1280&org_if_sml=1' alt="{{ $.Params.Title }}" itemprop="image"
           width="{{ $img.Width }}" height="{{ $img.Height }}"/>
     </picture>
   </div>

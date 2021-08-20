@@ -5,8 +5,7 @@ const fontSpecial = `"Nexa", ${defaultTheme.fontFamily.sans.join(',')}`
 
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.liquid'
+    './layouts/**/*.html',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {

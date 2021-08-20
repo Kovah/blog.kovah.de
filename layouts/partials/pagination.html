@@ -16,6 +16,7 @@
 {{ end }}
 
 {{ $link_class := "inline-block py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg bg-gray-50 text-gray-700 hover:bg-blue-100 focus:bg-blue-100 focus:outline-none transition" }}
+{{ $link_active_class := "inline-block py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg bg-blue-50" }}
 {{ $disabled_link_class := "inline-block py-4 px-2.5 md:px-4 lg:px-5 lg:text-lg text-gray-300" }}
 
 {{ if gt $paginator.TotalPages 1 }}
@@ -49,10 +50,16 @@
   <li class="hidden md:inline-block w-5"></li>
 
   {{ range $index, $page := first $paginator_limit $pages }}
-  <li class="{{ if eq $page $paginator }}{{ end }}" data-index="{{ $index }}">
+  <li>
+    {{ if ne $page $paginator }}
     <a class="{{ $link_class }}" href="{{ $page.URL | relLangURL }}" title='{{ i18n "page_no" }} {{ .PageNumber }}'>
       {{ .PageNumber }}
     </a>
+    {{ else }}
+    <span class="{{ $link_active_class }}">
+      {{ .PageNumber }}
+    </span>
+    {{ end }}
   </li>
   {{ end }}
 
