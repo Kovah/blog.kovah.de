@@ -1,15 +1,13 @@
 {{ define "main" }}
 
-<section class="e404 block">
-  <div class="container">
+<section class="container">
 
-    <div class="e404__image">
-      {{ partial "404-image.html" }}
-    </div>
-
-    <p class="e404__copy">{{ i18n "404_copy" }}</p>
-
+  <div class="max-w-xl mx-auto text-center mb-10 lg:mb-16">
+    {{ partial "404-image.html" }}
   </div>
+
+  <p class="text-lg lg:text-xl text-red-600 text-center">{{ i18n "404_copy" }}</p>
+
 </section>
 
 {{ end }}

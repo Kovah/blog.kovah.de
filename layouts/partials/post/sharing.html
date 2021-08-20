@@ -1,34 +1,39 @@
 <div class="share">
 
-  <span class="share__title">{{ if eq .Section "collection" }}{{ i18n "collection_share" }}{{ else }}{{ i18n "share" }}{{ end }}:</span>
+  <h2 class="mb-4 lg:mb-6 text-xl lg:text-2xl font-special font-bold text-center">
+    {{ if eq .Section "collection" }}{{ i18n "collection_share" }}{{ else }}{{ i18n "share" }}{{ end }}
+  </h2>
 
   {{ $share_title := replace .Title "&" "and" }}
   {{ $share_description := replace .Description "&" "and" }}
+  {{ $link_class := "inline-block text-xl lg:text-3xl text-white hover:scale-150 focus:scale-150 focus:outline-none transition transform transition-transform duration-300" }}
 
-  <a class="share__link" target="_blank" rel="noopener noreferrer"
-      href='https://twitter.com/share?url={{ .Permalink }}&text={{ $share_description }}&via=kovah_kvh'
-      title='{{ i18n "share_via" "Twitter" }}'>
-    {{ partial "icons/twitter.html" }}
-  </a>
-  <a class="share__link" target="_blank" rel="noopener noreferrer"
-      href='https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ $share_title }}'
-      title='{{ i18n "share_via" "Hackernews" }}'>
-    {{ partial "icons/hackernews.html" }}
-  </a>
-  <a class="share__link" target="_blank" rel="noopener noreferrer"
-      href='https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ $share_title }}&summary={{ $share_description }}&source={{ "/" | absURL }}'
-      title='{{ i18n "share_via" "Email" }}'>
-    {{ partial "icons/linkedin.html" }}
-  </a>
-  <a class="share__link" target="_blank" rel="noopener noreferrer"
-      href='https://reddit.com/submit?url={{ .Permalink }}&title={{ replace .Title "&" "and" }}'
-      title='{{ i18n "share_via" "Reddit" }}'>
-    {{ partial "icons/reddit.html" }}
-  </a>
-  <a class="share__link" target="_blank" rel="noopener noreferrer"
-      href='mailto:?subject={{ $share_title }}&body={{ $share_description }}'
-      title='{{ i18n "share_via" "Email" }}'>
-    {{ partial "icons/email.html" }}
-  </a>
+  <div class="flex justify-around">
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href='https://twitter.com/share?url={{ .Permalink }}&text={{ $share_description }}&via=kovah_kvh'
+        title='{{ i18n "share_via" "Twitter" }}'>
+      {{ partial "icons/twitter.html" }}
+    </a>
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href='https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ $share_title }}'
+        title='{{ i18n "share_via" "Hackernews" }}'>
+      {{ partial "icons/hackernews.html" }}
+    </a>
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href='https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ $share_title }}&summary={{ $share_description }}&source={{ "/" | absURL }}'
+        title='{{ i18n "share_via" "Email" }}'>
+      {{ partial "icons/linkedin.html" }}
+    </a>
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href='https://reddit.com/submit?url={{ .Permalink }}&title={{ replace .Title "&" "and" }}'
+        title='{{ i18n "share_via" "Reddit" }}'>
+      {{ partial "icons/reddit.html" }}
+    </a>
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href='mailto:?subject={{ $share_title }}&body={{ $share_description }}'
+        title='{{ i18n "share_via" "Email" }}'>
+      {{ partial "icons/email.html" }}
+    </a>
+  </div>
 
 </div>

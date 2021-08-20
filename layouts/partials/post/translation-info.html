@@ -1,5 +1,8 @@
+{{ $currentLang := .Language.Lang }}
 {{ range .Translations }}
-<div class="alert alert--info">
+{{ if not (eq .Lang $currentLang) }}
+<div class='p-4 lg:p-6 my-6 rounded bg-gray-100 text-sm alert-info'>
   {{ i18n "translation_for_post" . }} <a href='{{ .Permalink }}'>{{ .Title }}</a>
 </div>
+{{ end }}
 {{ end }}

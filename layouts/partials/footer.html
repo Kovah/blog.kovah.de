@@ -1,25 +1,29 @@
-<footer class="footer block block--primary text--center">
-  <div class="container">
+<footer class="bg-blue-500 text-center text-sm">
+  <div class="container py-16 md:py-20 lg:py-24">
 
-    <div class="footer__icon">
-      <a href="https://kovah.de/">{{ partial "icons/kvh-insignia.html" }}</a>
+    <div>
+      <a class="text-white text-4xl" href="https://kovah.de/" title="Portfolio of Kevin Woblick"
+        >{{ partial "icons/kvh-insignia.html" }}</a>
     </div>
 
-    <div class="footer__links">
-      <div class="footer__link">
-        &copy; {{ now.Format "2006" }} Kovah.de
-      </div>
-      <div class="footer__link">
-        <a href="https://kovah.de/info/impress">Impress</a>
-      </div>
-      <div class="footer__link">
-        <a href="https://kovah.de/info/privacy">Privacy</a>
-      </div>
+    <div class="mt-8 md:mt-12 lg:mt-16 text-white text-opacity-60">
+      &copy; {{ now.Format "2006" }} Kovah.de
     </div>
 
-    <div class="footer__links">
-      <div class="footer__link">
-        <small>All content is licensed as <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> if not stated otherwise.</small>
+    <div class="mt-4 flex items-center justify-center">
+      <a class="text-white text-opacity-80 hover:text-opacity-100 focus:text-opacity-100 transition"
+          href="https://kovah.de/info/impress">Impress</a>
+      <a class="ml-8 text-white text-opacity-80 hover:text-opacity-100 focus:text-opacity-100 transition"
+          href="https://kovah.de/info/privacy">Privacy</a>
+    </div>
+
+    <div class="mt-8 md:mt-12 lg:mt-16">
+      <div class="text-xs text-white text-opacity-60" data-lang="{{ .Language.Lang }}">
+        {{ if eq .Language.Lang "en" }}
+        All content is licensed as <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> if not stated otherwise.
+        {{ else }}
+        Die Inhalte dieses Blogs sind unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> lizenziert, sofern nicht anders angegeben.
+        {{ end }}
       </div>
     </div>
 
@@ -33,5 +37,7 @@
   {{ end }}
 {{ end }}
 
+{{ if ne .Site.IsServer true }}
 <noscript><img src="https://analytics.kovah.de/ingress/e76b26fa-8e79-4c02-9c7b-c8eb095b61f7/pixel.gif"></noscript>
 <script src="https://analytics.kovah.de/ingress/e76b26fa-8e79-4c02-9c7b-c8eb095b61f7/script.js"></script>
+{{ end }}
