@@ -43,10 +43,10 @@
 
   </div>
 
-  <div class="mt-10 md:mt-12 lg:mt-26 grid grid-cols-2 gap-y-3 gap-x-4 lg:gap-x-6 md:flex items-center">
+  <div class="mt-10 md:mt-12 lg:mt-26 grid grid-cols-2 gap-y-2 gap-x-2 lg:gap-x-4 md:flex items-center">
 
     {{ range .Site.Menus.main -}}
-    <a class="inline-block leading-none w-min lg:text-lg font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none transition"
+    <a class="inline-block leading-none w-min py-1 px-2 lg:text-lg font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none transition"
         href="{{ .URL | relLangURL }}">{{ .Name }}</a>
     {{- end }}
 
