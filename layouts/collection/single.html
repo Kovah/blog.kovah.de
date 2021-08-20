@@ -1,94 +1,98 @@
 {{ define "main" }}
+{{ $badge_class := "hover:text-gray-800 focus:text-gray-800 focus:outline-none transition" }}
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
   <meta itemprop="description" content='{{ i18n "collection_description" .Params.edition }}'/>
   <meta itemprop="author" content='{{ .Param "author" }}'/>
   <meta itemprop="publisher" content="{{ $.Site.Params.Publisher }}"/>
 
-  <span class="meta-info u-url">{{ .Permalink | absURL }}</span>
-  <span class="meta-info p-summary">{{ i18n "collection_description" .Params.edition }}</span>
-  <span class="meta-info p-author h-card">
+  <span class="hidden u-url">{{ .Permalink | absURL }}</span>
+  <span class="hidden p-summary">{{ i18n "collection_description" .Params.edition }}</span>
+  <span class="hidden p-author h-card">
     <a class="p-name u-url" href="https://kovah.de/">{{ $.Site.Params.Publisher }}</a>
   </span>
 
-  <header class="post__header">
+  <header>
     <div class="container">
 
-      <div class="post__inner">
+      <h1 class="font-special font-bold text-3xl lg:text-4xl p-name" itemprop="headline">
+        {{ i18n "collection_title" .Params.edition }}
+      </h1>
 
-        <h1 class="post__title p-name" itemprop="headline">{{ i18n "collection_title" .Params.edition }}</h1>
-
-        <div class="post__meta">
-          <span class="post__tags">
-            {{ with .Params.Tags }}
-              {{ $len := (len .) }}
-              {{ i18n "tags" . }}:
-              {{ range $index, $element := . }}
-                <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="tag post__tag">
-                  {{- $element -}}
-                </a>
-              {{ end }}
+      <div class="mt-4 lg:mt-4 sm:flex text-gray-500 text-sm">
+        <div class="flex mb-2 sm:mb-0 sm:mr-4 lg:mr-6">
+          {{ with .Params.Tags }}
+          <div class="mr-1">{{ i18n "tags" . }}:</div>
+          <div>
+            {{ range $index, $element := . }}
+            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
+              {{- $element -}}
+            </a>
             {{ end }}
-          </span>
-
-          <time class="post__published dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
-            {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
-          </time>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <section class="post__content-wrapper">
-    <div class="container">
-
-      <div class="post__inner post__content e-content" itemprop="articleBody">
-        {{ .Content }}
-
-        <div class="collection-list">
-          {{ range .Params.links }}
-          <div class="collection-list__item">
-            <h2 class="collection-list__item-title">{{ .title }}</h2>
-            <div class="collection-list__item-content">
-              <p>{{ .description | markdownify }}</p>
-            </div>
-            <div class="collection-list__item-link">
-              <span>&gt;</span>
-              <a href="{{ .link }}">
-                {{- with .linkTitle -}}
-                {{ . }}
-                {{- else -}}
-                {{ i18n "collection_more_link" }}
-                {{- end -}}
-              </a>
-            </div>
           </div>
           {{ end }}
         </div>
-
-        {{ with .Params.releases }}
-        <div class="collection-releases">
-          <h3>{{ i18n "collection_releases" }}</h3>
-
-          <ul>
-            {{ range . }}
-            <li><a href="{{ .link }}">{{ .title }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-        {{ end }}
-
+        <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+          {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+        </time>
       </div>
 
     </div>
+  </header>
+
+  <section class="container mt-10 lg:mt-16">
+
+    <div class="e-content" itemprop="articleBody">
+      <div class="prose prose-blue lg:prose-lg">
+        {{ .Content }}
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-y-16 mt-10 lg:mt-16">
+        {{ range .Params.links }}
+        <div class="flex flex-col">
+          <h2 class="font-special font-bold text-xl md:text-2xl lg:text-3xl">{{ .title }}</h2>
+          <div class="mt-1 lg:mt-2 prose prose-blue">
+            {{ .description | markdownify }}
+          </div>
+          <div class="mt-auto pt-2 lg:pt-3 font-bold">
+            <a href="{{ .link }}" class="text-blue-500 hover:text-blue-600 focus:text-blue-600 transition">
+              <span class="font-special mr-1.5">&gt;</span>
+              {{- with .linkTitle -}}
+              {{ . }}
+              {{- else -}}
+              {{ i18n "collection_more_link" }}
+              {{- end -}}
+            </a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      {{ with .Params.releases }}
+      <div class="mt-16 md:mt-20 lg:mt-24">
+        <h3 class="font-special font-bold text-xl md:text-2xl lg:text-3xl">{{ i18n "collection_releases" }}</h3>
+
+        <div class="grid grid-cols-2 gap-6 lg:gap-10 mt-8 lg:mt-10">
+          {{ range . }}
+          <div>
+            <a href="{{ .link }}"
+                class="text-lg lg:text-xl font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 transition"
+              ><span class="font-special mr-1.5">&gt;</span> {{ .title }}</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+
   </section>
 
 </article>
 
-<section class="block block--primary block--small">
-  <div class="container">
+<section class="bg-blue-500 text-white mt-16 md:mt-20 lg:mt-24">
+  <div class="container py-16 md:py-20 lg:py-24">
 
     {{ partial "post/sharing.html" . }}
 
