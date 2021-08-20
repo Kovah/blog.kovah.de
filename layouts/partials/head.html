@@ -1,6 +1,8 @@
 <link rel="dns-prefetch" href="//{{ .Site.Params.imgCDNDomain }}">
 <link rel="dns-prefetch" href="//webmention.io">
 <link rel="dns-prefetch" href="//analytics.kovah.de">
+<link rel="preload" as="font" type="font/woff2" href="{{ $.Site.BaseURL }}assets/fonts/subset-Nexa-XBold.woff2">
+<link rel="preload" as="font" type="font/woff2" href="{{ $.Site.BaseURL }}assets/fonts/subset-NexaBlack.woff2">
 
 {{ if .IsPage }}
 <title>{{ .Render "post-meta-title" }} - {{ i18n "site_title" }}</title>
