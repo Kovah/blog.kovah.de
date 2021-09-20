@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
-    "prismjs": "^1.24.1",
+    "prismjs": "^1.25.0",
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
