@@ -3,31 +3,21 @@
  * All Rights Reserved
  */
 @font-face {
-  font-family: 'Nexa';
-  src: local('Nexa Regular'), local('NexaRegular'),
-  url('../fonts/subset-NexaRegular.woff2') format('woff2'),
-  url('../fonts/subset-NexaRegular.woff') format('woff');
+  font-family: 'Overpass';
+  src: local('Overpass Regular'), local('Overpass-Regular'),
+  url('../fonts/subset-Overpass-Regular.woff2') format('woff2'),
+  url('../fonts/subset-Overpass-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Nexa';
-  src: local('Nexa XBold'), local('Nexa-XBold'),
-  url('../fonts/subset-Nexa-XBold.woff2') format('woff2'),
-  url('../fonts/subset-Nexa-XBold.woff') format('woff');
+  font-family: 'Overpass';
+  src: local('Overpass Bold'), local('Overpass-Bold'),
+  url('../fonts/subset-Overpass-Bold.woff2') format('woff2'),
+  url('../fonts/subset-Overpass-Bold.woff') format('woff');
   font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nexa';
-  src: local('Nexa Black'), local('NexaBlack'),
-  url('../fonts/subset-NexaBlack.woff2') format('woff2'),
-  url('../fonts/subset-NexaBlack.woff') format('woff');
-  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }

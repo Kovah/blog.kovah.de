@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-const fontSpecial = `"Nexa", ${defaultTheme.fontFamily.sans.join(',')}`
+const fontSpecial = `"Overpass", ${defaultTheme.fontFamily.sans.join(',')}`
 
 module.exports = {
   purge: [
@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        special: ['"Nexa"', ...defaultTheme.fontFamily.sans]
+        special: ['"Overpass"', ...defaultTheme.fontFamily.sans]
       },
       spacing: {
         '68': '17rem',
