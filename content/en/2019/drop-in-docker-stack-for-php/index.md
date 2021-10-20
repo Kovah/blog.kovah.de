@@ -4,6 +4,8 @@ description: Over the past months I gradually implemented a solid Docker setup f
 
 author: Kevin Woblick
 url: 5gw1x8-a-drop-in-docker-stack-for-php-app
+aliases:
+- en/5gw1x8-a-drop-in-docker-stack-for-php-app
 date: 2019-06-18
 draft: false
 hascode: true
