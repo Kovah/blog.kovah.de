@@ -20,11 +20,11 @@
         {{ i18n "collection_title" .Params.edition }}
       </h1>
 
-      <div class="mt-4 lg:mt-4 sm:flex text-gray-500 text-sm">
+      <div class="mt-4 lg:mt-6 sm:flex text-gray-500 text-sm">
         <div class="flex mb-2 sm:mb-0 sm:mr-4 lg:mr-6">
           {{ with .Params.Tags }}
           <div class="mr-1">{{ i18n "tags" . }}:</div>
-          <div>
+          <div class="space-x-1">
             {{ range $index, $element := . }}
             <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
               {{- $element -}}
