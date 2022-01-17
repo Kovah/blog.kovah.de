@@ -2,4 +2,5 @@
 /resources/_gen
 /public
 /mix-manifest.json
+.hugo_build.lock
 yarn-error.log
