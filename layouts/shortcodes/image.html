@@ -1,12 +1,13 @@
 {{ $img := .Page.Resources.GetMatch (.Get "img") }}
 
+{{ $linkexternal := .Get "linkexternal"}}
 {{ $prefix := "" }}
 {{ if ne .Site.IsServer true }}
 {{ $prefix = $.Site.Params.imgCDNUrl }}
 {{ end }}
 
 <figure{{ with .Get "modifier"}} class="figure-{{.}}"{{ end }}>
-  {{ with .Get "link"}} <a href="{{.}}" class="block"> {{ end }}
+  {{ with .Get "link"}} <a href="{{.}}" class="block" {{ with $linkexternal }}target="_blank" rel="noreferrer noopener"{{ end }}> {{ end }}
   <picture>
 
     <source type="image/jpeg" srcset="{{ $prefix }}{{ $img.RelPermalink }}?w=768&org_if_sml=1 768w, {{ $prefix }}{{ $img.RelPermalink }}?w=1024&org_if_sml=1 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
