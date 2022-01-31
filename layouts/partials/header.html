@@ -1,4 +1,4 @@
-{{ $secondary_link_class := "text-sm lg:text-base font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none transition" }}
+{{ $secondary_link_class := "p-2 rounded text-sm lg:text-base lg:leading-none font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-1 ring-blue-500 ring-opacity-25 transition" }}
 <div class="container pt-10 md:pt-12 lg:pt-16 pb-16 md:pb-20 lg:pb-24">
 
   <div class="grid grid-cols-2 gap-4 ">
@@ -7,7 +7,7 @@
       {{ partial "logo.html" . }}
     </a>
 
-    <div class="flex items-center justify-end">
+    <div class="flex items-center justify-end -mr-2">
       {{ with .OutputFormats.Get "rss" -}}
       <a class="{{ $secondary_link_class }}"
           href="{{ .Permalink | relURL }}" title="Feed">
@@ -43,10 +43,10 @@
 
   </div>
 
-  <div class="mt-10 md:mt-12 lg:mt-26 grid grid-cols-2 gap-y-2 gap-x-2 lg:gap-x-4 md:flex items-center">
+  <div class="mt-10 md:mt-12 lg:mt-26 -mx-2 grid grid-cols-2 gap-y-2 gap-x-2 lg:gap-x-4 md:flex items-center">
 
     {{ range .Site.Menus.main -}}
-    <a class="inline-block leading-none w-min py-1 px-2 lg:text-lg font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none transition"
+    <a class="inline-block leading-none w-min p-2 rounded lg:text-lg lg:leading-none font-special font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-1 ring-blue-500 ring-opacity-25 transition"
         href="{{ .URL | relLangURL }}">{{ .Name }}</a>
     {{- end }}
 

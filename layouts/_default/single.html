@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $badge_class := "p-1 hover:text-gray-800 focus:text-gray-800 focus:outline-none transition" }}
+{{ $badge_class := "p-1 rounded hover:text-gray-800 focus:text-gray-800 focus:outline-none focus:ring-1 ring-blue-500 ring-opacity-25 transition" }}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
@@ -37,7 +37,7 @@
           {{ $len := (len $list) }}
           {{ if gt $len 0 }}
             <div class="mr-1">{{ i18n "tags" . }}:</div>
-            <div class="space-x-1">
+            <div class="space-x-2">
               {{ range $index, $element := $list }}
               <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
                 {{- $element -}}
