@@ -10,9 +10,6 @@ mix
       ignored: ['public', 'node_modules']
     }
   })
-  .browserSync({
-    proxy: 'localhost:1313'
-  })
   .disableNotifications();
 
 // Asset tasks
@@ -33,5 +30,10 @@ mix.combine([
   'node_modules/prismjs/components/prism-bash.js'
 ], 'assets/dist/highlighter.js');
 
-mix.css('assets/styles/app.css', 'assets/dist');
-mix.css('assets/styles/highlighter.css', 'assets/dist');
+mix.postCss('assets/styles/app.css', 'assets/dist', [
+  require("tailwindcss"),
+]);
+
+mix.css('assets/styles/highlighter.css', 'assets/dist', [
+  require("tailwindcss"),
+]);

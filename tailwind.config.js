@@ -1,13 +1,25 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-const fontSpecial = `"Overpass", ${defaultTheme.fontFamily.sans.join(',')}`
+const fontSpecial = `"Overpass", ${defaultTheme.fontFamily.sans.join(',')}`;
+
+const brandBlue = {
+  50: '#f0f8ff',
+  100: '#cde7fe',
+  200: '#9ccffc',
+  300: '#6ab7fb',
+  400: '#389ffa',
+  500: '#0687f9',
+  600: '#056cc7',
+  700: '#045195',
+  800: '#033663',
+  900: '#011b32'
+};
 
 module.exports = {
-  purge: [
-    './layouts/**/*.html',
+  content: [
+    './layouts/**/*.html'
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -23,40 +35,29 @@ module.exports = {
       },
       colors: {
         gray: {
-          ...colors.gray
+          ...colors.coolGray
         },
-        'blue': {
-          '50': '#f0f8ff',
-          '100': '#cde7fe',
-          '200': '#9ccffc',
-          '300': '#6ab7fb',
-          '400': '#389ffa',
-          '500': '#0687f9',
-          '600': '#056cc7',
-          '700': '#045195',
-          '800': '#033663',
-          '900': '#011b32'
-        }
+        blue: brandBlue
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.800'),
             h1: {
-              fontFamily: fontSpecial,
+              fontFamily: fontSpecial
             },
             h2: {
-              fontFamily: fontSpecial,
+              fontFamily: fontSpecial
             },
             h3: {
-              fontFamily: fontSpecial,
+              fontFamily: fontSpecial
             },
             h4: {
-              fontFamily: fontSpecial,
+              fontFamily: fontSpecial
             },
             h5: {
               fontFamily: fontSpecial,
-              color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+              color: theme('colors.gray.900'),
               fontWeight: '600',
               marginTop: '1.5em',
               marginBottom: '0.5em',
@@ -79,7 +80,13 @@ module.exports = {
               marginBottom: '0.5em'
             }
           }
-        }
+        },
+        blue: {
+          css: {
+            '--tw-prose-links': brandBlue[600],
+            '--tw-prose-invert-links': brandBlue[500],
+          },
+        },
       })
     }
   },

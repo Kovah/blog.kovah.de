@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $badge_class := "p-1 rounded hover:text-gray-800 focus:text-gray-800 focus:outline-none focus:ring-1 ring-blue-500 ring-opacity-25 transition" }}
+{{ $badge_class := "p-1 rounded bg-gray-100 hover:text-gray-800 focus:text-gray-800 focus:outline-none focus:ring-1 ring-blue-500/25 transition" }}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
@@ -18,9 +18,9 @@
 
       {{ partial "post/thumbnail.html" . }}
 
-      <h1 class="font-special font-bold text-3xl lg:text-4xl p-name" itemprop="headline">{{ .Title }}</h1>
+      <h1 class="font-special font-bold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-snug lg:leading-snug md:text-center p-name" itemprop="headline">{{ .Title }}</h1>
 
-      <div class="mt-4 lg:mt-6 sm:flex text-gray-500 text-sm">
+      <div class="mt-8 lg:mt-12 sm:flex md:justify-center text-gray-500 text-sm">
         <div class="flex">
           {{ range .Params.Categories }}
           <div class="mr-1">{{ i18n "category" . }}:</div>
@@ -32,7 +32,7 @@
           {{ end }}
         </div>
 
-        <div class="flex mt-2 sm:mt-0 sm:ml-4 lg:ml-6">
+        <div class="flex mt-4 sm:mt-0 sm:ml-6 lg:ml-8">
           {{ $list := .Params.Tags }}
           {{ $len := (len $list) }}
           {{ if gt $len 0 }}
@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <div class="mt-2 text-gray-500 text-sm">
+      <div class="mt-4 text-gray-500 text-sm md:text-center">
         <span class="mr-4 lg:mr-6">{{ i18n "readtime" . }}</span>
         <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
           {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
@@ -58,7 +58,7 @@
     </div>
   </header>
 
-  <section class="container mt-8 md:mt-10 lg:mt-16">
+  <section class="container mt-12 lg:mt-16">
 
     <div class="prose prose-blue lg:prose-lg mx-auto e-content" itemprop="articleBody">
       {{ partial "post/translation-info.html" . }}
