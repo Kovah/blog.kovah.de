@@ -58,6 +58,15 @@ html {
   margin: 0;
 }
 
+.prose :not(pre) code {
+  @apply py-0.5 px-1 rounded bg-gray-100;
+}
+
+.prose code::before,
+.prose code::after {
+  content: "";
+}
+
 .alert-info {
   @apply bg-blue-100 text-blue-800;
 }
