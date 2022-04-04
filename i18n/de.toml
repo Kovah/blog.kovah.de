@@ -5,6 +5,8 @@ other = "Kevin Woblick's Blog - Mein privater Blog über Themen wie Web Developm
 
 [published]
 other = "Veröffentlicht"
+[updated]
+other = "Aktualisiert am"
 [readtime]
 other = "{{ .ReadingTime }} Min. zu lesen"
 [category]

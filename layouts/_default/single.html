@@ -53,6 +53,11 @@
         <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
           {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
         </time>
+        {{ with .Lastmod }}
+        <time class="ml-2 dt-updated" datetime='{{.Format "2006-01-02"}}' itemprop="dateModified">
+          {{ i18n "updated" }}: {{.Format "2006-01-02"}}
+        </time>
+        {{ end }}
       </div>
 
     </div>

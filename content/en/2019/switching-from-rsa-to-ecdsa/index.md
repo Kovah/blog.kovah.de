@@ -3,7 +3,8 @@ title: "Why and How: Switch from RSA to ECDSA SSH keys"
 description: While RSA is still sufficient to work with while connecting to servers, you probably want to switch to ECDSA sooner or later. But probably sooner.
 
 author: Kevin Woblick
-date: 2019-12-05T18:14:55+01:00
+date: 2019-12-05T17:14:55
+lastmod: 2022-04-04T13:45:33
 draft: false
 hascode: true
 thumbnail: ssh-private-key.jpg
@@ -24,30 +25,30 @@ _If you are not interested in the why, but in the how, you may jump directly to 
 
 ## Why RSA might not serve you well for the next decades
 
-Invented back in 1977, [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) seemed to be the best solution to generate secure keys. Computers were slow and it might take several decades until RSA would be rendered insecure by cracking the algorithm. However, advancing 40 years, keys are no longer really secure if they are less than 1024 bit. The ENISA (_European Union Agency for Cybersecurity_) recommends the usage of keys with a length of 2048 bit for short-term security only. Therefore, **do not generate new keys shorter than 4096 bit characters!**
+Invented back in 1977, [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) seemed to be the best solution to generate secure keys. Computers were slow, and it might take several decades until RSA would be rendered insecure by cracking the algorithm. However, advancing 40 years, keys are no longer really secure if they are less than 1024 bit long. Since 2013 the ENISA (_European Union Agency for Cybersecurity_) recommends the usage of keys with a length of 2048 bit for short-term security only. Therefore, **do not generate new keys shorter than 4096 bit characters!** [^enisa]
 
-One could argument, that simply using longer key lengths would solve this problem, so let's generate new keys with a length of 8192 bit. The problem here is, that the time to actually process keys of this length is not suitable for low-powered devices, while the actual gained security strength does not raise proportionally: A key length of 1024 bit for an asymmetrical key (which we use for SSH) only has a "real" strength of 80 bit based on symmetrical methods. Increasing that length from 1024 to 2048, however, does not increase the "real" security to 160, but only 112 bit.
+One could argument, that simply using longer key lengths would solve this problem, so let's generate new keys with a length of 8192 bit. The problem here is, that the time to actually process keys of this length is not suitable for low-powered devices, while the actual gained security strength does not raise proportionally: A key length of 1024 bit for an asymmetrical key (which we use for SSH) only has a "real" strength of 80 bit based on symmetrical methods. Increasing that length from 1024 to 2048, however, does not increase the "real" security to 160, but only 112 bit. [^rsa-strength]
 
 
 ## Stage enter: Elliptic Curve Algorithms
 
-To solve the problem that long keys lead to much higher processing times while only increasing security a bit, some really smart people figured out algorithms based on elliptic curves. Sadly, I cannot explain how those mathematical constructs work in detail. Based on the information available about the topic, those elliptic curves can be used to generate strong secure keys while keeping them shorter than regular RSA keys. For example, a key with a length of 256 bit is equal to a AES key of 128 bit which is considered quite secure. This way shorter keys, while granting a stronger security than RSA, are also easier to process on low-powered machines.
+To solve the problem that long keys lead to much higher processing times while only increasing security a bit, some really smart people figured out algorithms based on elliptic curves. Sadly, I cannot explain how those mathematical constructs work in detail. Based on the information available, those elliptic curves can be used to generate strong secure keys while keeping them actually shorter than regular RSA keys. For example, a key with a length of 256 bit is equal to an AES security of 128 bit which equals a key length of 3072 bit. This way shorter keys, while granting a stronger security than RSA, are also easier to process on low-powered machines.
 
 Elliptic curves cryptography ist just the theory, which [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) (Elliptic Curve Digital Signature Algorithm) and [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman) (Elliptic-curve Diffie–Hellman) are based on. Both technologies are used in SSH to connect two peers: ECDSA to generate the keys and ECDH as the key exchange protocol.  
 When generating a key, you can choose between two variants: the NIST-standardized ECDSA, and Curve25519. Although the latter is considered the better choice for new keys in the cryptography community, the former is implemented into more systems and applications, leading to a higher compatibility.
 
-Given all those aspects, switching from RSA to ECDSA might be a good idea. And if you know that your RSA-based key is just 1024 bit long, please switch as soon as possible!
+Given all those aspects, switching from RSA to ECDSA is a good idea. And if you know that your RSA-based key is just 1024 bit long, please switch as soon as possible!
 
 
 ## How to switch from RSA to ECDSA
 
-Before switching, a word of caution: the following process may take some time, depending on the number of server you connect to and where your public keys are stored. Also, please do yourself a favor and make a backup of both your `id_rsa` and `id_rsa.pub` files right now. Copy them to a `.backup` directory inside your `.ssh` folder, copy them to a secure USB stick, whatever fits you most. Just keep them secure at all times.
+Before switching, a word of caution: the following process may take some time, depending on the number of server you connect to and where your public keys are stored. Also, please do yourself a favor and **make a backup** of both your `id_rsa` and `id_rsa.pub` files **right now**. Copy them to a backup directory inside your `.ssh` folder, or copy them to a secure USB stick, whatever fits you most. Just keep them secure at all times.
 
-Done? Fine.  
+Done? Then let's go on. 
 
 ### Generate a new ECDSA key
 
-Generating a new key based on ECDSA is the first step. The following command is an example and you should customize it:
+Generating a new key based on ECDSA is the first step. The following command is an example, and you should customize it:
 
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "mail@example.com"
@@ -55,19 +56,23 @@ ssh-keygen -t ecdsa -b 521 -C "mail@example.com"
 
 * The `-t ecdsa` part tells the ssh-keygen function (which is part of OpenSSL), which algorithm to use. In contrast to `ecdsa` you may also use `ed25519` for using Curve25519, but for better compatibility, stay at ECDSA.  
 * Notice, that despite being located in the binary world, we do not use 512 as the key length, but 521, specified by `-b 521`. Reason is the mathematical structure of the key, which does not adhere to the power of two.  
-* Finally, you specify your email address with the `-C "mail@example.com"` flag. Obviously, replace the example address with your own.
+* Finally, you specify your email address with the `-C "mail@example.com"` flag. Replace the example address with your own.
 
 #### Saving the key and setting a passphrase
 
 After hitting enter the program will ask you for the location of the newly generated key. If you have no previous ECDSA key in your .ssh folder, you may skip this because the keygen will name the new key `id_ecdsa` in contrast to `id_rsa` for RSA keys.
 
-The next thing you do is specifying a passphrase. Please do not skip this. I see numerous blog posts and tutorials that are fine with skipping this step. DO NOT SKIP THIS! Setting a passphrase is the same as setting a password for your email account. If an attacker or any other random person gets access to your private key file, they can use it without any hurdles if you skip setting a passphrase! And with access to your private key this third party has access to all servers you connect to using the key. So, please set a password. In the best case it has the same strength as any other password you generate. Use a damn password manager if you don't want to remember passwords.
+The next thing you do is specifying a passphrase. Please do not skip this. I see numerous blog posts and tutorials that are fine with skipping this step.
 
-If you set your passphrase, the keygen will do its magic. Congratulations, you are now the proud owner of a brand new ECDSA key! The output should look similar to this:
+DO NOT SKIP SETTING A PASSPHRASE!
+
+Setting a passphrase is the same as setting a password for your email account. If an attacker or any other random person gets access to your private key file, they can use it without any hurdles! And with access to your private key this third party has access to all servers you connect to using the key. So, please set a passphrase. In the best case it has the same strength as any other password you generate. Use a damn password manager if you don't want to remember passwords.
+
+After you set your passphrase, the key generator will do its magic. Congratulations, you are now the proud owner of a brand-new ECDSA key! The output should look similar to this:
 
 ```
 Generating public/private ecdsa key pair.
-Enter file in which to save the key (/Users/kg/.ssh/id_ecdsa): ./id_ecdsa
+Enter file in which to save the key (/Users/exampleuser/.ssh/id_ecdsa): ./id_ecdsa
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in ./id_ecdsa.
@@ -91,7 +96,7 @@ The key's randomart image is:
 
 ### Pushing the new key to your servers
 
-Of course, you want to use your new key and push it to all servers you are using. No problem. I assume that the servers you want to connect to follow the most basic security guidelines and thus are somewhat up-to-date, which means they should run the latest version of OpenSSH or a similar SSH server. If your server does not support ECDSA yet you may have some other problems right now: update the server.
+Of course, you want to use your new key and push it to all servers you are using. I assume that the servers you want to connect to follow the most basic security guidelines and thus are somewhat up-to-date, which means they should run the latest version of OpenSSH or a similar SSH server. If your server does not support ECDSA, yet you may have some other problems right now: update the server.
 
 An easy command to push your new SSH key to your server comes pre-installed with OpenSSH:
 
@@ -103,23 +108,22 @@ Specify the used key (`-i ~/.ssh/id_ecdsa`) and your SSH credentials (`[username
 
 A more manual way, of course, is to manually login to the server and past the content of the public key into the authorized key file.
 
-
 _PS: Don't forget to add the new key to Github, Gitlab and similar services._
 
 
 ### Configure SSH to use your new key
 
 Last but not least: we want to tell SSH that it should use the new key by default. The main problem here is, that SSH assumes that you have an RSA key set and uses it if one was found. But we want to use our new fancy ECDSA key, and not some old RSA thingy.  
- The most suitable way to do this, is to use the standard SSH config. In my opinion all other approaches are more hacks than solutions to make this work. If you don't already use the SSH config: it's the main configuration file for your local machine. It's usually located at `~/.ssh/config`. In that file you can specify either global settings which will then be applied to all SSH connections, or settings per host. You can also create aliases for your connections, to reduce something like `company_username@48.35.183.137` to `companyssh`.
+The most suitable way to do this, is to use the SSH configuration file. In my opinion all other approaches are more hacks than solutions to make this work. If you don't already use the SSH config: it's the main configuration file for your local machine. It's usually located at `~/.ssh/config`. In that file you can specify either global settings which will then be applied to all SSH connections, or settings per host.
  
- So, open the .ssh/config file now. At the very top, if not present already, add the following lines:
+So, open the .ssh/config file now. At the very top, if not present already, add the following lines:
  
 ```
 Host *
     IdentityFile ~/.ssh/id_ecdsa
 ```
 
-The first line tells SSH to apply the next settings to all hosts, hence the wildcard *. The second line then sets the newly generated key `~/.ssh/id_ecdsa` as the new identity. That's it. There is nothing more to configure. Make sure that, when connecting to an old server that does not yet has the new key, add the `-i ~/.ssh/id_ecdsa` flag to your SSH command: `ssh ~/.ssh/id_ecdsa [username]@[some-old-server]`.
+The first line tells SSH to apply the next settings to all hosts, hence the wildcard *. The second line then sets the newly generated key `~/.ssh/id_ecdsa` as the new identity. That's it. There is nothing more to configure. Make sure that, when connecting to an old server that does not yet have the new key, add the `-i ~/.ssh/id_ecdsa` flag to your SSH command: `ssh ~/.ssh/id_ecdsa [username]@[some-old-server]`.
 
 _PS for all macOS users: to prevent macOS asking for the key passphrase every time you use the key, add `UseKeychain yes` to the global settings in your SSH config. Linux users may [use ssh-agent](https://askubuntu.com/questions/362280/enter-ssh-passphrase-once)._
 
@@ -127,3 +131,6 @@ _PS for all macOS users: to prevent macOS asking for the key passphrase every ti
 ## Conclusion
 
 Despite being a pretty long blog post, you essentially have to run only a couple commands to create your new key, push it to your servers and then configure SSH to use the new key. Depending on the amount of servers you have to add the key to it may take 10-20 minutes of your time. After passing the finish line you are good to go with your new, super secure SSH key.
+
+[^enisa]: "Algorithms, Key Sizes and Parameters Report", ENISA, version 1.0, October 2013
+[^rsa-strength]: See [Security Strength of RSA](https://www.rroij.com/open-access/security-strength-of-rsa-and-attribute-basedencryption-for-data-security-in-cloudcomputing.php?aid=46880)
