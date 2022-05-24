@@ -12,7 +12,7 @@ categories:
 tags:
 - stumbleupon
 - alternatives
-- stumbled
+- cloudhiker
 - internet
 ---
 
@@ -35,11 +35,11 @@ As mentioned above, [Mix](https://mix.com) is the official successor of StumbleU
 
 While StumbleUpon focused more on the discovery experience, [Digg](https://digg.com) made the social part the core of its site. Sharing and talking about websites made the site popular. I remember that the site has gone through some bad times while the company behind it struggled, but the site seems to be quite stable now. Today it focuses on viral content from all around the web and is still a viable alternative to StumbleUpon.
 
-## Stumbled
+## Cloudhiker
 
-{{< image img="stumbledto.png" alt="Screenshot of Stumbled.to" link="https://stumbled.to" linkexternal="1" >}}
+{{< image img="cloudhiker.png" alt="Screenshot of Cloudhiker" link="https://cloudhiker.net" linkexternal="1" >}}
 
-Earlier last year I decided to make my hands dirty with a new project and a website to discover the fast wildlands of the internet seemed to be the perfect chance to do so: that's how [Stumbled](https://stumbled.to) was born. It strives to revive the famous discovery experience StumbleUpon offered back in the old Web 2.0 days. You will be presented a completely random website out of a hand-curated set of sites. If possible, the website will directly be shown to you so you can explore and interact with it. You won't find any clickbait Buzzfeed stuff or low-effort blog articles here, but websites that are really exciting, weird, astonishing, or dedicated to learning. Some will make you laugh, some will make you think. And some can help you with your work by providing exceptionally helpful tools.  
+Earlier last year I decided to make my hands dirty with a new project and a website to discover the fast wildlands of the internet seemed to be the perfect chance to do so: that's how [Cloudhiker](https://cloudhiker.net) was born. It strives to revive the famous discovery experience StumbleUpon offered back in the old Web 2.0 days. You will be presented a completely random website out of a hand-curated set of sites. If possible, the website will directly be shown to you so you can explore and interact with it. You won't find any clickbait Buzzfeed stuff or low-effort blog articles here, but websites that are really exciting, weird, astonishing, or dedicated to learning. Some will make you laugh, some will make you think. And some can help you with your work by providing exceptionally helpful tools.  
 Please let me know what you think about my website.
 
 ## Jumpstick
@@ -115,7 +115,7 @@ The following sites are great to discover interesting content, although they off
 Besides those websites, there are some alternatives to StumbleUpon that I found fascinating, but the websites are currently unavailable. I post the links in the hope, that you find them being online again when you read this post.
 
 * [The Bored Hoard](https://boredhoard.com)
-* [Bunklist](https://www.bunklist.com/)
+* ~~Bunklist~~
 
 ---
 
