@@ -39,8 +39,7 @@ While StumbleUpon focused more on the discovery experience, [Digg](https://digg.
 
 {{< image img="cloudhiker.png" alt="Screenshot of Cloudhiker" link="https://cloudhiker.net" linkexternal="1" >}}
 
-Earlier last year I decided to make my hands dirty with a new project and a website to discover the fast wildlands of the internet seemed to be the perfect chance to do so: that's how [Cloudhiker](https://cloudhiker.net) was born. It strives to revive the famous discovery experience StumbleUpon offered back in the old Web 2.0 days. You will be presented a completely random website out of a hand-curated set of sites. If possible, the website will directly be shown to you so you can explore and interact with it. You won't find any clickbait Buzzfeed stuff or low-effort blog articles here, but websites that are really exciting, weird, astonishing, or dedicated to learning. Some will make you laugh, some will make you think. And some can help you with your work by providing exceptionally helpful tools.  
-Please let me know what you think about my website.
+Back in 2019 I decided to make my hands dirty with a new project and a website to discover the vast wildlands of the internet seemed to be the perfect chance to do so: that's how [Cloudhiker](https://cloudhiker.net) was born. It strives to revive the famous discovery experience of the old Web 2.0 days. You will be presented a completely random website out of a hand-curated set of sites. If possible, the website will directly be shown to you so you can explore and interact with it. You won't find any clickbait Buzzfeed stuff or low-effort blog articles here, but websites that are really exciting, weird, astonishing, or dedicated to learning. Some will make you laugh, some will make you think. And some can help you with your work by providing exceptionally helpful tools.
 
 ## Jumpstick
 
