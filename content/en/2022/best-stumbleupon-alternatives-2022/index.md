@@ -7,6 +7,7 @@ date: 2022-01-27T21:33:45
 lastmod: 2022-06-13T10:14:40
 draft: false
 hascode: false
+ogimage: thumbnail.png
 
 categories:
 - Articles
