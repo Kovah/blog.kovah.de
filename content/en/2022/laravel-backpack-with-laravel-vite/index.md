@@ -62,3 +62,7 @@ After you copied the `head.blade.php` file, open it. It should contain a lot of 
 
 After customizing the head.blade.php file, uncomment any custom styles and scripts in the `config/backpack/base.php` file.
 That's it. Backpack should now correctly load the specified assets built with Vite.
+
+{{< alert type="info" >}}
+I created a pull request for Laravel Backpack with the needed changes. If you are interested in this feature, please [vote for it](https://github.com/Laravel-Backpack/CRUD/pull/4522).
+{{</ alert >}}
