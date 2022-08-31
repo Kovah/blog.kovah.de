@@ -39,6 +39,10 @@ Huh. Backpack tries to load the `mix-manifest.json` file to inject the correct f
 
 ## Adding assets built with Vite to Laravel Backpack
 
+{{< alert type="warning" >}}
+**Laravel Backpack supports Vite styles natively starting with version [5.3.7](https://github.com/Laravel-Backpack/CRUD/releases/tag/5.3.7)**. The following changes are not needed anymore.
+{{</ alert >}}
+
 Up to this point, Backpack does not natively support any assets built with Vite, as is does not use the same manifest structure as Laravel Mix did, so just replacing file names won't do it. Thankfully, Laravel has a built-in system to overwrite views of third-party packages: the `resources/views/vendor` folder.
 
 After installing Backpack, your project should already have a `resources/views/vendor/backpack` folder containing some files, like the sidebar. To be able to add Vite assets, you have to copy one file from the package to your project files:
