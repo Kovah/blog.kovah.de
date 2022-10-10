@@ -16,7 +16,7 @@
   <header>
     <div class="container">
 
-      <h1 class="font-special font-bold text-4xl md:text-5xl lg:text-6xl md:text-center p-name" itemprop="headline">
+      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl md:text-center p-name" itemprop="headline">
         {{ i18n "collection_title" .Params.edition }}
       </h1>
 
@@ -44,19 +44,21 @@
   <section class="container mt-16">
 
     <div class="e-content" itemprop="articleBody">
-      <div class="prose prose-blue lg:prose-lg">
-        {{ .Content }}
+      {{ with .Content }}
+      <div class="prose prose-blue prose-lg lg:prose-xl">
+        {{ . }}
       </div>
+      {{ end }}
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-16 lg:gap-y-20 mt-10 lg:mt-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-16 lg:gap-y-20 mt-14 lg:mt-20">
         {{ range .Params.links }}
         <div class="flex flex-col">
-          <h2 class="font-special font-bold text-xl lg:text-2xl">{{ .title }}</h2>
+          <h2 class="font-bold text-xl lg:text-2xl">{{ .title }}</h2>
           <div class="mt-1 lg:mt-2 prose prose-blue">
             {{ .description | markdownify }}
           </div>
           <div class="mt-auto pt-2 lg:pt-3 font-bold">
-            <a href="{{ .link }}" class="rounded p-1 -ml-1 text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-1 ring-blue-500/25 transition">
+            <a href="{{ .link }}" class="rounded p-1 -ml-1 lg:text-lg text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-1 ring-blue-500/25 transition">
               {{ partial "icons/angle-right.html" . }}
               {{- with .linkTitle -}}
               {{ . }}
@@ -71,7 +73,7 @@
 
       {{ with .Params.releases }}
       <div class="mt-16 md:mt-20 lg:mt-24">
-        <h3 class="font-special font-bold text-xl md:text-2xl lg:text-3xl">{{ i18n "collection_releases" }}</h3>
+        <h3 class="font-bold text-xl md:text-2xl lg:text-3xl">{{ i18n "collection_releases" }}</h3>
 
         <div class="grid grid-cols-2 gap-6 lg:gap-10 mt-8 lg:mt-10">
           {{ range . }}

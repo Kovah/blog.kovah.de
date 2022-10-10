@@ -23,7 +23,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        special: ['"Overpass"', ...defaultTheme.fontFamily.sans]
+        sans: ['"Figtree"', ...defaultTheme.fontFamily.sans]
       },
       spacing: {
         '68': '17rem',
@@ -35,7 +35,7 @@ module.exports = {
       },
       colors: {
         gray: {
-          ...colors.coolGray
+          ...colors.slate
         },
         blue: brandBlue
       },

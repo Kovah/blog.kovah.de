@@ -2,24 +2,41 @@
  * Kovah.de CSS Styles
  * All Rights Reserved
  */
-@font-face {
-  font-family: 'Overpass';
-  src: local('Overpass Regular'), local('Overpass-Regular'),
-  url('../fonts/subset-Overpass-Regular.woff2') format('woff2'),
-  url('../fonts/subset-Overpass-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Figtree';
+    src: local('Figtree Regular'), local('Figtree-Regular'),
+    url('../fonts/Figtree-Regular.woff2') format('woff2'),
+    url('../fonts/Figtree-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Figtree';
+    src: local('Figtree Bold'), local('Figtree-Bold'),
+    url('../fonts/Figtree-Bold.woff2') format('woff2'),
+    url('../fonts/Figtree-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
-@font-face {
-  font-family: 'Overpass';
-  src: local('Overpass Bold'), local('Overpass-Bold'),
-  url('../fonts/subset-Overpass-Bold.woff2') format('woff2'),
-  url('../fonts/subset-Overpass-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Figtree';
+    src:
+      local('Figtree'),
+      url('/assets/fonts/Figtree-variable.woff2') format('woff2-variations'),
+      url('/assets/fonts/Figtree-variable.woff2') format('woff2 supports variations'),
+      url('/assets/fonts/Figtree-variable.woff') format('woff-variations'),
+      url('/assets/fonts/Figtree-variable.woff') format('woff supports variations');
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 @tailwind base;

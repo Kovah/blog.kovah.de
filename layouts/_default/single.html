@@ -18,7 +18,7 @@
 
       {{ partial "post/thumbnail.html" . }}
 
-      <h1 class="font-special font-bold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-snug lg:leading-snug md:text-center p-name" itemprop="headline">{{ .Title }}</h1>
+      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-snug lg:leading-snug md:text-center p-name" itemprop="headline">{{ .Title }}</h1>
 
       <div class="mt-8 lg:mt-12 sm:flex md:justify-center text-gray-500 text-sm">
         <div class="flex">
@@ -65,7 +65,7 @@
 
   <section class="container mt-12 lg:mt-16">
 
-    <div class="prose prose-blue lg:prose-lg mx-auto e-content" itemprop="articleBody">
+    <div class="prose prose-blue prose-lg lg:prose-xl mx-auto e-content" itemprop="articleBody">
       {{ partial "post/translation-info.html" . }}
       {{ .Content }}
     </div>
