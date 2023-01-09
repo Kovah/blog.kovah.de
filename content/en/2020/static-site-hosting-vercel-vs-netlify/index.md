@@ -54,7 +54,7 @@ From my experience, there are some differences between Vercel and Netlify in ter
 
 In the following table you can get a basic overview of the page speeds across different locations. Both Vercel and Netlify state that they operate a global CDN which takes care of fast and location-based delivery of all files of your website.
 
-All tests were run with [Webpagetest](https://www.webpagetest.org/) on my article about [switching from RSA SSH keys to ECDSA keys]({{< relref path="2019/switching-from-rsa-to-ecdsa" lang="en" >}}), as it also contains some code snippets and thus loads additional Javascript for the syntax highlighting. All tests were run with the following settings:
+All tests were run with [Webpagetest](https://www.webpagetest.org/) on my article about [switching from RSA SSH keys to ED25519 keys]({{< relref path="2019/switching-from-rsa-to-eddsa-ec25519" lang="en" >}}), as it also contains some code snippets and thus loads additional Javascript for the syntax highlighting. All tests were run with the following settings:
 
 * Browser: Chrome
 * DSL connection speed (1.5 Mbps, 50ms RTT)
