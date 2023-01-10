@@ -9,7 +9,7 @@ draft: false
 hascode: true
 thumbnail: ssh-private-key.jpg
 alias:
-- en/2019/switching-from-rsa-to-ecdsa
+- /en/2019/switching-from-rsa-to-ecdsa
 
 categories:
 - Tutorial
