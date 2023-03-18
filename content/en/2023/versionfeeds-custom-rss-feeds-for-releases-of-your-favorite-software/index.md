@@ -1,6 +1,6 @@
 ---
-title: "Versionfeeds: Custom RSS feeds for releases of your favorite software"
-description: With Versionfeeds, you can create your own RSS feeds and add the software you love and need to it. Stay up to date with your favorite software.
+title: "Versionfeeds: Custom RSS feeds for releases of your favourite software"
+description: With Versionfeeds, you can create your own RSS feeds and add the software you love and need to it. Stay up to date with your favourite software.
 
 author: Kevin Woblick
 date: 2023-03-18T11:33:04+01:00
@@ -22,7 +22,7 @@ That is why I build Versionfeeds.
 
 ## What is Versionfeeds
 
-On Versionfeeds, you can create custom RSS feeds, add your favorite software to it and then stay up-to-date with all new releases right in your feed reader. 
+On Versionfeeds, you can create custom RSS feeds, add your favourite software to it and then stay up-to-date with all new releases right in your feed reader. 
 
 ### 1. Create a custom RSS Feed
 
@@ -30,7 +30,7 @@ On Versionfeeds, you can create custom RSS feeds, add your favorite software to 
 
 Create your own RSS feeds with a custom title and description. Both the title and the description are used for the actual RSS feed and displayed in your feed reader.
 
-### 2. Add your favorite Software
+### 2. Add your favourite Software
 
 {{< image img="feed_add_app_golang.jpg" alt="Preview of adding Go programming language to a feed" >}}
 
