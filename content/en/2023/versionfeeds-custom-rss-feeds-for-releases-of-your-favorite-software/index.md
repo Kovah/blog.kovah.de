@@ -5,13 +5,14 @@ description: With Versionfeeds, you can create your own RSS feeds and add the so
 author: Kevin Woblick
 date: 2023-03-18T11:33:04+01:00
 draft: false
-hascode: true
+hascode: false
 
 categories:
 - News
 tags:
 - rss
 - software
+- productivity
 ---
 
 This is my second product launching, and I am quite excited. As with so many useful tools and services, they are born out of a problem that needs a solution. [Versionfeeds](https://versionfeeds.com/?ref=kvhblog) is exactly that.
