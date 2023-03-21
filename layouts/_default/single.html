@@ -18,9 +18,9 @@
 
       {{ partial "post/thumbnail.html" . }}
 
-      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-snug lg:leading-snug md:text-center p-name" itemprop="headline">{{ .Title }}</h1>
+      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-tight lg:leading-tight md:text-center p-name" itemprop="headline">{{ .Title }}</h1>
 
-      <div class="mt-8 lg:mt-12 sm:flex md:justify-center text-gray-500 text-sm">
+      <div class="mt-8 lg:mt-12 sm:flex md:justify-center text-gray-500">
         <div class="flex">
           {{ range .Params.Categories }}
           <div class="mr-1">{{ i18n "category" . }}:</div>
@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <div class="mt-4 text-gray-500 text-sm md:text-center">
+      <div class="mt-4 text-gray-500 md:text-center">
         <span class="mr-4 lg:mr-6">{{ i18n "readtime" . }}</span>
         <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
           {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
