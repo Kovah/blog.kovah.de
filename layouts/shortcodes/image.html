@@ -1,24 +1,20 @@
-{{ $img := .Page.Resources.GetMatch (.Get "img") }}
+{{ $original := .Page.Resources.GetMatch (.Get "img") }}
 
 {{ $linkexternal := .Get "linkexternal"}}
-{{ $prefix := "" }}
-{{ if ne .Site.IsServer true }}
-{{ $prefix = $.Site.Params.imgCDNUrl }}
-{{ end }}
+{{ $image := $original.Fit "768x432" }}
+{{ $imageLarge := $original.Fit "1024x576" }}
+{{ $webp := $original.Fit "768x432 webp" }}
+{{ $webpLarge := $original.Fit "1024x576 webp" }}
 
 <figure{{ with .Get "modifier"}} class="figure-{{.}}"{{ end }}>
-  {{ with .Get "link"}} <a href="{{.}}" class="block" {{ with $linkexternal }}target="_blank" rel="noreferrer noopener"{{ end }}> {{ end }}
+  {{ with .Get "link"}}<a href="{{.}}" class="block" {{ with $linkexternal }}target="_blank" rel="noreferrer noopener"{{ end }}>{{ end }}
   <picture>
-
-    <source type="image/jpeg" srcset="{{ $prefix }}{{ $img.RelPermalink }}?w=768&org_if_sml=1 768w, {{ $prefix }}{{ $img.RelPermalink }}?w=1024&org_if_sml=1 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
-    {{ if ne $.Site.IsServer true }}
-    <source type="image/webp" srcset="{{ $prefix }}{{ $img.RelPermalink }}?w=768&org_if_sml=1&force_format=webp 768w, {{ $prefix }}{{ $img.RelPermalink }}?w=1024&org_if_sml=1&force_format=webp 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
-    {{ end }}
-
-    <img src='{{ $prefix }}{{ $img.RelPermalink }}?w=1280&org_if_sml=1'
-        width="{{ $img.Width }}" height="{{ $img.Height }}"
+    <source type="image/jpeg" srcset="{{ $image.RelPermalink }} 768w, {{ $imageLarge.RelPermalink }} 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
+    <source type="image/webp" srcset="{{ $webp.RelPermalink }} 768w, {{ $webpLarge.RelPermalink }} 1024w" sizes="(max-width: 768px),(max-width: 1024px)">
+    <img src='{{ $original.RelPermalink }}?w=1280&org_if_sml=1'
+        width="{{ $original.Width }}" height="{{ $original.Height }}"
         {{ with .Get "alt"}}alt="{{.}}"{{ end }}/>
   </picture>
-  {{ with .Get "link"}} </a> {{ end }}
+  {{ with .Get "link"}}</a>{{ end }}
   {{ with .Get "caption"}}<figcaption class="text-center">{{ . }}</figcaption>{{ end }}
 </figure>

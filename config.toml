@@ -17,7 +17,8 @@ defaultContentLanguageInSubdir = true
   imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/blog.kovah.de"
 
 [imaging]
-quality = 85
+  quality = 90
+  resampleFilter = 'CatmullRom'
 
 [languages]
 [languages.en]

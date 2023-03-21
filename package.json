@@ -23,7 +23,7 @@
     "hot": "mix watch --hot",
     "prod": "npm run production",
     "production": "mix --production",
-    "serve": "hugo serve -D --bind 0.0.0.0",
+    "serve": "hugo serve --gc -D --bind 0.0.0.0",
     "build": "npm run production && hugo -D --gc"
   }
 }
