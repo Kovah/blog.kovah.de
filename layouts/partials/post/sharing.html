@@ -10,12 +10,27 @@
 
   <div class="flex justify-around">
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
-        href='https://twitter.com/share?url={{ .Permalink }}&text={{ $share_description }}&via=kovah_kvh'
+        href="https://twitter.com/share?url={{ .Permalink }}&text={{ $share_description }}&via=kevinwoblick"
         title='{{ i18n "share_via" "Twitter" }}'>
       {{ partial "icons/twitter.html" }}
     </a>
+    <div class="mastodon-share">
+      <button type="button" data-share-content="{{ $share_description }} {{ .Permalink }}"
+          class="mastodon-button {{ $link_class }}" title='{{ i18n "share_via" "Mastodon" }}'>
+        {{ partial "icons/mastodon.html" }}
+      </button>
+      <dialog class="p-4 lg:p-6 rounded-lg drop-shadow-2xl">
+        <form method="dialog">
+          <label class="block" for="mastodon-instance">Enter your Instance to share this article:</label>
+          <input class="input my-3" type="text" name="instance" id="mastodon-instance" placeholder="mastodon.social"
+              required>
+          <button class="button mr-3" type="submit">Save</button>
+          <button value="cancel" formmethod="dialog">Cancel</button>
+        </form>
+      </dialog>
+    </div>
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
-        href='https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ $share_title }}'
+        href="https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ $share_title }}"
         title='{{ i18n "share_via" "Hackernews" }}'>
       {{ partial "icons/hackernews.html" }}
     </a>
@@ -30,7 +45,7 @@
       {{ partial "icons/reddit.html" }}
     </a>
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
-        href='mailto:?subject={{ $share_title }}&body={{ $share_description }}'
+        href="mailto:?subject={{ $share_title }}&body={{ $share_description }}"
         title='{{ i18n "share_via" "Email" }}'>
       {{ partial "icons/email.html" }}
     </a>

@@ -47,8 +47,7 @@
     <div class="mt-10 md:mt-12 lg:mt-26 -mx-2 grid grid-cols-2 sm:grid-cols-3 gap-x-2 lg:gap-x-4 md:flex items-center">
 
       {{ range .Site.Menus.main -}}
-      <a class="inline-block leading-none w-min p-2 pt-2.5 rounded lg:text-lg lg:leading-none font-bold text-white hover:bg-white/10 focus:bg-white/10 focus:outline-none transition"
-          href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      <a class="button" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
       {{- end }}
 
     </div>

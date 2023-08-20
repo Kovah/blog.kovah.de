@@ -84,6 +84,14 @@ html {
   content: "";
 }
 
+.button {
+  @apply inline-block leading-none w-min p-2 pt-2.5 rounded lg:text-lg lg:leading-none font-bold text-white bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none transition;
+}
+
+.input {
+  @apply block w-full bg-gray-100 border border-gray-300 text-gray-700 py-1.5 px-3 leading-tight rounded focus:outline-none focus:bg-white focus:border-gray-500;
+}
+
 .alert-info {
   @apply bg-blue-100 text-blue-800;
 }
