@@ -1,41 +1,41 @@
-{{ $secondary_link_class := "p-2 rounded text-sm lg:text-base lg:leading-none font-bold text-white hover:bg-white/10 focus:bg-white/10 focus:outline-none transition" }}
 <div class="bg-blue-500 text-white">
   <div class="container pt-10 md:pt-12 lg:pt-16 pb-8 md:pb-10 lg:pb-12 mb-10 md:mb-14 lg:mb-16">
 
-    <div class="grid grid-cols-2 gap-4">
+    <div class="w-full flex justify-between items-center sm:items-start">
 
-      <a href='{{ "/" | relLangURL }}' class="w-min focus:outline-none focus:scale-110 transition">
-        {{ partial "logo.html" . }}
+      <a href='{{ "/" | relLangURL }}'
+          class="flex items-center focus:outline-none focus:scale-110 transition">
+        <img src="/assets/kwoblick_2023.png" srcset="/assets/kwoblick_2023@2x.png 2x"
+            alt="Photo of Kevin Woblick" class="h-auto w-[100px] lg:w-[150px]">
+        <h1 class="ml-3 sm:ml-6 font-bold text-2xl sm:text-3xl lg:text-5xl leading-tight">Kevin<br>Woblick</h1>
       </a>
 
-      <div class="flex items-center justify-end -mr-2">
+      <div class="flex flex-col justify-start items-end gap-1 -mr-2">
         {{ with .OutputFormats.Get "rss" -}}
-        <a class="{{ $secondary_link_class }}"
-            href="{{ .Permalink | relURL }}" title="Feed">
-          {{ partial "icons/rss.html" }}
+        <a class="button button-light" href="{{ .Permalink | relURL }}" title="Feed">
+          <span class="hidden sm:inline mr-2">Feed</span> {{ partial "icons/rss.html" }}
         </a>
         {{ else }}
         {{ with $.Site.Home.OutputFormats.Get "rss" -}}
-        <a class="{{ $secondary_link_class }}"
-            href="{{ .Permalink | relURL }}" title="Feed">
-          {{ partial "icons/rss.html" }}
+        <a class="button button-light" href="{{ .Permalink | relURL }}" title="Feed">
+          <span class="hidden sm:inline mr-2">Feed</span> {{ partial "icons/rss.html" }}
         </a>
         {{ end -}}
         {{ end -}}
 
         {{ range .Translations }}
-        <a class="ml-6 {{ $secondary_link_class }}"
+        <a class="button button-light"
             href="{{ .Permalink | relURL }}" title="{{ .Language.LanguageName }}">
-          {{ .Language.LanguageName }}
+          <span class="hidden sm:inline mr-1">Language:</span> {{ .Language.LanguageName }}
         </a>
         {{ else }}
         {{ $currentLang := .Language.Lang }}
         {{ range $.Site.Home.AllTranslations }}
         {{ if eq $currentLang .Lang }}
         {{ else }}
-        <a class="ml-6 pt-2.5 {{ $secondary_link_class }}"
+        <a class="button button-light"
             href="{{ .Permalink | relURL }}" title="{{ .Language.LanguageName }}">
-          {{ .Language.LanguageName }}
+          <span class="hidden sm:inline mr-1">Language:</span> {{ .Language.LanguageName }}
         </a>
         {{ end }}
         {{ end }}
@@ -47,7 +47,7 @@
     <div class="mt-10 md:mt-12 lg:mt-26 -mx-2 grid grid-cols-2 sm:grid-cols-3 gap-x-2 lg:gap-x-4 md:flex items-center">
 
       {{ range .Site.Menus.main -}}
-      <a class="button" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      <a class="button button-ghost" href="{{ .URL | relLangURL }}">&nbsp;{{ .Name }}</a>
       {{- end }}
 
     </div>

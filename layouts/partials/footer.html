@@ -2,8 +2,13 @@
   <div class="container py-16 md:py-20 lg:py-24">
 
     <div>
-      <a class="text-white text-4xl" href="https://kovah.de/" title="Portfolio of Kevin Woblick"
-        >{{ partial "icons/kvh-insignia.html" }}</a>
+      <div class="text-xs text-white text-opacity-60" data-lang="{{ .Language.Lang }}">
+        {{ if eq .Language.Lang "en" }}
+        All content is licensed as <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> if not stated otherwise.
+        {{ else }}
+        Die Inhalte dieses Blogs sind unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> lizenziert, sofern nicht anders angegeben.
+        {{ end }}
+      </div>
     </div>
 
     <div class="mt-8 md:mt-12 lg:mt-16 text-white text-opacity-60">
@@ -15,16 +20,6 @@
           href="https://kovah.de/info/impress">Impress</a>
       <a class="ml-8 text-white text-opacity-80 hover:text-opacity-100 focus:text-opacity-100 transition"
           href="https://kovah.de/info/privacy">Privacy</a>
-    </div>
-
-    <div class="mt-8 md:mt-12 lg:mt-16">
-      <div class="text-xs text-white text-opacity-60" data-lang="{{ .Language.Lang }}">
-        {{ if eq .Language.Lang "en" }}
-        All content is licensed as <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> if not stated otherwise.
-        {{ else }}
-        Die Inhalte dieses Blogs sind unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> lizenziert, sofern nicht anders angegeben.
-        {{ end }}
-      </div>
     </div>
 
   </div>
