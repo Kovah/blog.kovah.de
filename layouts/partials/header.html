@@ -1,4 +1,4 @@
-<div class="bg-blue-500 text-white">
+<div class="aurora-bg text-white">
   <div class="container pt-10 md:pt-12 lg:pt-16 pb-8 md:pb-10 lg:pb-12 mb-10 md:mb-14 lg:mb-16">
 
     <div class="w-full flex justify-between items-center sm:items-start">
@@ -6,7 +6,7 @@
       <a href='{{ "/" | relLangURL }}'
           class="flex items-center focus:outline-none focus:scale-110 transition">
         <img src="/assets/kwoblick_2023.png" srcset="/assets/kwoblick_2023@2x.png 2x"
-            alt="Photo of Kevin Woblick" class="h-auto w-[100px] lg:w-[150px]">
+            alt="Photo of Kevin Woblick" class="h-auto w-[100px] lg:w-[150px] drop-shadow-xl">
         <h1 class="ml-3 sm:ml-6 font-bold text-2xl sm:text-3xl lg:text-5xl leading-tight">Kevin<br>Woblick</h1>
       </a>
 
@@ -47,7 +47,7 @@
     <div class="mt-10 md:mt-12 lg:mt-26 -mx-2 grid grid-cols-2 sm:grid-cols-3 gap-x-2 lg:gap-x-4 md:flex items-center">
 
       {{ range .Site.Menus.main -}}
-      <a class="button button-ghost" href="{{ .URL | relLangURL }}">&nbsp;{{ .Name }}</a>
+      <a class="button" href="{{ .URL | relLangURL }}">&nbsp;{{ .Name }}</a>
       {{- end }}
 
     </div>
