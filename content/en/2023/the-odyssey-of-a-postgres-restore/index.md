@@ -64,4 +64,8 @@ dump_pg_14.0: error: options -c/--clean and -a/--data-only cannot be used togeth
 One last try. The docs about the archive format state that it contains all the data and "then pg_restore can be used to examine the archive and/or select which parts of the database are to be restored". Maybe try the archive format and tell **pg_restore** to clean up before doing the restore? I ran the restore of a regular archive backup with `--clean` and... FINALLY!  
 The database restore went through and I have the production data in my local database - after almost 40 minutes and a lot of headache.
 
+{{< alert type="info" >}}
+**TLDR:** Export the database into the archive format (`--format=custom`) and then import it into the other database with the `--clean` flag. Make sure, that the importing user has sufficient rights, like the `postgres` user.
+{{</ alert >}}
+
 However, I still would like to know how to restore a PostgreSQL database dump without having to take care of user permissions...
