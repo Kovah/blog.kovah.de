@@ -54,12 +54,10 @@ Done? Then let's go on.
 Generating a new key based on ED25519 is the first step. The following command is an example, and you should customize it:
 
 ```bash
-ssh-keygen -t ed25519 -b 521 -C "mail@example.com"
+ssh-keygen -t ed25519 -C "mail@example.com"
 ```
 
-* The `-t ed25519` part tells the ssh-keygen function (which is part of OpenSSL), which algorithm to use.
-* Notice, that despite being located in the binary world, we do not use 512 as the key length, but 521, specified by `-b 521`. Reason is the mathematical structure of the key, which does not adhere to the power of two.  
-* Finally, you specify your email address with the `-C "mail@example.com"` flag. Replace the example address with your own.
+The `-t ed25519` part tells the ssh-keygen function (which is part of OpenSSL), which algorithm to use. At last, you specify your email address with the `-C "mail@example.com"` flag. Replace the example address with your own.
 
 #### Saving the key and setting a passphrase
 
@@ -67,9 +65,11 @@ After hitting enter the program will ask you for the location of the newly gener
 
 The next thing you do is specifying a passphrase. Please do not skip this. I see numerous blog posts and tutorials that are fine with skipping this step.
 
-DO NOT SKIP SETTING A PASSPHRASE!
+{{< alert type="danger" >}}
+**DO NOT SKIP SETTING A PASSPHRASE!**
 
 Setting a passphrase is the same as setting a password for your email account. If an attacker or any other random person gets access to your private key file, they can use it without any hurdles! And with access to your private key this third party has access to all servers you connect to using the key. So, please set a passphrase. In the best case it has the same strength as any other password you generate. Use a damn password manager if you don't want to remember passwords.
+{{</ alert >}}
 
 After you set your passphrase, the key generator will do its magic. Congratulations, you are now the proud owner of a brand-new ED25519 key! The output should look similar to this:
 
@@ -128,7 +128,9 @@ Host *
 
 The first line tells SSH to apply the next settings to all hosts, hence the wildcard *. The second line then sets the newly generated key `~/.ssh/id_ed25519` as the new identity. That's it. There is nothing more to configure. Make sure that, when connecting to an old server that does not yet have the new key, add the `-i ~/.ssh/id_ed25519` flag to your SSH command: `ssh ~/.ssh/id_ed25519 [username]@[some-old-server]`.
 
-_PS for all macOS users: to prevent macOS asking for the key passphrase every time you use the key, add `UseKeychain yes` to the global settings in your SSH config. Linux users may [use ssh-agent](https://askubuntu.com/questions/362280/enter-ssh-passphrase-once)._
+{{< alert type="info" >}}
+To prevent your operating system asking for the key passphrase every time you use the key, you may [use an ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). macOS users can add `UseKeychain yes` to the global settings in your SSH config.
+{{</ alert >}}
 
 
 ## Conclusion

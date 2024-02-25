@@ -47,7 +47,11 @@ module.exports = {
               marginTop: '1.5em',
               marginBottom: '0.5em',
               lineHeight: '1.5'
-            }
+            },
+            strong: {
+              color: 'inherit',
+              fontWeight: '600',
+            },
           }
         },
         lg: {
