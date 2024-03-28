@@ -4,6 +4,7 @@ description: This article shows how to tell Playwright to stop follow redirects 
 
 author: Kevin Woblick
 date: 2023-11-12T12:52:15+01:00
+lastmod: 2024-03-28T12:45:00+01:00
 draft: false
 hascode: true
 
