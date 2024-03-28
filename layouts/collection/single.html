@@ -33,8 +33,9 @@
           </div>
           {{ end }}
         </div>
-        <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
-          {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+        <span>{{ i18n "published" }}: </span>
+        <time class="format-date dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+          {{.Date.Format "2006-01-02"}}
         </time>
       </div>
 

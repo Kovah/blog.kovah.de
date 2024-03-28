@@ -50,12 +50,14 @@
 
       <div class="mt-4 text-gray-500 md:text-center">
         <span class="mr-4 lg:mr-6">{{ i18n "readtime" . }}</span>
-        <time class="dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
-          {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+        <span>{{ i18n "published" }}:</span>
+        <time class="format-date dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
+          {{.Date.Format "2006-01-02"}}
         </time>
         {{ with .Lastmod }}
-        <time class="ml-2 dt-updated" datetime='{{.Format "2006-01-02"}}' itemprop="dateModified">
-          {{ i18n "updated" }}: {{.Format "2006-01-02"}}
+        <span class="ml-2">{{ i18n "updated" }}:</span>
+        <time class="format-date dt-updated" datetime='{{.Format "2006-01-02"}}' itemprop="dateModified">
+          {{.Format "2006-01-02"}}
         </time>
         {{ end }}
       </div>

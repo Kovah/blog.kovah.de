@@ -8,8 +8,9 @@
       {{ if not (eq .Section "collection") }}
       <span class="mr-4">{{ i18n "readtime" . }}</span>
       {{ end }}
-      <time class="" datetime='{{.Date.Format "2006-01-02"}}'>
-        {{ i18n "published" }}: {{.Date.Format "2006-01-02"}}
+      <span>{{ i18n "published" }}: </span>
+      <time class="format-date" datetime='{{.Date.Format "2006-01-02"}}'>
+        {{.Date.Format "2006-01-02"}}
       </time>
     </div>
 

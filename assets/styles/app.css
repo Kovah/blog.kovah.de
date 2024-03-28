@@ -89,7 +89,7 @@ html {
 }
 
 .button {
-  @apply inline-flex items-center leading-none w-min p-2 pt-2.5 rounded lg:text-lg lg:leading-none font-bold text-white bg-white/5 hover:bg-white/10 focus:bg-white/10 focus:outline-none transition;
+  @apply inline-flex items-center leading-none w-min p-2 pt-2.5 rounded lg:text-lg lg:leading-none font-bold text-white bg-white/5 hover:bg-white/10 focus:bg-white/20 focus:outline-none transition;
 }
 
 .button-dark {
@@ -97,7 +97,7 @@ html {
 }
 
 .button-light {
-  @apply bg-white/0 hover:bg-white/10 focus:bg-white/10 text-white/75 hover:text-white focus:text-white;
+  @apply bg-white/0 hover:bg-white/10 focus:bg-white/20 text-white/80 hover:text-white focus:text-white;
 }
 
 .input {

@@ -11,3 +11,17 @@ window.onload = function () {
     new MastoShare($mastoShare);
   }
 };
+
+document.querySelectorAll('.format-date').forEach(($e) => {
+  const date = new Date($e.dateTime);
+  $e.innerHTML = date.toLocaleDateString();
+});
+
+document.querySelectorAll('.format-datetime').forEach(($e) => {
+  const date = new Date($e.dateTime);
+  $e.innerHTML = date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { timeStyle: 'short' });
+});
+
+document.querySelectorAll('.format-number').forEach(($e) => {
+  $e.innerHTML = new Intl.NumberFormat().format(parseFloat($e.innerHTML));
+});
