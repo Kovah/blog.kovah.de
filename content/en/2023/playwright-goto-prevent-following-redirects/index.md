@@ -14,8 +14,8 @@ tags:
   - javascript
 ---
 
-{{< alert type="warning" >}}
-Unfortunately, this solution is currently blocked due to an issue in Playwright v1.39 itself. I hope the team fixes the issue soon. The related issue is [#23781](https://github.com/microsoft/playwright/issues/23781).
+{{< alert type="info" >}}
+This solution requires at least Playwright v1.41. Older versions contain an issue which breaks the following code.
 {{</ alert >}}
 
 I had some issues with the website checks I run for [Cloudhiker](https://cloudhiker.net), which are using a headless browser controlled by [Playwright](https://playwright.dev/). Unfortunately, when instructing the browser to open a new page and go to a specific URL, it automatically follows redirects returned by the website.
