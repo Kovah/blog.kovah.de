@@ -13,7 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "laravel-mix": "^6.0.41",
-    "postcss": "^8.4.38"
+    "postcss": "^8.4.39"
   },
   "scripts": {
     "dev": "npm run development",
