@@ -1,13 +1,15 @@
 title = "Kovah.de Blog"
 baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
-paginate = 10
 relativeURLs = false
 
 pygmentsCodeFences = false
 
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
+[pagination]
+pagerSize = 10
 
 [params]
   defaultAuthor = "Kevin Woblick"

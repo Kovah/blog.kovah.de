@@ -112,6 +112,21 @@ That's my Apple Music Replay for 2024:
     - Ahora te Puedes Marchar - Luis Miguel
     - Travelin' Band - Curtis Stigers & The Forest Rangers
 
+## Gaming
+
+Well, gaming is still an important part of my life. It helps me to calm down during stressful periods, but also have fun.
+
+My Steam statistics look like this:
+
+- Different Games played: 125 (more like 130 because some are not on Steam).
+- 628 Achievements unlocked, and I completed 8 Games.
+- I bought 46 new games, and yes, some of them are still unplayed. 🙈
+- According to my personal Steam statistics tracking, I played Games for 19 days 20 hours 47 minutes.
+
+## TV and Streaming
+
+Actually, I don't have statistics about that yet. I was using IMDB to track which movies shows I've watched, but migrated to [Trakt.tv](https://trakt.tv/vip/referral/86cf0119b0a817342b80f76ef1d7d2dd) during summer. Let's see how the statistics for 2025 will look like.
+
 ---
 
 ## Plans for 2025
