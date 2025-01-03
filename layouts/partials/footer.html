@@ -4,9 +4,13 @@
     <div>
       <div class="text-xs text-white text-opacity-60" data-lang="{{ .Language.Lang }}">
         {{ if eq .Language.Lang "en" }}
-        All content is licensed as <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> if not stated otherwise.
+        All content is licensed as <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+          class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC
+        BY-NC-ND 4.0</a> if not stated otherwise.
         {{ else }}
-        Die Inhalte dieses Blogs sind unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC BY-NC-ND 4.0</a> lizenziert, sofern nicht anders angegeben.
+        Die Inhalte dieses Blogs sind unter <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+          class="text-white text-opacity-80 font-bold hover:text-opacity-100 focus:text-opacity-100 transition">CC
+        BY-NC-ND 4.0</a> lizenziert, sofern nicht anders angegeben.
         {{ end }}
       </div>
     </div>
@@ -26,18 +30,65 @@
 </footer>
 
 {{ with .Params.hascode }}
-  {{ if . }}
-  {{ $highlightjs := resources.Get "highlighter.js" | fingerprint }}
-  <script src="{{ $highlightjs.Permalink | relURL }}"></script>
-  {{ end }}
+{{ if . }}
+{{ $highlightjs := resources.Get "highlighter.js" | fingerprint }}
+<script src="{{ $highlightjs.Permalink | relURL }}"></script>
+{{ end }}
 {{ end }}
 
 {{ if (.Params.hasDiagram) }}
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#7dd3fc',
+      secondaryColor: '#99f6e4',
+      tertiaryColor: '#bef264',
+      accentColor: '#fcd34d',
+
+      primaryBorderColor: '#0ea5e9',
+      secondaryBorderColor: '#14b8a6',
+      tertiaryBorderColor: '#84cc16',
+      accentBorderColor: '#f59e0b',
+
+      primaryTextColor: '#030712',
+      background: 'transparent',
+      lineColor: '#030712',
+
+      line1: '#ef4444',
+      line2: '#10b981',
+      line3: '#3b82f6',
+      line4: '#fbbf24',
+      line5: '#8b5cf6',
+      line6: '#ec4899',
+      line7: '#22d3ee',
+      line8: '#a3e635',
+
+      pie1: '#ef4444',
+      pie2: '#10b981',
+      pie3: '#3b82f6',
+      pie4: '#fbbf24',
+      pie5: '#8b5cf6',
+      pie6: '#ec4899',
+      pie7: '#22d3ee',
+      pie8: '#a3e635',
+
+      clusterBkg: '#fbbf24',
+      clusterBorder: '#f59e0b',
+      clusterTextColor: '#000'
+    },
+    securityLevel: 'loose',
+    experimental: {
+      enable: true
+    }
+  });
+</script>
+
 {{ end }}
 
-{{ if ne .Site.IsServer true }}
+{{ if ne hugo.IsServer true }}
 <noscript><img src="https://analytics.kovah.dev/ingress/e76b26fa-8e79-4c02-9c7b-c8eb095b61f7/pixel.gif"></noscript>
 <script src="https://analytics.kovah.dev/ingress/e76b26fa-8e79-4c02-9c7b-c8eb095b61f7/script.js"></script>
 {{ end }}

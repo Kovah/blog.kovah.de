@@ -75,7 +75,7 @@ html {
 }
 
 .prose figure img {
-  width: 100%;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -124,6 +124,15 @@ html {
 .figure-right {
   @apply float-right ml-4;
   max-width: 60%;
+}
+
+.figure-center {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.prose .figure-center img {
+  margin: 0 auto;
 }
 
 @screen lg {
