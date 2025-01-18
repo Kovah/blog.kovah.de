@@ -4,16 +4,13 @@
     {{ if eq .Section "collection" }}{{ i18n "collection_share" }}{{ else }}{{ i18n "share" }}{{ end }}
   </h2>
 
-  {{ $share_title := replace .Title "&" "and" }}
-  {{ $share_description := replace .Description "&" "and" }}
+  {{ $share_title := safeHTML (replace .Title "&" "and") }}
+  {{ $share_description := safeHTML (replace (print .Title " by Kevin Woblick") "&" "and") }}
+  {{ $share_description_x := safeHTML (replace .Title "&" "and") }}
+  {{ $share_description_bsky := safeHTML (replace (print .Title " by @kevin.woblick.com " .Permalink) "&" "and") }}
   {{ $link_class := "inline-block text-xl lg:text-3xl text-white hover:scale-150 focus:scale-150 focus:outline-none transition transform transition-transform duration-300" }}
 
   <div class="flex justify-around">
-    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
-        href="https://twitter.com/share?url={{ .Permalink }}&text={{ $share_description }}&via=kevinwoblick"
-        title='{{ i18n "share_via" "Twitter" }}'>
-      {{ partial "icons/twitter.html" }}
-    </a>
     <div class="mastodon-share">
       <button type="button" data-share-content="{{ $share_description }} {{ .Permalink }}"
           class="mastodon-button {{ $link_class }}" title='{{ i18n "share_via" "Mastodon" }}'>
@@ -30,17 +27,27 @@
       </dialog>
     </div>
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href="https://bsky.app/intent/compose?text={{ $share_description_bsky }}"
+        title='{{ i18n "share_via" "Bluesky" }}'>
+      {{ partial "icons/bluesky.html" }}
+    </a>
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
+        href="https://x.com/share?url={{ .Permalink }}&text={{ $share_description_x }}&via=kevinwoblick"
+        title='{{ i18n "share_via" "X" }}'>
+      {{ partial "icons/twitter.html" }}
+    </a>
+    <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
         href="https://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ $share_title }}"
         title='{{ i18n "share_via" "Hackernews" }}'>
       {{ partial "icons/hackernews.html" }}
     </a>
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
         href='https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ $share_title }}&summary={{ $share_description }}&source={{ "/" | absURL }}'
-        title='{{ i18n "share_via" "Email" }}'>
+        title='{{ i18n "share_via" "LinkedIn" }}'>
       {{ partial "icons/linkedin.html" }}
     </a>
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
-        href='https://reddit.com/submit?url={{ .Permalink }}&title={{ replace .Title "&" "and" }}'
+        href='https://reddit.com/submit?url={{ .Permalink }}&title={{ $share_title }}'
         title='{{ i18n "share_via" "Reddit" }}'>
       {{ partial "icons/reddit.html" }}
     </a>
