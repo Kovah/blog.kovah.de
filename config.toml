@@ -2,6 +2,7 @@ title = "Kovah.de Blog"
 baseURL = "https://blog.kovah.de/"
 assetDir = "./assets/dist"
 relativeURLs = false
+timeout = 60
 
 pygmentsCodeFences = false
 
