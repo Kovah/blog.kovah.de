@@ -6,7 +6,7 @@ author: Kevin Woblick
 date: 2025-02-11T09:01:44+01:00
 draft: true
 hascode: false
-#ogimage: thumbnail.png
+ogimage: thumbnail.png
 
 categories:
   - Articles
