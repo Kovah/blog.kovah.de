@@ -75,8 +75,7 @@ html {
 }
 
 .prose figure img {
-  max-width: 100%;
-  margin: 0;
+  @apply max-w-full m-0 border border-gray-100;
 }
 
 .prose :not(pre) code {
