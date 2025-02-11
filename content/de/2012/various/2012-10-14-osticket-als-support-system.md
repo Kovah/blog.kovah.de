@@ -18,5 +18,5 @@ tags:
 Ich habe mich kurzerhand dazu entschlossen, an Stelle der einfachen "Supportanfrage" via eMail ein Support System beziehungsweise einen HelpDesk einzusetzen. Dazu habe ich nach einem möglichst einfach einzusetzenden Ticket System gesucht - und gefunden.
 Ich nutze jetzt [osTicket](http://osticket.com/), um sämtliche Supportanfragen bearbeiten zu können. Bin dabei zwar auf einige Stolpersteine im Template gestoßen, die aber hier nicht nennenswert sind. Im Großen und Ganzen bin ich sehr zufrieden mit dem System und kann jetzt sämtliche Tickets ordentlich und übersichtlich verwalten.
 
-<del>Hier geht es zum [Helpdesk / Support System](http://helpdesk.kovah.de/).</del>
+~~Hier geht es zum [Helpdesk / Support System](http://helpdesk.kovah.de/).~~
 **Edit: **Ich bin bereits auf den MantisBT Bugtracker umgestiegen.
