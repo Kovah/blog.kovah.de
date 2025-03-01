@@ -1,5 +1,5 @@
-title = "Kovah.de Blog"
-baseURL = "https://blog.kovah.de/"
+title = "Woblick.dev Blog"
+baseURL = "https://blog.woblick.dev/"
 assetDir = "./assets/dist"
 relativeURLs = false
 timeout = 60
@@ -15,9 +15,9 @@ pagerSize = 10
 [params]
   defaultAuthor = "Kevin Woblick"
   publisher = "Kevin Woblick"
-  webmentionUrl = "https://blog.kovah.de"
+  webmentionUrl = "https://blog.woblick.dev"
   imgCDNDomain = "aiwsdltqdo.cloudimg.io"
-  imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/blog.kovah.de"
+  imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/blog.woblick.dev"
 
 [imaging]
   quality = 90

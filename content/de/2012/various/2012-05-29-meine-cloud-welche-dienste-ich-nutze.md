@@ -233,7 +233,7 @@ Einen Überblick beziehungsweise eine Rangliste über die Dienste möchte ich hi
 
 <tr>
 
-<td colspan="3">![](https://blog.kovah.de/de/app/uploads/2015/10/12241.jpg) Mediafire betitelt sich selber als Cloud-Anbieter, könnte aber genau so gut zu den Filehostern gezählt werden. Eine Ordnersynchronisation im üblichen Sinne bietet Mediafire nicht an, man beschränkt sich auf das einfache Hochladen von Dateien. Diese können dann jedoch beliebig verteilt werden. Für Backups ist der Dienst weniger geeignet, da die Dateien nach einer gewissen Zeit ohne Aktivität gelöscht werden. Genutzt wird das ganze von mir, wenn mal eben die letzten Fotos vom Grillabend rumgeschickt werden sollen.</td>
+<td colspan="3">![](https://blog.woblick.dev/de/app/uploads/2015/10/12241.jpg) Mediafire betitelt sich selber als Cloud-Anbieter, könnte aber genau so gut zu den Filehostern gezählt werden. Eine Ordnersynchronisation im üblichen Sinne bietet Mediafire nicht an, man beschränkt sich auf das einfache Hochladen von Dateien. Diese können dann jedoch beliebig verteilt werden. Für Backups ist der Dienst weniger geeignet, da die Dateien nach einer gewissen Zeit ohne Aktivität gelöscht werden. Genutzt wird das ganze von mir, wenn mal eben die letzten Fotos vom Grillabend rumgeschickt werden sollen.</td>
 
 </tr>
 
@@ -251,7 +251,7 @@ Einen Überblick beziehungsweise eine Rangliste über die Dienste möchte ich hi
 
 <tr>
 
-<td colspan="3">![](https://blog.kovah.de/de/app/uploads/2015/10/12244.jpg) DeviantArt ist eine internationale Kunst-Community. Da ich dort so oder so angemeldet bin, könnte ich 2 GB Bilderspeicher, genannt Sta.sh, kostenfrei nutzen. Bilder hochladen und per Link verteilen oder irgendwo einbinden. Da ich Premium Mitglied bin, stehen mit sogar gigantische 10 GB zur Verfügung. Die Premium Mitgliedschaft kostet umgerechnet 23 € pro Jahr und bringt neben Stash noch viele weitere nette Features mit, die jedoch nur für Leute interessant sind, die die Community auch voll nutzen möchten.</td>
+<td colspan="3">![](https://blog.woblick.dev/de/app/uploads/2015/10/12244.jpg) DeviantArt ist eine internationale Kunst-Community. Da ich dort so oder so angemeldet bin, könnte ich 2 GB Bilderspeicher, genannt Sta.sh, kostenfrei nutzen. Bilder hochladen und per Link verteilen oder irgendwo einbinden. Da ich Premium Mitglied bin, stehen mit sogar gigantische 10 GB zur Verfügung. Die Premium Mitgliedschaft kostet umgerechnet 23 € pro Jahr und bringt neben Stash noch viele weitere nette Features mit, die jedoch nur für Leute interessant sind, die die Community auch voll nutzen möchten.</td>
 
 </tr>
 

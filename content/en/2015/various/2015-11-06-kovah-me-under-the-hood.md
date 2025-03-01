@@ -14,7 +14,7 @@ tags:
 - Wordpress
 ---
 
-It's been about 7 weeks since I started working on the new version of my blog. Or better: a new version that merges my two blogs. The first one, my original blog from blog.kovah.de that was started about 8 years ago and this blog: kovah.me.
+It's been about 7 weeks since I started working on the new version of my blog. Or better: a new version that merges my two blogs. The first one, my original blog from blog.woblick.dev that was started about 8 years ago and this blog: kovah.me.
 Now I want to show you what I used to build the new base for the blog system.
 
 ## Multi language? Multi blog!
@@ -30,11 +30,11 @@ Another pretty awesome technology I used for the first time is the new HTML5 pic
 ```html
 <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
-      <source srcset="https://blog.kovah.de/en/wp-content/uploads/2015/07/3097846143-544x300.jpeg" media="(max-width: 543px)">
-      <source srcset="https://blog.kovah.de/en/wp-content/uploads/2015/07/3097846143-992x380.jpeg" media="(min-width: 544px) and (max-width: 991px)">
-      <source srcset="https://blog.kovah.de/en/wp-content/uploads/2015/07/3097846143-1200x420.jpeg" media="(min-width: 992px) and (max-width: 1199px)">
-      <source srcset="https://blog.kovah.de/en/wp-content/uploads/2015/07/3097846143-1410x480.jpeg" media="(min-width: 1200px)">
-      <img srcset="https://blog.kovah.de/en/wp-content/uploads/2015/07/3097846143-1200x420.jpeg" alt="">
+      <source srcset="https://blog.woblick.dev/en/wp-content/uploads/2015/07/3097846143-544x300.jpeg" media="(max-width: 543px)">
+      <source srcset="https://blog.woblick.dev/en/wp-content/uploads/2015/07/3097846143-992x380.jpeg" media="(min-width: 544px) and (max-width: 991px)">
+      <source srcset="https://blog.woblick.dev/en/wp-content/uploads/2015/07/3097846143-1200x420.jpeg" media="(min-width: 992px) and (max-width: 1199px)">
+      <source srcset="https://blog.woblick.dev/en/wp-content/uploads/2015/07/3097846143-1410x480.jpeg" media="(min-width: 1200px)">
+      <img srcset="https://blog.woblick.dev/en/wp-content/uploads/2015/07/3097846143-1200x420.jpeg" alt="">
       <!--[if IE 9]></video><![endif]-->
     </picture>
 ```

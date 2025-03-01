@@ -71,7 +71,7 @@ defaultContentLanguageInSubdir = true
   weight = 2
 ```
 
-I think it's quite self-explanatory. The only unusual setting here is `defaultContentLanguageInSubdir = true`, which redirects all icoming requests to the root directory `https://blog.kovah.de/` to `https://blog.kovah.de/en/` exactly like in the old Wordpress setup. Thanks to the Hugo dev for implementing this special setting!
+I think it's quite self-explanatory. The only unusual setting here is `defaultContentLanguageInSubdir = true`, which redirects all icoming requests to the root directory `https://blog.woblick.dev/` to `https://blog.woblick.dev/en/` exactly like in the old Wordpress setup. Thanks to the Hugo dev for implementing this special setting!
 
 
 ### Keep it simple without a theme

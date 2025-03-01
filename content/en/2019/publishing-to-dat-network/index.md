@@ -32,7 +32,7 @@ Dat is basically a P2P file sharing network. If you publish your site you share 
 To summarize:
 
 * Have your site available as a static website (HTML, CSS and JS).
-* Make sure that you do not use fixed base URLs like `https://blog.kovah.de/` as this will break all links of your Dat site.
+* Make sure that you do not use fixed base URLs like `https://blog.woblick.dev/` as this will break all links of your Dat site.
 * A terminal.
 * A working internet connection.
 

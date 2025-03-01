@@ -16,7 +16,7 @@ tags:
 - Storage
 ---
 
-Ich habe vor einigen Tagen bereits [über Copy berichtet](https://blog.kovah.de/copy-dropbox-alternative-mit-massig-speicher): eine neue Alternative zu Dropbox, allerdings diesmal mit ordentlich Speicher. Zum Start gibt's satte 15GB (bei Dropbox 2GB), wer [diesen Link](https://copy.com?r=jZ0vWa) nutzt profitiert von 5GB mehr und startet mit 20GB. Bei größerem Funktionsumfang und mehr Speicher gibt es lediglich einen Grund, nicht umzusteigen: Copy gibt es (noch) nicht in Deutsch. Da ich des Englischen aber mächtig bin stört mich das keineswegs und deshalb steige ich nun von Dropbox auf Copy um.
+Ich habe vor einigen Tagen bereits [über Copy berichtet](https://blog.woblick.dev/copy-dropbox-alternative-mit-massig-speicher): eine neue Alternative zu Dropbox, allerdings diesmal mit ordentlich Speicher. Zum Start gibt's satte 15GB (bei Dropbox 2GB), wer [diesen Link](https://copy.com?r=jZ0vWa) nutzt profitiert von 5GB mehr und startet mit 20GB. Bei größerem Funktionsumfang und mehr Speicher gibt es lediglich einen Grund, nicht umzusteigen: Copy gibt es (noch) nicht in Deutsch. Da ich des Englischen aber mächtig bin stört mich das keineswegs und deshalb steige ich nun von Dropbox auf Copy um.
 
 
 ## Mit Symlinks von Dropbox zu Copy

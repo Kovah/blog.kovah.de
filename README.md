@@ -1,6 +1,6 @@
 # Kovah.de Blog
 
-Hi there. This is the repository of my personal blog at [blog.kovah.de](https://blog.kovah.de). To find out more about this statically hosted site based on Hugo, read the [corresponding blog post](https://blog.kovah.de/en/2019/static-blog-with-hugo/).
+Hi there. This is the repository of my personal blog at [blog.woblick.dev](https://blog.woblick.dev). To find out more about this statically hosted site based on Hugo, read the [corresponding blog post](https://blog.woblick.dev/en/2019/static-blog-with-hugo/).
 
 You may find some useful shortcodes and configurations in this repo but besides the content there is not really much in here. Reading content through Github should basically work because it's all Markdown, but images, internal links and some other small parts may be broken due to usage of Hugo shortcodes.
 
