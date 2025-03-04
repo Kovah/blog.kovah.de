@@ -10,7 +10,7 @@ DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
 [pagination]
-pagerSize = 10
+pagerSize = 14
 
 [params]
   defaultAuthor = "Kevin Woblick"
