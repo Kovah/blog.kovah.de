@@ -9,7 +9,7 @@ You may find some useful shortcodes and configurations in this repo but besides 
 ### Base
 
 * Static site generator: [Hugo](https://gohugo.io/)
-* Frontend stuff: [Laravel Mix](https://laravel-mix.com/), [Tailwind CSS](https://tailwindcss.com/)
+* Frontend pipeline: [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/) v4, PostCSS
 
 ### Special Features
 
@@ -32,14 +32,21 @@ brew install hugo
 npm install
 ```
 
-To build the frontend:
+Start a local dev server with live rebuilds of assets and content:
 ```
-npm run production
-# or for continious development
-npm run watch
+npm run dev
 ```
+This runs:
+- Vite in watch mode, emitting compiled assets into `assets/dist` (Hugo's `assetDir`)
+- A light file watcher that "touches" CSS when content/layouts change to ensure Tailwind picks up new classes
+- `hugo serve` on port 1313
 
-To start the Hugo server and view the site in your browser:
+Build the frontend and the site for production:
 ```
-npm run serve
+npm run build
 ```
+This will:
+- Run `vite build` producing `assets/dist/app.css`, `assets/dist/app.js`, `assets/dist/highlighter.css`, `assets/dist/highlighter.js`
+- Run `hugo -D --gc`
+
+Legacy scripts using Laravel Mix have been removed; Vite is now the primary asset pipeline.

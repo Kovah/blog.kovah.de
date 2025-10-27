@@ -18,7 +18,7 @@ tags:
 ---
 
 In diesem Beitrag möchte ich euch den [VPN Anbieter TigerVPN](http://www.tigervpn.com#tap_a=3440-1c72b2&tap_s=47496-8474a5) näher bringen und euch meine Erfahrungen nach nun 8 Monaten Nutzung schildern.
-TigerVPN ist ein Anbieter für VPN Verbindungen, die es dem Nutzer ermöglichen, seinen Internetverkehr anonymisieren zu können. Ich habe mir einen sogenannten Lifetime Account für TigerVPN zugelegt, da mein [Account für Hide.me](/de/1-jahr-hide-me-vpn-meine-erfahrungen/) abgelaufen war. Was genau der Lifetime Account ist, dazu komme ich später. Zunächst einmal ein paar kurze, allgemeine Informationen über TigerVPN.
+TigerVPN ist ein Anbieter für VPN Verbindungen, die es dem Nutzer ermöglichen, seinen Internetverkehr anonymisieren zu können. Ich habe mir einen sogenannten Lifetime Account für TigerVPN zugelegt, da mein [Account für Hide.me]({{< relref path="/2014/hide-me-review/index.md" lang="de" >}}) abgelaufen war. Was genau der Lifetime Account ist, dazu komme ich später. Zunächst einmal ein paar kurze, allgemeine Informationen über TigerVPN.
 
 ### VPN Verbindungen von TigerVPN: Das Angebot
 

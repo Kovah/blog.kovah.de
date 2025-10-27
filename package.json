@@ -7,24 +7,20 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.15",
+    "dracula-prism": "^2.1.16",
     "prismjs": "^1.25.0",
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.16",
     "autoprefixer": "^10.4.20",
-    "laravel-mix": "^6.0.41",
-    "postcss": "^8.4.49"
+    "postcss": "^8.4.49",
+    "vite": "^5.4.10"
   },
   "scripts": {
-    "dev": "npm run development",
-    "development": "mix",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "prod": "npm run production",
-    "production": "mix --production",
+    "dev": "vite build --watch",
+    "build": "vite build",
     "serve": "hugo serve --gc -D --bind 0.0.0.0",
-    "build": "npm run production && hugo -D --gc"
+    "production": "npm run build && hugo -D --gc"
   }
 }

@@ -16,7 +16,9 @@ const brandBlue = {
 
 module.exports = {
   content: [
-    './layouts/**/*.html'
+    './layouts/**/*.html',
+    './content/**/*.{html,md}',
+    './assets/js/**/*.js'
   ],
   theme: {
     extend: {

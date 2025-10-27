@@ -104,7 +104,7 @@ html {
   @apply max-w-full m-0 border border-gray-100;
 }
 
-.prose :not(pre) code {
+.prose :not(pre) > code {
   @apply py-0.5 px-1 rounded-sm bg-gray-100;
 }
 

@@ -46,7 +46,7 @@ Kommen wir erst zu Lösungen, die durchaus mit dem Funktionsumfang von ownCloud 
 
 {{< image img="nextcloudlogo_white_big-1024x440.png" alt="Nextcloud Logo" modifier="left">}}
 
-Nextcloud ist ownCloud, nur besser. Einige Entwickler von ownCloud haben sich vom Projekt getrennt und wollen nun ihre eigene Version weiter entwickeln. Entstanden ist das Nextcloud Projekt, das bereits mit der ersten stabilen Version an den Start gegangen ist. Ich bin bereits auf Nextcloud umgestiegen, die Migration von ownCloud ist kinderleicht und ich hoffe, dass die Knackpunkte von Owncloud endlich ausgemerzt werden. Was Nextcloud nun besser machen will? Laut Entwickler will man sich nun wieder mehr um die Community kümmern und auf deren Wünsche eingehen. Ich habe dazu bereits [einen kleinen Beitrag](/de/die-neue-owncloud-alternative-nextcloud/) geschrieben.
+Nextcloud ist ownCloud, nur besser. Einige Entwickler von ownCloud haben sich vom Projekt getrennt und wollen nun ihre eigene Version weiter entwickeln. Entstanden ist das Nextcloud Projekt, das bereits mit der ersten stabilen Version an den Start gegangen ist. Ich bin bereits auf Nextcloud umgestiegen, die Migration von ownCloud ist kinderleicht und ich hoffe, dass die Knackpunkte von Owncloud endlich ausgemerzt werden. Was Nextcloud nun besser machen will? Laut Entwickler will man sich nun wieder mehr um die Community kümmern und auf deren Wünsche eingehen. Ich habe dazu bereits [einen kleinen Beitrag]({{< relref path="/2016/owncloud-alternative-nextcloud/index.md" lang="de" >}}) geschrieben.
 Wer also eine Alternative zu ownCloud sucht, sollte als aller erstes Nextcloud ausprobieren.
 
 Webseite: [nextcloud.com](https://nextcloud.com/)
