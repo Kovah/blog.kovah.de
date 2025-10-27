@@ -8,7 +8,7 @@
   {{ $share_description := safeHTML (replace (print .Title " by Kevin Woblick") "&" "and") }}
   {{ $share_description_x := safeHTML (replace .Title "&" "and") }}
   {{ $share_description_bsky := safeHTML (replace (print .Title " by @kevin.woblick.com " .Permalink) "&" "and") }}
-  {{ $link_class := "inline-block text-xl lg:text-3xl text-white hover:scale-150 focus:scale-150 focus:outline-none transition transform transition-transform duration-300" }}
+  {{ $link_class := "inline-block text-xl lg:text-3xl text-white hover:scale-150 focus:scale-150 focus:outline-hidden transition transform transition-transform duration-300" }}
 
   <div class="flex justify-around">
     <div class="mastodon-share">

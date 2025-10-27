@@ -31,9 +31,9 @@ mix.combine([
 ], 'assets/dist/highlighter.js');
 
 mix.postCss('assets/styles/app.css', 'assets/dist', [
-  require("tailwindcss"),
+  require("@tailwindcss/postcss"),
 ]);
 
 mix.css('assets/styles/highlighter.css', 'assets/dist', [
-  require("tailwindcss"),
+  require("@tailwindcss/postcss"),
 ]);

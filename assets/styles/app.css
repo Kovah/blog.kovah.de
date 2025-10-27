@@ -2,46 +2,72 @@
  * Kovah.de CSS Styles
  * All Rights Reserved
  */
-@supports not (font-variation-settings: normal) {
-  @font-face {
-    font-family: 'Figtree';
-    src: local('Figtree Regular'), local('Figtree-Regular'),
-    url('../fonts/Figtree-Regular.woff2') format('woff2'),
-    url('../fonts/Figtree-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+@import 'tailwindcss';
 
-  @font-face {
-    font-family: 'Figtree';
-    src: local('Figtree Bold'), local('Figtree-Bold'),
-    url('../fonts/Figtree-Bold.woff2') format('woff2'),
-    url('../fonts/Figtree-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-}
+@config '../../tailwind.config.js';
 
-@supports (font-variation-settings: normal) {
-  @font-face {
-    font-family: 'Figtree';
-    src:
-      local('Figtree'),
-      url('/assets/fonts/Figtree-variable.woff2') format('woff2-variations'),
-      url('/assets/fonts/Figtree-variable.woff2') format('woff2 supports variations'),
-      url('/assets/fonts/Figtree-variable.woff') format('woff-variations'),
-      url('/assets/fonts/Figtree-variable.woff') format('woff supports variations');
-    font-weight: 300 900;
-    font-style: normal;
-    font-display: swap;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  @supports not (font-variation-settings: normal) {
+    @font-face {
+      font-family: 'Figtree';
+      src:
+        local('Figtree Regular'),
+        local('Figtree-Regular'),
+        url('../fonts/Figtree-Regular.woff2') format('woff2'),
+        url('../fonts/Figtree-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Figtree';
+      src:
+        local('Figtree Bold'),
+        local('Figtree-Bold'),
+        url('../fonts/Figtree-Bold.woff2') format('woff2'),
+        url('../fonts/Figtree-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: 'Figtree';
+      src:
+        local('Figtree'),
+        url('/assets/fonts/Figtree-variable.woff2') format('woff2-variations'),
+        url('/assets/fonts/Figtree-variable.woff2')
+          format('woff2 supports variations'),
+        url('/assets/fonts/Figtree-variable.woff') format('woff-variations'),
+        url('/assets/fonts/Figtree-variable.woff')
+          format('woff supports variations');
+      font-weight: 300 900;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -51,7 +77,7 @@ html {
   @apply max-w-4xl mx-auto px-5;
 }
 
-@screen md {
+@media (width >= theme(--breakpoint-md)) {
   .container {
     @apply px-6;
   }
@@ -71,7 +97,7 @@ html {
 }
 
 .aurora-bg {
-  @apply bg-gradient-to-br from-blue-300 to-blue-500;
+  @apply bg-linear-to-br from-blue-300 to-blue-500;
 }
 
 .prose figure img {
@@ -79,7 +105,7 @@ html {
 }
 
 .prose :not(pre) code {
-  @apply py-0.5 px-1 rounded bg-gray-100;
+  @apply py-0.5 px-1 rounded-sm bg-gray-100;
 }
 
 .prose code::before,
@@ -88,11 +114,11 @@ html {
 }
 
 .button {
-  @apply inline-flex items-center leading-none w-min p-2 pt-2.5 rounded lg:text-lg lg:leading-none font-bold text-white bg-white/5 hover:bg-white/10 focus:bg-white/20 focus:outline-none transition;
+  @apply inline-flex items-center leading-none w-min p-2 pt-2.5 rounded-sm lg:text-lg lg:leading-none font-bold text-white bg-white/5 hover:bg-white/10 focus:bg-white/20 focus:outline-hidden transition;
 }
 
 .button-dark {
-  @apply bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none transition;
+  @apply bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 focus:outline-hidden transition;
 }
 
 .button-light {
@@ -100,7 +126,7 @@ html {
 }
 
 .input {
-  @apply block w-full bg-gray-100 border border-gray-300 text-gray-700 py-1.5 px-3 leading-tight rounded focus:outline-none focus:bg-white focus:border-gray-500;
+  @apply block w-full bg-gray-100 border border-gray-300 text-gray-700 py-1.5 px-3 leading-tight rounded-sm focus:outline-hidden focus:bg-white focus:border-gray-500;
 }
 
 .alert-info {
@@ -134,7 +160,7 @@ html {
   margin: 0 auto;
 }
 
-@screen lg {
+@media (width >= theme(--breakpoint-lg)) {
   .figure-left {
     @apply mr-6;
     max-width: 50%;
@@ -146,7 +172,7 @@ html {
   }
 }
 
-@screen lg {
+@media (width >= theme(--breakpoint-lg)) {
   .figure-left {
     max-width: 40%;
   }

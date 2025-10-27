@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $badge_class := "p-1 rounded bg-gray-100 hover:text-gray-800 focus:text-gray-800 focus:outline-none focus:ring-1 ring-blue-500 ring-opacity-25 transition" }}
+{{ $badge_class := "p-1 rounded-sm bg-gray-100 hover:text-gray-800 focus:text-gray-800 focus:outline-hidden focus:ring-1 ring-blue-500 ring-opacity-25 transition" }}
 
 <article class="h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <meta itemprop="keywords" content='{{ .Render "post-metakeywords" }}'/>
@@ -59,7 +59,7 @@
             {{ .description | markdownify }}
           </div>
           <div class="mt-auto pt-2 lg:pt-3 font-bold">
-            <a href="{{ .link }}" class="rounded p-1 -ml-1 lg:text-lg text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-1 ring-blue-500/25 transition">
+            <a href="{{ .link }}" class="rounded-sm p-1 -ml-1 lg:text-lg text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-hidden focus:ring-1 ring-blue-500/25 transition">
               {{ partial "icons/angle-right.html" . }}
               {{- with .linkTitle -}}
               {{ . }}
@@ -80,7 +80,7 @@
           {{ range . }}
           <div>
             <a href="{{ .link }}"
-                class="rounded p-1 -ml-1 text-lg lg:text-xl font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none focus:ring-1 ring-blue-500/25 transition"
+                class="rounded-sm p-1 -ml-1 text-lg lg:text-xl font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600 focus:outline-hidden focus:ring-1 ring-blue-500/25 transition"
               >{{ partial "icons/angle-right.html" . }} {{ .title }}</a>
           </div>
           {{ end }}

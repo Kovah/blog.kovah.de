@@ -10,7 +10,6 @@ You may find some useful shortcodes and configurations in this repo but besides 
 
 * Static site generator: [Hugo](https://gohugo.io/)
 * Frontend stuff: [Laravel Mix](https://laravel-mix.com/), [Tailwind CSS](https://tailwindcss.com/)
-* Image CDN: [Cloudimage](https://www.cloudimage.io/en/home?ref=kevinwoblick)
 
 ### Special Features
 
