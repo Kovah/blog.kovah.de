@@ -9,7 +9,6 @@ url: /en/04bc3-walkingdead-kovah-de/
 categories:
 - News
 tags:
-- Kovah.de
 - Walking Dead
 ---
 

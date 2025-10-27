@@ -9,7 +9,6 @@ categories:
 - Artikel
 tags:
 - Help Desk
-- Kovah.de
 - osTicket
 - Support
 - Ticket System

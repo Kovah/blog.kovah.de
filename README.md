@@ -1,4 +1,4 @@
-# Kovah.de Blog
+# Woblick.dev Blog
 
 Hi there. This is the repository of my personal blog at [blog.woblick.dev](https://blog.woblick.dev). To find out more about this statically hosted site based on Hugo, read the [corresponding blog post](https://blog.woblick.dev/en/2019/static-blog-with-hugo/).
 
@@ -35,18 +35,10 @@ npm install
 Start a local dev server with live rebuilds of assets and content:
 ```
 npm run dev
+npm run serve
 ```
-This runs:
-- Vite in watch mode, emitting compiled assets into `assets/dist` (Hugo's `assetDir`)
-- A light file watcher that "touches" CSS when content/layouts change to ensure Tailwind picks up new classes
-- `hugo serve` on port 1313
 
 Build the frontend and the site for production:
 ```
-npm run build
+npm run production
 ```
-This will:
-- Run `vite build` producing `assets/dist/app.css`, `assets/dist/app.js`, `assets/dist/highlighter.css`, `assets/dist/highlighter.js`
-- Run `hugo -D --gc`
-
-Legacy scripts using Laravel Mix have been removed; Vite is now the primary asset pipeline.

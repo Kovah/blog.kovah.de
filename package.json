@@ -1,8 +1,8 @@
 {
-  "name": "kovah.de-blog",
+  "name": "woblick.dev-blog",
   "version": "1.0.0",
-  "description": "Kovah.de Blog source",
-  "author": "Kevin Woblick <mail@kovah.de>",
+  "description": "Woblick.dev Blog source",
+  "author": "Kevin Woblick <mail@woblick.dev>",
   "private": true,
   "license": "UNLICENSED",
   "dependencies": {
