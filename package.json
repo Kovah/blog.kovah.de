@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",
-    "serve": "hugo serve --gc -D --bind 0.0.0.0",
+    "serve": "hugo serve --gc -D --poll 5s --bind 0.0.0.0",
     "production": "npm run build && hugo -D --gc"
   }
 }
