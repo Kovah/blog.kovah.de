@@ -14,6 +14,11 @@ tags:
 - Comparison
 ---
 
+{{< alert type="danger" >}}
+This post is severely outdated and should no longer be used as a reference for picking a transactional email provider.
+I have put together a [**new and updated comparison**](https://docs.google.com/spreadsheets/d/1vxsC4DI_jOF0yQS3_iZA_6ICIacoEqOwqpjIVj54JS0) which features dozens of providers.
+{{</ alert >}}
+
 Email support is one of the most basic things almost any webservice need. It should work, be reliable and doesn't cost a ton of money. In this comparison I take a look at the 5 most popular providers and what services they offer.
 
 Please notice that this guide focuses on transactional and regular marketing emails you send directly from your service, like password reset emails. Providers like Mailchimp which are specialized on email campaigns and advanced marketing are out of scope right now. As you are more likely to just get started with sending emails, I focus on the smallest plans too. Besides a free plan I share details about the first pricing tier with you.
