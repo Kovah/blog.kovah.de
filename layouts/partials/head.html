@@ -16,9 +16,6 @@
 
 {{- $isTag := and (eq .Kind "term") (eq .Type "tags") -}}
 {{- $isCategory := and (eq .Kind "term") (eq .Type "categories") -}}
-{{- if or $isTag $isCategory -}}
-<meta name="robots" content="noindex,follow">
-{{- end -}}
 
 {{ if .IsPage }}
 <meta property="og:title" content='{{ .Render "post-meta-title" }}'>
