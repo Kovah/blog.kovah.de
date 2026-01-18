@@ -16,8 +16,12 @@ pagerSize = 14
   defaultAuthor = "Kevin Woblick"
   publisher = "Kevin Woblick"
   webmentionUrl = "https://blog.woblick.dev"
-  imgCDNDomain = "aiwsdltqdo.cloudimg.io"
-  imgCDNUrl = "https://aiwsdltqdo.cloudimg.io/v7/blog.woblick.dev"
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
 
 [imaging]
   quality = 90
