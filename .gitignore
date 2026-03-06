@@ -1,3 +1,9 @@
+!.idea
+.idea/*
+!.idea/codeStyles
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+
 /assets/dist
 /node_modules
 /resources/_gen

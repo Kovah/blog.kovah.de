@@ -17,6 +17,10 @@ pagerSize = 14
   publisher = "Kevin Woblick"
   webmentionUrl = "https://blog.woblick.dev"
 
+[params.author]
+  name = "Kevin Woblick"
+  email = "mail@woblick.dev"
+
 [sitemap]
   changeFreq = ''
   disable = false
