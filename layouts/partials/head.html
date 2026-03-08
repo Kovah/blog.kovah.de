@@ -51,7 +51,7 @@
 {{ end -}}
 
 {{ range .Translations }}
-<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink | relLangURL }}">
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink | absLangURL }}">
 {{ end }}
 
 <link href="https://github.com/kovah" rel="me github authn">
