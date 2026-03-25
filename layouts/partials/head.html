@@ -1,7 +1,15 @@
 <link rel="preconnect" href="//webmention.io">
 <link rel="preconnect" href="//stats.kovah.dev">
 <link rel="preload" as="font" type="font/woff2" href="{{ $.Site.BaseURL }}assets/fonts/Figtree-variable.woff2">
-<link rel="canonical" href="{{ .Permalink }}">
+
+{{- $canonicalURL := .Permalink -}}
+{{- if .IsNode -}}
+  {{- $paginator := .Paginator -}}
+  {{- if gt $paginator.PageNumber 1 -}}
+    {{- $canonicalURL = printf "%spage/%d/" .Permalink $paginator.PageNumber -}}
+  {{- end -}}
+{{- end -}}
+<link rel="canonical" href="{{ $canonicalURL }}">
 
 {{ if .IsPage }}
 <title>{{ .Render "post-meta-title" }} - {{ i18n "site_title" }}</title>
@@ -25,7 +33,7 @@
 <meta property="og:title" content='{{ i18n "site_title" }}'>
 <meta property="og:description" content='{{ i18n "site_description" }}'>
 {{ end }}
-<meta property="og:url" content='{{ .Permalink }}'/>
+<meta property="og:url" content='{{ $canonical }}'/>
 <meta property="og:site_name" content='{{ i18n "site_title" }}'/>
 
 {{ with .Params.ogimage }}
