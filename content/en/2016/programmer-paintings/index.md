@@ -9,9 +9,6 @@ type: post
 url: /en/8c81a-classic-programmer-paintings/
 categories:
 - Article
-tags:
-- Blog
-- Programming
 ---
 
 [ClassicProgrammerPaintings](http://classicprogrammerpaintings.tumblr.com/)

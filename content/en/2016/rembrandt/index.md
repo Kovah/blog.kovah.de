@@ -8,9 +8,6 @@ type: post
 url: /en/23700-computer-painted-new-rembrandt/
 categories:
 - News
-tags:
-- AI
-- Art
 ---
 
 A computer [painted a new Rembrandt](http://www.bbc.com/news/technology-35977315) after analyzing his previous works. Pretty impressive!

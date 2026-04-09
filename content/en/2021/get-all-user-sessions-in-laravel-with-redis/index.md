@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Laravel
-- Redis
-- PHP
 ---
 
 I wanted to access all session data for all users in Laravel while using the Redis cache driver. If you have all session data, you can inspect the data associated to that session, do some calculations based on averages across all session, or whatever else you want to do.

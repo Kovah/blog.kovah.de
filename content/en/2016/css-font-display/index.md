@@ -9,11 +9,6 @@ url: /en/72123-css-font-display-property/
 hascode: true
 categories:
 - Article
-tags:
-- CSS
-- Fonts
-- Performance
-- Web Development
 ---
 
 If you already used custom fonts for your websites you may know the struggle with slow loading fonts. This can be very painful if you use custom fonts for large parts of your site. Users with a slow internet connection may encounter something like this:

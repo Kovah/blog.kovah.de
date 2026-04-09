@@ -9,11 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- dat Network
-- Static Site
-- Indieweb
-- P2P
 ---
 
 There are numerous new protocols to build a new internet. The intention is clear: the current internet relies on single servers providing the files of a website. Or short: it is based on centralization. Those new protocols, [dat:// (or Dat)](https://dat.foundation/) being one of them, rethink the web as a network of nodes sharing files of websites based on a P2P approach. Dat is one of the most popular systems besides [IPFS](https://ipfs.io/) and [Solid](https://solid.mit.edu/).  

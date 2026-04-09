@@ -8,12 +8,6 @@ draft: false
 
 categories:
 - Articles
-tags:
-- Predictions
-- Development
-- Internet
-- Social Media
-- Gaming
 ---
 
 With the end of 2019 closing the 2010 decade, it's time to think about the future decade: 2020. A lot has changed for me in my development career in the past 10 years, or even the past 5 years. Now I am looking forward, and I am excited about the years to come.

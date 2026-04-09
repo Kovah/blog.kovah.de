@@ -7,12 +7,7 @@ date: 2025-01-02T22:43:56+01:00
 hasDiagram: true
 
 categories:
-  - Articles
-tags:
-  - recap
-  - homelab
-  - music
-  - health
+- Articles
 ---
 
 2024 was an exciting, but also exhausting year. I'm in my mid 30s now and it kinda hurts to find out that you are not as young as you want to be. And this doesn't only apply to partying. I've visited more concerts in one year than before, even though it's not really a spectacular number. But together with some private family events, the summer months were packed as hell.

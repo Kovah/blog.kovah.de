@@ -10,10 +10,6 @@ url: /en/0a9fb-console-time-console-timeend/
 hascode: true
 categories:
 - Article
-tags:
-- Console
-- Development
-- DevTools
 ---
 
 I [just read](https://davidwalsh.name/console-time) about these two functions that can be used to measure times without the need of using the Date class. And I use stuff like `console.log('End: ' + (new Date.now() - start))`...

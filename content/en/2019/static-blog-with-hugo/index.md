@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Article
-tags:
-- Hugo
-- Static Site Generator
-- Wordpress
 ---
 
 This blog, started back in 2010, was ever since based on Wordpress. This makes sense as Wordpress was basically the most easy-to-use software for the web that allowed you to start your blog within a couple of minutes. Years passed and now I decided to ditch Wordpress completely. Follow me on my journey from Wordpress to a static site built with [Hugo](https://gohugo.io/).

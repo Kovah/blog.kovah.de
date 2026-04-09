@@ -9,12 +9,6 @@ hascode: true
 
 categories:
 - Article
-tags:
-- Oh my ZSH
-- Shell
-- Bash
-- Automator
-- Themes
 ---
 
 Oh my ZSH is one of the more popular alternatives to the basic Bash shell. It provides a lot of useful functions to 

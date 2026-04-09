@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Docker
-- Shell
-- Bash
 ---
 
 I work with Docker all the time. Ditching my MAMP stack for Docker was one of the most convenient and useful decisions

@@ -8,11 +8,7 @@ draft: false
 hascode: false
 
 categories:
-  - Articles
-tags:
-  - health
-  - home-office
-  - ergonomics
+- Articles
 ---
 
 Working at a desk all day can be tough on your posture and overall health, but with a few simple changes, you can feel better, stay healthier, and even boost your productivity. Here’s a casual, easy-to-follow guide to improving your posture and taking care of yourself at the office or home.

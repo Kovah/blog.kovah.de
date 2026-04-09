@@ -9,11 +9,6 @@ thumbnail: christopher-lemercier.jpg
 
 categories:
 - Articles
-tags:
-- HTML
-- Select2
-- Selectize
-- Accessibility
 ---
 
 It's hard to provide a solution that is both convenient and well working on websites. And it gets even harder if accessibility is also a requirement. At the moment I heavily struggle with providing a solid experience with select form elements in [LinkAce](https://github.com/Kovah/LinkAce). The problem is that I need both normal selects which have pre-filled lists in option groups and tag inputs, which allow the user to select from existing tags and create new ones on the fly.

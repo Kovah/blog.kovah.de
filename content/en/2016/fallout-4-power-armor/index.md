@@ -9,12 +9,6 @@ type: post
 url: /en/bd384-fallout-4-power-armor-helmets/
 categories:
 - News
-tags:
-- Fallout
-- Fallout 4
-- Games
-- Gaming
-- Wallpaper
 ---
 
 {{< image img="xPrN0hPSq2.jpg" alt="Power Armor Helmets" >}}
@@ -23,4 +17,4 @@ tags:
 
 Artwork based on Power Armor Images published "The Art of Fallout 4" by Bethesda
 
-[Direct Download Link](https://share.kovah.de/f/VEtJIsIGA1.zip) | [Alternative Download via DeviantArt](http://fav.me/da7jyrs)
+[Buy the Artwork on Redbubble](https://www.redbubble.com/i/t-shirt/Fallout-4-Power-Armor-Helmets-by-kovah-de/46179985/z5wf) | [Alternative Download via DeviantArt](http://fav.me/da7jyrs)

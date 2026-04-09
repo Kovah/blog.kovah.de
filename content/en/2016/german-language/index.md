@@ -9,9 +9,6 @@ type: post
 url: /en/1c6df-the-german-language/
 categories:
 - Article
-tags:
-- German
-- Language
 ---
 
 {{< video "ScaredMetallicIndianskimmer.webm" "video/webm" >}}

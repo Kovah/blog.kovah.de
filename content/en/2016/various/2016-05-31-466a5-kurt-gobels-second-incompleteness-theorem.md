@@ -8,8 +8,6 @@ type: post
 url: /en/466a5-kurt-gobels-second-incompleteness-theorem/
 categories:
 - Article
-tags:
-- Philosophy
 ---
 
 _Any mind that believes it can prove its own sanity, is insane._  

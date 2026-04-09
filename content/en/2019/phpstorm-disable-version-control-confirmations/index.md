@@ -8,8 +8,6 @@ draft: false
 
 categories:
 - Tutorial
-tags:
-- PhpStorm
 ---
 
 PhpStorm is a really powerful IDE with tons of features and even more settings to tweak the app to behave like you want. But one of the most annoying things for me was the dialogue asking if a newly created file should be added to the version control right now, or not, of if PhpStorm should never ask again. When accessing the settings, searching for that setting you may notice, that it is only set for the current project.

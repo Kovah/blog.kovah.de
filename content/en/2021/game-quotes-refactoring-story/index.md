@@ -9,9 +9,6 @@ hascode: true
 
 categories:
 - Articles
-tags:
-- Game Quotes
-- refactoring
 ---
 
 [**Game Quotes**](https://game-quotes.com/en) is one of my oldest projects. It was launched back in 2013 as a small side project. At that time there was a site similar to what Game Quotes is now: an archive of funny, inspiring or awfully weird quotes from video games. I loved browsing through the archives, but the site seemed abandoned, as no new quotes were added over months. Today, the old archive is gone and with it a handful of great content. Besides that archive, there was no other place on the internet where you could find curated quotes from video games. Game Quotes was born.

@@ -9,11 +9,6 @@ url: /en/d83b6-laravel-query-caching-rememberable/
 hascode: true
 categories:
 - Article
-tags:
-- Caching
-- Laravel
-- PHP
-- Web Development
 ---
 
 Laravel caching is really awesome and works perfectly. By adding the [watson/rememberable](https://github.com/dwightwatson/rememberable) package I was able to reduce the overall query count from 33 to zero. **Zero**!

@@ -8,12 +8,6 @@ draft: false
 
 categories:
 - Articles
-
-tags:
-- fediverse
-- indieweb
-- mastodon
-- pixelfed
 ---  
 
 I am frustrated. The common internet is a horrible place to be. Fake news, hate speech, pornography, and big companies trying to squeeze every bit of attention and money out of you. Only a few examples of the awfulness you encounter every day on Facebook, Instagram, Twitter/X, and every other social media site and app, as well as major news outlets with their discussion forums. Not to mention the millions of blogs and other websites SEO-optimized to reach the top of Google search results, only to shove advertisements down your throat as much as they can.

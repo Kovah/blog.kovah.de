@@ -9,9 +9,6 @@ type: post
 url: /en/563d0-optical-alignment-icons/
 categories:
 - Article
-tags:
-- CSS
-- Design
 ---
 
 [@erqiudao wrote an article](https://medium.com/@erqiudao/the-play-button-is-not-optical-alignment-4cea11bda175) about the alignment of icons and buttons. It's important to optical align them instead of relying on the absolute middle of icons he used circles to find the optical center.

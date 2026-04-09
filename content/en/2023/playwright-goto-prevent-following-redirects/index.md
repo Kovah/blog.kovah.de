@@ -10,9 +10,6 @@ hascode: true
 
 categories:
   - Tutorial
-tags:
-  - playwright
-  - javascript
 ---
 
 {{< alert type="info" >}}

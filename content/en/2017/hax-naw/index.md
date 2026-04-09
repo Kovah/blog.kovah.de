@@ -8,11 +8,6 @@ type: post
 url: /en/9me26-hex-naw/
 categories:
 - Article
-tags:
-- Accessibility
-- Colors
-- Web Development
-- Web Tool
 ---
 
 Before the design for a website is presented to the customer, or even in the production process, it's very important to keep color contrast and accessibility in mind. Color combinations with too less contrast may lead to problems for people with a limited eyesight or on devices with a poor screen quality. If people can't clearly and fast read the text on your website they may just leave the site - and this is what we want to prevent.

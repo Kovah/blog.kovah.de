@@ -9,10 +9,6 @@ url: /en/394a1-convert-arrays-objects-various-ways/
 hascode: true
 categories:
 - Article
-tags:
-- PHP
-- Programming
-- Web Development
 ---
 
 TIL: You can convert arrays to objects in various ways:

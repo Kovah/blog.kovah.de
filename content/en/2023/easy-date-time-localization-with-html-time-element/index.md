@@ -9,10 +9,6 @@ hascode: true
 
 categories:
   - Tutorial
-tags:
-  - html
-  - localization
-  - javascript
 ---
 
 Did you know there is quite easy way to show localized dates and times on your website? You can use the [HTML time element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) to display dates and times in the user's locale and timezone without having to guess the user's locale, rely on profiles or settings, or doing any backend work.

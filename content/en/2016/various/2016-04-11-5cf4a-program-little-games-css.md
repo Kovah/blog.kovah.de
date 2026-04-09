@@ -9,10 +9,6 @@ type: post
 url: /en/5cf4a-program-little-games-css/
 categories:
 - News
-tags:
-- CSS
-- Development
-- Games
 ---
 
 You're able to program little games with CSS **only**. Yes, CSS **only**! That's really crazy.

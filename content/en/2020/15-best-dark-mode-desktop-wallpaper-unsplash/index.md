@@ -8,11 +8,6 @@ draft: false
 
 categories:
 - Article
-tags:
-- Wallpaper
-- Unsplash
-- Dark Mode
-- Photography
 ---
 
 Dark Mode is a new trend in operating system design which changes the appearance of your system, be it Windows, macOS or a Linux distribution, to a dark themed look. It's better for your eyes to look at dark colors when working in the evening or night, instead of having several bright white windows glare at you.

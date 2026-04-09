@@ -9,11 +9,6 @@ hascode: true
 
 categories:
 - Tutorials
-tags:
-- Github
-- Git
-- Gitea
-- Backups
 ---
 
 In case of some outages or a locked account I would not be able to access any Github repositories again. Like with everything else, backups are also important for your code. As I own a Synology Diskstation that already holds a lot of backups, that was the best place to set up some mirrors of all my Github repositories. I installed Gitea, a small and fast alternative to Gitlab as a Docker image on my Diskstation and was ready to go just a little later.

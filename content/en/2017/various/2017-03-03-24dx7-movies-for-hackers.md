@@ -8,10 +8,6 @@ type: post
 url: /en/24dx7-movies-for-hackers/
 categories:
 - Article
-tags:
-- Hacker
-- Lists
-- Movies
 ---
 
 [Movies for Hackers](https://github.com/k4m4/movies-for-hackers) is a curated list of movies every hacker & cyberpunk must watch.

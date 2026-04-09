@@ -9,11 +9,6 @@ type: post
 url: /en/29c5c-heise-tippgeber/
 categories:
 - News
-tags:
-- Heise.de
-- Internet
-- Privacy
-- Whistleblower
 ---
 
 **[Heise Tippgeber](https://www.heise.de/tippgeber/)**

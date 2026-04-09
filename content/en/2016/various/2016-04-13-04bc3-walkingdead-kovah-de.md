@@ -8,8 +8,6 @@ type: post
 url: /en/04bc3-walkingdead-kovah-de/
 categories:
 - News
-tags:
-- Walking Dead
 ---
 
 The key is already gone but the mini-game-giveaway I made is still funny! [walkingdead.kovah.de](https://walkingdead.kovah.de/)

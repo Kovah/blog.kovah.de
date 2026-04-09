@@ -8,10 +8,6 @@ type: post
 url: /en/b84b1-optical-adjustments-web-design/
 categories:
 - Article
-tags:
-- Design
-- Web
-- Web Development
 ---
 
 {{< image img="NBr1pEq4qk.jpeg" alt="Example for optical adjustments" >}}

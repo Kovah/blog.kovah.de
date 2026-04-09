@@ -8,10 +8,6 @@ type: post
 url: /en/62469-the-temple-of-no/
 categories:
 - News
-tags:
-- Games
-- Gaming
-- The Stanley Parable
 ---
 
 {{< image img="NbXR5ch6Rn.png" alt="Temple of No" >}}

@@ -8,10 +8,6 @@ draft: false
 
 categories:
 - Test
-tags:
-- Email
-- Programming
-- Comparison
 ---
 
 {{< alert type="danger" >}}

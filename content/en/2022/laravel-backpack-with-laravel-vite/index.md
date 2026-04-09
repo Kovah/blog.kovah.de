@@ -9,11 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- laravel
-- php
-- laravel-backpack
-- vite
 ---
 
 I recently started using Backpack for my [Game-Quotes.com](https://game-quotes.com/en) project. It's a great admin panel with easy customization. Backpack also allows you to add custom styles and scripts to the admin panel inside the config file:

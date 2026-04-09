@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Synology Diskstation
-- Cloudflare
-- Dynamic DNS
 ---
 
 Synology Diskstations provide a wide range of dynamic DNS providers out of the box. Unfortunately, Cloudflare isn't one of them. I tested many of the available providers but none really matched my requirements. As I already use Cloudflare for all other domains I wanted to give it a try.

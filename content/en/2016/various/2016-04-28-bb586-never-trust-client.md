@@ -9,12 +9,6 @@ type: post
 url: /en/bb586-never-trust-client/
 categories:
 - Article
-tags:
-- FPS
-- Games
-- Gaming
-- Multiplayer
-- Tom Clancy’s The Division
 ---
 
 Very interesting article about the mechanics behind competitive multiplayer FPS games: [Never trust the client](http://gafferongames.com/2016/04/25/never-trust-the-client/)

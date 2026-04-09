@@ -9,10 +9,6 @@ hascode: false
 
 categories:
 - News
-tags:
-- rss
-- software
-- productivity
 ---
 
 This is my second product launching, and I am quite excited. As with so many useful tools and services, they are born out of a problem that needs a solution. [Versionfeeds](https://versionfeeds.com/?ref=kvhblog) is exactly that.

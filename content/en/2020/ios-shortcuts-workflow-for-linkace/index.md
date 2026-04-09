@@ -9,9 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- LinkAce
-- iOS
 ---
 
 At the moment [LinkAce](https://www.linkace.org/) has no mobile apps, so adding links on your mobile phone can be tedious. But LinkAce provides a great API that allows you to access and edit all data from anywhere. With the help of the API and Shortcuts, iOS users can easily add links to LinkAce from the share menu. I created a Shortcuts workflow that uses only two inputs from you: your LinkAce URL and your API key which can be found in the user settings.

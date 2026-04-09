@@ -8,10 +8,6 @@ type: post
 url: /en/xd2j8-smoothly-animate-particles-html5/
 categories:
 - Article
-tags:
-- Canvas
-- D3
-- HTML
 ---
 
 Peter Beshai explains how to efficiently animate thousands of points in canvas in [this tutorial](https://bocoup.com/blog/smoothly-animate-thousands-of-points-with-html5-canvas-and-d3).

@@ -10,12 +10,6 @@ thumbnail: tim-gouw-68319-unsplash.jpg
 
 categories:
 - Article
-tags:
-- Development
-- Web Development
-- Programming
-- Burnout
-- Mental Health
 ---
 
 We do live in a modern world which accelerates further with every second passing. Everything needs to be done fast and faster, preferably yet, now, instantly. Our technology evolves and with every evolution we discover new possibilities in computing, which raises the expectations for new possibilities even further. Which sounds like a somewhat scientific thing, e.g. wanting to able to use cold fusion now, after we are finally on the road to ditch fossil fuels more and more, can be broken down to a very detailed look at specific fields of information technology: the web, it’s development and people working in this field. As somebody who works in web development I see more and more problems with this race for being faster and faster.

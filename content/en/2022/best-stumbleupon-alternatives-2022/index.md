@@ -11,11 +11,6 @@ ogimage: thumbnail.png
 
 categories:
 - Articles
-tags:
-- stumbleupon
-- alternatives
-- cloudhiker
-- internet
 ---
 
 Back in the 2010s, there was a site called StumbleUpon. With one click, you could get a random website from their collection of million of sites. Like Tik Tok, you could just click yourself through thousands of websites without having to search for something specific, and discover the absolutely best the internet offered at that time. It was addicting, and many of their former users explored the internet with it for years.  

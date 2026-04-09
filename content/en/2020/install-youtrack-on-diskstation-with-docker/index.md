@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Synology Diskstation
-- Docker
-- YouTrack
 ---
 
 I recently tried a few project management and issue tracking applications and found [YouTrack](https://www.jetbrains.com/youtrack/) by Jetbrains to be an excitingly fresh take on the matter and with a lot of possibilities to customize the experience. And the best part of it: you can host it on your own server and it's free for up to 10 users. You can find more details about all features on the website but trying it might be much better than screenshots.

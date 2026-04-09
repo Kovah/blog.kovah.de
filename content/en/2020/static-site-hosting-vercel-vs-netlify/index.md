@@ -8,11 +8,6 @@ draft: false
 
 categories:
 - Test
-tags:
-- Netlify
-- Vercel
-- Static Site
-- Hosting
 ---
 
 Just three weeks ago I decided to move all my static websites from my own server to a hosting server and went with [Netlify](https://www.netlify.com/). I made the switch in a couple of hours and now all those sites are running within the free plan of Netlify. I am quite impressed by the simplicity of the service.

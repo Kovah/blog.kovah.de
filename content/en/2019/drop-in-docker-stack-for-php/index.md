@@ -12,13 +12,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Development
-- Docker
-- MySQL
-- PHP
-- nginx
-- Redis
 ---
 
 For a long time I used MAMP Pro to manage my local development environment. It was quite a hassle to keep everything running with those locally installed PHP version although the MAMP team did an exceptional job with the installation.

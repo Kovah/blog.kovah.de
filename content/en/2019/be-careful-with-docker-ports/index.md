@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Articles
-tags:
-- Docker
-- security
-- networking
 ---
 
 Not too long ago I got an email from my hosting provider, actually a forwarding from the BSI (German Institute for Information Security) that stated my Elasticsearch installation was accessible from the outside. I was flushed, as I thought I had secured the Elasticsearch Docker container behind nginx, which had basic authentication enabled. Fact is: Docker had bound the 9200 port directly in the iptables configuration, ignoring the UFW firewall completely. Oops.

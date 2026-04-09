@@ -9,9 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Laravel
-- PHP
 ---
 
 I recently implemented Laravel Scout, Laravel's own full text search package, into one of my projects. One of the models which Scout was enabled for had [global query scopes](https://laravel.com/docs/8.x/eloquent#query-scopes) implemented. They are used to defining specific query constraints for all queries run on this model. You must be careful with defining them, as they affect everything done with the model.

@@ -9,12 +9,6 @@ type: post
 url: /en/53a60-testing-vehicle-evolution-browser/
 categories:
 - Article
-tags:
-- Algorithm
-- Browser
-- Evolution
-- Genetics
-- Programming
 ---
 
 Create some random vehicles and test how far they can get on [rednuht.org/genetic_cars_2](http://rednuht.org/genetic_cars_2/). Just sitting there and watching your cars failing to get past the 100 meters mark is very relaxing.

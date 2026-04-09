@@ -9,12 +9,7 @@ hascode: false
 ogimage: thumbnail.png
 
 categories:
-  - Articles
-tags:
-  - stumbleupon
-  - alternatives
-  - cloudhiker
-  - internet
+- Articles
 ---
 
 Back in the 2010s, there was a site called StumbleUpon. With one click, you could get a random website from their collection of millions of websites. Like today's AI content discovery tools, you could just click yourself through thousands of websites without having to search for something specific, and discover the absolute best the internet offered at that time. It was addicting, and many of their former users explored the internet with it for years.

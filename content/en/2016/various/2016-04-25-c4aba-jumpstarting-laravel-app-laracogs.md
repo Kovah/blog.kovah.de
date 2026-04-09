@@ -9,10 +9,6 @@ type: post
 url: /en/c4aba-jumpstarting-laravel-app-laracogs/
 categories:
 - Article
-tags:
-- Development
-- Laravel
-- PHP
 ---
 
-Jumpstarting any Laravel app with [Laracogs](http://laracogs.com/). The CRUD builder looks awesome! More features: notifications, complete bootstrap, form maker and billing with Cashier.
+Jumpstarting any Laravel app with [Laracogs](https://web.archive.org/web/20171017033748/https://laracogs.com/). The CRUD builder looks awesome! More features: notifications, complete bootstrap, form maker and billing with Cashier.

@@ -8,9 +8,6 @@ draft: false
 
 categories:
 - Articles
-tags:
-- refactoring
-- legacy code
 ---
 
 Refactoring code isn't easy. It is probably one of the hardest things to do in programming. Here are 7 things to consider before starting to refactor any code.

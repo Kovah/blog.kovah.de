@@ -9,11 +9,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- DNSSEC
-- Cloudflare
-- INWX
-- Domains
 ---
 
 I recently updated some .de domains which are registered with [INWX](https://www.inwx.de/) and managed trough Cloudflare. As you have to manually configure DNSSEC with INWX I wrote this short guide so you don't have to search for th solution.

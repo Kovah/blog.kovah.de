@@ -8,11 +8,6 @@ type: post
 url: /en/093b6-bethesdas-hard-drive/
 categories:
 - Article
-tags:
-- Bethesda
-- E3
-- Games
-- Gaming
 ---
 
 Noticed something weird on the startup screen of Bethesda's E3 preview: Their hard drive has 39 000 TB of free space!

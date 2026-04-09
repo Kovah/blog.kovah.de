@@ -8,11 +8,6 @@ type: post
 url: /en/e34f1-the-crabbox-9000/
 categories:
 - Article
-tags:
-- Consoles
-- Games
-- Gaming
-- Valve
 ---
 
 The Crabbox 9000 - Valve's new gaming console

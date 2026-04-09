@@ -10,10 +10,6 @@ thumbnail: chuttersnap-eH_ftJYhaTY-unsplash.jpg
 
 categories:
 - Tutorial
-tags:
-- Docker
-- docker-sync
-- Performance
 ---
 
 I really do love the concept of Docker and containerization. I haven't touched my MAMP dev setup for more than a year now and barely use my local PHP CLI. But there is and always was one problem: performance. Response times of a second for Laravel apps and 3-7 seconds for a larger Wordpress stack are quite common. Thankfully, there is a solution for this problem, that does not require changing your whole tech stack: docker-sync.

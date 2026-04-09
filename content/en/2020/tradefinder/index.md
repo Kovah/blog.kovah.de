@@ -9,11 +9,6 @@ hascode: false
 
 categories:
 - News
-tags:
-- React
-- Javascript
-- Gaming
-
 ---
 
 As a passionate gamer I play a lot of different games which involve trading, like No Man's Sky. I often end up with a bunch of papers filled with prices for items the merchants offer, so I could find the best trades between them. I stepped up the trading game by using Excel, filled sheets with the numbers. But it felt just way too difficult.

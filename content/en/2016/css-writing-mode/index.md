@@ -8,12 +8,6 @@ type: post
 url: /en/b4fc3-css-property-writing-mode/
 categories:
 - Article
-tags:
-- CSS
-- Development
-- HTML
-- Web
-- Web Development
 ---
 
 Need some layout like this?

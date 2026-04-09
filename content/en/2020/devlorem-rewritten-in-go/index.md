@@ -8,9 +8,6 @@ draft: false
 
 categories:
 - News
-tags:
-- Golang
-- DevLorem
 ---
 
 About 3 weeks ago my good old [DevLorem](https://github.com/Kovah/DevLorem) project was a simple PHP website that generated Lorem Ipsum text made from movie quotes of famous actors and actresses. I decided to rewrite the whole thing with Go to dive into the language and its features.

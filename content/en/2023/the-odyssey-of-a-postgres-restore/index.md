@@ -8,10 +8,7 @@ draft: false
 hascode: true
 
 categories:
-  - article
-tags:
-  - postgresql
-  - databases
+- Article
 ---
 
 Maybe I'm too naive, but I thought that clicking "Backup" and then clicking "Restore" in [Tableplus](https://tableplus.com/) would be enough to move the content of a production database to my local dev environment. The schema is exactly the same, just the data is different and I wanted to have some production data locally to play and test with. However, I've spent almost an hour trying to copy the database data. This is the odyssey of restoring a PostgreSQL database from a backup.

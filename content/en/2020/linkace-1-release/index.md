@@ -9,9 +9,6 @@ hascode: false
 
 categories:
 - News
-tags:
-- Open Source
-- LinkAce
 ---
 
 About one and a half year ago I was deeply dissatisfied with my personal bookmarks collections. The links saved in my browser piled up to a bloated mess of outdated websites with only little structure. I tested Shaarli for a few weeks but it never "clicked", so I turned it off. After some thinking, I decided to build my own bookmarks archive. And today is the big day: the release of LinkAce 1.0.

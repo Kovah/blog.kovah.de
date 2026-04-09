@@ -8,10 +8,6 @@ draft: false
 
 categories:
 - Articles
-tags:
-- RSS
-- inspiration
-- recommendations
 ---
 
 RSS once was _the_ way to gather all the news you are interested in, in one place. Like a Facebook feed, but entirely managed by yourself. Over the past decade I maintained a pretty solid list of feeds for various topics. Inspired by the [Tweet of David McKay](https://twitter.com/i/status/1259588008283713536) I decided to publish this list of all the interesting feeds I currently follow and regularly read.

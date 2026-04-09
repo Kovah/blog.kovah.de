@@ -9,12 +9,6 @@ hascode: true
 
 categories:
 - Article
-tags:
-- Bash
-- Console
-- Development
-- Ubuntu
-- Unix
 ---
 
 My Unix CLI command of the day: watch – execute a program periodically, showing output fullscreen.

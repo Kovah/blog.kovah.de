@@ -9,10 +9,6 @@ hascode: true
 
 categories:
 - Articles
-tags:
-- PHP
-- algorithms
-- hashes
 ---
 
 The PHP [`hash()`](https://www.php.net/manual/en/function.hash.php) function is one of these functions you don't use that often, but that can come in quite handy if you want to generate something like unique IDs, shorten content or whatever practical use you can derive from the possibility of hashing some input.

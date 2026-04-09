@@ -9,12 +9,6 @@ url: /en/4nb2q-lint-html-css/
 hascode: true
 categories:
 - Article
-tags:
-- CSS
-- Development
-- HTML
-- Linting
-- Web Development
 ---
 
 Ire Aderinokun just posted an article on his blog bitsofco.de about [linting of HTML with CSS](https://bitsofco.de/linting-html-using-css/). The idea: visually mark HTML elements with the help of CSS if the elements are broken or incomplete.

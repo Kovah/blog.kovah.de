@@ -9,14 +9,6 @@ draft: false
 
 categories:
 - Article
-tags:
-- Development
-- Backend
-- Frontend
-- Guide
-- Programming
-- Web
-- Web Development
 ---
 
 So, a user stated he would like to start into web development and become a full stack developer. I wrote a small guide for him.

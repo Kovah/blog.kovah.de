@@ -7,10 +7,7 @@ date: 2025-10-27T22:30:17+01:00
 hascode: true
 
 categories:
-  - Article
-tags:
-  - productivity
-  - tasks
+- Article
 ---
 
 I recently put together a new productivity system which helps me prioritize the tasks for my personal projects. It works similar to the [Eisenhower method](https://en.wikipedia.org/wiki/Time_management#Eisenhower_method) by identifying tasks that should be done immediately, put aside, or discarded entirely.

@@ -10,14 +10,6 @@ thumbnail: simon-abrams-286276-unsplash.jpg
 
 categories:
 - Article
-tags:
-- Development
-- FusionInvoice
-- InvoicePlane
-- Open Source
-- PHP
-- Project Management
-- Web Development
 ---
 
 It’s been almost 4 years since I started the project. And if someone told me that InvoicePlane would once be used by thousands of companies from all over the world and count more than 100.000 downloads, I would have nodded unbelieving. I learned a lot in these four years and want to share some thoughts and insights into building and maintaining an open source software.

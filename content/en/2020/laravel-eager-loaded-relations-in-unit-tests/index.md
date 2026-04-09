@@ -9,9 +9,6 @@ hascode: true
 
 categories:
 - Articles
-tags:
-- Laravel
-- PHP
 ---
 
 First, here's an abstracted example of the real issue from my [LinkAce](https://github.com/Kovah/LinkAce) project.

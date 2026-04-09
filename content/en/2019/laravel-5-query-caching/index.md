@@ -10,11 +10,6 @@ hascode: true
 
 categories:
 - Tutorial
-tags:
-- Caching
-- Laravel
-- Performance
-- PHP
 ---
 
 I am currently rebuilding one of my oldest side projects, [the Game Quotes Network](https://game-quotes.com/). As a content-heavy application with a lot of stuff stored in the database it’s not that easy to find the best balance between caching your site and delivering the most up-to-date content to your users. There are several methods to achieve content caching to a) minimize the load on your infrastructure and b) make your app load faster, but today it’s not about the nginx cache or manually store stuff in the Laravel cache and retrieve it once you need it. Today I want to introduce **query caching** which reduced the number of database calls to almost zero.
