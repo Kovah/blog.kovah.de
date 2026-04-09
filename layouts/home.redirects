@@ -1,17 +1,15 @@
-{{- if site.IsDefault -}}
-    {{ printf "# Redirects\n" }}
-    {{- range hugo.Sites -}}
-        {{- range $p := .Pages -}}
-            {{- range .Aliases -}}
-                {{- if findRE `\s` . -}}
-                    {{- errorf "One of the front matter aliases in %q contains whitespace" $p.String -}}
-                {{- end -}}
-                {{- printf "%s %s 301\n" . $p.RelPermalink -}}
+{{ printf "# Redirects\n" }}
+{{- range hugo.Sites -}}
+    {{- range $p := .Pages -}}
+        {{- range .Aliases -}}
+            {{- if findRE `\s` . -}}
+                {{- errorf "One of the front matter aliases in %q contains whitespace" $p.String -}}
             {{- end -}}
+            {{- printf "%s %s 301\n" . $p.RelPermalink -}}
         {{- end -}}
     {{- end -}}
-    {{ printf "# Archived Pages\n" }}
-    {{- range site.Data.archived -}}
-        {{- printf "%s https://web.archive.org/web/%s 301\n" . (. | absURL) -}}
-    {{- end -}}
+{{- end -}}
+{{ printf "# Archived Pages\n" }}
+{{- range site.Data.archived -}}
+    {{- printf "%s https://web.archive.org/web/%s 301\n" . (. | absURL) -}}
 {{- end -}}
