@@ -11,5 +11,5 @@
 {{- end -}}
 {{ printf "# Archived Pages\n" }}
 {{- range site.Data.archived -}}
-    {{- printf "%s https://web.archive.org/web/%s 301\n" . (. | absURL) -}}
+    {{- printf "%s https://web.archive.org/web/0/%s 301\n" . (. | absURL) -}}
 {{- end -}}
