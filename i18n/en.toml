@@ -11,8 +11,6 @@ other = "Updated at"
 other = "{{ .ReadingTime }} min. read"
 [category]
 other = "Category"
-[tags]
-other = "Tags"
 [share]
 other = "Share this article"
 [share_via]

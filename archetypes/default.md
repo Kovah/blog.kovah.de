@@ -9,6 +9,5 @@ hascode: true
 translationKey: some-translation-string
 
 categories:
-tags:
 ---
 

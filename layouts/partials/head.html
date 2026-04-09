@@ -23,7 +23,6 @@
 <meta name="description" content='{{ i18n "site_description" }}'/>
 {{ end }}
 
-{{- $isTag := and (eq .Kind "term") (eq .Type "tags") -}}
 {{- $isCategory := and (eq .Kind "term") (eq .Type "categories") -}}
 
 {{ if .IsPage }}

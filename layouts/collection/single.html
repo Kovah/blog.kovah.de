@@ -21,18 +21,6 @@
       </h2>
 
       <div class="mt-8 lg:mt-12 text-gray-500 md:text-center text-sm">
-        <div class="flex md:justify-center mb-4 md:mb-6">
-          {{ with .Params.Tags }}
-          <div class="mr-1">{{ i18n "tags" . }}:</div>
-          <div class="space-x-1">
-            {{ range $index, $element := . }}
-            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
-              {{- $element -}}
-            </a>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
         <span>{{ i18n "published" }}: </span>
         <time class="format-date dt-published" datetime='{{.Date.Format "2006-01-02"}}' itemprop="datePublished">
           {{.Date.Format "2006-01-02"}}

@@ -20,34 +20,6 @@
 
       <h2 class="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-tight lg:leading-tight md:text-center p-name" itemprop="headline">{{ .Title }}</h2>
 
-      <div class="mt-8 lg:mt-12 sm:flex md:justify-center text-gray-500">
-        <div class="flex">
-          {{ range .Params.Categories }}
-          <div class="mr-1">{{ i18n "category" . }}:</div>
-          <div>
-            <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
-             {{- . -}}
-            </a>
-          </div>
-          {{ end }}
-        </div>
-
-        <div class="flex mt-4 sm:mt-0 sm:ml-6 lg:ml-8">
-          {{ $list := .Params.Tags }}
-          {{ $len := (len $list) }}
-          {{ if gt $len 0 }}
-            <div class="mr-1">{{ i18n "tags" . }}:</div>
-            <div class="space-x-2">
-              {{ range $index, $element := $list }}
-              <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="{{ $badge_class }}">
-                {{- $element -}}
-              </a>
-              {{ end }}
-            </div>
-          {{ end }}
-        </div>
-      </div>
-
       <div class="mt-4 text-gray-500 md:text-center">
         <span class="mr-4 lg:mr-6">{{ i18n "readtime" . }}</span>
         <span>{{ i18n "published" }}:</span>
