@@ -9,12 +9,6 @@ type: post
 url: /de/schnelle-webseiten-starke-performance-auch-ohne-cdn/
 categories:
 - Artikel
-tags:
-- CDN
-- Cloudflare
-- Performance
-- Pingdom
-- Webseite
 ---
 
 Seit langer Zeit betreibe ich nun schon mehrere Seiten über das [Cloudflare CDN](http://www.cloudflare.com) und war auch immer sehr zufrieden. Da ich jetzt aber für die neue Version der Game-Zitate Webseite einige Tests durchführen musste um Fehler zu finden, habe ich mir auch gleich die Ladezeiten angesehen - mit erstaunlichen Ergebnissen.

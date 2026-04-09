@@ -1,5 +1,5 @@
 ---
 sitemap:
-  changefreq: "monthly"
+  changefreq: "yearly"
   priority: 1.0
 ---

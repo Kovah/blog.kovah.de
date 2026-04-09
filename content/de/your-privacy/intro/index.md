@@ -7,15 +7,8 @@ draft: false
 title: Privatsphäre und Datenschutz - Eine kurze Einführung
 type: post
 url: /de/your-privacy/privatsphaere-und-datenschutz-kurze-einfuehrung/
-aliases:
-- /de/privatsphaere-und-datenschutz-eine-kurze-einfuehrung/
 categories:
 - Artikel
-tags:
-- Datenschutz
-- Internet
-- Privatsphäre
-- YourPrivacy
 ---
 
 {{< alert >}}

@@ -8,12 +8,6 @@ type: post
 url: /de/das-neue-alte-projekt-game-zitate/
 categories:
 - Artikel
-tags:
-- Drupal
-- Game-Zitate.de
-- Games
-- Wordpress
-- Zitate
 ---
 
 Es ist jetzt schon 2 Jahre her, als ich ein neues Projekt gestartet hatte: die [Game-Zitate](http://www.game-zitate.de/) Sammlung. Wie der Name schon sagt, werden hier Zitate aus Computer- beziehungsweise Konsolenspielen gesammelt. Das Projekt hatte ich im Herbst 2012 nach über einem Jahr Laufzeit aus Zeitgründen nicht auf meinen neuen Webserver übernommen, die alten Dateien schlummerten aber weiter auf meinem NAS Server. Und da ich mich jetzt etwas mehr in Wordpress einarbeiten wollte habe ich mich entschlossen, mit dem Projekt von der schon etwas eingestaubten Drupal Version 6 auf Wordpress umzusatteln.

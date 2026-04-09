@@ -8,13 +8,6 @@ type: post
 url: /de/warum-ich-hab-nichts-zu-verbergen-fuer-alle-gefaehrlich-ist/
 categories:
 - Artikel
-tags:
-- Edward Snowden
-- Medien
-- Politik
-- Privatsphäre
-- Überwachung
-- Wirtschaft
 ---
 
 Seit den [Enthüllungen von Snowden](https://de.wikipedia.org/wiki/Globale_%C3%9Cberwachungs-_und_Spionageaff%C3%A4re) debattiert man um das Thema Privatsphäre und Datenschutz so stark wie noch nie zuvor. Dabei kristallisieren sich drei Parteien heraus, von denen eine mir nur all zu bekannt ist. Neben denen, die sich für Privatsphäre einsetzen und denen, die für mehr Überwachung sind, gibt es noch die Gruppe der "Ich hab nichts zu verbergen"-Typen. Diese Gruppe ist wohl in der Deutschen Bevölkerung am meisten vertreten; den meisten ist es egal, ob noch mehr Überwachungskameras installiert und mehr Telefongespräche aufgezeichnet werden, denn sie haben doch nichts, was die Politik oder die Polizei interessieren könnte.

@@ -93,3 +93,16 @@ weight = 4
 [taxonomies]
 category = "categories"
 
+[mediaTypes]
+[mediaTypes.'text/redirects']
+delimiter = ''
+
+[outputs]
+home = ['html', 'redirects']
+
+[outputFormats]
+[outputFormats.redirects]
+baseName = '_redirects'
+isPlainText = true
+mediaType = 'text/redirects'
+root = true

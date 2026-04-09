@@ -8,12 +8,6 @@ type: post
 url: /de/6dollarshirts-com-meine-erfahrung/
 categories:
 - Test
-tags:
-- 6DollarShirts
-- PayPal
-- Tshirts
-- Versand
-- Zoll
 ---
 
 Vor einiger Zeit war ich auf der Suche nach einem günstigen Anbieter für Tshirts mit interessanten Motiven, die alle in Richtung Videospiele und Filme gehen sollten. Richtig nerdmäßig halt. Gekauft habe ich letztendlich bei [6DollarShirts](http://www.anrdoezrs.net/click-7802627-10650219-1234299783000)![](http://www.ftjcfx.com/image-7802627-10650219-1234299783000)

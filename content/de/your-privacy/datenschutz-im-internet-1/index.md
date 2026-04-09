@@ -6,20 +6,8 @@ draft: false
 title: Datenschutz im Internet - Teil 1
 type: post
 url: /de/your-privacy/datenschutz-im-internet-teil-1/
-aliases:
-- /de/datenschutz-im-internet-teil-1/
 categories:
 - Artikel
-tags:
-- AGB
-- Browser
-- Chrome
-- Datenschutz
-- Firefox
-- Safari
-- SSL
-- Verschlüsselung
-- YourPrivacy
 ---
 
 {{< alert >}}

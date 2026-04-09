@@ -1,16 +1,11 @@
 ---
 title: Der Corona Virus
 description: Gedanken zu einem Virus, der unser Leben derzeit stark lenkt, ohne wirklich anwesend zu sein.
-
 author: Kevin Woblick
 date: 2020-03-15T18:35:19+01:00
 draft: false
-
 categories:
 - Artikel
-tags:
-- Corona
-- Gesellschaft
 ---
 
 Der stürmische Wind hat mir fast die Einkaufstüte aus der Hand gerissen. Die Böen sind heute sehr stark und überall pfeift es um die Häuserschluchten. In den Nachrichten wurde sogar von einer Sturmwarnung gesprochen, interessieren tut das aber niemanden.  

@@ -6,14 +6,8 @@ draft: false
 title: Datenschutz im Internet - Teil 2
 type: post
 url: /de/your-privacy/datenschutz-im-internet-teil-2
-aliases:
-- /de/datenschutz-im-internet-teil-2
 categories:
 - Artikel
-tags:
-- Datenschutz
-- Online Shopping
-- YourPrivacy
 ---
 
 {{< alert >}}

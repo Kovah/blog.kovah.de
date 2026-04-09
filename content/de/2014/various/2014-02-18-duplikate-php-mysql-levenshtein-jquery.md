@@ -9,12 +9,6 @@ url: /de/duplikate-finden-mit-php-mysql-levenshtein-und-jquery/
 hascode: true
 categories:
 - Tutorial
-tags:
-- JavaScript
-- jQuery
-- Levenshtein
-- MySQL
-- PHP
 ---
 
 Für eines meiner aktuellen Projekte war es nötig eine Funktion in die Webseite zu integrieren, die in der MySQL Datenbank nach Duplikaten des eingegebenen Textes sucht. Basis ist ein simples HTML Formular, das bereits mit PHP ausgearbeitet ist. jQuery wurde bisher nicht genutzt, macht aber für diesen Zeck Sinn.

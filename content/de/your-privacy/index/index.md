@@ -8,15 +8,8 @@ type: post
 weight: 1000
 thumbnail: siarhei-horbach-xJc--frJbuw-unsplash.jpg
 url: /de/your-privacy/deine-privatsphaere-in-deiner-hand
-aliases:
-- /de/yourprivacy-deine-privatsphaere-in-deiner-hand
 categories:
 - Artikel
-tags:
-- Datenschutz
-- Internet
-- Privatsphäre
-- YourPrivacy
 ---
 
 **YourPrivacy** ist eine kleine Serie von Artikeln rund um das Thema Privatsphäre. Aber halt! Hier geht es nicht darum, dich zu einem neuen Snowden oder Internaktivisten zu machen. Es handelt sich um kurze, verständliche Artikel und Anleitungen zu den wichtigsten Themen rund um deine Privatsphäre.

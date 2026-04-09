@@ -6,14 +6,8 @@ draft: false
 title: 'Datenschutz: Die Grundlagen'
 type: post
 url: /de/your-privacy/datenschutz-die-grundlagen/
-aliases:
-- /de/datenschutz-die-grundlagen/
 categories:
 - Artikel
-tags:
-- Datenschutz
-- Privatsphäre
-- YourPrivacy
 ---
 
 {{< alert >}}

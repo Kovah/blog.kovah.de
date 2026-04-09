@@ -9,12 +9,6 @@ url: /de/1-jahr-hide-me-vpn-meine-erfahrungen/
 thumbnail: hidemebanner.jpg
 categories:
 - Test
-tags:
-- Anonymität
-- Hide.me
-- Sicherheit
-- VPN
-- Webservice
 ---
 
 {{< alert type="info" >}}

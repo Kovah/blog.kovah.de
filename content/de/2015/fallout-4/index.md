@@ -8,11 +8,6 @@ type: post
 url: /de/fallout-4-die-ersten-6-stunden/
 categories:
 - Test
-tags:
-- Bethesda
-- Fallout
-- Fallout 4
-- Gaming
 ---
 
 Pünktlich zum Release habe ich von Amazon meine Kopie von Fallout 4 erhalten und gleich installiert. Nach einigen Minuten Einrichtung konnte es dann auch gleich losgehen. Leider hatte ich ein paar Probleme mit nVidia Shadowplay und der Aufnahme, so dass ein paar Spielminuten nur aus Testen bestand. Dennoch konnte ich bereits einige Stunden das Spielerlebnis genießen.

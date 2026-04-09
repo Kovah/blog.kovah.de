@@ -8,10 +8,6 @@ type: post
 url: /de/die-neue-owncloud-alternative-nextcloud/
 categories:
 - News
-tags:
-- Cloud
-- Nextcloud
-- ownCloud
 ---
 
 Eine neue Alternative zu ownCloud ist quasi ownCloud selber. Was? Ja, wirklich. Denn [Nextcloud](https://nextcloud.com/) ist ein direkter Ableger von ownCloud, will jedoch vieles besser machen.
