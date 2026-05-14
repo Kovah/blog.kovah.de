@@ -52,7 +52,7 @@
       {{ partial "icons/reddit.html" }}
     </a>
     <a class="{{ $link_class }}" target="_blank" rel="noopener noreferrer"
-        href="mailto:?subject={{ $share_title }}&body={{ $share_description }}"
+        href="mailto:?subject={{ $share_title }}&body={{ $share_description }} {{ .Permalink }}"
         title='{{ i18n "share_via" "Email" }}'>
       {{ partial "icons/email.html" }}
     </a>
