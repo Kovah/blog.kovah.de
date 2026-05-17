@@ -98,7 +98,7 @@ category = "categories"
 delimiter = ''
 
 [outputs]
-home = ['html', 'redirects']
+home = ['html', 'rss', 'redirects']
 
 [outputFormats]
 [outputFormats.redirects]
