@@ -54,6 +54,9 @@ module.exports = {
               color: 'inherit',
               fontWeight: '600',
             },
+            blockquote: {
+              quotes: "none",
+            },
           }
         },
         lg: {

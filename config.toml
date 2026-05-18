@@ -34,14 +34,14 @@ pagerSize = 14
 [languages]
 [languages.en]
   contentDir = "content/en"
-  languageName = "EN"
-  languageCode = "en-us"
+  label = "EN"
+  locale = "en-us"
   weight = 1
 
 [languages.de]
   contentDir = "content/de"
-  languageName = "DE"
-  languageCode = "de-de"
+  label = "DE"
+  locale = "de-de"
   weight = 2
 
 [[languages.en.menu.main]]

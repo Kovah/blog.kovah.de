@@ -13,7 +13,7 @@ In the past years, more and more people wrote that the internet is basically dea
 
 I do not believe this.
 
-## A History of Change
+### A History of Change
 
 I was born into the emergence of the web as a mainstream medium and vividly remember watching my dad putting together a recipe website with HTML tables, inline styles, and tiny pictures. Then came the Web 2.0 with all those forums, the first social networks. For me, it was the golden era of the internet because everything felt free and without boundaries. Meanwhile, the first dark corners evolved: the first SEO-optimized corporate blogs popped up, spam became a real issue, and sites like Rotten published horrible content that should not have been freely available at all. One could argue that the internet was already dying at this time. Yet it didn't.
 
@@ -28,7 +28,7 @@ And again, people throw up their arms in shock and scream that now the internet,
 
 Bullshit.
 
-## There's always Light
+### There's always Light
 
 Humanity seems to have this weird little trait: while one half of it is actively working to destroy all humans, there's the other half that smiles and optimistically looks into the future. Statistics say that we are living in better times than anyone ever before us. And that's probably true. It's like taking care of your beautiful, colorful, and cherished garden while there's war right on the other side of your fence.
 Speaking of gardens: there's this small community, and you could also call it a trend to cultivate your own digital garden. Exactly like described: take care of your very own and personal website, while the internet is seemingly rotting away all around you. That's not an ideal situation, but a good sign that there are still people who want to make their own part of the internet, just for themselves.
