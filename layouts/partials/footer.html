@@ -86,3 +86,15 @@
   });
 </script>
 {{ end }}
+
+{{ if ne hugo.IsServer true }}
+<script src="https://stats.kovah.dev/js/app.js" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        swetrix.init('NkYzGh91xFY0', {apiURL: 'https://stats.kovah.dev/backend/v1/log',respectDNT: true,});swetrix.trackViews()
+    })
+</script>
+<noscript>
+    <img src="https://stats.kovah.dev/backend/log/noscript?pid=NkYzGh91xFY0" alt="" referrerpolicy="no-referrer-when-downgrade"/>
+</noscript>
+{{ end }}
